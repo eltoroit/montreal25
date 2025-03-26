@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>This action finds the PTO entitlements for the employee based on the employment start date</description>
-    <invocationTarget>HRPTO_EntitlementsPTO</invocationTarget>
-    <invocationTargetType>apex</invocationTargetType>
-    <isConfirmationRequired>false</isConfirmationRequired>
-    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
-    <masterLabel>HRPTO: Entitlements PTO</masterLabel>
-</GenAiFunction>

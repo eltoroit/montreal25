@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<GenAiPlanner xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Engage in a geography game where players answer geography questions to earn points. The goal is to test and improve geographical knowledge through a fun and competitive format.</description>
-    <genAiPlugins>
-        <genAiPluginName>Geography_Game</genAiPluginName>
-    </genAiPlugins>
-    <masterLabel>First Agent</masterLabel>
-    <plannerType>AiCopilot__ReAct</plannerType>
-</GenAiPlanner>

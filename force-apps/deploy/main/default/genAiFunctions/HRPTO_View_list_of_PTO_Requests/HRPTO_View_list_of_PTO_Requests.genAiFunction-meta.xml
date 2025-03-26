@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>This action shows the list of PTO request made by the employee.</description>
-    <invocationTarget>HRPTO_ListPTO</invocationTarget>
-    <invocationTargetType>apex</invocationTargetType>
-    <isConfirmationRequired>false</isConfirmationRequired>
-    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
-    <masterLabel>HRPTO: View list of PTO Requests</masterLabel>
-</GenAiFunction>

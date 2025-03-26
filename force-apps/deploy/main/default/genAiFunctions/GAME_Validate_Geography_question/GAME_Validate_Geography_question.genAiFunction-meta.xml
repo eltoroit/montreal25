@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>This prompt evaluates if the user gave the correct answer to a question asked in a game</description>
-    <invocationTarget>GAME_Validate_Geography_question</invocationTarget>
-    <invocationTargetType>generatePromptResponse</invocationTargetType>
-    <isConfirmationRequired>false</isConfirmationRequired>
-    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
-    <masterLabel>GAME: Validate Geography question</masterLabel>
-</GenAiFunction>
