@@ -1,0 +1,22 @@
+{
+	"orgName": "ELTOROit - Slack Demo Scratch Org",
+	"edition": "Developer",
+	"hasSampleData": true,
+	"features": ["EnableSetPasswordInApi", "Einstein1AIPlatform", "EinsteinGPTForDevelopers"],
+	"settings": {
+		"lightningExperienceSettings": {
+			"enableS1DesktopEnabled": true
+		},
+		"mobileSettings": {
+			"enableS1EncryptedStoragePref2": false
+		},
+		"securitySettings": {
+			"sessionSettings": {
+				"lockerServiceNext": false
+			}
+		},
+		"einsteinGptSettings": {
+			"enableEinsteinGptPlatform": true
+		}
+	}
+}

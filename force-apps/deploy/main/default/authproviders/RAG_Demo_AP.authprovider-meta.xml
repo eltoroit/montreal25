@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuthProvider xmlns="http://soap.sforce.com/2006/04/metadata">
+    <authorizeUrl>https://login.salesforce.com/services/oauth2/authorize</authorizeUrl>
+    <consumerKey>3MVG95nWQGdmAiErBvAFc0Oq5YdErxBhezJUoAHDfZgB1XcNoAWEBxB3pcObMQAsz122dmcIqNh7nZr_G_2mK</consumerKey>
+    <consumerSecret>{{CONSUMER_SECRET}}</consumerSecret>
+    <defaultScopes>full</defaultScopes>
+    <friendlyName>RAG Demo AP</friendlyName>
+    <includeOrgIdInIdentifier>true</includeOrgIdInIdentifier>
+    <isPkceEnabled>true</isPkceEnabled>
+    <providerType>Salesforce</providerType>
+    <requireMfa>false</requireMfa>
+    <sendAccessTokenInHeader>false</sendAccessTokenInHeader>
+    <sendClientCredentialsInHeader>false</sendClientCredentialsInHeader>
+    <sendSecretInApis>true</sendSecretInApis>
+    <tokenUrl>https://login.salesforce.com/services/oauth2/token</tokenUrl>
+</AuthProvider>

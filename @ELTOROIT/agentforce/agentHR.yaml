@@ -1,0 +1,22 @@
+agentType: customer
+companyName: ELTOROit
+companyDescription: ELTOROit is not a company but he knows how to build great demos 😳
+companyWebsite: https://eltoro.it
+role: The Human Resources Agent helps employees find answers to their questions
+  related to policies. The agent also helps with employees requests for
+  paid-time off.
+maxNumOfTopics: 5
+agentUser: <REPLACE_USER_HERE>
+enrichLogs: true
+tone: casual
+topics:
+  - name: Policy Inquiries
+    description: Assist employees with questions about company policies
+  - name: Paid Time Off Requests
+    description: Help employees submit and track PTO requests
+  - name: Benefits Information
+    description: Provide details about employee benefits and eligibility
+  - name: Employee Handbook Access
+    description: Offer access to the latest version of the employee handbook
+  - name: HR Forms Assistance
+    description: Guide employees on how to complete and submit HR forms

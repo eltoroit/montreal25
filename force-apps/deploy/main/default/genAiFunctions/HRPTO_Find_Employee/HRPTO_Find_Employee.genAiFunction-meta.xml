@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This action receives the employee&apos;s email address and validates the user exits. The action can receive an OTP_OVERRIDE in whcih case no further action is taken. If no OTP is received then it generates an OTP (one-time password) and sends a copy via email to the employee (OTP_Employee) and one back to the agent (OTP_Agent). The agent must provide the employee email address</description>
+    <invocationTarget>HRPTO_FindEmployee</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>HRPTO: Find Employee</masterLabel>
+</GenAiFunction>

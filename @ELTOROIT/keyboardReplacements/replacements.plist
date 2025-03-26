@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        <dict>
+            <key>phrase</key>
+            <string>My email address is aperez@salesforce.com, I want to manage my PTO requests</string>
+            <key>shortcut</key>
+            <string>AA01</string>
+        </dict>
+        <dict>
+            <key>phrase</key>
+            <string>I want to manage my PTO requests</string>
+            <key>shortcut</key>
+            <string>DM01</string>
+        </dict>
+        <dict>
+            <key>phrase</key>
+            <string>aperez@salesforce.com</string>
+            <key>shortcut</key>
+            <string>DM02</string>
+        </dict>
+        <dict>
+            <key>phrase</key>
+            <string>How many PTO days can I take this year?</string>
+            <key>shortcut</key>
+            <string>DM03</string>
+        </dict>
+        <dict>
+            <key>phrase</key>
+            <string>I want to request three PTO days starting this Monday</string>
+            <key>shortcut</key>
+            <string>DM04</string>
+        </dict>
+        <dict>
+            <key>phrase</key>
+            <string>I need to request 2.5 hours of PTO for this Friday starting at 11 AM</string>
+            <key>shortcut</key>
+            <string>DM05</string>
+        </dict>
+        <dict>
+            <key>phrase</key>
+            <string>I want to request three more PTO days starting a week from Monday</string>
+            <key>shortcut</key>
+            <string>DM06</string>
+        </dict>
+        <dict>
+            <key>phrase</key>
+            <string>Show me the list of PTO requests I have made this year</string>
+            <key>shortcut</key>
+            <string>DM07</string>
+        </dict>
+        <dict>
+            <key>phrase</key>
+            <string>Can you give me more information on the PTO request for this Friday?</string>
+            <key>shortcut</key>
+            <string>DM08</string>
+        </dict>
+        <dict>
+            <key>phrase</key>
+            <string>Can you move it to next Monday?</string>
+            <key>shortcut</key>
+            <string>DM09</string>
+        </dict>
+        <dict>
+            <key>phrase</key>
+            <string>In that case, just delete it.</string>
+            <key>shortcut</key>
+            <string>DM10</string>
+        </dict>
+        <dict>
+            <key>phrase</key>
+            <string>Talk to you later</string>
+            <key>shortcut</key>
+            <string>TTYL</string>
+        </dict>
+        <dict>
+            <key>phrase</key>
+            <string>On my way!</string>
+            <key>shortcut</key>
+            <string>omw</string>
+        </dict>
+    </array>
+</plist>

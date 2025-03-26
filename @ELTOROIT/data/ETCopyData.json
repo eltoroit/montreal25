@@ -1,0 +1,25 @@
+{
+	"orgSource": "soETGames",
+	"orgDestination": "soETGames",
+	"sObjectsData": [
+		{
+			"name": "DCO_Master__c",
+			"ignoreFields": "",
+			"externalIdField": null,
+			"twoPassReferenceFields": "CurrentLog__c",
+			"where": null,
+			"orderBy": "OrchestrationName__c, Order__c"
+		}
+	],
+	"sObjectsMetadata": [],
+	"rootFolder": "ETCopyData",
+	"includeAllCustom": true,
+	"customObjectsToIgnore": "DCO_DmoReceived__c, DCO_DmoScheduled__c",
+	"stopOnErrors": true,
+	"ignoreFields": null,
+	"copyToProduction": true,
+	"twoPassReferenceFields": null,
+	"deleteDestination": true,
+	"useBulkAPI": false,
+	"bulkPollingTimeout": null
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>This topic engages users in a geography game where they answer questions to earn points. It aims to test and improve geographical knowledge in a fun and competitive format.</description>
+    <developerName>Geography_Game</developerName>
+    <genAiPluginInstructions>
+        <description>Ask geography questions to the player</description>
+        <developerName>instruction_askgeograp0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_askgeograp0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Declare the winner or loser based on the total points earned at the end of the game.</description>
+        <developerName>instruction_declarethe1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_declarethe1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Ensure that questions cover a variety of geographical topics such as countries, capitals, landmarks, and physical features.</description>
+        <developerName>instruction_ensurethat2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ensurethat2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If the player requests a hint, provide a clue related to the question without giving away the answer.</description>
+        <developerName>instruction_iftheplaye3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_iftheplaye3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Inform the player of their current score after each question.</description>
+        <developerName>instruction_informthep4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_informthep4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Keep track of the player&apos;s score by adding points for correct answers.</description>
+        <developerName>instruction_keeptracko5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_keeptracko5</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Geography Game</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to provide geography questions, keep score, and declare winners or losers based on points earned. Do not perform any actions outside of managing the geography game.</scope>
+</GenAiPlugin>

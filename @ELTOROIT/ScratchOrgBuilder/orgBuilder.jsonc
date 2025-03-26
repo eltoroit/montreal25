@@ -1,0 +1,53 @@
+{
+	"settings": {
+		"days": 1,
+		"alias": "soETGames",
+		"OpenBrowser": true,
+		"QuitOnErrors": true,
+		"UserOnScreen": true // Can I prompt the user for manual verification? On CICD, this should be false
+	},
+	"steps": [
+		// Prepare environment
+		"BackupAlias", // In case you need to go back to the old org :-)
+		// "ValidateETCopyData",
+
+		// Creating Scratch org
+		"CreateScratchOrg",
+		"GeneratePassword",
+		"CreateFinestDebugLevel",
+
+		// Pre-Deploy
+		// COMMENT No need to enable this manually, it's part of the scratch org config
+		// COMMENT { "ManualMetadata": { "url": "/lightning/setup/EinsteinGPTSetup/home", "message": "Enable Einstein" } },
+		{ "AssignPermissionSet": "CopilotSalesforceAdmin" }, // Agentforce Default Admin
+		{ "AssignPermissionSet": "EinsteinGPTPromptTemplateManager" }, // Prompt Template Manager
+		// COMMENT Not required for this type of agent being created
+		// COMMENT { "ManualMetadata": { "url": "/lightning/setup/EinsteinBots/home", "message": "Enable bots" } },
+		{ "ManualMetadata": { "url": "/lightning/setup/EinsteinCopilot/home", "message": "Enable agentforce, ensure agents can be created" } },
+		{ "PushMetadata": { "folder": "force-apps/setup" } },
+		{ "ExecuteApex": "@ELTOROIT/scripts/apex/AgentforceInitializeUsers.apex" },
+		{ "RunShell": { "app": "./@ELTOROit/scripts/shell/agentforceUsers.sh" } },
+
+		// Crete dummy agent to allow for real agent to be deployed
+		{ "ManualMetadata": { "url": "/error", "message": "Create agent(s) and continue when successful" } },
+
+		// Deploying
+		"ShowDeployPage",
+		{ "PushMetadata": { "folder": "force-apps/deploy" } },
+		// COMMENT { "ManualMetadata": { "url": "/lightning/setup/EinsteinCopilot/home", "message": "Activate [Human Resources Agent] agent" } },
+		// COMMENT { "PushMetadata": { "folder": "force-apps/step02" } },
+		"PushMetadata",
+
+		// Post-Deploy
+		{ "AssignPermissionSet": "psRAG_Demo" },
+		{ "AssignPermissionSet": "psSlackPermissions" },
+		{ "ExecuteApex": "@ELTOROIT/scripts/apex/SetUserRecord.apex" },
+		{ "ExecuteApex": "@ELTOROIT/scripts/apex/AgentforceUpdateUsers.apex" },
+		{ "DeployProfile": "force-apps/doNotDeploy/main/default/profiles/Admin.profile-meta.xml" },
+		// COMMENT { "AssignPermissionSet": "ebikesCRM" },
+		// COMMENT { "ETCopyData": "./@ELTOROIT/data" },
+
+		// Print results
+		"ShowFinalSuccess"
+	]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This action deletes the PTO request, agent must provide the ptoID for the request to be deleted</description>
+    <invocationTarget>HRPTO_DeletePTO</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>HRPTO: Delete PTO Request</masterLabel>
+</GenAiFunction>

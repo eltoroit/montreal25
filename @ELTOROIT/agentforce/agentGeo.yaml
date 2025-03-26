@@ -1,0 +1,23 @@
+agentType: customer
+companyName: ELTOROit
+companyDescription: ELTOROit is not a company but he knows how to build great demos 😳
+companyWebsite: https://eltoro.it
+role: Engage in a fun and competitive geography game where players answer
+  geography questions to earn points. The Agent provides questions, tracks
+  scores, and declares winners or losers based on points earned, offering an
+  enjoyable way to test and improve geographical knowledge.
+maxNumOfTopics: 5
+agentUser: <REPLACE_USER_HERE>
+enrichLogs: true
+tone: casual
+topics:
+  - name: Geography Trivia Questions
+    description: Generate and provide geography questions for players.
+  - name: Score Tracking System
+    description: Track and update players' scores in real-time.
+  - name: Leaderboard Updates
+    description: Display and update the leaderboard based on scores.
+  - name: Game Winner Declaration
+    description: Declare winners based on the points earned.
+  - name: Geographical Knowledge Feedback
+    description: Offer feedback to players to improve their geography skills.

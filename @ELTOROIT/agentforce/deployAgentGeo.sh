@@ -1,0 +1,1 @@
+./@ELTOROIT/agentforce/deployAgent.sh "Geography Agent" "@ELTOROIT/agentforce/agentGeo.yaml" "etReplacements/AGENT_GEOGRAPHY_USERNAME.txt"

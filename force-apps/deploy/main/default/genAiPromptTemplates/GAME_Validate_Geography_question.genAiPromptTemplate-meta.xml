@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>hQr1GM5g/7/Lg0x4ets4mRmREOfS4ltNLZxyoUbEfxo=_1</activeVersionIdentifier>
+    <description>This prompt evaluates if the user gave the correct answer to a question asked in a game</description>
+    <developerName>GAME_Validate_Geography_question</developerName>
+    <masterLabel>GAME: Validate Geography question</masterLabel>
+    <templateVersions>
+        <content>In a game, I asked this question to the user &quot;{!$Input:Question}&quot;. The user answered &quot;{!$Input:UserAnswer}&quot;. Did the user get the answer correct?
+</content>
+        <inputs>
+            <apiName>Question</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Question</masterLabel>
+            <referenceName>Input:Question</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>UserAnswer</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>UserAnswer</masterLabel>
+            <referenceName>Input:UserAnswer</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>hQr1GM5g/7/Lg0x4ets4mRmREOfS4ltNLZxyoUbEfxo=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

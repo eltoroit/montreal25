@@ -1,0 +1,21 @@
+{
+  "required" : [ "emailAddress" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "emailAddress" : {
+      "title" : "emailAddress",
+      "description" : "Employee's email address",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "OTP_OVERRIDE" : {
+      "title" : "OTP_OVERRIDE",
+      "description" : "OTP Override to skip sending email",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

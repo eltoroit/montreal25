@@ -1,0 +1,1 @@
+./@ELTOROIT/agentforce/deployAgent.sh "Human Resources Agent" "@ELTOROIT/agentforce/agentHR.yaml" "etReplacements/AGENT_HUMAN_RESOURCES_USERNAME.txt"
