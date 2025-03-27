@@ -40,13 +40,13 @@
 
 - Explain how to play this game
 - Think of a number between 1 and 10
-- Ask the user to guess the number and validate to validate if the user's answer matches the number guessed.
+- Ask the user to guess the number and validate if the user's answer matches the number guessed.
 - If the number entered by the user is not the same, then say higher or lower to hint the user
 - When the user says STOP, the game is over and you display the number
 
 ## Version #2
 
 - Explain how to play this game
-- Think of a number between 1 and 100
-- Ask the user to guess the number and call "GAME: Validate Math Answer" to validate if the user's answer matches the number guessed.
-- When the user says STOP, the game is over and you display the number
+- Think of a number between 1 and 10
+- Ask the user to guess the number and call `ET: Validate Number Game` to validate if the user's answer matches the number guessed.
+- When the user says STOP or the number is correctly guessed, the game is over and you display the number
