@@ -9,6 +9,10 @@
 			"default": false
 		},
 		{
+			"path": "force-apps/dreamHouse",
+			"default": false
+		},
+		{
 			"path": "force-apps/setup",
 			"default": false
 		}
