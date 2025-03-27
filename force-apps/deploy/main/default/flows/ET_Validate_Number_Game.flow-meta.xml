@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <assignments>
+        <name>SET010</name>
+        <label>SET010 Initialize Variables</label>
+        <locationX>314</locationX>
+        <locationY>134</locationY>
+        <assignmentItems>
+            <assignToReference>Errors</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Pending...</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Message</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Pending...</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>IF020_Compare_numbers</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>SET030</name>
+        <label>SET030 Go Higher!</label>
+        <locationX>50</locationX>
+        <locationY>350</locationY>
+        <assignmentItems>
+            <assignToReference>Errors</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Message</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Go Higher</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>SET040</name>
+        <label>SET040 Go Lower!</label>
+        <locationX>314</locationX>
+        <locationY>350</locationY>
+        <assignmentItems>
+            <assignToReference>Errors</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Message</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Go Lower</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <assignments>
+        <name>SET050</name>
+        <label>SET050 Congratulations</label>
+        <locationX>578</locationX>
+        <locationY>350</locationY>
+        <assignmentItems>
+            <assignToReference>Errors</assignToReference>
+            <operator>Assign</operator>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>Message</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>You got it!</stringValue>
+            </value>
+        </assignmentItems>
+    </assignments>
+    <decisions>
+        <name>IF020_Compare_numbers</name>
+        <label>IF020 Compare numbers</label>
+        <locationX>314</locationX>
+        <locationY>242</locationY>
+        <defaultConnector>
+            <targetReference>SET050</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>You got it!</defaultConnectorLabel>
+        <rules>
+            <name>IF020_Low</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>UserNumber</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <elementReference>AgentNumber</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SET030</targetReference>
+            </connector>
+            <label>User is low</label>
+        </rules>
+        <rules>
+            <name>IF020_High</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>UserNumber</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <elementReference>AgentNumber</elementReference>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>SET040</targetReference>
+            </connector>
+            <label>User is high</label>
+        </rules>
+    </decisions>
+    <description>Validates the number entered by the user agains the agent number and provides a hint to the user for his next guess or congratulates the user if the number is correctly guessed.</description>
+    <environments>Default</environments>
+    <interviewLabel>ET: Validate Number Game {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ET: Validate Number Game</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>SET010</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>This is the random number generated by the agent</description>
+        <name>AgentNumber</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+    <variables>
+        <description>Indicates if there are any errors</description>
+        <name>Errors</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>This message indicates how the user and the agent numbers compare, hinting the user to go higher or lower or indicating if the user guessed correctly</description>
+        <name>Message</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <description>This is the current guess by the user</description>
+        <name>UserNumber</name>
+        <dataType>Number</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <scale>0</scale>
+    </variables>
+</Flow>
