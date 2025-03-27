@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # NEW_USERNAME for metadata replacement
-export NEW_USERNAME="test-0lfvzfcfzzuy@example.com"
+export NEW_USERNAME="test-ahmiew2bge7y@example.com"
 # Keep the target org here, to avoid accidentally deploying to a different org.
 sf project deploy start --target-org "$NEW_USERNAME" --ignore-conflicts --verbose --json > "./etLogs/build.json"
 

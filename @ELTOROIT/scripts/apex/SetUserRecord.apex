@@ -7,5 +7,5 @@ User me = [SELECT Id FROM User WHERE Id = :UserInfo.getUserId()];
 me.UserPreferencesUserDebugModePref = true;
 me.FirstName = 'Andres';
 me.LastName = 'Perez';
-me.StartDate__c = Date.valueOf('2024-10-03');
+// me.StartDate__c = Date.valueOf('2024-10-03');
 update me;
