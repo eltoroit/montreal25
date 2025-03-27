@@ -1,0 +1,1 @@
+SampleDataController.importSampleData();

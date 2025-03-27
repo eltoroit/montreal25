@@ -17,6 +17,8 @@
 		"CreateFinestDebugLevel",
 
 		// Pre-Deploy
+		// https://login.salesforce.com/packaging/installPackage.apexp?p0=04tKY000000LRJJYA4
+		{ "InstallPackage": { "id": "04tKY000000LRJJYA4" } }, // Dreamhouse App
 		{ "AssignPermissionSet": "CopilotSalesforceAdmin" }, // Agentforce Default Admin
 		{ "AssignPermissionSet": "EinsteinGPTPromptTemplateManager" }, // Prompt Template Manager
 		// { "ManualMetadata": { "url": "/lightning/setup/EinsteinCopilot/home", "message": "Enable agentforce, ensure agents can be created" } },
@@ -38,6 +40,7 @@
 		{ "ExecuteApex": "@ELTOROIT/scripts/apex/SetUserRecord.apex" },
 		// { "ExecuteApex": "@ELTOROIT/scripts/apex/AgentforceUpdateUsers.apex" },
 		{ "DeployProfile": "force-apps/doNotDeploy/main/default/profiles/Admin.profile-meta.xml" },
+		{ "ExecuteApex": "@ELTOROIT/scripts/apex/CreateDreamHouseAppData.apex" }, // Dreamhosue app data
 
 		// Print results
 		"ShowFinalSuccess"
