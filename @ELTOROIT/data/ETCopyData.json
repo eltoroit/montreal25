@@ -1,25 +1,41 @@
 {
-	"orgSource": "soETGames",
-	"orgDestination": "soETGames",
-	"sObjectsData": [
-		{
-			"name": "DCO_Master__c",
-			"ignoreFields": "",
-			"externalIdField": null,
-			"twoPassReferenceFields": "CurrentLog__c",
-			"where": null,
-			"orderBy": "OrchestrationName__c, Order__c"
-		}
-	],
-	"sObjectsMetadata": [],
-	"rootFolder": "ETCopyData",
-	"includeAllCustom": true,
-	"customObjectsToIgnore": "DCO_DmoReceived__c, DCO_DmoScheduled__c",
-	"stopOnErrors": true,
-	"ignoreFields": null,
-	"copyToProduction": true,
-	"twoPassReferenceFields": null,
-	"deleteDestination": true,
-	"useBulkAPI": false,
-	"bulkPollingTimeout": null
+  "orgSource": "soETGames",
+  "orgDestination": "soETGames",
+  "sObjectsData": [
+    {
+      "name": "Account",
+      "ignoreFields": "",
+      "externalIdField": null,
+      "twoPassReferenceFields": "",
+      "where": null,
+      "orderBy": null
+    },
+    {
+      "name": "Contact",
+      "ignoreFields": "",
+      "externalIdField": null,
+      "twoPassReferenceFields": "",
+      "where": null,
+      "orderBy": null
+    },
+    {
+      "name": "Case",
+      "ignoreFields": "",
+      "externalIdField": null,
+      "twoPassReferenceFields": "",
+      "where": null,
+      "orderBy": null
+    }
+  ],
+  "sObjectsMetadata": [],
+  "rootFolder": "ETCopyData",
+  "includeAllCustom": true,
+  "customObjectsToIgnore": null,
+  "stopOnErrors": true,
+  "ignoreFields": null,
+  "copyToProduction": false,
+  "twoPassReferenceFields": null,
+  "deleteDestination": true,
+  "useBulkAPI": false,
+  "bulkPollingTimeout": null
 }
