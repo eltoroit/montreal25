@@ -1,5 +1,57 @@
 # [UC-MAIN]: Dreamhouse Agent Use Cases
 
+## [UC-EXT] External User (Dreamhouse Customers) - Chat/Portal Agent
+
+### [UC-EXT-001]: Intelligent Property Discovery
+
+- [UC-EXT-001-01]: Advanced Property Search and Matching
+    - Multi-criteria property search (price, location, features)
+    - AI-powered personalized property recommendations
+    - Retrieve comprehensive property details and history
+- [UC-EXT-001-02]: Contextual Property Insights
+    - Retrieve neighborhood information
+    - Access commute and location analytics
+    - Provide walkability and amenity scores
+
+### [UC-EXT-002]: Seamless Tour and Interaction Management
+
+- [UC-EXT-002-01]: Intelligent Tour Scheduling
+    - Flexible tour booking and rescheduling
+    - Real-time availability tracking
+    - Adaptive scheduling based on user preferences
+- [UC-EXT-002-02]: Interactive Property Exploration
+    - Virtual tour capabilities
+    - Integrated communication with agents
+    - Personalized property recommendation follow-ups
+
+### [UC-EXT-003]: Comprehensive Document Management
+
+- [UC-EXT-003-01]: Secure Document Access and Verification
+    - Access and download contracts, lease agreements
+    - Verify document authenticity
+    - Provide clarification and interpretation support
+- [UC-EXT-003-02]: Transparent Transaction Documentation
+    - Track and manage closing documents
+    - Facilitate seamless document upload and verification
+
+### [UC-EXT-004]: Financial and Transaction Tracking
+
+- [UC-EXT-004-01]: End-to-End Transaction Monitoring
+    - Real-time offer and closing status tracking
+    - Mortgage and loan status updates
+    - Integrated financial eligibility assessments
+
+### [UC-EXT-005]: Comprehensive Neighborhood and Financial Intelligence
+
+- [UC-EXT-005-01]: Neighborhood and Lifestyle Analytics
+    - Retrieve detailed school and community ratings
+    - Compare neighborhood amenities
+    - Provide contextual location insights
+- [UC-EXT-005-02]: Financial Planning Support
+    - Mortgage rate and eligibility calculations
+    - Predictive financial modeling
+    - Address validation and preliminary assessment
+
 ## [UC-INT] Internal User (Dreamhouse Employees) - Slack Agent
 
 ### [UC-INT-001]: Property Management and Information
@@ -52,55 +104,3 @@
     - Implement data masking
     - Ensure regulatory compliance (GDPR, CCPA)
     - Manage audit logging and access controls
-
-## [UC-EXT] External User (Dreamhouse Customers) - Chat/Portal Agent
-
-### [UC-EXT-001]: Intelligent Property Discovery
-
-- [UC-EXT-001-01]: Advanced Property Search and Matching
-    - Multi-criteria property search (price, location, features)
-    - AI-powered personalized property recommendations
-    - Retrieve comprehensive property details and history
-- [UC-EXT-001-02]: Contextual Property Insights
-    - Retrieve neighborhood information
-    - Access commute and location analytics
-    - Provide walkability and amenity scores
-
-### [UC-EXT-002]: Seamless Tour and Interaction Management
-
-- [UC-EXT-002-01]: Intelligent Tour Scheduling
-    - Flexible tour booking and rescheduling
-    - Real-time availability tracking
-    - Adaptive scheduling based on user preferences
-- [UC-EXT-002-02]: Interactive Property Exploration
-    - Virtual tour capabilities
-    - Integrated communication with agents
-    - Personalized property recommendation follow-ups
-
-### [UC-EXT-003]: Comprehensive Document Management
-
-- [UC-EXT-003-01]: Secure Document Access and Verification
-    - Access and download contracts, lease agreements
-    - Verify document authenticity
-    - Provide clarification and interpretation support
-- [UC-EXT-003-02]: Transparent Transaction Documentation
-    - Track and manage closing documents
-    - Facilitate seamless document upload and verification
-
-### [UC-EXT-004]: Financial and Transaction Tracking
-
-- [UC-EXT-004-01]: End-to-End Transaction Monitoring
-    - Real-time offer and closing status tracking
-    - Mortgage and loan status updates
-    - Integrated financial eligibility assessments
-
-### [UC-EXT-005]: Comprehensive Neighborhood and Financial Intelligence
-
-- [UC-EXT-005-01]: Neighborhood and Lifestyle Analytics
-    - Retrieve detailed school and community ratings
-    - Compare neighborhood amenities
-    - Provide contextual location insights
-- [UC-EXT-005-02]: Financial Planning Support
-    - Mortgage rate and eligibility calculations
-    - Predictive financial modeling
-    - Address validation and preliminary assessment
