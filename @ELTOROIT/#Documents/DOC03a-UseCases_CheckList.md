@@ -7,6 +7,7 @@
 - [] [UC-EXT-004-01]: End-to-End Transaction Monitoring
 - [] [UC-EXT-005-01]: Neighborhood and Lifestyle Analytics
 - [] [UC-EXT-005-02]: Financial Planning Support
+
 - [] [UC-INT-001-01]: Comprehensive Property Lifecycle Management
 - [] [UC-INT-001-02]: Access and Interpret Listing Guidelines
 - [] [UC-INT-002-01]: Holistic Client Information Tracking

@@ -30,3 +30,7 @@ Admin.profile
 **/genAiPlanners/EmployeeCopilotPlanner.*
 **/genAiFunctions/CustomKnowledgeAction*/**
 **/genAiPlugins/p_*.genAiPlugin-meta.xml
+
+# Sandbox
+**/experiences/**
+**/digitalExperiences/**

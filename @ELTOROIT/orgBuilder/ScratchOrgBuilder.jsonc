@@ -8,26 +8,26 @@
 	},
 	"steps": [
 		// Prepare environment
-		// SCRATCH "BackupAlias", // In case you need to go back to the old org :-)
+		"BackupAlias", // In case you need to go back to the old org :-)
 		"ValidateETCopyData",
 
 		// Creating Scratch org
-		// SCRATCH "CreateScratchOrg",
-		// SCRATCH "GeneratePassword",
+		"CreateScratchOrg",
+		"GeneratePassword",
 		"CreateFinestDebugLevel",
 
 		// Pre-Deploy
 		// SKIP https://login.salesforce.com/packaging/installPackage.apexp?p0=04tKY000000LRJJYA4
 		// SKIP { "InstallPackage": { "id": "04tKY000000LRJJYA4" } }, // Dreamhouse App
-		// SCRATCH { "AssignPermissionSet": "CopilotSalesforceAdmin" }, // Agentforce Default Admin
-		// SCRATCH { "AssignPermissionSet": "EinsteinGPTPromptTemplateManager" }, // Prompt Template Manager
+		{ "AssignPermissionSet": "CopilotSalesforceAdmin" }, // Agentforce Default Admin
+		{ "AssignPermissionSet": "EinsteinGPTPromptTemplateManager" }, // Prompt Template Manager
 		{ "ManualMetadata": { "url": "/lightning/setup/EinsteinCopilot/home", "message": "Enable agentforce, ensure agents can be created" } },
 		{ "PushMetadata": { "folder": "force-apps/setup" } },
-		{ "ExecuteApex": "@ELTOROIT/scripts/apex/AgentforceInitializeUsers.apex" },
-		{ "RunShell": { "app": "./@ELTOROit/scripts/shell/agentforceUsers.sh" } },
 
-		// SKIP Crete dummy agent to allow for real agent to be deployed
-		// SKIP { "ManualMetadata": { "url": "/error", "message": "Create agent(s) and continue when successful" } },
+		// Crete dummy agent to allow for real agent to be deployed
+		// { "ExecuteApex": "@ELTOROIT/scripts/apex/AgentforceInitializeUsers.apex" },
+		// { "RunShell": { "app": "./@ELTOROit/scripts/shell/agentforceUsers.sh" } },
+		// { "ManualMetadata": { "url": "/error", "message": "Create agent(s) and continue when successful" } },
 
 		// Deploying
 		"ShowDeployPage",
@@ -42,7 +42,8 @@
 		{ "ExecuteApex": "@ELTOROIT/scripts/apex/SetUserRecord.apex" },
 		{ "ExecuteApex": "@ELTOROIT/scripts/apex/AgentforceUpdateUsers.apex" },
 		{ "DeployProfile": "force-apps/doNotDeploy/main/default/profiles/Admin.profile-meta.xml" },
-		{ "ExecuteApex": "@ELTOROIT/scripts/apex/CreateDreamHouseAppData.apex" }, // Dreamhosue app data
+		// { "ExecuteApex": "@ELTOROIT/scripts/apex/CreateDreamHouseAppData.apex" }, // Dreamhosue app data
+		{ "ETCopyData": "./@ELTOROIT/data" },
 
 		// Print results
 		"ShowFinalSuccess"

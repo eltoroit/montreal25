@@ -645,7 +645,6 @@
 			"AccountNumber",
 			"AccountSource",
 			"Account_Plan__c",
-			"ActivityMetricId",
 			"AnnualRevenue",
 			"BillingAddress",
 			"BillingCity",
@@ -717,10 +716,6 @@
 			"Partner_Certification__c",
 			"Partner_Program_Level__c",
 			"Partnership_Status__c",
-			"PersonActionCadenceAssigneeId",
-			"PersonActionCadenceId",
-			"PersonActionCadenceState",
-			"PersonActiveTrackerCount",
 			"PersonAssistantName",
 			"PersonAssistantPhone",
 			"PersonBirthdate",
@@ -731,8 +726,6 @@
 			"PersonEmail",
 			"PersonEmailBouncedDate",
 			"PersonEmailBouncedReason",
-			"PersonFirstCallDateTime",
-			"PersonFirstEmailDateTime",
 			"PersonGender",
 			"PersonGenderIdentity",
 			"PersonHasOptedOutOfEmail",
@@ -764,7 +757,6 @@
 			"PersonOtherState",
 			"PersonOtherStreet",
 			"PersonPronouns",
-			"PersonScheduledResumeDateTime",
 			"PersonSequenceInMultipleBirth",
 			"PersonTitle",
 			"Phone",
@@ -984,22 +976,6 @@
 		"AccreditationHistory": [],
 		"AccreditationOwnerSharingRule": [],
 		"AccreditationShare": [],
-		"ActionCadence": [],
-		"ActionCadenceChangeEvent": [],
-		"ActionCadenceOwnerSharingRule": [],
-		"ActionCadenceRule": [],
-		"ActionCadenceRuleCondition": [],
-		"ActionCadenceShare": [],
-		"ActionCadenceStep": [],
-		"ActionCadenceStepChangeEvent": [],
-		"ActionCadenceStepTracker": [],
-		"ActionCadenceStepTrackerChangeEvent": [],
-		"ActionCadenceStepVariant": [],
-		"ActionCadenceTracker": [],
-		"ActionCadenceTrackerChangeEvent": [],
-		"ActionCadenceTrackerOwnerSharingRule": [],
-		"ActionCadenceTrackerShare": [],
-		"ActionCdncStpMonthlyMetric": [],
 		"ActionLinkGroupTemplate": [],
 		"ActionLinkTemplate": [],
 		"ActionPlan": [],
@@ -1046,14 +1022,12 @@
 		"ActiveProfileMetric": [],
 		"ActivityFieldHistory": [],
 		"ActivityHistory": [],
-		"ActivityMetric": [],
 		"ActivityTiming": [],
 		"ActivityTimingChangeEvent": [],
 		"ActivityTimingFeed": [],
 		"ActivityTimingHistory": [],
 		"ActivityTimingOwnerSharingRule": [],
 		"ActivityTimingShare": [],
-		"ActivityUsrConnectionStatus": [],
 		"ActvTgtPlatformFieldValue": [],
 		"ActvTgtPlatformFieldValueHistory": [],
 		"ActvTgtPlatformFieldValueOwnerSharingRule": [],
@@ -1699,14 +1673,7 @@
 		"CallCenterRoutingMap": [],
 		"CallCoachConfigModifyEvent": [],
 		"CallCoachingMediaProvider": [],
-		"CallDisposition": [],
-		"CallDispositionCategory": [],
 		"CallRecordingGeoRestriction": [],
-		"CallScriptMonthlyMetric": [],
-		"CallTemplate": [],
-		"CallTemplateChangeEvent": [],
-		"CallTemplateOwnerSharingRule": [],
-		"CallTemplateShare": [],
 		"Campaign": [],
 		"CampaignChangeEvent": [],
 		"CampaignFeed": [],
@@ -2287,11 +2254,6 @@
 		"ConsumptionScheduleShare": [],
 		"Contact": [
 			"AccountId",
-			"ActionCadenceAssigneeId",
-			"ActionCadenceId",
-			"ActionCadenceState",
-			"ActiveTrackerCount",
-			"ActivityMetricId",
 			"AssistantName",
 			"AssistantPhone",
 			"Birthdate",
@@ -2314,8 +2276,6 @@
 			"EngagementScoreId",
 			"External_ID__c",
 			"Fax",
-			"FirstCallDateTime",
-			"FirstEmailDateTime",
 			"FirstName",
 			"Gender",
 			"GenderIdentity",
@@ -2403,7 +2363,6 @@
 			"SDO_Service_Primary_Messaging_User__c",
 			"SDO_Service_SMS_Message__c",
 			"Salutation",
-			"ScheduledResumeDateTime",
 			"SequenceInMultipleBirth",
 			"SystemModstamp",
 			"Title",
@@ -2438,7 +2397,6 @@
 		"ContactChangeEvent": [],
 		"ContactCleanInfo": [],
 		"ContactCleanInfoChangeEvent": [],
-		"ContactDailyMetric": [],
 		"ContactEncounter": [],
 		"ContactEncounterFeed": [],
 		"ContactEncounterHistory": [],
@@ -2449,7 +2407,6 @@
 		"ContactEncounterShare": [],
 		"ContactFeed": [],
 		"ContactHistory": [],
-		"ContactMonthlyMetric": [],
 		"ContactOwnerSharingRule": [],
 		"ContactPointAddress": [],
 		"ContactPointAddressChangeEvent": [],
@@ -2980,7 +2937,6 @@
 		"EmailStatus": [],
 		"EmailTemplate": [],
 		"EmailTemplateChangeEvent": [],
-		"EmailTemplateMonthlyMetric": [],
 		"EmbeddedServiceDetail": [],
 		"EmbeddedServiceLabel": [],
 		"EmissionsActivity": [],
@@ -3816,12 +3772,10 @@
 		"Lead": [],
 		"LeadChangeEvent": [],
 		"LeadCleanInfo": [],
-		"LeadDailyMetric": [],
 		"LeadFeed": [],
 		"LeadHistory": [],
 		"LeadIQConfiguration": [],
 		"LeadInsight": [],
-		"LeadMonthlyMetric": [],
 		"LeadOwnerSharingRule": [],
 		"LeadShare": [],
 		"LeadStatus": [],
@@ -3862,7 +3816,6 @@
 		"ListEmail": [],
 		"ListEmailChangeEvent": [],
 		"ListEmailIndividualRecipient": [],
-		"ListEmailMonthlyMetric": [],
 		"ListEmailOwnerSharingRule": [],
 		"ListEmailRecipientSource": [],
 		"ListEmailShare": [],
@@ -5028,7 +4981,6 @@
 		"Product_Video__Share": [],
 		"Product_Video__c": [],
 		"Profile": [],
-		"ProfileCallLogQuickAction": [],
 		"ProfileSkill": [],
 		"ProfileSkillEndorsement": [],
 		"ProfileSkillEndorsementChangeEvent": [],
@@ -5867,7 +5819,6 @@
 		"SalesChannelShare": [],
 		"SalesStore": [],
 		"SalesStoreCatalog": [],
-		"SalesWorkQueueSettings": [],
 		"SalesforceContract": [],
 		"SalesforceContractFeed": [],
 		"SalesforceInvoice": [],
@@ -6448,7 +6399,6 @@
 		"UiFormulaCriterion": [],
 		"UiFormulaRule": [],
 		"UndecidedEventRelation": [],
-		"UnifiedActivity": [],
 		"UnitOfMeasure": [],
 		"UnitOfMeasureChangeEvent": [],
 		"UnitOfMeasureClass": [],
@@ -6493,16 +6443,12 @@
 		"UserConfigTransferSkill": [],
 		"UserCustomBadge": [],
 		"UserCustomBadgeLocalization": [],
-		"UserDailyMetric": [],
-		"UserDailyMetricOwnerSharingRule": [],
-		"UserDailyMetricShare": [],
 		"UserDefinedLabel": [],
 		"UserDefinedLabelAssignment": [],
 		"UserDefinedLabelAssignmentOwnerSharingRule": [],
 		"UserDefinedLabelAssignmentShare": [],
 		"UserDefinedLabelOwnerSharingRule": [],
 		"UserDefinedLabelShare": [],
-		"UserEmailCalendarSync": [],
 		"UserEmailPreferredPerson": [],
 		"UserEmailPreferredPersonChangeEvent": [],
 		"UserEmailPreferredPersonOwnerSharingRule": [],
@@ -6524,9 +6470,6 @@
 		"UserLocationAssignment": [],
 		"UserLogin": [],
 		"UserMembershipSharingRule": [],
-		"UserMonthlyMetric": [],
-		"UserMonthlyMetricOwnerSharingRule": [],
-		"UserMonthlyMetricShare": [],
 		"UserPackageLicense": [],
 		"UserPermissionAccess": [],
 		"UserPreference": [],
@@ -6555,10 +6498,6 @@
 		"UserSharedFeature": [],
 		"UserTeamMember": [],
 		"UserTerritory2Association": [],
-		"UserWorkList": [],
-		"UserWorkListItem": [],
-		"UserWorkListOwnerSharingRule": [],
-		"UserWorkListShare": [],
 		"VRA_SDO__ChangeEvent": [],
 		"VRA_SDO__OwnerSharingRule": [],
 		"VRA_SDO__c": [],
@@ -8038,23 +7977,6 @@
 			"Contact.OwnerId": [
 				"Parent sObject [User] is not processed"
 			],
-			"Contact.ActionCadenceId": [
-				"Must be createable",
-				"Parent sObject [ActionCadence] is not processed"
-			],
-			"Contact.ActionCadenceAssigneeId": [
-				"Must be createable",
-				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
-			],
-			"Contact.ActionCadenceState": [
-				"Must be createable"
-			],
-			"Contact.ScheduledResumeDateTime": [
-				"Must be createable"
-			],
-			"Contact.ActiveTrackerCount": [
-				"Must be createable"
-			],
 			"Contact.CreatedById": [
 				"Parent sObject [User] is not processed"
 			],
@@ -8097,18 +8019,8 @@
 			"Contact.IndividualId": [
 				"Parent sObject [Individual] is not processed"
 			],
-			"Contact.FirstCallDateTime": [
-				"Must be createable"
-			],
-			"Contact.FirstEmailDateTime": [
-				"Must be createable"
-			],
 			"Contact.HasPrivacyHold": [
 				"Must be createable"
-			],
-			"Contact.ActivityMetricId": [
-				"Must be createable",
-				"Parent sObject [ActivityMetric] is not processed"
 			],
 			"Contact.EngagementScoreId": [
 				"Must be createable",
@@ -8216,38 +8128,11 @@
 			"Account.OperatingHoursId": [
 				"Parent sObject [OperatingHours] is not processed"
 			],
-			"Account.PersonActionCadenceId": [
-				"Must be createable",
-				"Parent sObject [ActionCadence] is not processed"
-			],
-			"Account.PersonActionCadenceAssigneeId": [
-				"Must be createable",
-				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
-			],
-			"Account.PersonActionCadenceState": [
-				"Must be createable"
-			],
-			"Account.PersonScheduledResumeDateTime": [
-				"Must be createable"
-			],
-			"Account.PersonActiveTrackerCount": [
-				"Must be createable"
-			],
 			"Account.IsBuyer": [
 				"Must be createable"
 			],
 			"Account.HasPrivacyHold": [
 				"Must be createable"
-			],
-			"Account.PersonFirstCallDateTime": [
-				"Must be createable"
-			],
-			"Account.PersonFirstEmailDateTime": [
-				"Must be createable"
-			],
-			"Account.ActivityMetricId": [
-				"Must be createable",
-				"Parent sObject [ActivityMetric] is not processed"
 			],
 			"Account.IsPriorityRecord": [
 				"Must be createable"
@@ -9460,18 +9345,6 @@
 			"Contact.null => AccreditationChangeEvent": [
 				"Child sObject [AccreditationChangeEvent] is not processed"
 			],
-			"Contact.null => ActionCadenceStepTracker": [
-				"Child sObject [ActionCadenceStepTracker] is not processed"
-			],
-			"Contact.null => ActionCadenceStepTrackerChangeEvent": [
-				"Child sObject [ActionCadenceStepTrackerChangeEvent] is not processed"
-			],
-			"Contact.Targets => ActionCadenceTracker": [
-				"Child sObject [ActionCadenceTracker] is not processed"
-			],
-			"Contact.null => ActionCadenceTrackerChangeEvent": [
-				"Child sObject [ActionCadenceTrackerChangeEvent] is not processed"
-			],
 			"Contact.ActionPlans => ActionPlan": [
 				"Child sObject [ActionPlan] is not processed"
 			],
@@ -9480,9 +9353,6 @@
 			],
 			"Contact.ActivityHistories => ActivityHistory": [
 				"Child sObject [ActivityHistory] is not processed"
-			],
-			"Contact.null => ActivityMetric": [
-				"Child sObject [ActivityMetric] is not processed"
 			],
 			"Contact.AdvAcctForecastSetUseForecastContext => AdvAcctForecastSetUse": [
 				"Child sObject [AdvAcctForecastSetUse] is not processed"
@@ -9664,9 +9534,6 @@
 			"Contact.null => ContactCleanInfoChangeEvent": [
 				"Child sObject [ContactCleanInfoChangeEvent] is not processed"
 			],
-			"Contact.ContactDailyMetrics => ContactDailyMetric": [
-				"Child sObject [ContactDailyMetric] is not processed"
-			],
 			"Contact.ContactEncounterParticipants => ContactEncounterParticipant": [
 				"Child sObject [ContactEncounterParticipant] is not processed"
 			],
@@ -9675,9 +9542,6 @@
 			],
 			"Contact.Histories => ContactHistory": [
 				"Child sObject [ContactHistory] is not processed"
-			],
-			"Contact.ContactMonthlyMetrics => ContactMonthlyMetric": [
-				"Child sObject [ContactMonthlyMetric] is not processed"
 			],
 			"Contact.ContactRequests => ContactRequest": [
 				"Child sObject [ContactRequest] is not processed"
@@ -10312,9 +10176,6 @@
 			"Contact.null => UserPrioritizedRecord": [
 				"Child sObject [UserPrioritizedRecord] is not processed"
 			],
-			"Contact.null => UserWorkListItem": [
-				"Child sObject [UserWorkListItem] is not processed"
-			],
 			"Contact.VideoRelatedRecords => VideoCall": [
 				"Child sObject [VideoCall] is not processed"
 			],
@@ -10510,18 +10371,6 @@
 			"Account.null => AccreditationChangeEvent": [
 				"Child sObject [AccreditationChangeEvent] is not processed"
 			],
-			"Account.null => ActionCadenceStepTracker": [
-				"Child sObject [ActionCadenceStepTracker] is not processed"
-			],
-			"Account.null => ActionCadenceStepTrackerChangeEvent": [
-				"Child sObject [ActionCadenceStepTrackerChangeEvent] is not processed"
-			],
-			"Account.PersonTargets => ActionCadenceTracker": [
-				"Child sObject [ActionCadenceTracker] is not processed"
-			],
-			"Account.null => ActionCadenceTrackerChangeEvent": [
-				"Child sObject [ActionCadenceTrackerChangeEvent] is not processed"
-			],
 			"Account.ActionPlans => ActionPlan": [
 				"Child sObject [ActionPlan] is not processed"
 			],
@@ -10533,9 +10382,6 @@
 			],
 			"Account.PersonActivityHistories => ActivityHistory": [
 				"Child sObject [ActivityHistory] is not processed"
-			],
-			"Account.null => ActivityMetric": [
-				"Child sObject [ActivityMetric] is not processed"
 			],
 			"Account.AdvAcctForecastFacts => AdvAccountForecastFact": [
 				"Child sObject [AdvAccountForecastFact] is not processed"
@@ -10930,17 +10776,11 @@
 			"Account.null => ContactCleanInfoChangeEvent": [
 				"Child sObject [ContactCleanInfoChangeEvent] is not processed"
 			],
-			"Account.PersonContactDailyMetrics => ContactDailyMetric": [
-				"Child sObject [ContactDailyMetric] is not processed"
-			],
 			"Account.ContactEncounterParticipantAccounts => ContactEncounterParticipant": [
 				"Child sObject [ContactEncounterParticipant] is not processed"
 			],
 			"Account.PersonContactEncounterParticipants => ContactEncounterParticipant": [
 				"Child sObject [ContactEncounterParticipant] is not processed"
-			],
-			"Account.PersonContactMonthlyMetrics => ContactMonthlyMetric": [
-				"Child sObject [ContactMonthlyMetric] is not processed"
 			],
 			"Account.ContactPointAddresses => ContactPointAddress": [
 				"Child sObject [ContactPointAddress] is not processed"
@@ -12172,9 +12012,6 @@
 			"Account.null => UserRole": [
 				"Child sObject [UserRole] is not processed"
 			],
-			"Account.null => UserWorkListItem": [
-				"Child sObject [UserWorkListItem] is not processed"
-			],
 			"Account.Vehicles => Vehicle": [
 				"Child sObject [Vehicle] is not processed"
 			],
@@ -12692,78 +12529,6 @@
 			"AccreditationShare": [
 				"Was Not requested"
 			],
-			"ActionCadence": [
-				"Was Not requested"
-			],
-			"ActionCadenceChangeEvent": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be queryable",
-				"Must be updateable",
-				"Was Not requested"
-			],
-			"ActionCadenceOwnerSharingRule": [
-				"Was Not requested"
-			],
-			"ActionCadenceRule": [
-				"Was Not requested"
-			],
-			"ActionCadenceRuleCondition": [
-				"Was Not requested"
-			],
-			"ActionCadenceShare": [
-				"Was Not requested"
-			],
-			"ActionCadenceStep": [
-				"Was Not requested"
-			],
-			"ActionCadenceStepChangeEvent": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be queryable",
-				"Must be updateable",
-				"Was Not requested"
-			],
-			"ActionCadenceStepTracker": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be updateable",
-				"Was Not requested"
-			],
-			"ActionCadenceStepTrackerChangeEvent": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be queryable",
-				"Must be updateable",
-				"Was Not requested"
-			],
-			"ActionCadenceStepVariant": [
-				"Was Not requested"
-			],
-			"ActionCadenceTracker": [
-				"Must be createable",
-				"Must be updateable",
-				"Was Not requested"
-			],
-			"ActionCadenceTrackerChangeEvent": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be queryable",
-				"Must be updateable",
-				"Was Not requested"
-			],
-			"ActionCadenceTrackerOwnerSharingRule": [
-				"Was Not requested"
-			],
-			"ActionCadenceTrackerShare": [
-				"Was Not requested"
-			],
-			"ActionCdncStpMonthlyMetric": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be updateable",
-				"Was Not requested"
-			],
 			"ActionLinkGroupTemplate": [
 				"Was Not requested"
 			],
@@ -12965,10 +12730,6 @@
 				"Must be updateable",
 				"Was Not requested"
 			],
-			"ActivityMetric": [
-				"Must be deletable",
-				"Was Not requested"
-			],
 			"ActivityTiming": [
 				"Must be createable",
 				"Must be deletable",
@@ -12997,13 +12758,6 @@
 				"Was Not requested"
 			],
 			"ActivityTimingShare": [
-				"Was Not requested"
-			],
-			"ActivityUsrConnectionStatus": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be retrieveable",
-				"Must be updateable",
 				"Was Not requested"
 			],
 			"ActvTgtPlatformFieldValue": [
@@ -15896,44 +15650,10 @@
 				"Must be deletable",
 				"Was Not requested"
 			],
-			"CallDisposition": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be updateable",
-				"Was Not requested"
-			],
-			"CallDispositionCategory": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be updateable",
-				"Was Not requested"
-			],
 			"CallRecordingGeoRestriction": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be updateable",
-				"Was Not requested"
-			],
-			"CallScriptMonthlyMetric": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be updateable",
-				"Was Not requested"
-			],
-			"CallTemplate": [
-				"Was Not requested"
-			],
-			"CallTemplateChangeEvent": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be queryable",
-				"Must be updateable",
-				"Was Not requested"
-			],
-			"CallTemplateOwnerSharingRule": [
-				"Was Not requested"
-			],
-			"CallTemplateShare": [
 				"Was Not requested"
 			],
 			"Campaign": [
@@ -18062,12 +17782,6 @@
 				"Must be updateable",
 				"Was Not requested"
 			],
-			"ContactDailyMetric": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be updateable",
-				"Was Not requested"
-			],
 			"ContactEncounter": [
 				"Must be createable",
 				"Must be deletable",
@@ -18114,12 +17828,6 @@
 				"Was Not requested"
 			],
 			"ContactHistory": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be updateable",
-				"Was Not requested"
-			],
-			"ContactMonthlyMetric": [
 				"Must be createable",
 				"Must be deletable",
 				"Must be updateable",
@@ -20488,12 +20196,6 @@
 				"Must be createable",
 				"Must be deletable",
 				"Must be queryable",
-				"Must be updateable",
-				"Was Not requested"
-			],
-			"EmailTemplateMonthlyMetric": [
-				"Must be createable",
-				"Must be deletable",
 				"Must be updateable",
 				"Was Not requested"
 			],
@@ -24407,12 +24109,6 @@
 				"Must be deletable",
 				"Was Not requested"
 			],
-			"LeadDailyMetric": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be updateable",
-				"Was Not requested"
-			],
 			"LeadFeed": [
 				"Must be createable",
 				"Must be updateable",
@@ -24428,12 +24124,6 @@
 				"Was Not requested"
 			],
 			"LeadInsight": [
-				"Was Not requested"
-			],
-			"LeadMonthlyMetric": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be updateable",
 				"Was Not requested"
 			],
 			"LeadOwnerSharingRule": [
@@ -24605,12 +24295,6 @@
 				"Was Not requested"
 			],
 			"ListEmailIndividualRecipient": [
-				"Was Not requested"
-			],
-			"ListEmailMonthlyMetric": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be updateable",
 				"Was Not requested"
 			],
 			"ListEmailOwnerSharingRule": [
@@ -29981,12 +29665,6 @@
 			"Profile": [
 				"Was Not requested"
 			],
-			"ProfileCallLogQuickAction": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be updateable",
-				"Was Not requested"
-			],
 			"ProfileSkill": [
 				"Was Not requested"
 			],
@@ -33489,9 +33167,6 @@
 				"Must be updateable",
 				"Was Not requested"
 			],
-			"SalesWorkQueueSettings": [
-				"Was Not requested"
-			],
 			"SalesforceContract": [
 				"Must be createable",
 				"Must be deletable",
@@ -36180,12 +35855,6 @@
 				"Must be updateable",
 				"Was Not requested"
 			],
-			"UnifiedActivity": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be updateable",
-				"Was Not requested"
-			],
 			"UnitOfMeasure": [
 				"Was Not requested"
 			],
@@ -36379,18 +36048,6 @@
 			"UserCustomBadgeLocalization": [
 				"Was Not requested"
 			],
-			"UserDailyMetric": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be updateable",
-				"Was Not requested"
-			],
-			"UserDailyMetricOwnerSharingRule": [
-				"Was Not requested"
-			],
-			"UserDailyMetricShare": [
-				"Was Not requested"
-			],
 			"UserDefinedLabel": [
 				"Was Not requested"
 			],
@@ -36407,11 +36064,6 @@
 				"Was Not requested"
 			],
 			"UserDefinedLabelShare": [
-				"Was Not requested"
-			],
-			"UserEmailCalendarSync": [
-				"Must be deletable",
-				"Must be retrieveable",
 				"Was Not requested"
 			],
 			"UserEmailPreferredPerson": [
@@ -36499,18 +36151,6 @@
 				"Was Not requested"
 			],
 			"UserMembershipSharingRule": [
-				"Was Not requested"
-			],
-			"UserMonthlyMetric": [
-				"Must be createable",
-				"Must be deletable",
-				"Must be updateable",
-				"Was Not requested"
-			],
-			"UserMonthlyMetricOwnerSharingRule": [
-				"Was Not requested"
-			],
-			"UserMonthlyMetricShare": [
 				"Was Not requested"
 			],
 			"UserPackageLicense": [
@@ -36620,18 +36260,6 @@
 				"Was Not requested"
 			],
 			"UserTerritory2Association": [
-				"Was Not requested"
-			],
-			"UserWorkList": [
-				"Was Not requested"
-			],
-			"UserWorkListItem": [
-				"Was Not requested"
-			],
-			"UserWorkListOwnerSharingRule": [
-				"Was Not requested"
-			],
-			"UserWorkListShare": [
 				"Was Not requested"
 			],
 			"VRA_SDO__ChangeEvent": [

@@ -15,6 +15,10 @@
 		{
 			"path": "force-apps/setup",
 			"default": false
+		},
+		{
+			"path": "force-apps/sandbox",
+			"default": false
 		}
 	],
 	"name": "et-basic-project",
