@@ -1,17 +1,17 @@
 {
-  "orgSource": "soETGames",
-  "orgDestination": "soETGames",
+  "orgSource": "sbMontreal",
+  "orgDestination": "sbMontreal",
   "sObjectsData": [
     {
       "name": "Account",
       "ignoreFields": "",
       "externalIdField": null,
-      "twoPassReferenceFields": "",
+      "twoPassReferenceFields": "MasterRecordId,ParentId,blng__BillToContact__c,SDO_SCOM_OOA_Approver__pc",
       "where": null,
       "orderBy": null
     },
     {
-      "name": "Contact",
+      "name": "Broker__c",
       "ignoreFields": "",
       "externalIdField": null,
       "twoPassReferenceFields": "",
@@ -22,6 +22,22 @@
       "name": "Case",
       "ignoreFields": "",
       "externalIdField": null,
+      "twoPassReferenceFields": "MasterRecordId,ParentId",
+      "where": null,
+      "orderBy": null
+    },
+    {
+      "name": "Contact",
+      "ignoreFields": "",
+      "externalIdField": null,
+      "twoPassReferenceFields": "AccountId,MasterRecordId,ReportsToId,SDO_SCOM_OOA_Approver__c",
+      "where": null,
+      "orderBy": null
+    },
+    {
+      "name": "Property__c",
+      "ignoreFields": "",
+      "externalIdField": null,
       "twoPassReferenceFields": "",
       "where": null,
       "orderBy": null
@@ -29,7 +45,7 @@
   ],
   "sObjectsMetadata": [],
   "rootFolder": "ETCopyData",
-  "includeAllCustom": true,
+  "includeAllCustom": false,
   "customObjectsToIgnore": null,
   "stopOnErrors": true,
   "ignoreFields": null,
