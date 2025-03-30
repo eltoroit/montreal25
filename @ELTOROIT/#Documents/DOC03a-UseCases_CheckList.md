@@ -1,19 +1,19 @@
-- [] [UC-EXT-001-01]: Advanced Property Search and Matching
-- [] [UC-EXT-001-02]: Contextual Property Insights
-- [] [UC-EXT-002-01]: Intelligent Tour Scheduling
-- [] [UC-EXT-002-02]: Interactive Property Exploration
-- [] [UC-EXT-003-01]: Secure Document Access and Verification
-- [] [UC-EXT-003-02]: Transparent Transaction Documentation
-- [] [UC-EXT-004-01]: End-to-End Transaction Monitoring
-- [] [UC-EXT-005-01]: Neighborhood and Lifestyle Analytics
-- [] [UC-EXT-005-02]: Financial Planning Support
+- [] **UC-EXT-001-01**: Advanced Property Search and Matching
+- [] **UC-EXT-001-02**: Contextual Property Insights
+- [] **UC-EXT-002-01**: Intelligent Tour Scheduling
+- [] **UC-EXT-002-02**: Interactive Property Exploration
+- [] **UC-EXT-003-01**: Secure Document Access and Verification
+- [] **UC-EXT-003-02**: Transparent Transaction Documentation
+- [] **UC-EXT-004-01**: End-to-End Transaction Monitoring
+- [] **UC-EXT-005-01**: Neighborhood and Lifestyle Analytics
+- [] **UC-EXT-005-02**: Financial Planning Support
 
-- [] [UC-INT-001-01]: Comprehensive Property Lifecycle Management
-- [] [UC-INT-001-02]: Access and Interpret Listing Guidelines
-- [] [UC-INT-002-01]: Holistic Client Information Tracking
-- [] [UC-INT-002-02]: Client Financial and Preference Analysis
-- [] [UC-INT-003-01]: Comprehensive Salesforce Data Integration
-- [] [UC-INT-003-02]: Advanced Reporting and Analytics
-- [] [UC-INT-004-01]: Proactive Communication System
-- [] [UC-INT-004-02]: Advanced Client Interaction Monitoring
-- [] [UC-INT-005-01]: Data Privacy and Security Management
+- [] **UC-INT-001-01**: Comprehensive Property Lifecycle Management
+- [] **UC-INT-001-02**: Access and Interpret Listing Guidelines
+- [RAG] **UC-INT-002-01**: Holistic Client Information Tracking
+- [V2.0] **UC-INT-002-02**: Client Financial and Preference Analysis _I do not have financial information about the clients_
+- [IGNORE] **UC-INT-003-01**: Comprehensive Salesforce Data Integration _This does not need to be built in_
+- [V2.0] **UC-INT-003-02**: Advanced Reporting and Analytics _Yes for the system, but not for Montreal Dreamin'25_
+- [V2.0] **UC-INT-004-01**: Proactive Communication System _Yes for the system, but not for Montreal Dreamin'25_
+- [V2.0] **UC-INT-004-02**: Advanced Client Interaction Monitoring _Yes for the system, but not for Montreal Dreamin'25_
+- [V2.0] **UC-INT-005-01**: Data Privacy and Security Management _Yes for the system, but not for Montreal Dreamin'25_
