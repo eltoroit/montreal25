@@ -1,4 +1,4 @@
-# [UC-MAIN]: Dreamhouse Agent Use Cases
+# Dreamhouse Agent Use Cases
 
 ## [UC-EXT] External User (Dreamhouse Customers) - Chat/Portal Agent
 
@@ -104,3 +104,42 @@
     - Implement data masking
     - Ensure regulatory compliance (GDPR, CCPA)
     - Manage audit logging and access controls
+
+# Future Cool Use Cases
+
+## Would be cool
+
+### External
+
+1.  **Generate AI Recommendations**: If enabled, use AI models to generate personalized property recommendations based on user preferences and search history.
+2.  **Combine Search Results and Recommendations**: Integrate search results and AI-generated recommendations for a comprehensive list.
+3.  **Display Property Photos**: Display property photos in the search results and property detail views.
+4.  **Save Search Criteria**: Allow users to save their search criteria for future use.
+5.  **Display Map View**: Provide a map view of property locations.
+6.  **Handle Virtual Tour Requests**: If the user requests a virtual tour, check for virtual tour availability and schedule accordingly.
+7.  **Check Partner Scheduling**: If multiple users are scheduling, ensure that the time works for all people.
+8.  **Explain Cancellation Policy**: Provide the tour cancellation policy to the user.
+9.  **Update Calendar**: Update the user's and listing agent's calendars with the tour schedule.
+10. **Retrieve Cost of Living Comparison**: If requested, retrieve and compare the cost of living for different areas.
+11. **Provide Neighborhood Comparison**: Provide a comparison of neighborhoods based on user criteria.
+
+### Internal
+
+1.  1. **Analyze Market Trends**: Provide insights into current market conditions.
+2.  **Generate Reports**: Create reports on property listings, sales, or market trends.
+3.  **Offer Property Recommendations**: Suggest properties based on user preferences.
+4.  **Set Reminders for Follow-up**: Schedule reminders for follow-up actions with clients, allowing for custom timeframes.
+5.  **Schedule Follow-up Reminders**: Automate the scheduling of follow-up reminders for clients, integrating with Salesforce's scheduling functionalities.
+6.  **Check Email Response**: Determine if a client has responded to a specific email, checking email logs or related Salesforce records.
+7.  **Display Purchase Timeline**: Show the client's timeline for purchasing a property.
+
+## Autonomous agent
+
+1. **Track Price Changes**: Monitor and report changes in property prices.
+2. **Send Notifications**: Alert users about important updates or events (e.g., new listings).
+
+## Which use case do these belong to?
+
+1.  **Facilitate Lead Management**: Assist in managing leads related to property inquiries.
+2.  **Provide Historical Data**: Offer historical data on property prices or sales trends.
+3.  **Show Clients by Property Interest**: List all clients interested in a specific property type (e.g., waterfront).

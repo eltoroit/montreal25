@@ -1,0 +1,752 @@
+{
+	"02113": {
+		"address": "Cambridge, MA 02113",
+		"latitude": 42.373611,
+		"longitude": -71.084733,
+		"walk_score": {
+			"walk_score": 85,
+			"transit_score": 92,
+			"bike_score": 78
+		},
+		"neighborhood_info": {
+			"demographics": {
+				"population": 158000,
+				"median_age": 30,
+				"household_income": 95000
+			},
+			"crime_rate": {
+				"overall": {
+					"rate": 28,
+					"description": "Moderate crime rate compared to national averages"
+				},
+				"violent": {
+					"rate": 4.5,
+					"description": "Moderate violent crime rate"
+				},
+				"property": {
+					"rate": 23.2,
+					"description": "Moderate property crime rate"
+				}
+			},
+			"schools": [
+				{
+					"name": "Harvard University",
+					"type": "University",
+					"distance": "2 miles"
+				},
+				{
+					"name": "Lesley University",
+					"type": "University",
+					"distance": "0.5 miles"
+				}
+			]
+		},
+		"commute_times": {
+			"downtown": "10 minutes",
+			"major_employers": [
+				{
+					"name": "Biogen Idec",
+					"distance": "2 miles",
+					"commute_time": "12 minutes"
+				},
+				{
+					"name": "Google Cambridge",
+					"distance": "1.8 miles",
+					"commute_time": "8 minutes"
+				}
+			]
+		},
+		"nearby_amenities": {
+			"grocery_stores": [
+				{
+					"name": "Star Market",
+					"distance": "0.2 miles"
+				},
+				{
+					"name": "Whole Foods Market",
+					"distance": "0.8 miles"
+				}
+			],
+			"restaurants": [
+				{
+					"name": "Legal Sea Foods",
+					"cuisine": "Seafood",
+					"distance": "0.3 miles"
+				},
+				{
+					"name": "Craigie on Main",
+					"cuisine": "New American",
+					"distance": "0.5 miles"
+				}
+			],
+			"parks": [
+				{
+					"name": "Charles River Reservation",
+					"distance": "0.5 miles"
+				},
+				{
+					"name": "Alewife Brook Reservation",
+					"distance": "2 miles"
+				}
+			]
+		},
+		"location_analytics": {
+			"market_trends": {
+				"median_home_price": 920000,
+				"price_change_year_over_year": 5.5,
+				"median_home_age": 60,
+				"property_tax_rate": 12.2,
+				"average_property_tax": 4485
+			},
+			"property_values": {
+				"average_rent": 2750,
+				"vacancy_rate": 4
+			}
+		},
+		"property_details": {
+			"flood_risk": {
+				"description": "Cambridge is partially at risk of flooding, especially near the river. It's recommended to review flood maps and consider flood insurance.",
+				"resource": "City of Cambridge Flood Maps",
+				"url": "https://www.cambridgema.gov/Services/femafloodmaps"
+			},
+			"natural_hazards": {
+				"earthquakes": "Unlikely",
+				"severe_storms": "Moderate risk",
+				"hurricanes": "Unlikely",
+				"tornadoes": "Rare",
+				"wildfires": "Very low"
+			},
+			"school_ratings": {
+				"Harvard_University": "Top-rated",
+				"Lesley_University": "Highly regarded for arts and education"
+			}
+		}
+	},
+	"02115": {
+		"address": "Boston, MA 02115",
+		"latitude": 42.344444,
+		"longitude": -71.104167,
+		"walk_score": {
+			"walk_score": 82,
+			"transit_score": 89,
+			"bike_score": 65
+		},
+		"neighborhood_info": {
+			"demographics": {
+				"population": 122000,
+				"median_age": 31,
+				"household_income": 98000
+			},
+			"crime_rate": {
+				"overall": {
+					"rate": 26,
+					"description": "Moderate crime rate"
+				},
+				"violent": {
+					"rate": 4.0,
+					"description": "Moderate violent crime rate"
+				},
+				"property": {
+					"rate": 22.5,
+					"description": "Moderate property crime rate"
+				}
+			},
+			"schools": [
+				{
+					"name": "Harvard University",
+					"type": "University",
+					"distance": "2.2 miles"
+				},
+				{
+					"name": "Boston University",
+					"type": "University",
+					"distance": "0.5 miles"
+				}
+			]
+		},
+		"commute_times": {
+			"downtown": "20 minutes",
+			"major_employers": [
+				{
+					"name": "MIT",
+					"distance": "2 miles",
+					"commute_time": "12 minutes"
+				},
+				{
+					"name": "Harvard University",
+					"distance": "2 miles",
+					"commute_time": "15 minutes"
+				}
+			]
+		},
+		"nearby_amenities": {
+			"grocery_stores": [
+				{
+					"name": "Whole Foods Market",
+					"distance": "0.4 miles"
+				},
+				{
+					"name": "Trader Joe's",
+					"distance": "0.6 miles"
+				}
+			],
+			"restaurants": [
+				{
+					"name": "The Capital Grille",
+					"cuisine": "Steakhouse",
+					"distance": "0.3 miles"
+				},
+				{
+					"name": "Flour Bakery",
+					"cuisine": "Bakery",
+					"distance": "0.5 miles"
+				}
+			],
+			"parks": [
+				{
+					"name": "The Fens",
+					"distance": "0.6 miles"
+				},
+				{
+					"name": "Jamaica Pond",
+					"distance": "2 miles"
+				}
+			]
+		},
+		"location_analytics": {
+			"market_trends": {
+				"median_home_price": 950000,
+				"price_change_year_over_year": 4.3,
+				"median_home_age": 62,
+				"property_tax_rate": 10.9,
+				"average_property_tax": 3899
+			},
+			"property_values": {
+				"average_rent": 3000,
+				"vacancy_rate": 3.5
+			}
+		},
+		"property_details": {
+			"flood_risk": {
+				"description": "Moderate risk of flooding in this area. Check with local authorities for updated flood zone maps.",
+				"resource": "Boston Flood Maps",
+				"url": "https://www.boston.gov/flood-maps"
+			},
+			"natural_hazards": {
+				"earthquakes": "Unlikely",
+				"severe_storms": "High risk",
+				"hurricanes": "Unlikely",
+				"tornadoes": "Possible",
+				"wildfires": "Very low"
+			},
+			"school_ratings": {
+				"Harvard_University": "Top-ranked institution",
+				"Boston_University": "Highly regarded for research and innovation"
+			}
+		}
+	},
+	"02128": {
+		"address": "East Boston, MA 02128",
+		"latitude": 42.374444,
+		"longitude": -71.033611,
+		"walk_score": {
+			"walk_score": 75,
+			"transit_score": 85,
+			"bike_score": 60
+		},
+		"neighborhood_info": {
+			"demographics": {
+				"population": 45000,
+				"median_age": 33,
+				"household_income": 65000
+			},
+			"crime_rate": {
+				"overall": {
+					"rate": 32,
+					"description": "Moderate crime rate compared to national averages"
+				},
+				"violent": {
+					"rate": 5.2,
+					"description": "Moderate violent crime rate"
+				},
+				"property": {
+					"rate": 26.8,
+					"description": "Moderate property crime rate"
+				}
+			},
+			"schools": [
+				{
+					"name": "East Boston High School",
+					"type": "High School",
+					"distance": "0.5 miles"
+				},
+				{
+					"name": "Noyes Early Childhood Center",
+					"type": "Preschool",
+					"distance": "0.3 miles"
+				}
+			]
+		},
+		"commute_times": {
+			"downtown": "15 minutes",
+			"major_employers": [
+				{
+					"name": "Logan International Airport",
+					"distance": "1.5 miles",
+					"commute_time": "5 minutes"
+				},
+				{
+					"name": "General Electric",
+					"distance": "3 miles",
+					"commute_time": "15 minutes"
+				}
+			]
+		},
+		"nearby_amenities": {
+			"grocery_stores": [
+				{
+					"name": "Shaw's Supermarket",
+					"distance": "0.4 miles"
+				},
+				{
+					"name": "Market Basket",
+					"distance": "1 mile"
+				}
+			],
+			"restaurants": [
+				{
+					"name": "Ciao Bello",
+					"cuisine": "Italian",
+					"distance": "0.3 miles"
+				},
+				{
+					"name": "The Blue Room",
+					"cuisine": "American",
+					"distance": "0.7 miles"
+				}
+			],
+			"parks": [
+				{
+					"name": "Piers Park",
+					"distance": "0.5 miles"
+				},
+				{
+					"name": "Belle Isle Marsh Reservation",
+					"distance": "2 miles"
+				}
+			]
+		},
+		"location_analytics": {
+			"market_trends": {
+				"median_home_price": 600000,
+				"price_change_year_over_year": 6.2,
+				"median_home_age": 50,
+				"property_tax_rate": 10.5,
+				"average_property_tax": 3100
+			},
+			"property_values": {
+				"average_rent": 2200,
+				"vacancy_rate": 5.0
+			}
+		},
+		"property_details": {
+			"flood_risk": {
+				"description": "Moderate flood risk, especially along waterfront areas. Check local flood zone maps.",
+				"resource": "East Boston Flood Maps",
+				"url": "https://www.boston.gov/flood-maps"
+			},
+			"natural_hazards": {
+				"earthquakes": "Unlikely",
+				"severe_storms": "Moderate risk",
+				"hurricanes": "Unlikely",
+				"tornadoes": "Rare",
+				"wildfires": "Very low"
+			},
+			"school_ratings": {
+				"East_Boston_High_School": "Good community high school",
+				"Noyes_Early_Childhood_Center": "Well-regarded preschool"
+			}
+		}
+	},
+	"02138": {
+		"address": "Cambridge, MA 02138",
+		"latitude": 42.373611,
+		"longitude": -71.118285,
+		"walk_score": {
+			"walk_score": 79,
+			"transit_score": 81,
+			"bike_score": 72
+		},
+		"neighborhood_info": {
+			"demographics": {
+				"population": 105000,
+				"median_age": 34,
+				"household_income": 100000
+			},
+			"crime_rate": {
+				"overall": {
+					"rate": 22,
+					"description": "Low to moderate crime rate compared to national averages"
+				},
+				"violent": {
+					"rate": 3.2,
+					"description": "Low violent crime rate"
+				},
+				"property": {
+					"rate": 18.5,
+					"description": "Low property crime rate"
+				}
+			},
+			"schools": [
+				{
+					"name": "Harvard University",
+					"type": "University",
+					"distance": "0.3 miles"
+				},
+				{
+					"name": "Lesley University",
+					"type": "University",
+					"distance": "0.7 miles"
+				},
+				{
+					"name": "Cambridge Rindge and Latin School",
+					"type": "High School",
+					"distance": "1 mile"
+				}
+			]
+		},
+		"commute_times": {
+			"downtown": "15 minutes",
+			"major_employers": [
+				{
+					"name": "Biogen Idec",
+					"distance": "2 miles",
+					"commute_time": "12 minutes"
+				},
+				{
+					"name": "Google Cambridge",
+					"distance": "1.5 miles",
+					"commute_time": "8 minutes"
+				}
+			]
+		},
+		"nearby_amenities": {
+			"grocery_stores": [
+				{
+					"name": "Whole Foods Market",
+					"distance": "0.3 miles"
+				},
+				{
+					"name": "Star Market",
+					"distance": "0.5 miles"
+				}
+			],
+			"restaurants": [
+				{
+					"name": "The Red House",
+					"cuisine": "American",
+					"distance": "0.5 miles"
+				},
+				{
+					"name": "Tatte Bakery & Cafe",
+					"cuisine": "Cafe",
+					"distance": "0.6 miles"
+				}
+			],
+			"parks": [
+				{
+					"name": "Fresh Pond Reservation",
+					"distance": "1 mile"
+				},
+				{
+					"name": "Cambridge Common",
+					"distance": "0.4 miles"
+				}
+			]
+		},
+		"location_analytics": {
+			"market_trends": {
+				"median_home_price": 900000,
+				"price_change_year_over_year": 4.8,
+				"median_home_age": 70,
+				"property_tax_rate": 11.4,
+				"average_property_tax": 4100
+			},
+			"property_values": {
+				"average_rent": 3200,
+				"vacancy_rate": 3.8
+			}
+		},
+		"property_details": {
+			"flood_risk": {
+				"description": "Cambridge has areas that are susceptible to flooding, especially close to the river. Review local flood maps before purchasing.",
+				"resource": "Cambridge Flood Maps",
+				"url": "https://www.cambridgema.gov/Services/femafloodmaps"
+			},
+			"natural_hazards": {
+				"earthquakes": "Unlikely",
+				"severe_storms": "Moderate risk",
+				"hurricanes": "Unlikely",
+				"tornadoes": "Rare",
+				"wildfires": "Very low"
+			},
+			"school_ratings": {
+				"Harvard_University": "Top-ranked university",
+				"Lesley_University": "Highly regarded for arts and education",
+				"Cambridge_Rindge_and_Latin_School": "Well-regarded public high school"
+			}
+		}
+	},
+	"02139": {
+		"address": "Cambridge, MA 02139",
+		"latitude": 42.373611,
+		"longitude": -71.109733,
+		"walk_score": {
+			"walk_score": 85,
+			"transit_score": 92,
+			"bike_score": 78
+		},
+		"neighborhood_info": {
+			"demographics": {
+				"population": 158000,
+				"median_age": 30,
+				"household_income": 95000
+			},
+			"crime_rate": {
+				"overall": {
+					"rate": 28,
+					"description": "Moderate crime rate compared to national averages"
+				},
+				"violent": {
+					"rate": 4.5,
+					"description": "Moderate violent crime rate"
+				},
+				"property": {
+					"rate": 23.2,
+					"description": "Moderate property crime rate"
+				}
+			},
+			"schools": [
+				{
+					"name": "Harvard University",
+					"type": "University",
+					"distance": "2 miles"
+				},
+				{
+					"name": "Lesley University",
+					"type": "University",
+					"distance": "0.5 miles"
+				},
+				{
+					"name": "Cambridge Rindge and Latin School",
+					"type": "High School",
+					"distance": "1 mile"
+				}
+			]
+		},
+		"commute_times": {
+			"downtown": "10 minutes",
+			"major_employers": [
+				{
+					"name": "Biogen Idec",
+					"distance": "2 miles",
+					"commute_time": "12 minutes"
+				},
+				{
+					"name": "Google Cambridge",
+					"distance": "1.8 miles",
+					"commute_time": "8 minutes"
+				}
+			]
+		},
+		"nearby_amenities": {
+			"grocery_stores": [
+				{
+					"name": "Star Market",
+					"distance": "0.2 miles"
+				},
+				{
+					"name": "Whole Foods Market",
+					"distance": "0.8 miles"
+				}
+			],
+			"restaurants": [
+				{
+					"name": "Legal Sea Foods",
+					"cuisine": "Seafood",
+					"distance": "0.3 miles"
+				},
+				{
+					"name": "Craigie on Main",
+					"cuisine": "New American",
+					"distance": "0.5 miles"
+				}
+			],
+			"parks": [
+				{
+					"name": "Charles River Reservation",
+					"distance": "0.5 miles"
+				},
+				{
+					"name": "Alewife Brook Reservation",
+					"distance": "2 miles"
+				}
+			]
+		},
+		"location_analytics": {
+			"market_trends": {
+				"median_home_price": 920000,
+				"price_change_year_over_year": 5.5,
+				"median_home_age": 60,
+				"property_tax_rate": 12.2,
+				"average_property_tax": 4485
+			},
+			"property_values": {
+				"average_rent": 2750,
+				"vacancy_rate": 4
+			}
+		},
+		"property_details": {
+			"flood_risk": {
+				"description": "Cambridge is partially at risk of flooding, especially near the river. It's recommended to review flood maps and consider flood insurance.",
+				"resource": "City of Cambridge Flood Maps",
+				"url": "https://www.cambridgema.gov/Services/femafloodmaps"
+			},
+			"natural_hazards": {
+				"earthquakes": "Unlikely",
+				"severe_storms": "Moderate risk",
+				"hurricanes": "Unlikely",
+				"tornadoes": "Rare",
+				"wildfires": "Very low"
+			},
+			"school_ratings": {
+				"Harvard_University": "Top-ranked university",
+				"Lesley_University": "Highly regarded for arts and education",
+				"Cambridge_Rindge_and_Latin_School": "Well-regarded public high school"
+			}
+		}
+	},
+	"02420": {
+		"address": "Belmont, MA 02420",
+		"latitude": 42.395438,
+		"longitude": -71.180537,
+		"walk_score": {
+			"walk_score": 63,
+			"transit_score": 51,
+			"bike_score": 51
+		},
+		"neighborhood_info": {
+			"demographics": {
+				"population": 26000,
+				"median_age": 43,
+				"household_income": 112000
+			},
+			"crime_rate": {
+				"overall": {
+					"rate": 12,
+					"description": "Low crime rate compared to national averages"
+				},
+				"violent": {
+					"rate": 1.5,
+					"description": "Very low violent crime rate"
+				},
+				"property": {
+					"rate": 10.5,
+					"description": "Low property crime rate"
+				}
+			},
+			"schools": [
+				{
+					"name": "Belmont High School",
+					"type": "High School",
+					"distance": "0.5 miles"
+				},
+				{
+					"name": "The Winn Brook School",
+					"type": "Elementary School",
+					"distance": "0.7 miles"
+				}
+			]
+		},
+		"commute_times": {
+			"downtown": "25 minutes",
+			"major_employers": [
+				{
+					"name": "Harvard University",
+					"distance": "5 miles",
+					"commute_time": "20 minutes"
+				},
+				{
+					"name": "Biogen Idec",
+					"distance": "7 miles",
+					"commute_time": "30 minutes"
+				}
+			]
+		},
+		"nearby_amenities": {
+			"grocery_stores": [
+				{
+					"name": "Star Market",
+					"distance": "1 mile"
+				},
+				{
+					"name": "Whole Foods Market",
+					"distance": "2 miles"
+				}
+			],
+			"restaurants": [
+				{
+					"name": "The Belmont Food Shop",
+					"cuisine": "American",
+					"distance": "1 mile"
+				},
+				{
+					"name": "Via Lago",
+					"cuisine": "Italian",
+					"distance": "1.5 miles"
+				}
+			],
+			"parks": [
+				{
+					"name": "Rock Meadow Conservation Area",
+					"distance": "1 mile"
+				},
+				{
+					"name": "Belmont Hill",
+					"distance": "2 miles"
+				}
+			]
+		},
+		"location_analytics": {
+			"market_trends": {
+				"median_home_price": 800000,
+				"price_change_year_over_year": 3.8,
+				"median_home_age": 50,
+				"property_tax_rate": 12.0,
+				"average_property_tax": 9600
+			},
+			"property_values": {
+				"average_rent": 2300,
+				"vacancy_rate": 2.5
+			}
+		},
+		"property_details": {
+			"flood_risk": {
+				"description": "Belmont is not in a high flood risk zone, though areas near the Belmont Hill may be at low risk.",
+				"resource": "Belmont Flood Maps",
+				"url": "https://www.belmontma.gov/floodmaps"
+			},
+			"natural_hazards": {
+				"earthquakes": "Unlikely",
+				"severe_storms": "Moderate risk",
+				"hurricanes": "Unlikely",
+				"tornadoes": "Rare",
+				"wildfires": "Very low"
+			},
+			"school_ratings": {
+				"Belmont_High_School": "Highly rated public high school",
+				"The_Winn_Brook_School": "Well-regarded elementary school"
+			}
+		}
+	}
+}

@@ -1,7 +1,7 @@
 {
 	"settings": {
 		"days": 1,
-		"alias": "soETGames",
+		"alias": "soMontreal",
 		"OpenBrowser": true,
 		"QuitOnErrors": true,
 		"UserOnScreen": true // Can I prompt the user for manual verification? On CICD, this should be false
@@ -21,7 +21,8 @@
 		// SKIP { "InstallPackage": { "id": "04tKY000000LRJJYA4" } }, // Dreamhouse App
 		{ "AssignPermissionSet": "CopilotSalesforceAdmin" }, // Agentforce Default Admin
 		{ "AssignPermissionSet": "EinsteinGPTPromptTemplateManager" }, // Prompt Template Manager
-		{ "ManualMetadata": { "url": "/lightning/setup/EinsteinCopilot/home", "message": "Enable agentforce, ensure agents can be created" } },
+		{ "ManualMetadata": { "url": "/lightning/setup/EinsteinBots/home", "message": "Enable AI Agents From Bots" } },
+		{ "ManualMetadata": { "url": "/lightning/setup/EinsteinCopilot/home", "message": "Enable agentforce" } },
 		{ "PushMetadata": { "folder": "force-apps/setup" } },
 
 		// Crete dummy agent to allow for real agent to be deployed
