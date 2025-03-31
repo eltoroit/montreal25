@@ -17,7 +17,7 @@
     </assignments>
     <assignments>
         <name>ASS030b</name>
-        <label>ASS030b</label>
+        <label>ASS030b Save properties</label>
         <locationX>314</locationX>
         <locationY>350</locationY>
         <assignmentItems>
@@ -28,11 +28,27 @@
             </value>
         </assignmentItems>
     </assignments>
+    <assignments>
+        <name>ASS040b</name>
+        <label>ASS040b Save properties</label>
+        <locationX>578</locationX>
+        <locationY>350</locationY>
+        <assignmentItems>
+            <assignToReference>Properties</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>GET040a</elementReference>
+            </value>
+        </assignmentItems>
+    </assignments>
     <decisions>
         <name>IF010</name>
         <label>IF010 What are we looking for?</label>
         <locationX>314</locationX>
         <locationY>134</locationY>
+        <defaultConnector>
+            <targetReference>GET040a</targetReference>
+        </defaultConnector>
         <defaultConnectorLabel>Other</defaultConnectorLabel>
         <rules>
             <name>IF010_Address</name>
@@ -65,7 +81,7 @@
             <label>Zip Code</label>
         </rules>
     </decisions>
-    <description>Finds a property based on specific criteria, including Address, Zip Code, etc.</description>
+    <description>Finds a property based on Address or Zip Code. The properties can also be searched by other properties but the whole list will be returned and the agent then can filter the list.</description>
     <environments>Default</environments>
     <interviewLabel>ETDH: Find property {!$Flow.CurrentDateTime}</interviewLabel>
     <label>ETDH: Find property</label>
@@ -130,6 +146,19 @@
         <object>Property__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
+    <recordLookups>
+        <name>GET040a</name>
+        <label>GET040a Find all properties</label>
+        <locationX>578</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>ASS040b</targetReference>
+        </connector>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Property__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <start>
         <locationX>188</locationX>
         <locationY>0</locationY>
@@ -137,7 +166,7 @@
             <targetReference>IF010</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <description>Property address, for example &quot;123 Main Street&quot;</description>
         <name>Address</name>
