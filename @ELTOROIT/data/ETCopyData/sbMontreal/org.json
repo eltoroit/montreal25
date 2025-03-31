@@ -7724,37 +7724,6 @@
 	},
 	"rejected": {
 		"ADD_FIELD": {
-			"Broker__c.OwnerId": [
-				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
-			],
-			"Broker__c.IsDeleted": [
-				"Must be createable"
-			],
-			"Broker__c.CreatedById": [
-				"Parent sObject [User] is not processed"
-			],
-			"Broker__c.LastModifiedById": [
-				"Parent sObject [User] is not processed"
-			],
-			"Broker__c.SystemModstamp": [
-				"Must be createable"
-			],
-			"Broker__c.MayEdit": [
-				"Must be createable"
-			],
-			"Broker__c.IsLocked": [
-				"Must be createable"
-			],
-			"Broker__c.LastViewedDate": [
-				"Must be createable"
-			],
-			"Broker__c.LastReferencedDate": [
-				"Must be createable"
-			],
-			"Broker__c.Picture_IMG__c": [
-				"Can't be calculated",
-				"Must be createable"
-			],
 			"Property__c.OwnerId": [
 				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
 			],
@@ -7950,6 +7919,37 @@
 				"Must be createable"
 			],
 			"Case.SDO_OMS_Order_Summary_Related__c": [
+				"Can't be calculated",
+				"Must be createable"
+			],
+			"Broker__c.OwnerId": [
+				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
+			],
+			"Broker__c.IsDeleted": [
+				"Must be createable"
+			],
+			"Broker__c.CreatedById": [
+				"Parent sObject [User] is not processed"
+			],
+			"Broker__c.LastModifiedById": [
+				"Parent sObject [User] is not processed"
+			],
+			"Broker__c.SystemModstamp": [
+				"Must be createable"
+			],
+			"Broker__c.MayEdit": [
+				"Must be createable"
+			],
+			"Broker__c.IsLocked": [
+				"Must be createable"
+			],
+			"Broker__c.LastViewedDate": [
+				"Must be createable"
+			],
+			"Broker__c.LastReferencedDate": [
+				"Must be createable"
+			],
+			"Broker__c.Picture_IMG__c": [
 				"Can't be calculated",
 				"Must be createable"
 			],
@@ -8283,291 +8283,6 @@
 			]
 		},
 		"ADD_CHILD": {
-			"Broker__c.null => AIInsightValue": [
-				"Child sObject [AIInsightValue] is not processed"
-			],
-			"Broker__c.null => AIRecordInsight": [
-				"Child sObject [AIRecordInsight] is not processed"
-			],
-			"Broker__c.null => ActionPlanChangeEvent": [
-				"Child sObject [ActionPlanChangeEvent] is not processed"
-			],
-			"Broker__c.AdvAcctForecastFactAdjustments => AdvAcctForecastFactAdj": [
-				"Child sObject [AdvAcctForecastFactAdj] is not processed"
-			],
-			"Broker__c.AdvAcctForecastSetUseForecastContext => AdvAcctForecastSetUse": [
-				"Child sObject [AdvAcctForecastSetUse] is not processed"
-			],
-			"Broker__c.null => AgentWork": [
-				"Child sObject [AgentWork] is not processed"
-			],
-			"Broker__c.null => AgentWorkChangeEvent": [
-				"Child sObject [AgentWorkChangeEvent] is not processed"
-			],
-			"Broker__c.ApprovalSubmissions => ApprovalSubmission": [
-				"Child sObject [ApprovalSubmission] is not processed"
-			],
-			"Broker__c.ApprovalWorkItems => ApprovalWorkItem": [
-				"Child sObject [ApprovalWorkItem] is not processed"
-			],
-			"Broker__c.ContentDocumentContext => AssessmentTaskContentDocument": [
-				"Child sObject [AssessmentTaskContentDocument] is not processed"
-			],
-			"Broker__c.AttachedContentDocuments => AttachedContentDocument": [
-				"Child sObject [AttachedContentDocument] is not processed"
-			],
-			"Broker__c.AttachedContentNotes => AttachedContentNote": [
-				"Child sObject [AttachedContentNote] is not processed"
-			],
-			"Broker__c.Attachments => Attachment": [
-				"Child sObject [Attachment] is not processed"
-			],
-			"Broker__c.FormRequestRecordRelatedRecords => AuthFormRequestRecord": [
-				"Child sObject [AuthFormRequestRecord] is not processed"
-			],
-			"Broker__c.null => AuthFormRequestRecordChangeEvent": [
-				"Child sObject [AuthFormRequestRecordChangeEvent] is not processed"
-			],
-			"Broker__c.Shares => Broker__Share": [
-				"Child sObject [Broker__Share] is not processed"
-			],
-			"Broker__c.null => BusinessAlert": [
-				"Child sObject [BusinessAlert] is not processed"
-			],
-			"Broker__c.RecordAssociatedGroups => CollaborationGroupRecord": [
-				"Child sObject [CollaborationGroupRecord] is not processed"
-			],
-			"Broker__c.null => CollaborationGroupRecordChangeEvent": [
-				"Child sObject [CollaborationGroupRecordChangeEvent] is not processed"
-			],
-			"Broker__c.CombinedAttachments => CombinedAttachment": [
-				"Child sObject [CombinedAttachment] is not processed"
-			],
-			"Broker__c.ContactRequests => ContactRequest": [
-				"Child sObject [ContactRequest] is not processed"
-			],
-			"Broker__c.null => ContentDistribution": [
-				"Child sObject [ContentDistribution] is not processed"
-			],
-			"Broker__c.ContentDocumentLinks => ContentDocumentLink": [
-				"Child sObject [ContentDocumentLink] is not processed"
-			],
-			"Broker__c.null => ContentDocumentLinkChangeEvent": [
-				"Child sObject [ContentDocumentLinkChangeEvent] is not processed"
-			],
-			"Broker__c.null => ContentVersion": [
-				"Child sObject [ContentVersion] is not processed"
-			],
-			"Broker__c.null => ContentVersionChangeEvent": [
-				"Child sObject [ContentVersionChangeEvent] is not processed"
-			],
-			"Broker__c.DigitalVerificationParentReferenceRecord => DigitalVerification": [
-				"Child sObject [DigitalVerification] is not processed"
-			],
-			"Broker__c.DocumentChecklistItemPR => DocumentChecklistItem": [
-				"Child sObject [DocumentChecklistItem] is not processed"
-			],
-			"Broker__c.null => DocumentChecklistItemChangeEvent": [
-				"Child sObject [DocumentChecklistItemChangeEvent] is not processed"
-			],
-			"Broker__c.DocEnvelopeRefObjects => DocumentEnvelope": [
-				"Child sObject [DocumentEnvelope] is not processed"
-			],
-			"Broker__c.DuplicateRecordItems => DuplicateRecordItem": [
-				"Child sObject [DuplicateRecordItem] is not processed"
-			],
-			"Broker__c.null => EmailMessageChangeEvent": [
-				"Child sObject [EmailMessageChangeEvent] is not processed"
-			],
-			"Broker__c.EngagementInitiatedTopic => EngagementTopic": [
-				"Child sObject [EngagementTopic] is not processed"
-			],
-			"Broker__c.null => EngagementTopicChangeEvent": [
-				"Child sObject [EngagementTopicChangeEvent] is not processed"
-			],
-			"Broker__c.FeedSubscriptionsForEntity => EntitySubscription": [
-				"Child sObject [EntitySubscription] is not processed"
-			],
-			"Broker__c.null => EventChangeEvent": [
-				"Child sObject [EventChangeEvent] is not processed"
-			],
-			"Broker__c.null => EventRelationChangeEvent": [
-				"Child sObject [EventRelationChangeEvent] is not processed"
-			],
-			"Broker__c.null => FeedComment": [
-				"Child sObject [FeedComment] is not processed"
-			],
-			"Broker__c.null => FeedItem": [
-				"Child sObject [FeedItem] is not processed"
-			],
-			"Broker__c.FinanceBalanceSnapshots => FinanceBalanceSnapshot": [
-				"Child sObject [FinanceBalanceSnapshot] is not processed"
-			],
-			"Broker__c.null => FinanceBalanceSnapshotChangeEvent": [
-				"Child sObject [FinanceBalanceSnapshotChangeEvent] is not processed"
-			],
-			"Broker__c.DestinationFinanceTransactions => FinanceTransaction": [
-				"Child sObject [FinanceTransaction] is not processed"
-			],
-			"Broker__c.FinanceTransactions => FinanceTransaction": [
-				"Child sObject [FinanceTransaction] is not processed"
-			],
-			"Broker__c.ParentFinanceTransactions => FinanceTransaction": [
-				"Child sObject [FinanceTransaction] is not processed"
-			],
-			"Broker__c.SourceFinanceTransactions => FinanceTransaction": [
-				"Child sObject [FinanceTransaction] is not processed"
-			],
-			"Broker__c.null => FinanceTransactionChangeEvent": [
-				"Child sObject [FinanceTransactionChangeEvent] is not processed"
-			],
-			"Broker__c.null => FlowExecutionErrorEvent": [
-				"Child sObject [FlowExecutionErrorEvent] is not processed"
-			],
-			"Broker__c.FlowOrchestrationWorkItems => FlowOrchestrationWorkItem": [
-				"Child sObject [FlowOrchestrationWorkItem] is not processed"
-			],
-			"Broker__c.null => FlowRecordRelation": [
-				"Child sObject [FlowRecordRelation] is not processed"
-			],
-			"Broker__c.null => ForecastingItem__hd": [
-				"Child sObject [ForecastingItem__hd] is not processed"
-			],
-			"Broker__c.GeneratedDocRefObjects => GeneratedDocument": [
-				"Child sObject [GeneratedDocument] is not processed"
-			],
-			"Broker__c.null => GenericAsmtTaskContext": [
-				"Child sObject [GenericAsmtTaskContext] is not processed"
-			],
-			"Broker__c.null => GenericAssessmentTask": [
-				"Child sObject [GenericAssessmentTask] is not processed"
-			],
-			"Broker__c.GVTaskContexts => GenericVisitTaskContext": [
-				"Child sObject [GenericVisitTaskContext] is not processed"
-			],
-			"Broker__c.InfoAuthRequestSourceRecords => InfoAuthorizationRequest": [
-				"Child sObject [InfoAuthorizationRequest] is not processed"
-			],
-			"Broker__c.null => InfoAuthorizationRequestChangeEvent": [
-				"Child sObject [InfoAuthorizationRequestChangeEvent] is not processed"
-			],
-			"Broker__c.InventoryReservationSources => InventoryItemReservation": [
-				"Child sObject [InventoryItemReservation] is not processed"
-			],
-			"Broker__c.InventoryReservations => InventoryReservation": [
-				"Child sObject [InventoryReservation] is not processed"
-			],
-			"Broker__c.MultipartyInfoAuthRequestSourceRecords => MultipartyInfoAuthRequest": [
-				"Child sObject [MultipartyInfoAuthRequest] is not processed"
-			],
-			"Broker__c.null => MultipartyInfoAuthRequestChangeEvent": [
-				"Child sObject [MultipartyInfoAuthRequestChangeEvent] is not processed"
-			],
-			"Broker__c.ParentEntities => NetworkActivityAudit": [
-				"Child sObject [NetworkActivityAudit] is not processed"
-			],
-			"Broker__c.null => NetworkFeedResponseMetric": [
-				"Child sObject [NetworkFeedResponseMetric] is not processed"
-			],
-			"Broker__c.NetworkUserHistoryRecentToRecord => NetworkUserHistoryRecent": [
-				"Child sObject [NetworkUserHistoryRecent] is not processed"
-			],
-			"Broker__c.Notes => Note": [
-				"Child sObject [Note] is not processed"
-			],
-			"Broker__c.NotesAndAttachments => NoteAndAttachment": [
-				"Child sObject [NoteAndAttachment] is not processed"
-			],
-			"Broker__c.null => ObjectRelatedUrl": [
-				"Child sObject [ObjectRelatedUrl] is not processed"
-			],
-			"Broker__c.null => ObjectRelatedUrlChangeEvent": [
-				"Child sObject [ObjectRelatedUrlChangeEvent] is not processed"
-			],
-			"Broker__c.null => Opportunity__hd": [
-				"Child sObject [Opportunity__hd] is not processed"
-			],
-			"Broker__c.null => PendingServiceRouting": [
-				"Child sObject [PendingServiceRouting] is not processed"
-			],
-			"Broker__c.null => PendingServiceRoutingChangeEvent": [
-				"Child sObject [PendingServiceRoutingChangeEvent] is not processed"
-			],
-			"Broker__c.null => PendingServiceRoutingInteractionInfo": [
-				"Child sObject [PendingServiceRoutingInteractionInfo] is not processed"
-			],
-			"Broker__c.ProcessExceptions => ProcessException": [
-				"Child sObject [ProcessException] is not processed"
-			],
-			"Broker__c.null => ProcessExceptionChangeEvent": [
-				"Child sObject [ProcessExceptionChangeEvent] is not processed"
-			],
-			"Broker__c.null => ProcessExceptionEvent": [
-				"Child sObject [ProcessExceptionEvent] is not processed"
-			],
-			"Broker__c.ProcessInstances => ProcessInstance": [
-				"Child sObject [ProcessInstance] is not processed"
-			],
-			"Broker__c.null => ProcessInstanceChangeEvent": [
-				"Child sObject [ProcessInstanceChangeEvent] is not processed"
-			],
-			"Broker__c.ProcessSteps => ProcessInstanceHistory": [
-				"Child sObject [ProcessInstanceHistory] is not processed"
-			],
-			"Broker__c.Transaction => ProgramRebateTypPayoutSrc": [
-				"Child sObject [ProgramRebateTypPayoutSrc] is not processed"
-			],
-			"Broker__c.null => ProgramRebateTypeReference": [
-				"Child sObject [ProgramRebateTypeReference] is not processed"
-			],
-			"Broker__c.RecordActions => RecordAction": [
-				"Child sObject [RecordAction] is not processed"
-			],
-			"Broker__c.RecordActionHistories => RecordActionHistory": [
-				"Child sObject [RecordActionHistory] is not processed"
-			],
-			"Broker__c.RecordAlertWhat => RecordAlert": [
-				"Child sObject [RecordAlert] is not processed"
-			],
-			"Broker__c.null => RecordAlertChangeEvent": [
-				"Child sObject [RecordAlertChangeEvent] is not processed"
-			],
-			"Broker__c.SurveySubjectEntities => SurveySubject": [
-				"Child sObject [SurveySubject] is not processed"
-			],
-			"Broker__c.null => SurveySubjectChangeEvent": [
-				"Child sObject [SurveySubjectChangeEvent] is not processed"
-			],
-			"Broker__c.null => SvcCatalogReqExtdAttrVal": [
-				"Child sObject [SvcCatalogReqExtdAttrVal] is not processed"
-			],
-			"Broker__c.null => SvcCatalogReqRelatedItem": [
-				"Child sObject [SvcCatalogReqRelatedItem] is not processed"
-			],
-			"Broker__c.null => TaskChangeEvent": [
-				"Child sObject [TaskChangeEvent] is not processed"
-			],
-			"Broker__c.TopicAssignments => TopicAssignment": [
-				"Child sObject [TopicAssignment] is not processed"
-			],
-			"Broker__c.UserDefinedLabelAssignments => UserDefinedLabelAssignment": [
-				"Child sObject [UserDefinedLabelAssignment] is not processed"
-			],
-			"Broker__c.VideoRelatedRecords => VideoCall": [
-				"Child sObject [VideoCall] is not processed"
-			],
-			"Broker__c.null => VideoCallChangeEvent": [
-				"Child sObject [VideoCallChangeEvent] is not processed"
-			],
-			"Broker__c.Contexts => Visit": [
-				"Child sObject [Visit] is not processed"
-			],
-			"Broker__c.RelatedRecords => VoiceCall": [
-				"Child sObject [VoiceCall] is not processed"
-			],
-			"Broker__c.null => VoiceCallChangeEvent": [
-				"Child sObject [VoiceCallChangeEvent] is not processed"
-			],
 			"Property__c.null => AIInsightValue": [
 				"Child sObject [AIInsightValue] is not processed"
 			],
@@ -9314,6 +9029,291 @@
 			],
 			"Case.tspa__Visual_Remote_Assistant_Reports__r => tspa__Visual_History__c": [
 				"Child sObject [tspa__Visual_History__c] is not processed"
+			],
+			"Broker__c.null => AIInsightValue": [
+				"Child sObject [AIInsightValue] is not processed"
+			],
+			"Broker__c.null => AIRecordInsight": [
+				"Child sObject [AIRecordInsight] is not processed"
+			],
+			"Broker__c.null => ActionPlanChangeEvent": [
+				"Child sObject [ActionPlanChangeEvent] is not processed"
+			],
+			"Broker__c.AdvAcctForecastFactAdjustments => AdvAcctForecastFactAdj": [
+				"Child sObject [AdvAcctForecastFactAdj] is not processed"
+			],
+			"Broker__c.AdvAcctForecastSetUseForecastContext => AdvAcctForecastSetUse": [
+				"Child sObject [AdvAcctForecastSetUse] is not processed"
+			],
+			"Broker__c.null => AgentWork": [
+				"Child sObject [AgentWork] is not processed"
+			],
+			"Broker__c.null => AgentWorkChangeEvent": [
+				"Child sObject [AgentWorkChangeEvent] is not processed"
+			],
+			"Broker__c.ApprovalSubmissions => ApprovalSubmission": [
+				"Child sObject [ApprovalSubmission] is not processed"
+			],
+			"Broker__c.ApprovalWorkItems => ApprovalWorkItem": [
+				"Child sObject [ApprovalWorkItem] is not processed"
+			],
+			"Broker__c.ContentDocumentContext => AssessmentTaskContentDocument": [
+				"Child sObject [AssessmentTaskContentDocument] is not processed"
+			],
+			"Broker__c.AttachedContentDocuments => AttachedContentDocument": [
+				"Child sObject [AttachedContentDocument] is not processed"
+			],
+			"Broker__c.AttachedContentNotes => AttachedContentNote": [
+				"Child sObject [AttachedContentNote] is not processed"
+			],
+			"Broker__c.Attachments => Attachment": [
+				"Child sObject [Attachment] is not processed"
+			],
+			"Broker__c.FormRequestRecordRelatedRecords => AuthFormRequestRecord": [
+				"Child sObject [AuthFormRequestRecord] is not processed"
+			],
+			"Broker__c.null => AuthFormRequestRecordChangeEvent": [
+				"Child sObject [AuthFormRequestRecordChangeEvent] is not processed"
+			],
+			"Broker__c.Shares => Broker__Share": [
+				"Child sObject [Broker__Share] is not processed"
+			],
+			"Broker__c.null => BusinessAlert": [
+				"Child sObject [BusinessAlert] is not processed"
+			],
+			"Broker__c.RecordAssociatedGroups => CollaborationGroupRecord": [
+				"Child sObject [CollaborationGroupRecord] is not processed"
+			],
+			"Broker__c.null => CollaborationGroupRecordChangeEvent": [
+				"Child sObject [CollaborationGroupRecordChangeEvent] is not processed"
+			],
+			"Broker__c.CombinedAttachments => CombinedAttachment": [
+				"Child sObject [CombinedAttachment] is not processed"
+			],
+			"Broker__c.ContactRequests => ContactRequest": [
+				"Child sObject [ContactRequest] is not processed"
+			],
+			"Broker__c.null => ContentDistribution": [
+				"Child sObject [ContentDistribution] is not processed"
+			],
+			"Broker__c.ContentDocumentLinks => ContentDocumentLink": [
+				"Child sObject [ContentDocumentLink] is not processed"
+			],
+			"Broker__c.null => ContentDocumentLinkChangeEvent": [
+				"Child sObject [ContentDocumentLinkChangeEvent] is not processed"
+			],
+			"Broker__c.null => ContentVersion": [
+				"Child sObject [ContentVersion] is not processed"
+			],
+			"Broker__c.null => ContentVersionChangeEvent": [
+				"Child sObject [ContentVersionChangeEvent] is not processed"
+			],
+			"Broker__c.DigitalVerificationParentReferenceRecord => DigitalVerification": [
+				"Child sObject [DigitalVerification] is not processed"
+			],
+			"Broker__c.DocumentChecklistItemPR => DocumentChecklistItem": [
+				"Child sObject [DocumentChecklistItem] is not processed"
+			],
+			"Broker__c.null => DocumentChecklistItemChangeEvent": [
+				"Child sObject [DocumentChecklistItemChangeEvent] is not processed"
+			],
+			"Broker__c.DocEnvelopeRefObjects => DocumentEnvelope": [
+				"Child sObject [DocumentEnvelope] is not processed"
+			],
+			"Broker__c.DuplicateRecordItems => DuplicateRecordItem": [
+				"Child sObject [DuplicateRecordItem] is not processed"
+			],
+			"Broker__c.null => EmailMessageChangeEvent": [
+				"Child sObject [EmailMessageChangeEvent] is not processed"
+			],
+			"Broker__c.EngagementInitiatedTopic => EngagementTopic": [
+				"Child sObject [EngagementTopic] is not processed"
+			],
+			"Broker__c.null => EngagementTopicChangeEvent": [
+				"Child sObject [EngagementTopicChangeEvent] is not processed"
+			],
+			"Broker__c.FeedSubscriptionsForEntity => EntitySubscription": [
+				"Child sObject [EntitySubscription] is not processed"
+			],
+			"Broker__c.null => EventChangeEvent": [
+				"Child sObject [EventChangeEvent] is not processed"
+			],
+			"Broker__c.null => EventRelationChangeEvent": [
+				"Child sObject [EventRelationChangeEvent] is not processed"
+			],
+			"Broker__c.null => FeedComment": [
+				"Child sObject [FeedComment] is not processed"
+			],
+			"Broker__c.null => FeedItem": [
+				"Child sObject [FeedItem] is not processed"
+			],
+			"Broker__c.FinanceBalanceSnapshots => FinanceBalanceSnapshot": [
+				"Child sObject [FinanceBalanceSnapshot] is not processed"
+			],
+			"Broker__c.null => FinanceBalanceSnapshotChangeEvent": [
+				"Child sObject [FinanceBalanceSnapshotChangeEvent] is not processed"
+			],
+			"Broker__c.DestinationFinanceTransactions => FinanceTransaction": [
+				"Child sObject [FinanceTransaction] is not processed"
+			],
+			"Broker__c.FinanceTransactions => FinanceTransaction": [
+				"Child sObject [FinanceTransaction] is not processed"
+			],
+			"Broker__c.ParentFinanceTransactions => FinanceTransaction": [
+				"Child sObject [FinanceTransaction] is not processed"
+			],
+			"Broker__c.SourceFinanceTransactions => FinanceTransaction": [
+				"Child sObject [FinanceTransaction] is not processed"
+			],
+			"Broker__c.null => FinanceTransactionChangeEvent": [
+				"Child sObject [FinanceTransactionChangeEvent] is not processed"
+			],
+			"Broker__c.null => FlowExecutionErrorEvent": [
+				"Child sObject [FlowExecutionErrorEvent] is not processed"
+			],
+			"Broker__c.FlowOrchestrationWorkItems => FlowOrchestrationWorkItem": [
+				"Child sObject [FlowOrchestrationWorkItem] is not processed"
+			],
+			"Broker__c.null => FlowRecordRelation": [
+				"Child sObject [FlowRecordRelation] is not processed"
+			],
+			"Broker__c.null => ForecastingItem__hd": [
+				"Child sObject [ForecastingItem__hd] is not processed"
+			],
+			"Broker__c.GeneratedDocRefObjects => GeneratedDocument": [
+				"Child sObject [GeneratedDocument] is not processed"
+			],
+			"Broker__c.null => GenericAsmtTaskContext": [
+				"Child sObject [GenericAsmtTaskContext] is not processed"
+			],
+			"Broker__c.null => GenericAssessmentTask": [
+				"Child sObject [GenericAssessmentTask] is not processed"
+			],
+			"Broker__c.GVTaskContexts => GenericVisitTaskContext": [
+				"Child sObject [GenericVisitTaskContext] is not processed"
+			],
+			"Broker__c.InfoAuthRequestSourceRecords => InfoAuthorizationRequest": [
+				"Child sObject [InfoAuthorizationRequest] is not processed"
+			],
+			"Broker__c.null => InfoAuthorizationRequestChangeEvent": [
+				"Child sObject [InfoAuthorizationRequestChangeEvent] is not processed"
+			],
+			"Broker__c.InventoryReservationSources => InventoryItemReservation": [
+				"Child sObject [InventoryItemReservation] is not processed"
+			],
+			"Broker__c.InventoryReservations => InventoryReservation": [
+				"Child sObject [InventoryReservation] is not processed"
+			],
+			"Broker__c.MultipartyInfoAuthRequestSourceRecords => MultipartyInfoAuthRequest": [
+				"Child sObject [MultipartyInfoAuthRequest] is not processed"
+			],
+			"Broker__c.null => MultipartyInfoAuthRequestChangeEvent": [
+				"Child sObject [MultipartyInfoAuthRequestChangeEvent] is not processed"
+			],
+			"Broker__c.ParentEntities => NetworkActivityAudit": [
+				"Child sObject [NetworkActivityAudit] is not processed"
+			],
+			"Broker__c.null => NetworkFeedResponseMetric": [
+				"Child sObject [NetworkFeedResponseMetric] is not processed"
+			],
+			"Broker__c.NetworkUserHistoryRecentToRecord => NetworkUserHistoryRecent": [
+				"Child sObject [NetworkUserHistoryRecent] is not processed"
+			],
+			"Broker__c.Notes => Note": [
+				"Child sObject [Note] is not processed"
+			],
+			"Broker__c.NotesAndAttachments => NoteAndAttachment": [
+				"Child sObject [NoteAndAttachment] is not processed"
+			],
+			"Broker__c.null => ObjectRelatedUrl": [
+				"Child sObject [ObjectRelatedUrl] is not processed"
+			],
+			"Broker__c.null => ObjectRelatedUrlChangeEvent": [
+				"Child sObject [ObjectRelatedUrlChangeEvent] is not processed"
+			],
+			"Broker__c.null => Opportunity__hd": [
+				"Child sObject [Opportunity__hd] is not processed"
+			],
+			"Broker__c.null => PendingServiceRouting": [
+				"Child sObject [PendingServiceRouting] is not processed"
+			],
+			"Broker__c.null => PendingServiceRoutingChangeEvent": [
+				"Child sObject [PendingServiceRoutingChangeEvent] is not processed"
+			],
+			"Broker__c.null => PendingServiceRoutingInteractionInfo": [
+				"Child sObject [PendingServiceRoutingInteractionInfo] is not processed"
+			],
+			"Broker__c.ProcessExceptions => ProcessException": [
+				"Child sObject [ProcessException] is not processed"
+			],
+			"Broker__c.null => ProcessExceptionChangeEvent": [
+				"Child sObject [ProcessExceptionChangeEvent] is not processed"
+			],
+			"Broker__c.null => ProcessExceptionEvent": [
+				"Child sObject [ProcessExceptionEvent] is not processed"
+			],
+			"Broker__c.ProcessInstances => ProcessInstance": [
+				"Child sObject [ProcessInstance] is not processed"
+			],
+			"Broker__c.null => ProcessInstanceChangeEvent": [
+				"Child sObject [ProcessInstanceChangeEvent] is not processed"
+			],
+			"Broker__c.ProcessSteps => ProcessInstanceHistory": [
+				"Child sObject [ProcessInstanceHistory] is not processed"
+			],
+			"Broker__c.Transaction => ProgramRebateTypPayoutSrc": [
+				"Child sObject [ProgramRebateTypPayoutSrc] is not processed"
+			],
+			"Broker__c.null => ProgramRebateTypeReference": [
+				"Child sObject [ProgramRebateTypeReference] is not processed"
+			],
+			"Broker__c.RecordActions => RecordAction": [
+				"Child sObject [RecordAction] is not processed"
+			],
+			"Broker__c.RecordActionHistories => RecordActionHistory": [
+				"Child sObject [RecordActionHistory] is not processed"
+			],
+			"Broker__c.RecordAlertWhat => RecordAlert": [
+				"Child sObject [RecordAlert] is not processed"
+			],
+			"Broker__c.null => RecordAlertChangeEvent": [
+				"Child sObject [RecordAlertChangeEvent] is not processed"
+			],
+			"Broker__c.SurveySubjectEntities => SurveySubject": [
+				"Child sObject [SurveySubject] is not processed"
+			],
+			"Broker__c.null => SurveySubjectChangeEvent": [
+				"Child sObject [SurveySubjectChangeEvent] is not processed"
+			],
+			"Broker__c.null => SvcCatalogReqExtdAttrVal": [
+				"Child sObject [SvcCatalogReqExtdAttrVal] is not processed"
+			],
+			"Broker__c.null => SvcCatalogReqRelatedItem": [
+				"Child sObject [SvcCatalogReqRelatedItem] is not processed"
+			],
+			"Broker__c.null => TaskChangeEvent": [
+				"Child sObject [TaskChangeEvent] is not processed"
+			],
+			"Broker__c.TopicAssignments => TopicAssignment": [
+				"Child sObject [TopicAssignment] is not processed"
+			],
+			"Broker__c.UserDefinedLabelAssignments => UserDefinedLabelAssignment": [
+				"Child sObject [UserDefinedLabelAssignment] is not processed"
+			],
+			"Broker__c.VideoRelatedRecords => VideoCall": [
+				"Child sObject [VideoCall] is not processed"
+			],
+			"Broker__c.null => VideoCallChangeEvent": [
+				"Child sObject [VideoCallChangeEvent] is not processed"
+			],
+			"Broker__c.Contexts => Visit": [
+				"Child sObject [Visit] is not processed"
+			],
+			"Broker__c.RelatedRecords => VoiceCall": [
+				"Child sObject [VoiceCall] is not processed"
+			],
+			"Broker__c.null => VoiceCallChangeEvent": [
+				"Child sObject [VoiceCallChangeEvent] is not processed"
 			],
 			"Contact.null => AIInsightValue": [
 				"Child sObject [AIInsightValue] is not processed"
