@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Manage the full lifecycle of real estate property listings, including retrieving, updating, and maintaining property information.</description>
+    <developerName>Property_Management_UC_INT_001_01</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__GetRecordDetails</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__IdentifyRecordByName</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__LabelARecord</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecords</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecordsWithAggregate</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__SummarizeRecord</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__UpdateRecordFields</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Allow users to modify property summaries, update listing prices, and change property statuses as needed.</description>
+        <developerName>instruction_allowusers0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_allowusers0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Facilitate open house scheduling by allowing users to view existing schedules and create new open house events.</description>
+        <developerName>instruction_facilitate1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_facilitate1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Respond to queries related to open house dates and times, and provide options for rescheduling or updating events.</description>
+        <developerName>instruction_respondtoq2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_respondtoq2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Retrieve and display relevant property details, including new listings, property summaries, price changes, and current status.</description>
+        <developerName>instruction_retrievean3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_retrievean3</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Validate all updates to ensure data accuracy.</description>
+        <developerName>instruction_validateal4</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_validateal4</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Property Management (UC-INT-001-01)</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is to retrieve and display property listing information, allow modifications to property summaries, update listing prices, and change property statuses. Ensure data accuracy by validating all updates. Facilitate open house scheduling and respond to queries related to open house dates and times.</scope>
+</GenAiPlugin>

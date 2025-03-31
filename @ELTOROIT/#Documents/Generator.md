@@ -61,3 +61,33 @@ Please provide this information for Cambridge, Massachusetts, is 02139
 6.  **Call Location Analytics API**: Use the API Integration Layer to call an API to retrieve location analytics (e.g., market trends, property values).
 
 Use a Json format
+
+===
+
+I have a list of cases to build agents in Salesforce Agentforce. Each use case has:
+
+- **## Purpose:**: Description of the use case (purpose)
+
+- **## What can the agent do?**: List of things the agent must do, grouped by category and some samples of things the agent can do in that category
+
+- **## Sample Utterances:** List of sample utterances but they need to be reworked.
+
+Your job is to help me with the list of utterances. I want you to validate if the utterance is valid for the use case. I then want you to group similar utterances, remove duplicates (or tiny variations). Feel free to reword the utterances if needed. Add more utterances if they are missing, etc.
+
+The utterances should be grouped by category, use the same categories are the section **## What can the agent do?**.
+
+The output is the new list of utterances, formatted in markdown (I want to see the code, not rendered). The list should have two levels, the first level is the category, and the second level is a list of the sample utterances. Like this:
+
+1. Category
+    1. Utterance
+    2. Utterance
+2. Category
+   ...
+
+Once you are done with one use case, you will ask for the next use case.
+
+Ready?
+
+===
+
+I need to give an instruction to an agent for this use case, please write a small paragraph or two with the instructions.
