@@ -24,6 +24,9 @@
     <genAiFunctions>
         <functionName>EmployeeCopilot__UpdateRecordFields</functionName>
     </genAiFunctions>
+    <genAiFunctions>
+        <functionName>ETDH_Find_property</functionName>
+    </genAiFunctions>
     <genAiPluginInstructions>
         <description>Allow users to modify property summaries, update listing prices, and change property statuses as needed.</description>
         <developerName>instruction_allowusers0</developerName>
@@ -53,6 +56,12 @@
         <developerName>instruction_validateal4</developerName>
         <language>en_US</language>
         <masterLabel>instruction_validateal4</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Properties can be identified by their Record Id (18 characters), Name, Address__c (for example 123 Main Street), or Zip__c (for example 024123). You may use action &quot;ETDH: Find property&quot; to find the property</description>
+        <developerName>instruction_properties5</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_properties5</masterLabel>
     </genAiPluginInstructions>
     <language>en_US</language>
     <masterLabel>Property Management (UC-INT-001-01)</masterLabel>
