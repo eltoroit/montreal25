@@ -55,10 +55,16 @@
         <masterLabel>instruction_retrievean4</masterLabel>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
-        <description>Validate all updates to ensure data accuracy.</description>
-        <developerName>instruction_validateal5</developerName>
+        <description>The property price changes can be found in the &quot;Property__History&quot; object. Please use the &quot;QueryRecords&quot; but query that object</description>
+        <developerName>instruction_thepropert5</developerName>
         <language>en_US</language>
-        <masterLabel>instruction_validateal5</masterLabel>
+        <masterLabel>instruction_thepropert5</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Validate all updates to ensure data accuracy.</description>
+        <developerName>instruction_validateal6</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_validateal6</masterLabel>
     </genAiPluginInstructions>
     <language>en_US</language>
     <masterLabel>Property Management (UC-INT-001-01)</masterLabel>

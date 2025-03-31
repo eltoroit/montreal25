@@ -17,3 +17,33 @@
     - Do not deploy `bots/Copilot_for_Salesforce.bot`
 - "This Object Name already exists or has been previously used. Please choose a different name."
     - Do not deploy `bots/Human_Resources_Agent.bot`
+
+# Notes Agentforce
+
+- `QueryResults` on `Property__History`: not found in the schema
+
+```
+{
+  "additionalContext": [
+    {
+      "description": "Search results obtained from the query terms passed as input.",
+      "id": null,
+      "name": "searchResults",
+      "schema": null,
+      "type": "JSON",
+      "value": "[]"
+    },
+    {
+      "description": "A string that explains how the query was interpreted to retrieve the results.",
+      "id": null,
+      "name": "explanation",
+      "schema": null,
+      "type": "String",
+      "value": "Property__History table or price change field not found in the schema."
+    }
+  ],
+  "result": []
+}
+```
+
+-

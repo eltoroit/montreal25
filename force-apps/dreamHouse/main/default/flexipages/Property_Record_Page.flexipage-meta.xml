@@ -502,6 +502,12 @@
             <componentInstance>
                 <componentName>force:detailPanel</componentName>
                 <identifier>force_detailPanel</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Zip__c}</leftValue>
+                        <operator>EQUAL</operator>
+                    </criteria>
+                </visibilityRule>
             </componentInstance>
         </itemInstances>
         <itemInstances>
