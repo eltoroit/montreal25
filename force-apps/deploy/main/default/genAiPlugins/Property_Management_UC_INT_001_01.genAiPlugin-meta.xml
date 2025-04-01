@@ -24,12 +24,6 @@
     <genAiFunctions>
         <functionName>EmployeeCopilot__UpdateRecordFields</functionName>
     </genAiFunctions>
-    <genAiFunctions>
-        <functionName>ETDH_Make_SOQL_Property_History</functionName>
-    </genAiFunctions>
-    <genAiFunctions>
-        <functionName>ETDH_Retrieve_Property_History</functionName>
-    </genAiFunctions>
     <genAiPluginInstructions>
         <description>Allow users to modify property summaries, update listing prices, and change property statuses as needed.</description>
         <developerName>instruction_allowusers0</developerName>
@@ -61,16 +55,19 @@
         <masterLabel>instruction_retrievean4</masterLabel>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
-        <description>To find the property data changes you must first call the &quot;ETDH: Make SOQL Property History&quot; action with the current request, once the SOQL query is returned, call the &quot;ETDH: Retrieve Property History&quot; action passing the SOQL query to use to retrieve the history</description>
-        <developerName>instruction_tofindthep5</developerName>
+        <description>Validate all updates to ensure data accuracy.</description>
+        <developerName>instruction_validateal5</developerName>
         <language>en_US</language>
-        <masterLabel>instruction_tofindthep5</masterLabel>
+        <masterLabel>instruction_validateal5</masterLabel>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
-        <description>Validate all updates to ensure data accuracy.</description>
-        <developerName>instruction_validateal6</developerName>
+        <description>When requested for price history information (reductions, increase, or to view the history) you must follow these steps:
+
+1. If required do a query to find the Property IDs (18 character strings) using the &quot;QueryRecords&quot; but do not query for price changes, just get the IDs.
+2. Call the &quot;ETDH: Property Price History&quot;  action to get the price history</description>
+        <developerName>instruction_whenreques6</developerName>
         <language>en_US</language>
-        <masterLabel>instruction_validateal6</masterLabel>
+        <masterLabel>instruction_whenreques6</masterLabel>
     </genAiPluginInstructions>
     <language>en_US</language>
     <masterLabel>Property Management (UC-INT-001-01)</masterLabel>
