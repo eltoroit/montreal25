@@ -1,5 +1,5 @@
 public with sharing class ETDH_PropertyPriceHistory {
-	@InvocableMethod(label='ETDH: Property Price History' description='Retrieve price history information for properties')
+	@InvocableMethod(label='ETDH: Property Price History' description='Retrieve price history information for a property')
 	public static List<AgentResult> getHistory(List<AgentRequest> requests) {
 		List<AgentResult> results = new List<AgentResult>();
 
@@ -14,16 +14,12 @@ public with sharing class ETDH_PropertyPriceHistory {
 
 		try {
 			result.error = null;
-			Map<Id, List<PriceHistoryItem>> mapPriceHistory = new Map<Id, List<PriceHistoryItem>>();
-			List<Property__c> properties = [SELECT Id, PriceHistory__c FROM Property__c WHERE ID IN :request.PropertyIDs];
-			for (Property__c property : properties) {
-				List<PriceHistoryItem> priceHistory = new List<PriceHistoryItem>();
-				if (property.PriceHistory__c != null) {
-					priceHistory = (List<PriceHistoryItem>) JSON.deserialize(property.PriceHistory__c, List<PriceHistoryItem>.class);
-				}
-				mapPriceHistory.put(property.Id, priceHistory);
-			}
-			result.priceHistory = JSON.serialize(mapPriceHistory);
+			result.priceChanges = [
+				SELECT Id, (SELECT Id, DateChanged__c, OldPrice__c, NewPrice__c FROM PropertyPricesHistory__r ORDER BY DateChanged__c DESC)
+				FROM Property__c
+				WHERE ID = :request.PropertyID
+			]
+			.PropertyPricesHistory__r;
 		} catch (Exception e) {
 			System.debug(e.getMessage());
 			result.error = 'An error has occurred' + e.getMessage() + '\n' + e.getStackTraceString() + '\n' + e.getLineNumber();
@@ -33,43 +29,36 @@ public with sharing class ETDH_PropertyPriceHistory {
 
 	// Handles the changes to the property prices, invoked from before update trigger
 	public static void updatePriceHistory(List<Property__c> newProperties, Map<Id, Property__c> oldProperties) {
+		List<PropertyPriceHistory__c> phs = new List<PropertyPriceHistory__c>();
 		for (Property__c newProperty : newProperties) {
-			Property__c oldProperty = oldProperties.get(newProperty.Id);
-			if (newProperty.Price__c != oldProperty.Price__c) {
-				// Parse old prices
-				List<PriceHistoryItem> priceHistory = new List<PriceHistoryItem>();
-				if (newProperty.PriceHistory__c != null) {
-					priceHistory = (List<PriceHistoryItem>) JSON.deserialize(newProperty.PriceHistory__c, List<PriceHistoryItem>.class);
-				}
-
-				// Add new price to list
-				PriceHistoryItem historyItem = new PriceHistoryItem();
-				historyItem.dateChange = System.now();
-				historyItem.oldPrice = oldProperty.Price__c;
-				historyItem.newPrice = newProperty.Price__c;
-				priceHistory.add(historyItem);
-
-				// Stringify (JSON) price history
-				newProperty.PriceHistory__c = JSON.serialize(priceHistory);
+			Property__c oldProperty = new Property__c();
+			if (oldProperties != null) {
+				oldProperty = oldProperties.get(newProperty.Id);
 			}
+			if (newProperty.Price__c != oldProperty.Price__c) {
+				PropertyPriceHistory__c ph = new PropertyPriceHistory__c();
+				ph.Property__c = newProperty.Id;
+				ph.OldPrice__c = oldProperty.Price__c;
+				ph.NewPrice__c = newProperty.Price__c;
+				ph.DateChanged__c = System.now();
+				phs.add(ph);
+			}
+		}
+
+		if (phs.size() > 0) {
+			insert phs;
 		}
 	}
 
 	public class AgentRequest {
-		@InvocableVariable(required=true description='List of Property IDs to get the price history for')
-		public List<ID> PropertyIDs;
+		@InvocableVariable(required=true description='Property ID of th eproperty to get the price history for')
+		public ID PropertyID;
 	}
 
 	public class AgentResult {
-		@InvocableVariable(required=false description='JSON object with the list of price changes for each property')
-		public String priceHistory;
+		@InvocableVariable(required=false description='List of price changes')
+		public List<PropertyPriceHistory__c> priceChanges;
 		@InvocableVariable(required=false description='Error message')
 		public String error;
-	}
-
-	public class PriceHistoryItem {
-		public DateTime dateChange;
-		public Decimal oldPrice;
-		public Decimal newPrice;
 	}
 }
