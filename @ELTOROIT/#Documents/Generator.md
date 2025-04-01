@@ -90,4 +90,4 @@ Ready?
 
 ===
 
-I need to give an instruction to an agent for this use case, please write a small paragraph or two with the instructions.
+I need to give an instruction to an agent for this use case, please write a small paragraph or two with clear instructions.

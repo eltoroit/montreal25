@@ -49,3 +49,9 @@
 # Debugging
 
 - Agentforce (default) (builder and regular modes) runs under "Platform Integration User" (Set debug logs on this user)
+
+# Instrcutions
+
+```
+Properties can be identified by their Record Id (18 characters), Name, Address__c (for example 123 Main Street), or Zip__c (for example 024123) or other attributes. You may use action "QueryRecords" to find the property.
+```

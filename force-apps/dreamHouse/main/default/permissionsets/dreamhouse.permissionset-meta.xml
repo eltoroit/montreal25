@@ -58,11 +58,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Property__c.Assessed_Value__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Property__c.Baths__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -129,11 +124,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Property__c.Picture__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Property__c.Price_Sold__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
