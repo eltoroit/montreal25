@@ -63,8 +63,8 @@
         <language>en_US</language>
         <masterLabel>instruction_validateal6</masterLabel>
     </genAiPluginInstructions>
-    <description>To retrieve the property prices history call the &quot;ETDH: Property Price History&quot; action.</description>
     <genAiPluginInstructions>
+        <description>To retrieve the property prices history call the &quot;ETDH: Property Price History&quot; action.</description>
         <developerName>instruction_toretrieve5</developerName>
         <language>en_US</language>
         <masterLabel>instruction_toretrieve5</masterLabel>

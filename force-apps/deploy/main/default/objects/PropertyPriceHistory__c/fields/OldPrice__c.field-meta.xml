@@ -3,7 +3,7 @@
     <fullName>OldPrice__c</fullName>
     <label>Old Price</label>
     <precision>8</precision>
-    <required>true</required>
+    <required>false</required>
     <scale>0</scale>
     <trackTrending>false</trackTrending>
     <type>Currency</type>
