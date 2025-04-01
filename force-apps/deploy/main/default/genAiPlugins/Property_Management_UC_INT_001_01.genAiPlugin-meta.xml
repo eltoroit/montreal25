@@ -24,6 +24,12 @@
     <genAiFunctions>
         <functionName>EmployeeCopilot__UpdateRecordFields</functionName>
     </genAiFunctions>
+    <genAiFunctions>
+        <functionName>ETDH_Make_SOQL_Property_History</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>ETDH_Retrieve_Property_History</functionName>
+    </genAiFunctions>
     <genAiPluginInstructions>
         <description>Allow users to modify property summaries, update listing prices, and change property statuses as needed.</description>
         <developerName>instruction_allowusers0</developerName>
@@ -55,10 +61,10 @@
         <masterLabel>instruction_retrievean4</masterLabel>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
-        <description>The property price changes can be found in the &quot;Property__History&quot; object. Please use the &quot;QueryRecords&quot; but query that object</description>
-        <developerName>instruction_thepropert5</developerName>
+        <description>To find the property data changes you must first call the &quot;ETDH: Make SOQL Property History&quot; action with the current request, once the SOQL query is returned, call the &quot;ETDH: Retrieve Property History&quot; action passing the SOQL query to use to retrieve the history</description>
+        <developerName>instruction_tofindthep5</developerName>
         <language>en_US</language>
-        <masterLabel>instruction_thepropert5</masterLabel>
+        <masterLabel>instruction_tofindthep5</masterLabel>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
         <description>Validate all updates to ensure data accuracy.</description>

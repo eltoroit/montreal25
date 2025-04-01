@@ -5,5 +5,7 @@
 		"**/bower_components": true,
 		"**/.sfdx": true
 	},
-	"codeBuilder.showWelcomePage": false
+	"codeBuilder.showWelcomePage": false,
+	"salesforcedx-vscode-core.push-or-deploy-on-save.ignoreConflictsOnPush": true,
+	"salesforcedx-vscode-core.push-or-deploy-on-save.showOutputPanel": true
 }

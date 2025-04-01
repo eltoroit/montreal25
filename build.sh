@@ -7,7 +7,7 @@ sf project deploy start --target-org "$NEW_USERNAME" --ignore-conflicts --verbos
 
 # Check if there's anything to deploy
 if jq -e '.result.status == "Nothing to deploy"' ./etLogs/build.json > /dev/null 2>&1; then
-  print "\u001b[33m\u001b[1;30m*** *** NO CHANGES DETETED TO DEPLOY *** ***\u001b[0m"
+  print "\u001b[33m\u001b[1;30m*** *** NO CHANGES DETECTED TO DEPLOY *** ***\u001b[0m"
 else
   failures=$(jq '.result.details.componentFailures | length' ./etLogs/build.json)
   if [ "$failures" -gt 0 ]; then

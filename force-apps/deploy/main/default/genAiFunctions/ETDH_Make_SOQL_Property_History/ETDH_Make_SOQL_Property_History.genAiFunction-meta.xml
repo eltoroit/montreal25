@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Makes SOQL query to retrieve property history information.</description>
+    <invocationTarget>ETDH_Make_SOQL_Property_History</invocationTarget>
+    <invocationTargetType>generatePromptResponse</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <mappingAttributes>
+        <label>promptResponse</label>
+        <name>output_promptResponse</name>
+        <parameterName>promptResponse</parameterName>
+        <parameterType>output</parameterType>
+    </mappingAttributes>
+    <masterLabel>ETDH: Make SOQL Property History</masterLabel>
+    <progressIndicatorMessage>Making SOQL query...</progressIndicatorMessage>
+</GenAiFunction>

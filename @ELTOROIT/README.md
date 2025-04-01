@@ -46,4 +46,6 @@
 }
 ```
 
--
+# Debugging
+
+- Agentforce (default) (builder and regular modes) runs under "Platform Integration User" (Set debug logs on this user)
