@@ -3,22 +3,6 @@
     <flexiPageRegions>
         <itemInstances>
             <componentInstance>
-                <componentName>force:detailPanel</componentName>
-                <identifier>force_detailPanel</identifier>
-                <visibilityRule>
-                    <criteria>
-                        <leftValue>{!Record.Zip__c}</leftValue>
-                        <operator>NE</operator>
-                    </criteria>
-                </visibilityRule>
-            </componentInstance>
-        </itemInstances>
-        <name>Facet-5e5efb4e-8527-4a3a-bf0d-c533144ee305</name>
-        <type>Facet</type>
-    </flexiPageRegions>
-    <flexiPageRegions>
-        <itemInstances>
-            <componentInstance>
                 <componentInstanceProperties>
                     <name>relatedListComponentOverride</name>
                     <value>NONE</value>
@@ -35,6 +19,22 @@
                 <identifier>force_relatedListContainer2</identifier>
             </componentInstance>
         </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentName>force:detailPanel</componentName>
+                <identifier>force_detailPanel</identifier>
+                <visibilityRule>
+                    <criteria>
+                        <leftValue>{!Record.Zip__c}</leftValue>
+                        <operator>NE</operator>
+                    </criteria>
+                </visibilityRule>
+            </componentInstance>
+        </itemInstances>
+        <name>Facet-5e5efb4e-8527-4a3a-bf0d-c533144ee305</name>
+        <type>Facet</type>
+    </flexiPageRegions>
+    <flexiPageRegions>
         <name>Facet-90ab92a6-4193-4874-b50a-620b0ae4273b</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -205,6 +205,12 @@
                 </fieldInstanceProperties>
                 <fieldItem>Record.OwnerId</fieldItem>
                 <identifier>RecordOwnerIdField</identifier>
+            </fieldInstance>
+        </itemInstances>
+        <itemInstances>
+            <fieldInstance>
+                <fieldItem>Record.Tagline__c</fieldItem>
+                <identifier>RecordTagline__cField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-eb9c4d7e-6868-43e8-9851-85aacdd3a54d</name>

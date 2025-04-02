@@ -41,6 +41,22 @@
       "twoPassReferenceFields": "",
       "where": null,
       "orderBy": null
+    },
+    {
+      "name": "PropertyOpenHouseSchedule__c",
+      "ignoreFields": "",
+      "externalIdField": null,
+      "twoPassReferenceFields": "",
+      "where": null,
+      "orderBy": null
+    },
+    {
+      "name": "PropertyPriceHistory__c",
+      "ignoreFields": "",
+      "externalIdField": null,
+      "twoPassReferenceFields": "",
+      "where": null,
+      "orderBy": null
     }
   ],
   "sObjectsMetadata": [],

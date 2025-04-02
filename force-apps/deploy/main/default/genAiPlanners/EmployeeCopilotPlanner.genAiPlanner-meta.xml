@@ -5,16 +5,10 @@
         <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
     </genAiFunctions>
     <genAiPlugins>
-        <genAiPluginName>EmployeeCopilot__GeneralCRM</genAiPluginName>
+        <genAiPluginName>Open_House_Management</genAiPluginName>
     </genAiPlugins>
     <genAiPlugins>
-        <genAiPluginName>EmployeeCopilot__OOTBSingleRecordSummary</genAiPluginName>
-    </genAiPlugins>
-    <genAiPlugins>
-        <genAiPluginName>Manage_Property_Listing_UC_INT_001_01A</genAiPluginName>
-    </genAiPlugins>
-    <genAiPlugins>
-        <genAiPluginName>Property_Price_History_UC_INT_001_01B</genAiPluginName>
+        <genAiPluginName>Property_Management</genAiPluginName>
     </genAiPlugins>
     <masterLabel>EmployeeCopilotPlanner</masterLabel>
     <plannerType>AiCopilot__ReAct</plannerType>

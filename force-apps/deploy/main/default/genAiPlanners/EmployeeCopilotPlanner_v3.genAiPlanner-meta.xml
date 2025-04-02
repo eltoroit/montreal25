@@ -4,12 +4,6 @@
     <genAiFunctions>
         <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
     </genAiFunctions>
-    <genAiPlugins>
-        <genAiPluginName>Manage_Property_Listing_UC_INT_001_01A</genAiPluginName>
-    </genAiPlugins>
-    <genAiPlugins>
-        <genAiPluginName>Property_Price_History_UC_INT_001_01B</genAiPluginName>
-    </genAiPlugins>
     <masterLabel>EmployeeCopilotPlanner</masterLabel>
     <plannerType>AiCopilot__ReAct</plannerType>
 </GenAiPlanner>

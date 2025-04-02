@@ -1,0 +1,21 @@
+{
+  "required" : [ "EndDateTime", "StartDateTime" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "EndDateTime" : {
+      "title" : "EndDateTime",
+      "description" : "The range ends at this DateTime",
+      "lightning:type" : "lightning__dateTimeStringType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    },
+    "StartDateTime" : {
+      "title" : "StartDateTime",
+      "description" : "The range starts at this DateTime",
+      "lightning:type" : "lightning__dateTimeStringType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : true
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

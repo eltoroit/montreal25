@@ -1,0 +1,21 @@
+{
+  "required" : [ "EndDateTime", "StartDateTime" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "EndDateTime" : {
+      "title" : "EndDateTime",
+      "description" : "The range ends at this DateTime. This time must be in the users local time zone.",
+      "lightning:type" : "lightning__dateTimeStringType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "StartDateTime" : {
+      "title" : "StartDateTime",
+      "description" : "The range starts at this DateTime. This time must be in the users local time zone.",
+      "lightning:type" : "lightning__dateTimeStringType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

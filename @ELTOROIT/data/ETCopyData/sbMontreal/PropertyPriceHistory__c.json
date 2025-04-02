@@ -1,0 +1,39 @@
+{
+	"fetched": 3,
+	"records": [
+		{
+			"attributes": {
+				"type": "PropertyPriceHistory__c",
+				"url": "/services/data/v63.0/sobjects/PropertyPriceHistory__c/a0B7x00000AbyaXEAR"
+			},
+			"DateChanged__c": "2025-04-02T15:42:37.000+0000",
+			"Id": "a0B7x00000AbyaXEAR",
+			"NewPrice__c": 950000,
+			"OldPrice__c": 975000,
+			"Property__c": "a0C7x00002hzVecEAE"
+		},
+		{
+			"attributes": {
+				"type": "PropertyPriceHistory__c",
+				"url": "/services/data/v63.0/sobjects/PropertyPriceHistory__c/a0B7x00000AcODFEA3"
+			},
+			"DateChanged__c": "2025-04-02T19:21:23.000+0000",
+			"Id": "a0B7x00000AcODFEA3",
+			"NewPrice__c": 950001,
+			"OldPrice__c": 950000,
+			"Property__c": "a0C7x00002hzVecEAE"
+		},
+		{
+			"attributes": {
+				"type": "PropertyPriceHistory__c",
+				"url": "/services/data/v63.0/sobjects/PropertyPriceHistory__c/a0B7x00000AcOErEAN"
+			},
+			"DateChanged__c": "2025-04-02T19:22:08.000+0000",
+			"Id": "a0B7x00000AcOErEAN",
+			"NewPrice__c": 949999,
+			"OldPrice__c": 950001,
+			"Property__c": "a0C7x00002hzVecEAE"
+		}
+	],
+	"total": 3
+}
