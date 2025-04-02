@@ -11,7 +11,7 @@ public with sharing class ETDH_PropertyPriceHistory {
 
 	private static AgentResult getHistory(AgentRequest request) {
 		AgentResult result = new AgentResult();
-
+ 
 		try {
 			result.error = null;
 			result.priceChanges = [

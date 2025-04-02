@@ -39,3 +39,4 @@ Additionally, you are capable of identifying and listing properties that have un
     5. Show me the price history for property [PropertyId].
     6. List the most recent price changes for today.
     7. Show me the properties that have had a price reduction this week.
+    8. Find the price history for the properties in [City]
