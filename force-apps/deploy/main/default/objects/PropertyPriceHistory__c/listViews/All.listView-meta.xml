@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Price_Changes</fullName>
+    <fullName>All</fullName>
     <columns>NAME</columns>
     <columns>Property__c</columns>
     <columns>DateChanged__c</columns>
     <columns>OldPrice__c</columns>
     <columns>NewPrice__c</columns>
     <filterScope>Everything</filterScope>
-    <filters>
-        <field>OldPrice__c</field>
-        <operation>notEqual</operation>
-    </filters>
-    <label>Price Changes</label>
+    <label>All</label>
 </ListView>

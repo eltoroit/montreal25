@@ -6,6 +6,7 @@
 - Similar to this one: `~/Git Projects/current/Slack/0005_Html2MD/main.js`
 - Use own buildpack for Heroku: `https://github.com/eltoroit/deno-buildpack`
 - `deno run --allow-env --allow-net ./server.js`
+- Heroku runs: `https://et-dreamhouse-agentforce-fac4c0e681a0.herokuapp.com/`
 
 # Scratch org configuration
 
