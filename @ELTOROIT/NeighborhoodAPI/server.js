@@ -1,5 +1,6 @@
 import { Application, Router } from "@oak/oak";
 import data from "./data.json" with { type: "json" };
+import spec from "./openAPI.json" with { type: "json" };
 
 class ZipCodeService {
 	// Function to select random zip code data
@@ -42,23 +43,32 @@ class ZipCodeServer {
 
 	handleRootRequest(context) {
 		context.response.body = `
-      <!DOCTYPE html>
-      <html>
-        <head><title>ZipCode Location Simulator</title><head>
-        <body>
-          <h1>ZipCode Location Simulator</h1>
-          <p>
-            <a href="/zip/02115">/zip/02115</a>
-          </p>
-        </body>
-      </html>
-          `;
+		<!DOCTYPE html>
+		<html>
+		  <head><title>ZipCode Location Simulator</title><head>
+		  <body>
+			<h1>ZipCode Location Simulator</h1>
+			<p>
+			  <a href="/zip/02115">/zip/02115</a>
+			</p>
+			<p>
+			  <a href="/service.json">/service.json</a>
+			</p>
+		  </body>
+		</html>
+			`;
+	}
+
+	handleOpenAPISpec(context) {
+		context.response.headers.set("Content-Type", "application/json");
+		context.response.body = spec;
 	}
 
 	// Method to set up routes and start the server
 	setupRoutes() {
 		this.router.get("/", (context) => this.handleRootRequest(context));
 		this.router.get("/zip/:zipcode", (context) => this.handleZipCodeRequest(context));
+		this.router.get("/service.json", (context) => this.handleOpenAPISpec(context));
 		this.app.use(this.router.routes());
 		this.app.use(this.router.allowedMethods());
 	}
