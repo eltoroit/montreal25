@@ -1,16 +1,5 @@
 {
-	"fetched": 1,
-	"records": [
-		{
-			"attributes": {
-				"type": "PropertyOpenHouseSchedule__c",
-				"url": "/services/data/v63.0/sobjects/PropertyOpenHouseSchedule__c/a0D7x00000FVXS5EAP"
-			},
-			"Broker__c": "a0A7x000004p7q4EAA",
-			"DateTime__c": "2025-04-03T23:00:00.000+0000",
-			"Id": "a0D7x00000FVXS5EAP",
-			"Property__c": "a0C7x00002hzVecEAE"
-		}
-	],
-	"total": 1
+	"fetched": 0,
+	"records": [],
+	"total": 0
 }
