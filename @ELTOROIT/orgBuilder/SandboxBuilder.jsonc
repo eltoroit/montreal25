@@ -26,8 +26,6 @@
 
 		// Deploying
 		"ShowDeployPage",
-		{ "PushMetadata": { "folder": "force-apps/sandbox" } },
-		{ "PushMetadata": { "folder": "force-apps/dreamHouse" } },
 		{ "PushMetadata": { "folder": "force-apps/deploy" } },
 		"PushMetadata",
 

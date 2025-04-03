@@ -166,7 +166,7 @@
             <targetReference>IF010</targetReference>
         </connector>
     </start>
-    <status>Obsolete</status>
+    <status>Draft</status>
     <variables>
         <description>Property address, for example &quot;123 Main Street&quot;</description>
         <name>Address</name>

@@ -24,10 +24,10 @@ Admin.profile
 # Issues with the Agentforce deployment 
 
 # Agentforce
+**/bots/**
 **/permissionsetgroups/force__*
 **/permissionsets/sfdcInternalInt*
-**/bots/**
-**/genAiPlanners/EmployeeCopilotPlanner.*
+# **/genAiPlanners/EmployeeCopilotPlanner.*
 **/genAiFunctions/CustomKnowledgeAction*/**
 **/genAiPlugins/p_*.genAiPlugin-meta.xml
 

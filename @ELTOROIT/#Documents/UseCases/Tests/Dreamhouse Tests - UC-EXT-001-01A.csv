@@ -1,0 +1,26 @@
+Utterance,Expected Topic,Expected Actions,Expected Response
+Can you give me a summary of the property at 02420?,x,['x'],x
+Can you give me a summary of the property at 18 Henry Street?,x,['x'],x
+"Change the property description of the property named Stunning Victorian to ""Sold this House"".",x,['x'],x
+Change the status of the property named Stunning Victorian to Closed.,x,['x'],x
+Change the status of the property named Stunning Victorian to Sold.,x,['x'],x
+Get the latest updates on new listings.,x,['x'],x
+Give me the details of the property at 18 Henry Street.,x,['x'],x
+How many listings are grouped by status?,x,['x'],x
+I need to see the property summary for the listing named Stunning Victorian.,x,['x'],x
+I want to see all the details related to the property named Stunning Victorian.,x,['x'],x
+"Modify the property description of the property named Stunning Victorian to ""Sold this House. Please unlist"".",x,['x'],x
+Retrieve all listings in the downtown area.,x,['x'],x
+Retrieve property information for the property named Stunning Victorian.,x,['x'],x
+Send me a daily summary of new listings.,x,['x'],x
+Show all listings.,x,['x'],x
+Show me properties with at least 3 bedrooms and at most 2 bathrooms.,x,['x'],x
+Show me properties with at least 3 bedrooms.,x,['x'],x
+Show me the properties in Boston.,x,['x'],x
+Show me the property listings.,x,['x'],x
+"Update the price of the property at 18 Henry Street to $950,000.",x,['x'],x
+What are the details for property ID a0C7x00002hdrKPEAY?,x,['x'],x
+What are the details for this property?,x,['x'],x
+What is the current listing price for 18 Henry Street?,x,['x'],x
+What is the current status of the listing at 18 Henry Street?,x,['x'],x
+What's the average price of properties in this zip code 02420?,x,['x'],x
