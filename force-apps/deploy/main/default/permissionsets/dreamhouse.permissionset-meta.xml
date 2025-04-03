@@ -53,11 +53,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>PropertyPriceHistory__c.OldPrice__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Property__c.Address__c</field>
         <readable>true</readable>
     </fieldPermissions>

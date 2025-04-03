@@ -37,7 +37,7 @@
 		{ "ExecuteApex": "@ELTOROIT/scripts/apex/SetUserRecord.apex" },
 		// SKIP { "ExecuteApex": "@ELTOROIT/scripts/apex/AgentforceUpdateUsers.apex" },
 		{ "DeployProfile": "force-apps/doNotDeploy/main/default/profiles/Admin.profile-meta.xml" },
-		// { "ExecuteApex": "@ELTOROIT/scripts/apex/CreateDreamHouseAppData.apex" }, // Dreamhosue app data
+		// SKIP { "ExecuteApex": "@ELTOROIT/scripts/apex/CreateDreamHouseAppData.apex" }, // Dreamhosue app data
 		{ "ETCopyData": "./@ELTOROIT/data" },
 
 		// Print results
