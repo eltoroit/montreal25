@@ -22,8 +22,7 @@ class ZipCodeService {
 }
 
 class ZipCodeServer {
-	constructor(port) {
-		this.port = port;
+	constructor() {
 		this.zipCodeService = new ZipCodeService();
 		this.app = new Application();
 		this.router = new Router();
@@ -66,12 +65,13 @@ class ZipCodeServer {
 
 	// Start the server
 	start() {
+		const port = parseInt(Deno.env.get("PORT") || "3000");
 		this.setupRoutes();
-		this.app.listen({ port: this.port });
-		console.log(`Server is running on http://localhost:${this.port}`);
+		this.app.listen({ port });
+		console.log(`Server running on port ${port}: http://localhost:${port}`);
 	}
 }
 
 // Main entry point
-const zipCodeServer = new ZipCodeServer(8000);
+const zipCodeServer = new ZipCodeServer();
 zipCodeServer.start();
