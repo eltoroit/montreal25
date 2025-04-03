@@ -7,19 +7,7 @@
         <functionName>EmployeeCopilot__GetRecordDetails</functionName>
     </genAiFunctions>
     <genAiFunctions>
-        <functionName>EmployeeCopilot__IdentifyRecordByName</functionName>
-    </genAiFunctions>
-    <genAiFunctions>
-        <functionName>EmployeeCopilot__LabelARecord</functionName>
-    </genAiFunctions>
-    <genAiFunctions>
         <functionName>EmployeeCopilot__QueryRecords</functionName>
-    </genAiFunctions>
-    <genAiFunctions>
-        <functionName>EmployeeCopilot__QueryRecordsWithAggregate</functionName>
-    </genAiFunctions>
-    <genAiFunctions>
-        <functionName>Slack__SendSlackDirectMessage</functionName>
     </genAiFunctions>
     <genAiFunctions>
         <functionName>EmployeeCopilot__SummarizeRecord</functionName>
@@ -28,10 +16,10 @@
         <functionName>EmployeeCopilot__UpdateRecordFields</functionName>
     </genAiFunctions>
     <genAiFunctions>
-        <functionName>ETDH_Schedule_Property_Open_House_Event</functionName>
+        <functionName>ETDH_Find_Property_Open_House_By_Date_Range</functionName>
     </genAiFunctions>
     <genAiFunctions>
-        <functionName>ETDH_Find_Property_Open_House_By_Date_Range</functionName>
+        <functionName>ETDH_Schedule_Property_Open_House_Event</functionName>
     </genAiFunctions>
     <genAiPluginInstructions>
         <description>Find properties based on their open house events using the &apos;ETDH: Find Property Open House By Date Range&apos; action. Specify the date range to retrieve the relevant open house information.
@@ -47,8 +35,7 @@ The times must be in the users local time zone.</description>
 1. You must have the Property ID (18 character)
 2. If a broker is desired, you must have the Broker ID (18 character)
 3. Gather all necessary details such as date, time, property. Confirm the details with the user
-4. Call action &quot;ETDH: Schedule Property Open House Event&quot;
-5. Query the newly created open house record and display that</description>
+4. Call action &quot;ETDH: Schedule Property Open House Event&quot;</description>
         <developerName>instruction_stepstosch1</developerName>
         <language>en_US</language>
         <masterLabel>instruction_stepstosch1</masterLabel>

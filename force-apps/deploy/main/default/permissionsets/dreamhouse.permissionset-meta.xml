@@ -197,6 +197,10 @@
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
+        <tab>PropertyPriceHistory__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
         <tab>Property_Explorer</tab>
         <visibility>Visible</visibility>
     </tabSettings>

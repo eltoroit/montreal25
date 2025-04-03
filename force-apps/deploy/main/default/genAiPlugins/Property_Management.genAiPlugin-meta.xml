@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Assist brokers in managing the full lifecycle of real estate property listings. Handle requests related to property details, price changes, and status updates.</description>
+    <developerName>Property_Management</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__GetRecordDetails</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecords</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__SummarizeRecord</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__UpdateRecordFields</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>ETDH_Find_Property_Price_History_By_Date_Range</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Properties can be identified by their Record Id (18 characters), Name (for example 123 Main Street), Address__c (for example 123 Main Street), Zip__c (for example 024123) or other attributes (bedrooms, bathrooms, ...). You may use action &quot;QueryRecords&quot; on the &quot;Property__c&quot; to find the property.</description>
+        <developerName>instruction_properties0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_properties0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>The property price history for a specific property can be  found by calling the &quot;GetRecordDetails&quot; action and looking into the &quot;Property Prices History&quot; related records.
+
+To find properties based on their price changes use the &apos;ETDH: Find Property Price History By Date Range&apos; action. You must specify the date range to retrieve the properties.</description>
+        <developerName>instruction_thepropert1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_thepropert1</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Property Management</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Your job is only to retrieve, display, and update property information, including new listings, property summaries, price changes, and current status.</scope>
+</GenAiPlugin>

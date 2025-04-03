@@ -31,6 +31,9 @@
         <locationX>176</locationX>
         <locationY>134</locationY>
         <assignRecordIdToReference>PropertyOpenHouseEventID</assignRecordIdToReference>
+        <connector>
+            <targetReference>GET020</targetReference>
+        </connector>
         <inputAssignments>
             <field>Broker__c</field>
             <value>
@@ -51,6 +54,27 @@
         </inputAssignments>
         <object>PropertyOpenHouseSchedule__c</object>
     </recordCreates>
+    <recordLookups>
+        <name>GET020</name>
+        <label>GET020 Find new record</label>
+        <locationX>176</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>true</assignNullValuesIfNoRecordsFound>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>PropertyOpenHouseEventID</elementReference>
+            </value>
+        </filters>
+        <object>PropertyOpenHouseSchedule__c</object>
+        <outputReference>PropertyOpenHouseEvent</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Broker__c</queriedFields>
+        <queriedFields>DateTime__c</queriedFields>
+        <queriedFields>Property__c</queriedFields>
+    </recordLookups>
     <start>
         <locationX>50</locationX>
         <locationY>0</locationY>
@@ -82,6 +106,15 @@
         <isCollection>false</isCollection>
         <isInput>true</isInput>
         <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>The new property open house event created</description>
+        <name>PropertyOpenHouseEvent</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <objectType>PropertyOpenHouseSchedule__c</objectType>
     </variables>
     <variables>
         <description>The Id for the record created</description>

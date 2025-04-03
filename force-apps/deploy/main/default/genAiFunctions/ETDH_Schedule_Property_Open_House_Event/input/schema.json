@@ -14,14 +14,14 @@
       "description" : "DateTime for the open house event",
       "lightning:type" : "lightning__dateTimeStringType",
       "lightning:isPII" : false,
-      "copilotAction:isUserInput" : true
+      "copilotAction:isUserInput" : false
     },
     "PropertyID" : {
       "title" : "PropertyID",
       "description" : "Property Id (18 characters) that will host the open house event. You must find the ID before calling the flow",
       "lightning:type" : "lightning__textType",
       "lightning:isPII" : false,
-      "copilotAction:isUserInput" : true
+      "copilotAction:isUserInput" : false
     }
   },
   "lightning:type" : "lightning__objectType"
