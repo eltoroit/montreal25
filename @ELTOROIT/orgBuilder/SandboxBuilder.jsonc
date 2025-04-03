@@ -16,10 +16,11 @@
 		// SKIP { "InstallPackage": { "id": "04tKY000000LRJJYA4" } }, // Dreamhouse App
 		// SCRATCH { "AssignPermissionSet": "CopilotSalesforceAdmin" }, // Agentforce Default Admin
 		// SCRATCH { "AssignPermissionSet": "EinsteinGPTPromptTemplateManager" }, // Prompt Template Manager
-		{ "ManualMetadata": { "url": "/lightning/setup/EinsteinCopilot/home", "message": "Enable agentforce, ensure agents can be created" } },
-		{ "PushMetadata": { "folder": "force-apps/setup" } },
 
-		// SKIP Crete dummy agent to allow for real agent to be deployed
+		// Agentforce
+		{ "ManualMetadata": { "url": "/lightning/setup/EinsteinCopilot/home", "message": "Enable agentforce, ensure agents can be created" } },
+		// SKIP Create dummy agent to allow for real agent to be deployed
+		// SKIP { "PushMetadata": { "folder": "force-apps/setup" } },
 		// SKIP { "ExecuteApex": "@ELTOROIT/scripts/apex/AgentforceInitializeUsers.apex" },
 		// SKIP { "RunShell": { "app": "./@ELTOROit/scripts/shell/agentforceUsers.sh" } },
 		// SKIP { "ManualMetadata": { "url": "/error", "message": "Create agent(s) and continue when successful" } },
