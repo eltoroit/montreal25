@@ -14,10 +14,6 @@ This use case outlines the functionalities for internal users (Dreamhouse employ
     - Update Property Status (e.g., Active, Sold).
     - Maintain Data Accuracy for Listings.
 
-<!-- 2.  **Open House Scheduling**:
-
-    - Arrange and Schedule Open House Events. -->
-
 ## Sample Utterances:
 
 - **Property Listing Management**:

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>ICWS8OWJeZvB3CQs6y3DnOVK2a/XUpXREPbLUXjCR/I=_1</activeVersionIdentifier>
+    <description>Extracts and formats ZipCode location information</description>
+    <developerName>ETDH_Analyze_ZipCode_information2</developerName>
+    <masterLabel>ETDH: Analyze ZipCode information2</masterLabel>
+    <templateVersions>
+        <content>You are an expert realtor responding to a customer inquiry about the &quot;{!$Input:Interest}&quot; aspects of their area of interest.
+Extract and present only community-related information from the provided data below using these guidelines:
+
+1. Format your response as clean, visually appealing HTML (output only what would go inside a &lt;div&gt; element)
+2. Use semantic HTML elements appropriately (&lt;h1&gt;, &lt;h2&gt;, &lt;ul&gt;, etc.)
+3. Enhance readability with &lt;b&gt;, &lt;i&gt;, and &lt;u&gt; tags where appropriate
+4. Convert URLs to clickable hyperlinks
+5. Generate HTML without unnecessary line breaks (\n) in the code itself
+6. Use &lt;br/&gt; tags instead of line breaks when vertical spacing is needed in the displayed content
+7. Organize content into clear sections with descriptive headings
+8. Keep your tone professional, warm, and informative
+9. The title must be the location of this property: {!$Input:Property.Address__c} {!$Input:Property.City__c} {!$Input:Property.State__c} {!$Input:Property.Zip__c}
+
+Focus specifically on aspects that define the community experience the user is interested in: &quot;{!$Input:Interest}&quot; 
+
+This is all the information we have for the zip code the customer is inquiring
+{!$Input:ZipCode_Data}
+
+</content>
+        <inputs>
+            <apiName>ZipCode_Data</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>ZipCode Data</masterLabel>
+            <referenceName>Input:ZipCode_Data</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Interest</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>Interest</masterLabel>
+            <referenceName>Input:Interest</referenceName>
+            <required>true</required>
+        </inputs>
+        <inputs>
+            <apiName>Property</apiName>
+            <definition>SOBJECT://Property__c</definition>
+            <masterLabel>Property</masterLabel>
+            <referenceName>Input:Property</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultBedrockAnthropicClaude3Haiku</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>ICWS8OWJeZvB3CQs6y3DnOVK2a/XUpXREPbLUXjCR/I=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>
