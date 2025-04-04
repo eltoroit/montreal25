@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Retrieves location information for the property ZipCode. You must provide either the Property ID or the Zip Code.</description>
+    <invocationTarget>ETDH_ZipCodeLocationInformation</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+    <masterLabel>ETDH: Zipcode Location Information</masterLabel>
+    <progressIndicatorMessage>Finding zip code information...</progressIndicatorMessage>
+</GenAiFunction>

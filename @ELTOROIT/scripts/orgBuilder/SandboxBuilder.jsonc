@@ -18,7 +18,12 @@
 		// SCRATCH { "AssignPermissionSet": "EinsteinGPTPromptTemplateManager" }, // Prompt Template Manager
 
 		// Agentforce
-		{ "ManualMetadata": { "url": "/lightning/setup/EinsteinCopilot/home", "message": "Enable agentforce, ensure agents can be created" } },
+		{
+			"ManualMetadata": {
+				"url": "/lightning/setup/EinsteinCopilot/home",
+				"message": "Enable agentforce. Clean and deactivate Agentforce (default)"
+			}
+		},
 		// SKIP Create dummy agent to allow for real agent to be deployed
 		// SKIP { "PushMetadata": { "folder": "force-apps/setup" } },
 		// SKIP { "ExecuteApex": "@ELTOROIT/scripts/apex/AgentforceInitializeUsers.apex" },
