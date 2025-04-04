@@ -2226,37 +2226,37 @@
 	},
 	"rejected": {
 		"ADD_FIELD": {
-			"Broker__c.OwnerId": [
-				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
-			],
-			"Broker__c.IsDeleted": [
+			"PropertyPriceHistory__c.IsDeleted": [
 				"Must be createable"
 			],
-			"Broker__c.CreatedDate": [
+			"PropertyPriceHistory__c.Name": [
+				"Can't be autoNumber",
 				"Must be createable"
 			],
-			"Broker__c.CreatedById": [
+			"PropertyPriceHistory__c.CreatedDate": [
+				"Must be createable"
+			],
+			"PropertyPriceHistory__c.CreatedById": [
 				"Must be createable",
 				"Parent sObject [User] is not processed"
 			],
-			"Broker__c.LastModifiedDate": [
+			"PropertyPriceHistory__c.LastModifiedDate": [
 				"Must be createable"
 			],
-			"Broker__c.LastModifiedById": [
+			"PropertyPriceHistory__c.LastModifiedById": [
 				"Must be createable",
 				"Parent sObject [User] is not processed"
 			],
-			"Broker__c.SystemModstamp": [
+			"PropertyPriceHistory__c.SystemModstamp": [
 				"Must be createable"
 			],
-			"Broker__c.LastViewedDate": [
+			"PropertyPriceHistory__c.LastActivityDate": [
 				"Must be createable"
 			],
-			"Broker__c.LastReferencedDate": [
+			"PropertyPriceHistory__c.LastViewedDate": [
 				"Must be createable"
 			],
-			"Broker__c.Picture_IMG__c": [
-				"Can't be calculated",
+			"PropertyPriceHistory__c.LastReferencedDate": [
 				"Must be createable"
 			],
 			"PropertyOpenHouseSchedule__c.IsDeleted": [
@@ -2290,39 +2290,6 @@
 				"Must be createable"
 			],
 			"PropertyOpenHouseSchedule__c.LastReferencedDate": [
-				"Must be createable"
-			],
-			"PropertyPriceHistory__c.IsDeleted": [
-				"Must be createable"
-			],
-			"PropertyPriceHistory__c.Name": [
-				"Can't be autoNumber",
-				"Must be createable"
-			],
-			"PropertyPriceHistory__c.CreatedDate": [
-				"Must be createable"
-			],
-			"PropertyPriceHistory__c.CreatedById": [
-				"Must be createable",
-				"Parent sObject [User] is not processed"
-			],
-			"PropertyPriceHistory__c.LastModifiedDate": [
-				"Must be createable"
-			],
-			"PropertyPriceHistory__c.LastModifiedById": [
-				"Must be createable",
-				"Parent sObject [User] is not processed"
-			],
-			"PropertyPriceHistory__c.SystemModstamp": [
-				"Must be createable"
-			],
-			"PropertyPriceHistory__c.LastActivityDate": [
-				"Must be createable"
-			],
-			"PropertyPriceHistory__c.LastViewedDate": [
-				"Must be createable"
-			],
-			"PropertyPriceHistory__c.LastReferencedDate": [
 				"Must be createable"
 			],
 			"Property__c.OwnerId": [
@@ -2376,55 +2343,92 @@
 				"Can't be calculated",
 				"Must be createable"
 			],
-			"Account.IsDeleted": [
+			"Case.IsDeleted": [
 				"Must be createable"
 			],
-			"Account.MasterRecordId": [
+			"Case.MasterRecordId": [
 				"Must be createable"
 			],
-			"Account.BillingAddress": [
+			"Case.CaseNumber": [
+				"Can't be autoNumber",
 				"Must be createable"
 			],
-			"Account.ShippingAddress": [
+			"Case.IsClosed": [
 				"Must be createable"
 			],
-			"Account.PhotoUrl": [
+			"Case.ClosedDate": [
 				"Must be createable"
 			],
-			"Account.OwnerId": [
-				"Parent sObject [User] is not processed"
+			"Case.OwnerId": [
+				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
 			],
-			"Account.CreatedDate": [
+			"Case.CreatedDate": [
 				"Must be createable"
 			],
-			"Account.CreatedById": [
+			"Case.CreatedById": [
 				"Must be createable",
 				"Parent sObject [User] is not processed"
 			],
-			"Account.LastModifiedDate": [
+			"Case.LastModifiedDate": [
 				"Must be createable"
 			],
-			"Account.LastModifiedById": [
+			"Case.LastModifiedById": [
 				"Must be createable",
 				"Parent sObject [User] is not processed"
 			],
-			"Account.SystemModstamp": [
+			"Case.SystemModstamp": [
 				"Must be createable"
 			],
-			"Account.LastActivityDate": [
+			"Case.ContactPhone": [
 				"Must be createable"
 			],
-			"Account.LastViewedDate": [
+			"Case.ContactMobile": [
 				"Must be createable"
 			],
-			"Account.LastReferencedDate": [
+			"Case.ContactEmail": [
 				"Must be createable"
 			],
-			"Account.JigsawCompanyId": [
+			"Case.ContactFax": [
 				"Must be createable"
 			],
-			"Account.OperatingHoursId": [
-				"Parent sObject [OperatingHours] is not processed"
+			"Case.LastViewedDate": [
+				"Must be createable"
+			],
+			"Case.LastReferencedDate": [
+				"Must be createable"
+			],
+			"Broker__c.OwnerId": [
+				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
+			],
+			"Broker__c.IsDeleted": [
+				"Must be createable"
+			],
+			"Broker__c.CreatedDate": [
+				"Must be createable"
+			],
+			"Broker__c.CreatedById": [
+				"Must be createable",
+				"Parent sObject [User] is not processed"
+			],
+			"Broker__c.LastModifiedDate": [
+				"Must be createable"
+			],
+			"Broker__c.LastModifiedById": [
+				"Must be createable",
+				"Parent sObject [User] is not processed"
+			],
+			"Broker__c.SystemModstamp": [
+				"Must be createable"
+			],
+			"Broker__c.LastViewedDate": [
+				"Must be createable"
+			],
+			"Broker__c.LastReferencedDate": [
+				"Must be createable"
+			],
+			"Broker__c.Picture_IMG__c": [
+				"Can't be calculated",
+				"Must be createable"
 			],
 			"Contact.IsDeleted": [
 				"Must be createable"
@@ -2495,225 +2499,236 @@
 				"Can't be calculated",
 				"Must be createable"
 			],
-			"Case.IsDeleted": [
+			"Account.IsDeleted": [
 				"Must be createable"
 			],
-			"Case.MasterRecordId": [
+			"Account.MasterRecordId": [
 				"Must be createable"
 			],
-			"Case.CaseNumber": [
-				"Can't be autoNumber",
+			"Account.BillingAddress": [
 				"Must be createable"
 			],
-			"Case.IsClosed": [
+			"Account.ShippingAddress": [
 				"Must be createable"
 			],
-			"Case.ClosedDate": [
+			"Account.PhotoUrl": [
 				"Must be createable"
 			],
-			"Case.OwnerId": [
-				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
+			"Account.OwnerId": [
+				"Parent sObject [User] is not processed"
 			],
-			"Case.CreatedDate": [
+			"Account.CreatedDate": [
 				"Must be createable"
 			],
-			"Case.CreatedById": [
+			"Account.CreatedById": [
 				"Must be createable",
 				"Parent sObject [User] is not processed"
 			],
-			"Case.LastModifiedDate": [
+			"Account.LastModifiedDate": [
 				"Must be createable"
 			],
-			"Case.LastModifiedById": [
+			"Account.LastModifiedById": [
 				"Must be createable",
 				"Parent sObject [User] is not processed"
 			],
-			"Case.SystemModstamp": [
+			"Account.SystemModstamp": [
 				"Must be createable"
 			],
-			"Case.ContactPhone": [
+			"Account.LastActivityDate": [
 				"Must be createable"
 			],
-			"Case.ContactMobile": [
+			"Account.LastViewedDate": [
 				"Must be createable"
 			],
-			"Case.ContactEmail": [
+			"Account.LastReferencedDate": [
 				"Must be createable"
 			],
-			"Case.ContactFax": [
+			"Account.JigsawCompanyId": [
 				"Must be createable"
 			],
-			"Case.LastViewedDate": [
-				"Must be createable"
-			],
-			"Case.LastReferencedDate": [
-				"Must be createable"
+			"Account.OperatingHoursId": [
+				"Parent sObject [OperatingHours] is not processed"
 			]
 		},
 		"ADD_CHILD": {
-			"Broker__c.null => AIInsightValue": [
+			"PropertyPriceHistory__c.null => AIInsightValue": [
 				"Child sObject [AIInsightValue] is not processed"
 			],
-			"Broker__c.null => AIRecordInsight": [
+			"PropertyPriceHistory__c.null => AIRecordInsight": [
 				"Child sObject [AIRecordInsight] is not processed"
 			],
-			"Broker__c.null => AgentWork": [
+			"PropertyPriceHistory__c.ActivityHistories => ActivityHistory": [
+				"Child sObject [ActivityHistory] is not processed"
+			],
+			"PropertyPriceHistory__c.null => AgentWork": [
 				"Child sObject [AgentWork] is not processed"
 			],
-			"Broker__c.null => AgentWorkChangeEvent": [
+			"PropertyPriceHistory__c.null => AgentWorkChangeEvent": [
 				"Child sObject [AgentWorkChangeEvent] is not processed"
 			],
-			"Broker__c.ApprovalSubmissions => ApprovalSubmission": [
+			"PropertyPriceHistory__c.ApprovalSubmissions => ApprovalSubmission": [
 				"Child sObject [ApprovalSubmission] is not processed"
 			],
-			"Broker__c.ApprovalWorkItems => ApprovalWorkItem": [
+			"PropertyPriceHistory__c.ApprovalWorkItems => ApprovalWorkItem": [
 				"Child sObject [ApprovalWorkItem] is not processed"
 			],
-			"Broker__c.AttachedContentDocuments => AttachedContentDocument": [
+			"PropertyPriceHistory__c.AttachedContentDocuments => AttachedContentDocument": [
 				"Child sObject [AttachedContentDocument] is not processed"
 			],
-			"Broker__c.Attachments => Attachment": [
+			"PropertyPriceHistory__c.Attachments => Attachment": [
 				"Child sObject [Attachment] is not processed"
 			],
-			"Broker__c.Shares => Broker__Share": [
-				"Child sObject [Broker__Share] is not processed"
-			],
-			"Broker__c.RecordAssociatedGroups => CollaborationGroupRecord": [
+			"PropertyPriceHistory__c.RecordAssociatedGroups => CollaborationGroupRecord": [
 				"Child sObject [CollaborationGroupRecord] is not processed"
 			],
-			"Broker__c.null => CollaborationGroupRecordChangeEvent": [
+			"PropertyPriceHistory__c.null => CollaborationGroupRecordChangeEvent": [
 				"Child sObject [CollaborationGroupRecordChangeEvent] is not processed"
 			],
-			"Broker__c.CombinedAttachments => CombinedAttachment": [
+			"PropertyPriceHistory__c.CombinedAttachments => CombinedAttachment": [
 				"Child sObject [CombinedAttachment] is not processed"
 			],
-			"Broker__c.ContactRequests => ContactRequest": [
+			"PropertyPriceHistory__c.ContactRequests => ContactRequest": [
 				"Child sObject [ContactRequest] is not processed"
 			],
-			"Broker__c.null => ContentDistribution": [
+			"PropertyPriceHistory__c.null => ContentDistribution": [
 				"Child sObject [ContentDistribution] is not processed"
 			],
-			"Broker__c.ContentDocumentLinks => ContentDocumentLink": [
+			"PropertyPriceHistory__c.ContentDocumentLinks => ContentDocumentLink": [
 				"Child sObject [ContentDocumentLink] is not processed"
 			],
-			"Broker__c.null => ContentDocumentLinkChangeEvent": [
+			"PropertyPriceHistory__c.null => ContentDocumentLinkChangeEvent": [
 				"Child sObject [ContentDocumentLinkChangeEvent] is not processed"
 			],
-			"Broker__c.null => ContentVersion": [
+			"PropertyPriceHistory__c.null => ContentVersion": [
 				"Child sObject [ContentVersion] is not processed"
 			],
-			"Broker__c.null => ContentVersionChangeEvent": [
+			"PropertyPriceHistory__c.null => ContentVersionChangeEvent": [
 				"Child sObject [ContentVersionChangeEvent] is not processed"
 			],
-			"Broker__c.DuplicateRecordItems => DuplicateRecordItem": [
+			"PropertyPriceHistory__c.DuplicateRecordItems => DuplicateRecordItem": [
 				"Child sObject [DuplicateRecordItem] is not processed"
 			],
-			"Broker__c.null => EmailMessageChangeEvent": [
+			"PropertyPriceHistory__c.Emails => EmailMessage": [
+				"Child sObject [EmailMessage] is not processed"
+			],
+			"PropertyPriceHistory__c.null => EmailMessageChangeEvent": [
 				"Child sObject [EmailMessageChangeEvent] is not processed"
 			],
-			"Broker__c.FeedSubscriptionsForEntity => EntitySubscription": [
+			"PropertyPriceHistory__c.FeedSubscriptionsForEntity => EntitySubscription": [
 				"Child sObject [EntitySubscription] is not processed"
 			],
-			"Broker__c.null => EventChangeEvent": [
+			"PropertyPriceHistory__c.Events => Event": [
+				"Child sObject [Event] is not processed"
+			],
+			"PropertyPriceHistory__c.null => EventChangeEvent": [
 				"Child sObject [EventChangeEvent] is not processed"
 			],
-			"Broker__c.null => EventRelationChangeEvent": [
+			"PropertyPriceHistory__c.null => EventRelationChangeEvent": [
 				"Child sObject [EventRelationChangeEvent] is not processed"
 			],
-			"Broker__c.null => FeedComment": [
+			"PropertyPriceHistory__c.null => FeedComment": [
 				"Child sObject [FeedComment] is not processed"
 			],
-			"Broker__c.null => FeedItem": [
+			"PropertyPriceHistory__c.null => FeedItem": [
 				"Child sObject [FeedItem] is not processed"
 			],
-			"Broker__c.null => FlowExecutionErrorEvent": [
+			"PropertyPriceHistory__c.null => FlowExecutionErrorEvent": [
 				"Child sObject [FlowExecutionErrorEvent] is not processed"
 			],
-			"Broker__c.FlowOrchestrationWorkItems => FlowOrchestrationWorkItem": [
+			"PropertyPriceHistory__c.FlowOrchestrationWorkItems => FlowOrchestrationWorkItem": [
 				"Child sObject [FlowOrchestrationWorkItem] is not processed"
 			],
-			"Broker__c.null => FlowRecordRelation": [
+			"PropertyPriceHistory__c.null => FlowRecordRelation": [
 				"Child sObject [FlowRecordRelation] is not processed"
 			],
-			"Broker__c.InventoryReservationSources => InventoryItemReservation": [
+			"PropertyPriceHistory__c.InventoryReservationSources => InventoryItemReservation": [
 				"Child sObject [InventoryItemReservation] is not processed"
 			],
-			"Broker__c.InventoryReservations => InventoryReservation": [
+			"PropertyPriceHistory__c.InventoryReservations => InventoryReservation": [
 				"Child sObject [InventoryReservation] is not processed"
 			],
-			"Broker__c.ParentEntities => NetworkActivityAudit": [
+			"PropertyPriceHistory__c.ParentEntities => NetworkActivityAudit": [
 				"Child sObject [NetworkActivityAudit] is not processed"
 			],
-			"Broker__c.null => NetworkFeedResponseMetric": [
+			"PropertyPriceHistory__c.null => NetworkFeedResponseMetric": [
 				"Child sObject [NetworkFeedResponseMetric] is not processed"
 			],
-			"Broker__c.NetworkUserHistoryRecentToRecord => NetworkUserHistoryRecent": [
+			"PropertyPriceHistory__c.NetworkUserHistoryRecentToRecord => NetworkUserHistoryRecent": [
 				"Child sObject [NetworkUserHistoryRecent] is not processed"
 			],
-			"Broker__c.Notes => Note": [
+			"PropertyPriceHistory__c.Notes => Note": [
 				"Child sObject [Note] is not processed"
 			],
-			"Broker__c.NotesAndAttachments => NoteAndAttachment": [
+			"PropertyPriceHistory__c.NotesAndAttachments => NoteAndAttachment": [
 				"Child sObject [NoteAndAttachment] is not processed"
 			],
-			"Broker__c.null => ObjectRelatedUrl": [
+			"PropertyPriceHistory__c.null => ObjectRelatedUrl": [
 				"Child sObject [ObjectRelatedUrl] is not processed"
 			],
-			"Broker__c.null => ObjectRelatedUrlChangeEvent": [
+			"PropertyPriceHistory__c.null => ObjectRelatedUrlChangeEvent": [
 				"Child sObject [ObjectRelatedUrlChangeEvent] is not processed"
 			],
-			"Broker__c.null => PendingServiceRouting": [
+			"PropertyPriceHistory__c.OpenActivities => OpenActivity": [
+				"Child sObject [OpenActivity] is not processed"
+			],
+			"PropertyPriceHistory__c.null => PendingServiceRouting": [
 				"Child sObject [PendingServiceRouting] is not processed"
 			],
-			"Broker__c.null => PendingServiceRoutingChangeEvent": [
+			"PropertyPriceHistory__c.null => PendingServiceRoutingChangeEvent": [
 				"Child sObject [PendingServiceRoutingChangeEvent] is not processed"
 			],
-			"Broker__c.null => PendingServiceRoutingInteractionInfo": [
+			"PropertyPriceHistory__c.null => PendingServiceRoutingInteractionInfo": [
 				"Child sObject [PendingServiceRoutingInteractionInfo] is not processed"
 			],
-			"Broker__c.ProcessExceptions => ProcessException": [
+			"PropertyPriceHistory__c.ProcessExceptions => ProcessException": [
 				"Child sObject [ProcessException] is not processed"
 			],
-			"Broker__c.null => ProcessExceptionChangeEvent": [
+			"PropertyPriceHistory__c.null => ProcessExceptionChangeEvent": [
 				"Child sObject [ProcessExceptionChangeEvent] is not processed"
 			],
-			"Broker__c.null => ProcessExceptionEvent": [
+			"PropertyPriceHistory__c.null => ProcessExceptionEvent": [
 				"Child sObject [ProcessExceptionEvent] is not processed"
 			],
-			"Broker__c.ProcessInstances => ProcessInstance": [
+			"PropertyPriceHistory__c.ProcessInstances => ProcessInstance": [
 				"Child sObject [ProcessInstance] is not processed"
 			],
-			"Broker__c.null => ProcessInstanceChangeEvent": [
+			"PropertyPriceHistory__c.null => ProcessInstanceChangeEvent": [
 				"Child sObject [ProcessInstanceChangeEvent] is not processed"
 			],
-			"Broker__c.ProcessSteps => ProcessInstanceHistory": [
+			"PropertyPriceHistory__c.ProcessSteps => ProcessInstanceHistory": [
 				"Child sObject [ProcessInstanceHistory] is not processed"
 			],
-			"Broker__c.RecordActions => RecordAction": [
+			"PropertyPriceHistory__c.Histories => PropertyPriceHistory__History": [
+				"Child sObject [PropertyPriceHistory__History] is not processed"
+			],
+			"PropertyPriceHistory__c.RecordActions => RecordAction": [
 				"Child sObject [RecordAction] is not processed"
 			],
-			"Broker__c.RecordActionHistories => RecordActionHistory": [
+			"PropertyPriceHistory__c.RecordActionHistories => RecordActionHistory": [
 				"Child sObject [RecordActionHistory] is not processed"
 			],
-			"Broker__c.null => TaskChangeEvent": [
+			"PropertyPriceHistory__c.Tasks => Task": [
+				"Child sObject [Task] is not processed"
+			],
+			"PropertyPriceHistory__c.null => TaskChangeEvent": [
 				"Child sObject [TaskChangeEvent] is not processed"
 			],
-			"Broker__c.TopicAssignments => TopicAssignment": [
+			"PropertyPriceHistory__c.TopicAssignments => TopicAssignment": [
 				"Child sObject [TopicAssignment] is not processed"
 			],
-			"Broker__c.UserDefinedLabelAssignments => UserDefinedLabelAssignment": [
+			"PropertyPriceHistory__c.UserDefinedLabelAssignments => UserDefinedLabelAssignment": [
 				"Child sObject [UserDefinedLabelAssignment] is not processed"
 			],
-			"Broker__c.VideoRelatedRecords => VideoCall": [
+			"PropertyPriceHistory__c.VideoRelatedRecords => VideoCall": [
 				"Child sObject [VideoCall] is not processed"
 			],
-			"Broker__c.null => VideoCallChangeEvent": [
+			"PropertyPriceHistory__c.null => VideoCallChangeEvent": [
 				"Child sObject [VideoCallChangeEvent] is not processed"
 			],
-			"Broker__c.RelatedRecords => VoiceCall": [
+			"PropertyPriceHistory__c.RelatedRecords => VoiceCall": [
 				"Child sObject [VoiceCall] is not processed"
 			],
-			"Broker__c.null => VoiceCallChangeEvent": [
+			"PropertyPriceHistory__c.null => VoiceCallChangeEvent": [
 				"Child sObject [VoiceCallChangeEvent] is not processed"
 			],
 			"PropertyOpenHouseSchedule__c.null => AIInsightValue": [
@@ -2894,186 +2909,6 @@
 				"Child sObject [VoiceCall] is not processed"
 			],
 			"PropertyOpenHouseSchedule__c.null => VoiceCallChangeEvent": [
-				"Child sObject [VoiceCallChangeEvent] is not processed"
-			],
-			"PropertyPriceHistory__c.null => AIInsightValue": [
-				"Child sObject [AIInsightValue] is not processed"
-			],
-			"PropertyPriceHistory__c.null => AIRecordInsight": [
-				"Child sObject [AIRecordInsight] is not processed"
-			],
-			"PropertyPriceHistory__c.ActivityHistories => ActivityHistory": [
-				"Child sObject [ActivityHistory] is not processed"
-			],
-			"PropertyPriceHistory__c.null => AgentWork": [
-				"Child sObject [AgentWork] is not processed"
-			],
-			"PropertyPriceHistory__c.null => AgentWorkChangeEvent": [
-				"Child sObject [AgentWorkChangeEvent] is not processed"
-			],
-			"PropertyPriceHistory__c.ApprovalSubmissions => ApprovalSubmission": [
-				"Child sObject [ApprovalSubmission] is not processed"
-			],
-			"PropertyPriceHistory__c.ApprovalWorkItems => ApprovalWorkItem": [
-				"Child sObject [ApprovalWorkItem] is not processed"
-			],
-			"PropertyPriceHistory__c.AttachedContentDocuments => AttachedContentDocument": [
-				"Child sObject [AttachedContentDocument] is not processed"
-			],
-			"PropertyPriceHistory__c.Attachments => Attachment": [
-				"Child sObject [Attachment] is not processed"
-			],
-			"PropertyPriceHistory__c.RecordAssociatedGroups => CollaborationGroupRecord": [
-				"Child sObject [CollaborationGroupRecord] is not processed"
-			],
-			"PropertyPriceHistory__c.null => CollaborationGroupRecordChangeEvent": [
-				"Child sObject [CollaborationGroupRecordChangeEvent] is not processed"
-			],
-			"PropertyPriceHistory__c.CombinedAttachments => CombinedAttachment": [
-				"Child sObject [CombinedAttachment] is not processed"
-			],
-			"PropertyPriceHistory__c.ContactRequests => ContactRequest": [
-				"Child sObject [ContactRequest] is not processed"
-			],
-			"PropertyPriceHistory__c.null => ContentDistribution": [
-				"Child sObject [ContentDistribution] is not processed"
-			],
-			"PropertyPriceHistory__c.ContentDocumentLinks => ContentDocumentLink": [
-				"Child sObject [ContentDocumentLink] is not processed"
-			],
-			"PropertyPriceHistory__c.null => ContentDocumentLinkChangeEvent": [
-				"Child sObject [ContentDocumentLinkChangeEvent] is not processed"
-			],
-			"PropertyPriceHistory__c.null => ContentVersion": [
-				"Child sObject [ContentVersion] is not processed"
-			],
-			"PropertyPriceHistory__c.null => ContentVersionChangeEvent": [
-				"Child sObject [ContentVersionChangeEvent] is not processed"
-			],
-			"PropertyPriceHistory__c.DuplicateRecordItems => DuplicateRecordItem": [
-				"Child sObject [DuplicateRecordItem] is not processed"
-			],
-			"PropertyPriceHistory__c.Emails => EmailMessage": [
-				"Child sObject [EmailMessage] is not processed"
-			],
-			"PropertyPriceHistory__c.null => EmailMessageChangeEvent": [
-				"Child sObject [EmailMessageChangeEvent] is not processed"
-			],
-			"PropertyPriceHistory__c.FeedSubscriptionsForEntity => EntitySubscription": [
-				"Child sObject [EntitySubscription] is not processed"
-			],
-			"PropertyPriceHistory__c.Events => Event": [
-				"Child sObject [Event] is not processed"
-			],
-			"PropertyPriceHistory__c.null => EventChangeEvent": [
-				"Child sObject [EventChangeEvent] is not processed"
-			],
-			"PropertyPriceHistory__c.null => EventRelationChangeEvent": [
-				"Child sObject [EventRelationChangeEvent] is not processed"
-			],
-			"PropertyPriceHistory__c.null => FeedComment": [
-				"Child sObject [FeedComment] is not processed"
-			],
-			"PropertyPriceHistory__c.null => FeedItem": [
-				"Child sObject [FeedItem] is not processed"
-			],
-			"PropertyPriceHistory__c.null => FlowExecutionErrorEvent": [
-				"Child sObject [FlowExecutionErrorEvent] is not processed"
-			],
-			"PropertyPriceHistory__c.FlowOrchestrationWorkItems => FlowOrchestrationWorkItem": [
-				"Child sObject [FlowOrchestrationWorkItem] is not processed"
-			],
-			"PropertyPriceHistory__c.null => FlowRecordRelation": [
-				"Child sObject [FlowRecordRelation] is not processed"
-			],
-			"PropertyPriceHistory__c.InventoryReservationSources => InventoryItemReservation": [
-				"Child sObject [InventoryItemReservation] is not processed"
-			],
-			"PropertyPriceHistory__c.InventoryReservations => InventoryReservation": [
-				"Child sObject [InventoryReservation] is not processed"
-			],
-			"PropertyPriceHistory__c.ParentEntities => NetworkActivityAudit": [
-				"Child sObject [NetworkActivityAudit] is not processed"
-			],
-			"PropertyPriceHistory__c.null => NetworkFeedResponseMetric": [
-				"Child sObject [NetworkFeedResponseMetric] is not processed"
-			],
-			"PropertyPriceHistory__c.NetworkUserHistoryRecentToRecord => NetworkUserHistoryRecent": [
-				"Child sObject [NetworkUserHistoryRecent] is not processed"
-			],
-			"PropertyPriceHistory__c.Notes => Note": [
-				"Child sObject [Note] is not processed"
-			],
-			"PropertyPriceHistory__c.NotesAndAttachments => NoteAndAttachment": [
-				"Child sObject [NoteAndAttachment] is not processed"
-			],
-			"PropertyPriceHistory__c.null => ObjectRelatedUrl": [
-				"Child sObject [ObjectRelatedUrl] is not processed"
-			],
-			"PropertyPriceHistory__c.null => ObjectRelatedUrlChangeEvent": [
-				"Child sObject [ObjectRelatedUrlChangeEvent] is not processed"
-			],
-			"PropertyPriceHistory__c.OpenActivities => OpenActivity": [
-				"Child sObject [OpenActivity] is not processed"
-			],
-			"PropertyPriceHistory__c.null => PendingServiceRouting": [
-				"Child sObject [PendingServiceRouting] is not processed"
-			],
-			"PropertyPriceHistory__c.null => PendingServiceRoutingChangeEvent": [
-				"Child sObject [PendingServiceRoutingChangeEvent] is not processed"
-			],
-			"PropertyPriceHistory__c.null => PendingServiceRoutingInteractionInfo": [
-				"Child sObject [PendingServiceRoutingInteractionInfo] is not processed"
-			],
-			"PropertyPriceHistory__c.ProcessExceptions => ProcessException": [
-				"Child sObject [ProcessException] is not processed"
-			],
-			"PropertyPriceHistory__c.null => ProcessExceptionChangeEvent": [
-				"Child sObject [ProcessExceptionChangeEvent] is not processed"
-			],
-			"PropertyPriceHistory__c.null => ProcessExceptionEvent": [
-				"Child sObject [ProcessExceptionEvent] is not processed"
-			],
-			"PropertyPriceHistory__c.ProcessInstances => ProcessInstance": [
-				"Child sObject [ProcessInstance] is not processed"
-			],
-			"PropertyPriceHistory__c.null => ProcessInstanceChangeEvent": [
-				"Child sObject [ProcessInstanceChangeEvent] is not processed"
-			],
-			"PropertyPriceHistory__c.ProcessSteps => ProcessInstanceHistory": [
-				"Child sObject [ProcessInstanceHistory] is not processed"
-			],
-			"PropertyPriceHistory__c.Histories => PropertyPriceHistory__History": [
-				"Child sObject [PropertyPriceHistory__History] is not processed"
-			],
-			"PropertyPriceHistory__c.RecordActions => RecordAction": [
-				"Child sObject [RecordAction] is not processed"
-			],
-			"PropertyPriceHistory__c.RecordActionHistories => RecordActionHistory": [
-				"Child sObject [RecordActionHistory] is not processed"
-			],
-			"PropertyPriceHistory__c.Tasks => Task": [
-				"Child sObject [Task] is not processed"
-			],
-			"PropertyPriceHistory__c.null => TaskChangeEvent": [
-				"Child sObject [TaskChangeEvent] is not processed"
-			],
-			"PropertyPriceHistory__c.TopicAssignments => TopicAssignment": [
-				"Child sObject [TopicAssignment] is not processed"
-			],
-			"PropertyPriceHistory__c.UserDefinedLabelAssignments => UserDefinedLabelAssignment": [
-				"Child sObject [UserDefinedLabelAssignment] is not processed"
-			],
-			"PropertyPriceHistory__c.VideoRelatedRecords => VideoCall": [
-				"Child sObject [VideoCall] is not processed"
-			],
-			"PropertyPriceHistory__c.null => VideoCallChangeEvent": [
-				"Child sObject [VideoCallChangeEvent] is not processed"
-			],
-			"PropertyPriceHistory__c.RelatedRecords => VoiceCall": [
-				"Child sObject [VoiceCall] is not processed"
-			],
-			"PropertyPriceHistory__c.null => VoiceCallChangeEvent": [
 				"Child sObject [VoiceCallChangeEvent] is not processed"
 			],
 			"Property__c.null => AIInsightValue": [
@@ -3261,6 +3096,810 @@
 			],
 			"Property__c.null => VoiceCallChangeEvent": [
 				"Child sObject [VoiceCallChangeEvent] is not processed"
+			],
+			"Case.null => AIInsightValue": [
+				"Child sObject [AIInsightValue] is not processed"
+			],
+			"Case.null => AIRecordInsight": [
+				"Child sObject [AIRecordInsight] is not processed"
+			],
+			"Case.ActivityHistories => ActivityHistory": [
+				"Child sObject [ActivityHistory] is not processed"
+			],
+			"Case.null => AgentWork": [
+				"Child sObject [AgentWork] is not processed"
+			],
+			"Case.null => AgentWorkChangeEvent": [
+				"Child sObject [AgentWorkChangeEvent] is not processed"
+			],
+			"Case.ApprovalSubmissions => ApprovalSubmission": [
+				"Child sObject [ApprovalSubmission] is not processed"
+			],
+			"Case.ApprovalWorkItems => ApprovalWorkItem": [
+				"Child sObject [ApprovalWorkItem] is not processed"
+			],
+			"Case.AttachedContentDocuments => AttachedContentDocument": [
+				"Child sObject [AttachedContentDocument] is not processed"
+			],
+			"Case.Attachments => Attachment": [
+				"Child sObject [Attachment] is not processed"
+			],
+			"Case.Cases => Case": [
+				"Current version does not allow recursive parenting for parent-child relations"
+			],
+			"Case.CaseArticles => CaseArticle": [
+				"Child sObject [CaseArticle] is not processed"
+			],
+			"Case.null => CaseChangeEvent": [
+				"Child sObject [CaseChangeEvent] is not processed"
+			],
+			"Case.CaseComments => CaseComment": [
+				"Child sObject [CaseComment] is not processed"
+			],
+			"Case.CaseContactRoles => CaseContactRole": [
+				"Child sObject [CaseContactRole] is not processed"
+			],
+			"Case.CaseExternalDocuments => CaseExternalDocument": [
+				"Child sObject [CaseExternalDocument] is not processed"
+			],
+			"Case.Feeds => CaseFeed": [
+				"Child sObject [CaseFeed] is not processed"
+			],
+			"Case.Histories => CaseHistory": [
+				"Child sObject [CaseHistory] is not processed"
+			],
+			"Case.null => CaseHistory2": [
+				"Child sObject [CaseHistory2] is not processed"
+			],
+			"Case.null => CaseHistory2ChangeEvent": [
+				"Child sObject [CaseHistory2ChangeEvent] is not processed"
+			],
+			"Case.CaseRelatedIssues => CaseRelatedIssue": [
+				"Child sObject [CaseRelatedIssue] is not processed"
+			],
+			"Case.null => CaseRelatedIssueChangeEvent": [
+				"Child sObject [CaseRelatedIssueChangeEvent] is not processed"
+			],
+			"Case.Shares => CaseShare": [
+				"Child sObject [CaseShare] is not processed"
+			],
+			"Case.CaseSolutions => CaseSolution": [
+				"Child sObject [CaseSolution] is not processed"
+			],
+			"Case.TeamMembers => CaseTeamMember": [
+				"Child sObject [CaseTeamMember] is not processed"
+			],
+			"Case.TeamTemplateRecords => CaseTeamTemplateRecord": [
+				"Child sObject [CaseTeamTemplateRecord] is not processed"
+			],
+			"Case.ChangeRequestRelatedIssues => ChangeRequestRelatedIssue": [
+				"Child sObject [ChangeRequestRelatedIssue] is not processed"
+			],
+			"Case.null => ChangeRequestRelatedIssueChangeEvent": [
+				"Child sObject [ChangeRequestRelatedIssueChangeEvent] is not processed"
+			],
+			"Case.RecordAssociatedGroups => CollaborationGroupRecord": [
+				"Child sObject [CollaborationGroupRecord] is not processed"
+			],
+			"Case.null => CollaborationGroupRecordChangeEvent": [
+				"Child sObject [CollaborationGroupRecordChangeEvent] is not processed"
+			],
+			"Case.CombinedAttachments => CombinedAttachment": [
+				"Child sObject [CombinedAttachment] is not processed"
+			],
+			"Case.ContactRequests => ContactRequest": [
+				"Child sObject [ContactRequest] is not processed"
+			],
+			"Case.null => ContentDistribution": [
+				"Child sObject [ContentDistribution] is not processed"
+			],
+			"Case.ContentDocumentLinks => ContentDocumentLink": [
+				"Child sObject [ContentDocumentLink] is not processed"
+			],
+			"Case.null => ContentDocumentLinkChangeEvent": [
+				"Child sObject [ContentDocumentLinkChangeEvent] is not processed"
+			],
+			"Case.null => ContentVersion": [
+				"Child sObject [ContentVersion] is not processed"
+			],
+			"Case.null => ContentVersionChangeEvent": [
+				"Child sObject [ContentVersionChangeEvent] is not processed"
+			],
+			"Case.EmailMessages => EmailMessage": [
+				"Child sObject [EmailMessage] is not processed"
+			],
+			"Case.Emails => EmailMessage": [
+				"Child sObject [EmailMessage] is not processed"
+			],
+			"Case.null => EmailMessageChangeEvent": [
+				"Child sObject [EmailMessageChangeEvent] is not processed"
+			],
+			"Case.FeedSubscriptionsForEntity => EntitySubscription": [
+				"Child sObject [EntitySubscription] is not processed"
+			],
+			"Case.Events => Event": [
+				"Child sObject [Event] is not processed"
+			],
+			"Case.null => EventChangeEvent": [
+				"Child sObject [EventChangeEvent] is not processed"
+			],
+			"Case.null => EventRelationChangeEvent": [
+				"Child sObject [EventRelationChangeEvent] is not processed"
+			],
+			"Case.null => FeedComment": [
+				"Child sObject [FeedComment] is not processed"
+			],
+			"Case.null => FeedItem": [
+				"Child sObject [FeedItem] is not processed"
+			],
+			"Case.null => FlowExecutionErrorEvent": [
+				"Child sObject [FlowExecutionErrorEvent] is not processed"
+			],
+			"Case.FlowOrchestrationWorkItems => FlowOrchestrationWorkItem": [
+				"Child sObject [FlowOrchestrationWorkItem] is not processed"
+			],
+			"Case.null => FlowRecordRelation": [
+				"Child sObject [FlowRecordRelation] is not processed"
+			],
+			"Case.null => Knowledge__kav": [
+				"Child sObject [Knowledge__kav] is not processed"
+			],
+			"Case.ListEmails => ListEmail": [
+				"Child sObject [ListEmail] is not processed"
+			],
+			"Case.null => ListEmailChangeEvent": [
+				"Child sObject [ListEmailChangeEvent] is not processed"
+			],
+			"Case.MessagingSessions => MessagingSession": [
+				"Child sObject [MessagingSession] is not processed"
+			],
+			"Case.null => MessagingSessionChangeEvent": [
+				"Child sObject [MessagingSessionChangeEvent] is not processed"
+			],
+			"Case.ParentEntities => NetworkActivityAudit": [
+				"Child sObject [NetworkActivityAudit] is not processed"
+			],
+			"Case.null => NetworkFeedResponseMetric": [
+				"Child sObject [NetworkFeedResponseMetric] is not processed"
+			],
+			"Case.NetworkUserHistoryRecentToRecord => NetworkUserHistoryRecent": [
+				"Child sObject [NetworkUserHistoryRecent] is not processed"
+			],
+			"Case.OpenActivities => OpenActivity": [
+				"Child sObject [OpenActivity] is not processed"
+			],
+			"Case.null => PendingServiceRouting": [
+				"Child sObject [PendingServiceRouting] is not processed"
+			],
+			"Case.null => PendingServiceRoutingChangeEvent": [
+				"Child sObject [PendingServiceRoutingChangeEvent] is not processed"
+			],
+			"Case.null => PendingServiceRoutingInteractionInfo": [
+				"Child sObject [PendingServiceRoutingInteractionInfo] is not processed"
+			],
+			"Case.ProcessExceptions => ProcessException": [
+				"Child sObject [ProcessException] is not processed"
+			],
+			"Case.null => ProcessExceptionChangeEvent": [
+				"Child sObject [ProcessExceptionChangeEvent] is not processed"
+			],
+			"Case.ProcessInstances => ProcessInstance": [
+				"Child sObject [ProcessInstance] is not processed"
+			],
+			"Case.null => ProcessInstanceChangeEvent": [
+				"Child sObject [ProcessInstanceChangeEvent] is not processed"
+			],
+			"Case.ProcessSteps => ProcessInstanceHistory": [
+				"Child sObject [ProcessInstanceHistory] is not processed"
+			],
+			"Case.RecordActions => RecordAction": [
+				"Child sObject [RecordAction] is not processed"
+			],
+			"Case.RecordActionHistories => RecordActionHistory": [
+				"Child sObject [RecordActionHistory] is not processed"
+			],
+			"Case.ReturnOrders => ReturnOrder": [
+				"Child sObject [ReturnOrder] is not processed"
+			],
+			"Case.null => ReturnOrderChangeEvent": [
+				"Child sObject [ReturnOrderChangeEvent] is not processed"
+			],
+			"Case.ServiceAppointments => ServiceAppointment": [
+				"Child sObject [ServiceAppointment] is not processed"
+			],
+			"Case.null => ServiceAppointmentChangeEvent": [
+				"Child sObject [ServiceAppointmentChangeEvent] is not processed"
+			],
+			"Case.Posts => SocialPost": [
+				"Child sObject [SocialPost] is not processed"
+			],
+			"Case.null => SocialPostChangeEvent": [
+				"Child sObject [SocialPostChangeEvent] is not processed"
+			],
+			"Case.Tasks => Task": [
+				"Child sObject [Task] is not processed"
+			],
+			"Case.null => TaskChangeEvent": [
+				"Child sObject [TaskChangeEvent] is not processed"
+			],
+			"Case.TopicAssignments => TopicAssignment": [
+				"Child sObject [TopicAssignment] is not processed"
+			],
+			"Case.UserDefinedLabelAssignments => UserDefinedLabelAssignment": [
+				"Child sObject [UserDefinedLabelAssignment] is not processed"
+			],
+			"Case.VideoRelatedRecords => VideoCall": [
+				"Child sObject [VideoCall] is not processed"
+			],
+			"Case.null => VideoCallChangeEvent": [
+				"Child sObject [VideoCallChangeEvent] is not processed"
+			],
+			"Case.RelatedRecords => VoiceCall": [
+				"Child sObject [VoiceCall] is not processed"
+			],
+			"Case.null => VoiceCallChangeEvent": [
+				"Child sObject [VoiceCallChangeEvent] is not processed"
+			],
+			"Case.WorkOrders => WorkOrder": [
+				"Child sObject [WorkOrder] is not processed"
+			],
+			"Case.null => WorkOrderChangeEvent": [
+				"Child sObject [WorkOrderChangeEvent] is not processed"
+			],
+			"Broker__c.null => AIInsightValue": [
+				"Child sObject [AIInsightValue] is not processed"
+			],
+			"Broker__c.null => AIRecordInsight": [
+				"Child sObject [AIRecordInsight] is not processed"
+			],
+			"Broker__c.null => AgentWork": [
+				"Child sObject [AgentWork] is not processed"
+			],
+			"Broker__c.null => AgentWorkChangeEvent": [
+				"Child sObject [AgentWorkChangeEvent] is not processed"
+			],
+			"Broker__c.ApprovalSubmissions => ApprovalSubmission": [
+				"Child sObject [ApprovalSubmission] is not processed"
+			],
+			"Broker__c.ApprovalWorkItems => ApprovalWorkItem": [
+				"Child sObject [ApprovalWorkItem] is not processed"
+			],
+			"Broker__c.AttachedContentDocuments => AttachedContentDocument": [
+				"Child sObject [AttachedContentDocument] is not processed"
+			],
+			"Broker__c.Attachments => Attachment": [
+				"Child sObject [Attachment] is not processed"
+			],
+			"Broker__c.Shares => Broker__Share": [
+				"Child sObject [Broker__Share] is not processed"
+			],
+			"Broker__c.RecordAssociatedGroups => CollaborationGroupRecord": [
+				"Child sObject [CollaborationGroupRecord] is not processed"
+			],
+			"Broker__c.null => CollaborationGroupRecordChangeEvent": [
+				"Child sObject [CollaborationGroupRecordChangeEvent] is not processed"
+			],
+			"Broker__c.CombinedAttachments => CombinedAttachment": [
+				"Child sObject [CombinedAttachment] is not processed"
+			],
+			"Broker__c.ContactRequests => ContactRequest": [
+				"Child sObject [ContactRequest] is not processed"
+			],
+			"Broker__c.null => ContentDistribution": [
+				"Child sObject [ContentDistribution] is not processed"
+			],
+			"Broker__c.ContentDocumentLinks => ContentDocumentLink": [
+				"Child sObject [ContentDocumentLink] is not processed"
+			],
+			"Broker__c.null => ContentDocumentLinkChangeEvent": [
+				"Child sObject [ContentDocumentLinkChangeEvent] is not processed"
+			],
+			"Broker__c.null => ContentVersion": [
+				"Child sObject [ContentVersion] is not processed"
+			],
+			"Broker__c.null => ContentVersionChangeEvent": [
+				"Child sObject [ContentVersionChangeEvent] is not processed"
+			],
+			"Broker__c.DuplicateRecordItems => DuplicateRecordItem": [
+				"Child sObject [DuplicateRecordItem] is not processed"
+			],
+			"Broker__c.null => EmailMessageChangeEvent": [
+				"Child sObject [EmailMessageChangeEvent] is not processed"
+			],
+			"Broker__c.FeedSubscriptionsForEntity => EntitySubscription": [
+				"Child sObject [EntitySubscription] is not processed"
+			],
+			"Broker__c.null => EventChangeEvent": [
+				"Child sObject [EventChangeEvent] is not processed"
+			],
+			"Broker__c.null => EventRelationChangeEvent": [
+				"Child sObject [EventRelationChangeEvent] is not processed"
+			],
+			"Broker__c.null => FeedComment": [
+				"Child sObject [FeedComment] is not processed"
+			],
+			"Broker__c.null => FeedItem": [
+				"Child sObject [FeedItem] is not processed"
+			],
+			"Broker__c.null => FlowExecutionErrorEvent": [
+				"Child sObject [FlowExecutionErrorEvent] is not processed"
+			],
+			"Broker__c.FlowOrchestrationWorkItems => FlowOrchestrationWorkItem": [
+				"Child sObject [FlowOrchestrationWorkItem] is not processed"
+			],
+			"Broker__c.null => FlowRecordRelation": [
+				"Child sObject [FlowRecordRelation] is not processed"
+			],
+			"Broker__c.InventoryReservationSources => InventoryItemReservation": [
+				"Child sObject [InventoryItemReservation] is not processed"
+			],
+			"Broker__c.InventoryReservations => InventoryReservation": [
+				"Child sObject [InventoryReservation] is not processed"
+			],
+			"Broker__c.ParentEntities => NetworkActivityAudit": [
+				"Child sObject [NetworkActivityAudit] is not processed"
+			],
+			"Broker__c.null => NetworkFeedResponseMetric": [
+				"Child sObject [NetworkFeedResponseMetric] is not processed"
+			],
+			"Broker__c.NetworkUserHistoryRecentToRecord => NetworkUserHistoryRecent": [
+				"Child sObject [NetworkUserHistoryRecent] is not processed"
+			],
+			"Broker__c.Notes => Note": [
+				"Child sObject [Note] is not processed"
+			],
+			"Broker__c.NotesAndAttachments => NoteAndAttachment": [
+				"Child sObject [NoteAndAttachment] is not processed"
+			],
+			"Broker__c.null => ObjectRelatedUrl": [
+				"Child sObject [ObjectRelatedUrl] is not processed"
+			],
+			"Broker__c.null => ObjectRelatedUrlChangeEvent": [
+				"Child sObject [ObjectRelatedUrlChangeEvent] is not processed"
+			],
+			"Broker__c.null => PendingServiceRouting": [
+				"Child sObject [PendingServiceRouting] is not processed"
+			],
+			"Broker__c.null => PendingServiceRoutingChangeEvent": [
+				"Child sObject [PendingServiceRoutingChangeEvent] is not processed"
+			],
+			"Broker__c.null => PendingServiceRoutingInteractionInfo": [
+				"Child sObject [PendingServiceRoutingInteractionInfo] is not processed"
+			],
+			"Broker__c.ProcessExceptions => ProcessException": [
+				"Child sObject [ProcessException] is not processed"
+			],
+			"Broker__c.null => ProcessExceptionChangeEvent": [
+				"Child sObject [ProcessExceptionChangeEvent] is not processed"
+			],
+			"Broker__c.null => ProcessExceptionEvent": [
+				"Child sObject [ProcessExceptionEvent] is not processed"
+			],
+			"Broker__c.ProcessInstances => ProcessInstance": [
+				"Child sObject [ProcessInstance] is not processed"
+			],
+			"Broker__c.null => ProcessInstanceChangeEvent": [
+				"Child sObject [ProcessInstanceChangeEvent] is not processed"
+			],
+			"Broker__c.ProcessSteps => ProcessInstanceHistory": [
+				"Child sObject [ProcessInstanceHistory] is not processed"
+			],
+			"Broker__c.RecordActions => RecordAction": [
+				"Child sObject [RecordAction] is not processed"
+			],
+			"Broker__c.RecordActionHistories => RecordActionHistory": [
+				"Child sObject [RecordActionHistory] is not processed"
+			],
+			"Broker__c.null => TaskChangeEvent": [
+				"Child sObject [TaskChangeEvent] is not processed"
+			],
+			"Broker__c.TopicAssignments => TopicAssignment": [
+				"Child sObject [TopicAssignment] is not processed"
+			],
+			"Broker__c.UserDefinedLabelAssignments => UserDefinedLabelAssignment": [
+				"Child sObject [UserDefinedLabelAssignment] is not processed"
+			],
+			"Broker__c.VideoRelatedRecords => VideoCall": [
+				"Child sObject [VideoCall] is not processed"
+			],
+			"Broker__c.null => VideoCallChangeEvent": [
+				"Child sObject [VideoCallChangeEvent] is not processed"
+			],
+			"Broker__c.RelatedRecords => VoiceCall": [
+				"Child sObject [VoiceCall] is not processed"
+			],
+			"Broker__c.null => VoiceCallChangeEvent": [
+				"Child sObject [VoiceCallChangeEvent] is not processed"
+			],
+			"Contact.null => AIInsightValue": [
+				"Child sObject [AIInsightValue] is not processed"
+			],
+			"Contact.null => AIRecordInsight": [
+				"Child sObject [AIRecordInsight] is not processed"
+			],
+			"Contact.AcceptedEventRelations => AcceptedEventRelation": [
+				"Child sObject [AcceptedEventRelation] is not processed"
+			],
+			"Contact.AccountContactRoles => AccountContactRole": [
+				"Child sObject [AccountContactRole] is not processed"
+			],
+			"Contact.null => AccountContactRoleChangeEvent": [
+				"Child sObject [AccountContactRoleChangeEvent] is not processed"
+			],
+			"Contact.ActivityHistories => ActivityHistory": [
+				"Child sObject [ActivityHistory] is not processed"
+			],
+			"Contact.null => AgentWork": [
+				"Child sObject [AgentWork] is not processed"
+			],
+			"Contact.null => AgentWorkChangeEvent": [
+				"Child sObject [AgentWorkChangeEvent] is not processed"
+			],
+			"Contact.ApprovalSubmissions => ApprovalSubmission": [
+				"Child sObject [ApprovalSubmission] is not processed"
+			],
+			"Contact.ApprovalWorkItems => ApprovalWorkItem": [
+				"Child sObject [ApprovalWorkItem] is not processed"
+			],
+			"Contact.Assets => Asset": [
+				"Child sObject [Asset] is not processed"
+			],
+			"Contact.null => AssetChangeEvent": [
+				"Child sObject [AssetChangeEvent] is not processed"
+			],
+			"Contact.AttachedContentDocuments => AttachedContentDocument": [
+				"Child sObject [AttachedContentDocument] is not processed"
+			],
+			"Contact.Attachments => Attachment": [
+				"Child sObject [Attachment] is not processed"
+			],
+			"Contact.AuthorizationFormConsents => AuthorizationFormConsent": [
+				"Child sObject [AuthorizationFormConsent] is not processed"
+			],
+			"Contact.null => AuthorizationFormConsentChangeEvent": [
+				"Child sObject [AuthorizationFormConsentChangeEvent] is not processed"
+			],
+			"Contact.Bookings__r => Booking__c": [
+				"Child sObject [Booking__c] is not processed"
+			],
+			"Contact.CampaignInfluences => CampaignInfluence": [
+				"Child sObject [CampaignInfluence] is not processed"
+			],
+			"Contact.CampaignMembers => CampaignMember": [
+				"Child sObject [CampaignMember] is not processed"
+			],
+			"Contact.null => CampaignMember": [
+				"Child sObject [CampaignMember] is not processed"
+			],
+			"Contact.null => CampaignMemberChangeEvent": [
+				"Child sObject [CampaignMemberChangeEvent] is not processed"
+			],
+			"Contact.null => CaseChangeEvent": [
+				"Child sObject [CaseChangeEvent] is not processed"
+			],
+			"Contact.CaseContactRoles => CaseContactRole": [
+				"Child sObject [CaseContactRole] is not processed"
+			],
+			"Contact.null => CaseTeamMember": [
+				"Child sObject [CaseTeamMember] is not processed"
+			],
+			"Contact.null => CaseTeamTemplateMember": [
+				"Child sObject [CaseTeamTemplateMember] is not processed"
+			],
+			"Contact.RecordAssociatedGroups => CollaborationGroupRecord": [
+				"Child sObject [CollaborationGroupRecord] is not processed"
+			],
+			"Contact.null => CollaborationGroupRecordChangeEvent": [
+				"Child sObject [CollaborationGroupRecordChangeEvent] is not processed"
+			],
+			"Contact.CombinedAttachments => CombinedAttachment": [
+				"Child sObject [CombinedAttachment] is not processed"
+			],
+			"Contact.CommSubscriptionConsents => CommSubscriptionConsent": [
+				"Child sObject [CommSubscriptionConsent] is not processed"
+			],
+			"Contact.null => CommSubscriptionConsentChangeEvent": [
+				"Child sObject [CommSubscriptionConsentChangeEvent] is not processed"
+			],
+			"Contact.null => Contact": [
+				"Current version does not allow recursive parenting for parent-child relations"
+			],
+			"Contact.null => ContactChangeEvent": [
+				"Child sObject [ContactChangeEvent] is not processed"
+			],
+			"Contact.ContactCleanInfos => ContactCleanInfo": [
+				"Child sObject [ContactCleanInfo] is not processed"
+			],
+			"Contact.null => ContactCleanInfoChangeEvent": [
+				"Child sObject [ContactCleanInfoChangeEvent] is not processed"
+			],
+			"Contact.Feeds => ContactFeed": [
+				"Child sObject [ContactFeed] is not processed"
+			],
+			"Contact.Histories => ContactHistory": [
+				"Child sObject [ContactHistory] is not processed"
+			],
+			"Contact.ContactRequests => ContactRequest": [
+				"Child sObject [ContactRequest] is not processed"
+			],
+			"Contact.Shares => ContactShare": [
+				"Child sObject [ContactShare] is not processed"
+			],
+			"Contact.null => ContentDistribution": [
+				"Child sObject [ContentDistribution] is not processed"
+			],
+			"Contact.ContentDocumentLinks => ContentDocumentLink": [
+				"Child sObject [ContentDocumentLink] is not processed"
+			],
+			"Contact.null => ContentDocumentLinkChangeEvent": [
+				"Child sObject [ContentDocumentLinkChangeEvent] is not processed"
+			],
+			"Contact.null => ContentVersion": [
+				"Child sObject [ContentVersion] is not processed"
+			],
+			"Contact.null => ContentVersionChangeEvent": [
+				"Child sObject [ContentVersionChangeEvent] is not processed"
+			],
+			"Contact.ContractsSigned => Contract": [
+				"Child sObject [Contract] is not processed"
+			],
+			"Contact.null => ContractChangeEvent": [
+				"Child sObject [ContractChangeEvent] is not processed"
+			],
+			"Contact.ContractContactRoles => ContractContactRole": [
+				"Child sObject [ContractContactRole] is not processed"
+			],
+			"Contact.ConversationParticipants => ConversationParticipant": [
+				"Child sObject [ConversationParticipant] is not processed"
+			],
+			"Contact.CreditMemos => CreditMemo": [
+				"Child sObject [CreditMemo] is not processed"
+			],
+			"Contact.Credits__r => Credit__c": [
+				"Child sObject [Credit__c] is not processed"
+			],
+			"Contact.DeclinedEventRelations => DeclinedEventRelation": [
+				"Child sObject [DeclinedEventRelation] is not processed"
+			],
+			"Contact.DuplicateRecordItems => DuplicateRecordItem": [
+				"Child sObject [DuplicateRecordItem] is not processed"
+			],
+			"Contact.null => EmailBounceEvent": [
+				"Child sObject [EmailBounceEvent] is not processed"
+			],
+			"Contact.null => EmailMessage": [
+				"Child sObject [EmailMessage] is not processed"
+			],
+			"Contact.EmailMessageRelations => EmailMessageRelation": [
+				"Child sObject [EmailMessageRelation] is not processed"
+			],
+			"Contact.EmailStatuses => EmailStatus": [
+				"Child sObject [EmailStatus] is not processed"
+			],
+			"Contact.FeedSubscriptionsForEntity => EntitySubscription": [
+				"Child sObject [EntitySubscription] is not processed"
+			],
+			"Contact.Events => Event": [
+				"Child sObject [Event] is not processed"
+			],
+			"Contact.null => EventChangeEvent": [
+				"Child sObject [EventChangeEvent] is not processed"
+			],
+			"Contact.EventRelations => EventRelation": [
+				"Child sObject [EventRelation] is not processed"
+			],
+			"Contact.null => EventRelationChangeEvent": [
+				"Child sObject [EventRelationChangeEvent] is not processed"
+			],
+			"Contact.null => FeedComment": [
+				"Child sObject [FeedComment] is not processed"
+			],
+			"Contact.null => FeedItem": [
+				"Child sObject [FeedItem] is not processed"
+			],
+			"Contact.null => FlowExecutionErrorEvent": [
+				"Child sObject [FlowExecutionErrorEvent] is not processed"
+			],
+			"Contact.FlowOrchestrationWorkItems => FlowOrchestrationWorkItem": [
+				"Child sObject [FlowOrchestrationWorkItem] is not processed"
+			],
+			"Contact.null => FlowRecordRelation": [
+				"Child sObject [FlowRecordRelation] is not processed"
+			],
+			"Contact.FulfillmentOrders => FulfillmentOrder": [
+				"Child sObject [FulfillmentOrder] is not processed"
+			],
+			"Contact.null => FulfillmentOrderChangeEvent": [
+				"Child sObject [FulfillmentOrderChangeEvent] is not processed"
+			],
+			"Contact.Guest_Events__r => Guest_Event__c": [
+				"Child sObject [Guest_Event__c] is not processed"
+			],
+			"Contact.Reviews__r => Guest_Review__c": [
+				"Child sObject [Guest_Review__c] is not processed"
+			],
+			"Contact.Invoices => Invoice": [
+				"Child sObject [Invoice] is not processed"
+			],
+			"Contact.null => Lead": [
+				"Child sObject [Lead] is not processed"
+			],
+			"Contact.null => LeadChangeEvent": [
+				"Child sObject [LeadChangeEvent] is not processed"
+			],
+			"Contact.ListEmails => ListEmail": [
+				"Child sObject [ListEmail] is not processed"
+			],
+			"Contact.null => ListEmailChangeEvent": [
+				"Child sObject [ListEmailChangeEvent] is not processed"
+			],
+			"Contact.ListEmailIndividualRecipients => ListEmailIndividualRecipient": [
+				"Child sObject [ListEmailIndividualRecipient] is not processed"
+			],
+			"Contact.null => MatchingInformation": [
+				"Child sObject [MatchingInformation] is not processed"
+			],
+			"Contact.MessagingEndUsers => MessagingEndUser": [
+				"Child sObject [MessagingEndUser] is not processed"
+			],
+			"Contact.null => MessagingEndUserChangeEvent": [
+				"Child sObject [MessagingEndUserChangeEvent] is not processed"
+			],
+			"Contact.MessagingSessions => MessagingSession": [
+				"Child sObject [MessagingSession] is not processed"
+			],
+			"Contact.null => MessagingSessionChangeEvent": [
+				"Child sObject [MessagingSessionChangeEvent] is not processed"
+			],
+			"Contact.ParentEntities => NetworkActivityAudit": [
+				"Child sObject [NetworkActivityAudit] is not processed"
+			],
+			"Contact.null => NetworkFeedResponseMetric": [
+				"Child sObject [NetworkFeedResponseMetric] is not processed"
+			],
+			"Contact.Notes => Note": [
+				"Child sObject [Note] is not processed"
+			],
+			"Contact.NotesAndAttachments => NoteAndAttachment": [
+				"Child sObject [NoteAndAttachment] is not processed"
+			],
+			"Contact.null => ObjectRelatedUrl": [
+				"Child sObject [ObjectRelatedUrl] is not processed"
+			],
+			"Contact.null => ObjectRelatedUrlChangeEvent": [
+				"Child sObject [ObjectRelatedUrlChangeEvent] is not processed"
+			],
+			"Contact.OpenActivities => OpenActivity": [
+				"Child sObject [OpenActivity] is not processed"
+			],
+			"Contact.Opportunities => Opportunity": [
+				"Child sObject [Opportunity] is not processed"
+			],
+			"Contact.null => OpportunityChangeEvent": [
+				"Child sObject [OpportunityChangeEvent] is not processed"
+			],
+			"Contact.OpportunityContactRoles => OpportunityContactRole": [
+				"Child sObject [OpportunityContactRole] is not processed"
+			],
+			"Contact.null => OpportunityContactRoleChangeEvent": [
+				"Child sObject [OpportunityContactRoleChangeEvent] is not processed"
+			],
+			"Contact.null => Order": [
+				"Child sObject [Order] is not processed"
+			],
+			"Contact.null => OrderChangeEvent": [
+				"Child sObject [OrderChangeEvent] is not processed"
+			],
+			"Contact.PendingOrderSummaries => PendingOrderSummary": [
+				"Child sObject [PendingOrderSummary] is not processed"
+			],
+			"Contact.null => PendingOrderSummaryChangeEvent": [
+				"Child sObject [PendingOrderSummaryChangeEvent] is not processed"
+			],
+			"Contact.null => PendingServiceRouting": [
+				"Child sObject [PendingServiceRouting] is not processed"
+			],
+			"Contact.null => PendingServiceRoutingChangeEvent": [
+				"Child sObject [PendingServiceRoutingChangeEvent] is not processed"
+			],
+			"Contact.null => PendingServiceRoutingInteractionInfo": [
+				"Child sObject [PendingServiceRoutingInteractionInfo] is not processed"
+			],
+			"Contact.ProcessInstances => ProcessInstance": [
+				"Child sObject [ProcessInstance] is not processed"
+			],
+			"Contact.null => ProcessInstanceChangeEvent": [
+				"Child sObject [ProcessInstanceChangeEvent] is not processed"
+			],
+			"Contact.ProcessSteps => ProcessInstanceHistory": [
+				"Child sObject [ProcessInstanceHistory] is not processed"
+			],
+			"Contact.RecordActions => RecordAction": [
+				"Child sObject [RecordAction] is not processed"
+			],
+			"Contact.RecordActionHistories => RecordActionHistory": [
+				"Child sObject [RecordActionHistory] is not processed"
+			],
+			"Contact.ReturnOrders => ReturnOrder": [
+				"Child sObject [ReturnOrder] is not processed"
+			],
+			"Contact.null => ReturnOrderChangeEvent": [
+				"Child sObject [ReturnOrderChangeEvent] is not processed"
+			],
+			"Contact.ServiceAppointments => ServiceAppointment": [
+				"Child sObject [ServiceAppointment] is not processed"
+			],
+			"Contact.null => ServiceAppointmentAttendee": [
+				"Child sObject [ServiceAppointmentAttendee] is not processed"
+			],
+			"Contact.null => ServiceAppointmentChangeEvent": [
+				"Child sObject [ServiceAppointmentChangeEvent] is not processed"
+			],
+			"Contact.Personas => SocialPersona": [
+				"Child sObject [SocialPersona] is not processed"
+			],
+			"Contact.Posts => SocialPost": [
+				"Child sObject [SocialPost] is not processed"
+			],
+			"Contact.null => SocialPostChangeEvent": [
+				"Child sObject [SocialPostChangeEvent] is not processed"
+			],
+			"Contact.Tasks => Task": [
+				"Child sObject [Task] is not processed"
+			],
+			"Contact.null => TaskChangeEvent": [
+				"Child sObject [TaskChangeEvent] is not processed"
+			],
+			"Contact.TopicAssignments => TopicAssignment": [
+				"Child sObject [TopicAssignment] is not processed"
+			],
+			"Contact.UndecidedEventRelations => UndecidedEventRelation": [
+				"Child sObject [UndecidedEventRelation] is not processed"
+			],
+			"Contact.Users => User": [
+				"Child sObject [User] is not processed"
+			],
+			"Contact.null => UserChangeEvent": [
+				"Child sObject [UserChangeEvent] is not processed"
+			],
+			"Contact.UserDefinedLabelAssignments => UserDefinedLabelAssignment": [
+				"Child sObject [UserDefinedLabelAssignment] is not processed"
+			],
+			"Contact.PersonRecord => UserEmailPreferredPerson": [
+				"Child sObject [UserEmailPreferredPerson] is not processed"
+			],
+			"Contact.null => UserEmailPreferredPersonChangeEvent": [
+				"Child sObject [UserEmailPreferredPersonChangeEvent] is not processed"
+			],
+			"Contact.null => UserPrioritizedRecord": [
+				"Child sObject [UserPrioritizedRecord] is not processed"
+			],
+			"Contact.VideoRelatedRecords => VideoCall": [
+				"Child sObject [VideoCall] is not processed"
+			],
+			"Contact.null => VideoCallChangeEvent": [
+				"Child sObject [VideoCallChangeEvent] is not processed"
+			],
+			"Contact.RelatedPersons => VideoCallParticipant": [
+				"Child sObject [VideoCallParticipant] is not processed"
+			],
+			"Contact.null => VideoCallParticipantChangeEvent": [
+				"Child sObject [VideoCallParticipantChangeEvent] is not processed"
+			],
+			"Contact.RelatedRecords => VoiceCall": [
+				"Child sObject [VoiceCall] is not processed"
+			],
+			"Contact.null => VoiceCallChangeEvent": [
+				"Child sObject [VoiceCallChangeEvent] is not processed"
+			],
+			"Contact.WaitlistParticipants => WaitlistParticipant": [
+				"Child sObject [WaitlistParticipant] is not processed"
+			],
+			"Contact.WorkOrders => WorkOrder": [
+				"Child sObject [WorkOrder] is not processed"
+			],
+			"Contact.null => WorkOrderChangeEvent": [
+				"Child sObject [WorkOrderChangeEvent] is not processed"
 			],
 			"Account.null => AIInsightValue": [
 				"Child sObject [AIInsightValue] is not processed"
@@ -3692,645 +4331,6 @@
 				"Child sObject [WorkOrder] is not processed"
 			],
 			"Account.null => WorkOrderChangeEvent": [
-				"Child sObject [WorkOrderChangeEvent] is not processed"
-			],
-			"Contact.null => AIInsightValue": [
-				"Child sObject [AIInsightValue] is not processed"
-			],
-			"Contact.null => AIRecordInsight": [
-				"Child sObject [AIRecordInsight] is not processed"
-			],
-			"Contact.AcceptedEventRelations => AcceptedEventRelation": [
-				"Child sObject [AcceptedEventRelation] is not processed"
-			],
-			"Contact.AccountContactRoles => AccountContactRole": [
-				"Child sObject [AccountContactRole] is not processed"
-			],
-			"Contact.null => AccountContactRoleChangeEvent": [
-				"Child sObject [AccountContactRoleChangeEvent] is not processed"
-			],
-			"Contact.ActivityHistories => ActivityHistory": [
-				"Child sObject [ActivityHistory] is not processed"
-			],
-			"Contact.null => AgentWork": [
-				"Child sObject [AgentWork] is not processed"
-			],
-			"Contact.null => AgentWorkChangeEvent": [
-				"Child sObject [AgentWorkChangeEvent] is not processed"
-			],
-			"Contact.ApprovalSubmissions => ApprovalSubmission": [
-				"Child sObject [ApprovalSubmission] is not processed"
-			],
-			"Contact.ApprovalWorkItems => ApprovalWorkItem": [
-				"Child sObject [ApprovalWorkItem] is not processed"
-			],
-			"Contact.Assets => Asset": [
-				"Child sObject [Asset] is not processed"
-			],
-			"Contact.null => AssetChangeEvent": [
-				"Child sObject [AssetChangeEvent] is not processed"
-			],
-			"Contact.AttachedContentDocuments => AttachedContentDocument": [
-				"Child sObject [AttachedContentDocument] is not processed"
-			],
-			"Contact.Attachments => Attachment": [
-				"Child sObject [Attachment] is not processed"
-			],
-			"Contact.AuthorizationFormConsents => AuthorizationFormConsent": [
-				"Child sObject [AuthorizationFormConsent] is not processed"
-			],
-			"Contact.null => AuthorizationFormConsentChangeEvent": [
-				"Child sObject [AuthorizationFormConsentChangeEvent] is not processed"
-			],
-			"Contact.Bookings__r => Booking__c": [
-				"Child sObject [Booking__c] is not processed"
-			],
-			"Contact.CampaignInfluences => CampaignInfluence": [
-				"Child sObject [CampaignInfluence] is not processed"
-			],
-			"Contact.CampaignMembers => CampaignMember": [
-				"Child sObject [CampaignMember] is not processed"
-			],
-			"Contact.null => CampaignMember": [
-				"Child sObject [CampaignMember] is not processed"
-			],
-			"Contact.null => CampaignMemberChangeEvent": [
-				"Child sObject [CampaignMemberChangeEvent] is not processed"
-			],
-			"Contact.null => CaseChangeEvent": [
-				"Child sObject [CaseChangeEvent] is not processed"
-			],
-			"Contact.CaseContactRoles => CaseContactRole": [
-				"Child sObject [CaseContactRole] is not processed"
-			],
-			"Contact.null => CaseTeamMember": [
-				"Child sObject [CaseTeamMember] is not processed"
-			],
-			"Contact.null => CaseTeamTemplateMember": [
-				"Child sObject [CaseTeamTemplateMember] is not processed"
-			],
-			"Contact.RecordAssociatedGroups => CollaborationGroupRecord": [
-				"Child sObject [CollaborationGroupRecord] is not processed"
-			],
-			"Contact.null => CollaborationGroupRecordChangeEvent": [
-				"Child sObject [CollaborationGroupRecordChangeEvent] is not processed"
-			],
-			"Contact.CombinedAttachments => CombinedAttachment": [
-				"Child sObject [CombinedAttachment] is not processed"
-			],
-			"Contact.CommSubscriptionConsents => CommSubscriptionConsent": [
-				"Child sObject [CommSubscriptionConsent] is not processed"
-			],
-			"Contact.null => CommSubscriptionConsentChangeEvent": [
-				"Child sObject [CommSubscriptionConsentChangeEvent] is not processed"
-			],
-			"Contact.null => Contact": [
-				"Current version does not allow recursive parenting for parent-child relations"
-			],
-			"Contact.null => ContactChangeEvent": [
-				"Child sObject [ContactChangeEvent] is not processed"
-			],
-			"Contact.ContactCleanInfos => ContactCleanInfo": [
-				"Child sObject [ContactCleanInfo] is not processed"
-			],
-			"Contact.null => ContactCleanInfoChangeEvent": [
-				"Child sObject [ContactCleanInfoChangeEvent] is not processed"
-			],
-			"Contact.Feeds => ContactFeed": [
-				"Child sObject [ContactFeed] is not processed"
-			],
-			"Contact.Histories => ContactHistory": [
-				"Child sObject [ContactHistory] is not processed"
-			],
-			"Contact.ContactRequests => ContactRequest": [
-				"Child sObject [ContactRequest] is not processed"
-			],
-			"Contact.Shares => ContactShare": [
-				"Child sObject [ContactShare] is not processed"
-			],
-			"Contact.null => ContentDistribution": [
-				"Child sObject [ContentDistribution] is not processed"
-			],
-			"Contact.ContentDocumentLinks => ContentDocumentLink": [
-				"Child sObject [ContentDocumentLink] is not processed"
-			],
-			"Contact.null => ContentDocumentLinkChangeEvent": [
-				"Child sObject [ContentDocumentLinkChangeEvent] is not processed"
-			],
-			"Contact.null => ContentVersion": [
-				"Child sObject [ContentVersion] is not processed"
-			],
-			"Contact.null => ContentVersionChangeEvent": [
-				"Child sObject [ContentVersionChangeEvent] is not processed"
-			],
-			"Contact.ContractsSigned => Contract": [
-				"Child sObject [Contract] is not processed"
-			],
-			"Contact.null => ContractChangeEvent": [
-				"Child sObject [ContractChangeEvent] is not processed"
-			],
-			"Contact.ContractContactRoles => ContractContactRole": [
-				"Child sObject [ContractContactRole] is not processed"
-			],
-			"Contact.ConversationParticipants => ConversationParticipant": [
-				"Child sObject [ConversationParticipant] is not processed"
-			],
-			"Contact.CreditMemos => CreditMemo": [
-				"Child sObject [CreditMemo] is not processed"
-			],
-			"Contact.Credits__r => Credit__c": [
-				"Child sObject [Credit__c] is not processed"
-			],
-			"Contact.DeclinedEventRelations => DeclinedEventRelation": [
-				"Child sObject [DeclinedEventRelation] is not processed"
-			],
-			"Contact.DuplicateRecordItems => DuplicateRecordItem": [
-				"Child sObject [DuplicateRecordItem] is not processed"
-			],
-			"Contact.null => EmailBounceEvent": [
-				"Child sObject [EmailBounceEvent] is not processed"
-			],
-			"Contact.null => EmailMessage": [
-				"Child sObject [EmailMessage] is not processed"
-			],
-			"Contact.EmailMessageRelations => EmailMessageRelation": [
-				"Child sObject [EmailMessageRelation] is not processed"
-			],
-			"Contact.EmailStatuses => EmailStatus": [
-				"Child sObject [EmailStatus] is not processed"
-			],
-			"Contact.FeedSubscriptionsForEntity => EntitySubscription": [
-				"Child sObject [EntitySubscription] is not processed"
-			],
-			"Contact.Events => Event": [
-				"Child sObject [Event] is not processed"
-			],
-			"Contact.null => EventChangeEvent": [
-				"Child sObject [EventChangeEvent] is not processed"
-			],
-			"Contact.EventRelations => EventRelation": [
-				"Child sObject [EventRelation] is not processed"
-			],
-			"Contact.null => EventRelationChangeEvent": [
-				"Child sObject [EventRelationChangeEvent] is not processed"
-			],
-			"Contact.null => FeedComment": [
-				"Child sObject [FeedComment] is not processed"
-			],
-			"Contact.null => FeedItem": [
-				"Child sObject [FeedItem] is not processed"
-			],
-			"Contact.null => FlowExecutionErrorEvent": [
-				"Child sObject [FlowExecutionErrorEvent] is not processed"
-			],
-			"Contact.FlowOrchestrationWorkItems => FlowOrchestrationWorkItem": [
-				"Child sObject [FlowOrchestrationWorkItem] is not processed"
-			],
-			"Contact.null => FlowRecordRelation": [
-				"Child sObject [FlowRecordRelation] is not processed"
-			],
-			"Contact.FulfillmentOrders => FulfillmentOrder": [
-				"Child sObject [FulfillmentOrder] is not processed"
-			],
-			"Contact.null => FulfillmentOrderChangeEvent": [
-				"Child sObject [FulfillmentOrderChangeEvent] is not processed"
-			],
-			"Contact.Guest_Events__r => Guest_Event__c": [
-				"Child sObject [Guest_Event__c] is not processed"
-			],
-			"Contact.Reviews__r => Guest_Review__c": [
-				"Child sObject [Guest_Review__c] is not processed"
-			],
-			"Contact.Invoices => Invoice": [
-				"Child sObject [Invoice] is not processed"
-			],
-			"Contact.null => Lead": [
-				"Child sObject [Lead] is not processed"
-			],
-			"Contact.null => LeadChangeEvent": [
-				"Child sObject [LeadChangeEvent] is not processed"
-			],
-			"Contact.ListEmails => ListEmail": [
-				"Child sObject [ListEmail] is not processed"
-			],
-			"Contact.null => ListEmailChangeEvent": [
-				"Child sObject [ListEmailChangeEvent] is not processed"
-			],
-			"Contact.ListEmailIndividualRecipients => ListEmailIndividualRecipient": [
-				"Child sObject [ListEmailIndividualRecipient] is not processed"
-			],
-			"Contact.null => MatchingInformation": [
-				"Child sObject [MatchingInformation] is not processed"
-			],
-			"Contact.MessagingEndUsers => MessagingEndUser": [
-				"Child sObject [MessagingEndUser] is not processed"
-			],
-			"Contact.null => MessagingEndUserChangeEvent": [
-				"Child sObject [MessagingEndUserChangeEvent] is not processed"
-			],
-			"Contact.MessagingSessions => MessagingSession": [
-				"Child sObject [MessagingSession] is not processed"
-			],
-			"Contact.null => MessagingSessionChangeEvent": [
-				"Child sObject [MessagingSessionChangeEvent] is not processed"
-			],
-			"Contact.ParentEntities => NetworkActivityAudit": [
-				"Child sObject [NetworkActivityAudit] is not processed"
-			],
-			"Contact.null => NetworkFeedResponseMetric": [
-				"Child sObject [NetworkFeedResponseMetric] is not processed"
-			],
-			"Contact.Notes => Note": [
-				"Child sObject [Note] is not processed"
-			],
-			"Contact.NotesAndAttachments => NoteAndAttachment": [
-				"Child sObject [NoteAndAttachment] is not processed"
-			],
-			"Contact.null => ObjectRelatedUrl": [
-				"Child sObject [ObjectRelatedUrl] is not processed"
-			],
-			"Contact.null => ObjectRelatedUrlChangeEvent": [
-				"Child sObject [ObjectRelatedUrlChangeEvent] is not processed"
-			],
-			"Contact.OpenActivities => OpenActivity": [
-				"Child sObject [OpenActivity] is not processed"
-			],
-			"Contact.Opportunities => Opportunity": [
-				"Child sObject [Opportunity] is not processed"
-			],
-			"Contact.null => OpportunityChangeEvent": [
-				"Child sObject [OpportunityChangeEvent] is not processed"
-			],
-			"Contact.OpportunityContactRoles => OpportunityContactRole": [
-				"Child sObject [OpportunityContactRole] is not processed"
-			],
-			"Contact.null => OpportunityContactRoleChangeEvent": [
-				"Child sObject [OpportunityContactRoleChangeEvent] is not processed"
-			],
-			"Contact.null => Order": [
-				"Child sObject [Order] is not processed"
-			],
-			"Contact.null => OrderChangeEvent": [
-				"Child sObject [OrderChangeEvent] is not processed"
-			],
-			"Contact.PendingOrderSummaries => PendingOrderSummary": [
-				"Child sObject [PendingOrderSummary] is not processed"
-			],
-			"Contact.null => PendingOrderSummaryChangeEvent": [
-				"Child sObject [PendingOrderSummaryChangeEvent] is not processed"
-			],
-			"Contact.null => PendingServiceRouting": [
-				"Child sObject [PendingServiceRouting] is not processed"
-			],
-			"Contact.null => PendingServiceRoutingChangeEvent": [
-				"Child sObject [PendingServiceRoutingChangeEvent] is not processed"
-			],
-			"Contact.null => PendingServiceRoutingInteractionInfo": [
-				"Child sObject [PendingServiceRoutingInteractionInfo] is not processed"
-			],
-			"Contact.ProcessInstances => ProcessInstance": [
-				"Child sObject [ProcessInstance] is not processed"
-			],
-			"Contact.null => ProcessInstanceChangeEvent": [
-				"Child sObject [ProcessInstanceChangeEvent] is not processed"
-			],
-			"Contact.ProcessSteps => ProcessInstanceHistory": [
-				"Child sObject [ProcessInstanceHistory] is not processed"
-			],
-			"Contact.RecordActions => RecordAction": [
-				"Child sObject [RecordAction] is not processed"
-			],
-			"Contact.RecordActionHistories => RecordActionHistory": [
-				"Child sObject [RecordActionHistory] is not processed"
-			],
-			"Contact.ReturnOrders => ReturnOrder": [
-				"Child sObject [ReturnOrder] is not processed"
-			],
-			"Contact.null => ReturnOrderChangeEvent": [
-				"Child sObject [ReturnOrderChangeEvent] is not processed"
-			],
-			"Contact.ServiceAppointments => ServiceAppointment": [
-				"Child sObject [ServiceAppointment] is not processed"
-			],
-			"Contact.null => ServiceAppointmentAttendee": [
-				"Child sObject [ServiceAppointmentAttendee] is not processed"
-			],
-			"Contact.null => ServiceAppointmentChangeEvent": [
-				"Child sObject [ServiceAppointmentChangeEvent] is not processed"
-			],
-			"Contact.Personas => SocialPersona": [
-				"Child sObject [SocialPersona] is not processed"
-			],
-			"Contact.Posts => SocialPost": [
-				"Child sObject [SocialPost] is not processed"
-			],
-			"Contact.null => SocialPostChangeEvent": [
-				"Child sObject [SocialPostChangeEvent] is not processed"
-			],
-			"Contact.Tasks => Task": [
-				"Child sObject [Task] is not processed"
-			],
-			"Contact.null => TaskChangeEvent": [
-				"Child sObject [TaskChangeEvent] is not processed"
-			],
-			"Contact.TopicAssignments => TopicAssignment": [
-				"Child sObject [TopicAssignment] is not processed"
-			],
-			"Contact.UndecidedEventRelations => UndecidedEventRelation": [
-				"Child sObject [UndecidedEventRelation] is not processed"
-			],
-			"Contact.Users => User": [
-				"Child sObject [User] is not processed"
-			],
-			"Contact.null => UserChangeEvent": [
-				"Child sObject [UserChangeEvent] is not processed"
-			],
-			"Contact.UserDefinedLabelAssignments => UserDefinedLabelAssignment": [
-				"Child sObject [UserDefinedLabelAssignment] is not processed"
-			],
-			"Contact.PersonRecord => UserEmailPreferredPerson": [
-				"Child sObject [UserEmailPreferredPerson] is not processed"
-			],
-			"Contact.null => UserEmailPreferredPersonChangeEvent": [
-				"Child sObject [UserEmailPreferredPersonChangeEvent] is not processed"
-			],
-			"Contact.null => UserPrioritizedRecord": [
-				"Child sObject [UserPrioritizedRecord] is not processed"
-			],
-			"Contact.VideoRelatedRecords => VideoCall": [
-				"Child sObject [VideoCall] is not processed"
-			],
-			"Contact.null => VideoCallChangeEvent": [
-				"Child sObject [VideoCallChangeEvent] is not processed"
-			],
-			"Contact.RelatedPersons => VideoCallParticipant": [
-				"Child sObject [VideoCallParticipant] is not processed"
-			],
-			"Contact.null => VideoCallParticipantChangeEvent": [
-				"Child sObject [VideoCallParticipantChangeEvent] is not processed"
-			],
-			"Contact.RelatedRecords => VoiceCall": [
-				"Child sObject [VoiceCall] is not processed"
-			],
-			"Contact.null => VoiceCallChangeEvent": [
-				"Child sObject [VoiceCallChangeEvent] is not processed"
-			],
-			"Contact.WaitlistParticipants => WaitlistParticipant": [
-				"Child sObject [WaitlistParticipant] is not processed"
-			],
-			"Contact.WorkOrders => WorkOrder": [
-				"Child sObject [WorkOrder] is not processed"
-			],
-			"Contact.null => WorkOrderChangeEvent": [
-				"Child sObject [WorkOrderChangeEvent] is not processed"
-			],
-			"Case.null => AIInsightValue": [
-				"Child sObject [AIInsightValue] is not processed"
-			],
-			"Case.null => AIRecordInsight": [
-				"Child sObject [AIRecordInsight] is not processed"
-			],
-			"Case.ActivityHistories => ActivityHistory": [
-				"Child sObject [ActivityHistory] is not processed"
-			],
-			"Case.null => AgentWork": [
-				"Child sObject [AgentWork] is not processed"
-			],
-			"Case.null => AgentWorkChangeEvent": [
-				"Child sObject [AgentWorkChangeEvent] is not processed"
-			],
-			"Case.ApprovalSubmissions => ApprovalSubmission": [
-				"Child sObject [ApprovalSubmission] is not processed"
-			],
-			"Case.ApprovalWorkItems => ApprovalWorkItem": [
-				"Child sObject [ApprovalWorkItem] is not processed"
-			],
-			"Case.AttachedContentDocuments => AttachedContentDocument": [
-				"Child sObject [AttachedContentDocument] is not processed"
-			],
-			"Case.Attachments => Attachment": [
-				"Child sObject [Attachment] is not processed"
-			],
-			"Case.Cases => Case": [
-				"Current version does not allow recursive parenting for parent-child relations"
-			],
-			"Case.CaseArticles => CaseArticle": [
-				"Child sObject [CaseArticle] is not processed"
-			],
-			"Case.null => CaseChangeEvent": [
-				"Child sObject [CaseChangeEvent] is not processed"
-			],
-			"Case.CaseComments => CaseComment": [
-				"Child sObject [CaseComment] is not processed"
-			],
-			"Case.CaseContactRoles => CaseContactRole": [
-				"Child sObject [CaseContactRole] is not processed"
-			],
-			"Case.CaseExternalDocuments => CaseExternalDocument": [
-				"Child sObject [CaseExternalDocument] is not processed"
-			],
-			"Case.Feeds => CaseFeed": [
-				"Child sObject [CaseFeed] is not processed"
-			],
-			"Case.Histories => CaseHistory": [
-				"Child sObject [CaseHistory] is not processed"
-			],
-			"Case.null => CaseHistory2": [
-				"Child sObject [CaseHistory2] is not processed"
-			],
-			"Case.null => CaseHistory2ChangeEvent": [
-				"Child sObject [CaseHistory2ChangeEvent] is not processed"
-			],
-			"Case.CaseRelatedIssues => CaseRelatedIssue": [
-				"Child sObject [CaseRelatedIssue] is not processed"
-			],
-			"Case.null => CaseRelatedIssueChangeEvent": [
-				"Child sObject [CaseRelatedIssueChangeEvent] is not processed"
-			],
-			"Case.Shares => CaseShare": [
-				"Child sObject [CaseShare] is not processed"
-			],
-			"Case.CaseSolutions => CaseSolution": [
-				"Child sObject [CaseSolution] is not processed"
-			],
-			"Case.TeamMembers => CaseTeamMember": [
-				"Child sObject [CaseTeamMember] is not processed"
-			],
-			"Case.TeamTemplateRecords => CaseTeamTemplateRecord": [
-				"Child sObject [CaseTeamTemplateRecord] is not processed"
-			],
-			"Case.ChangeRequestRelatedIssues => ChangeRequestRelatedIssue": [
-				"Child sObject [ChangeRequestRelatedIssue] is not processed"
-			],
-			"Case.null => ChangeRequestRelatedIssueChangeEvent": [
-				"Child sObject [ChangeRequestRelatedIssueChangeEvent] is not processed"
-			],
-			"Case.RecordAssociatedGroups => CollaborationGroupRecord": [
-				"Child sObject [CollaborationGroupRecord] is not processed"
-			],
-			"Case.null => CollaborationGroupRecordChangeEvent": [
-				"Child sObject [CollaborationGroupRecordChangeEvent] is not processed"
-			],
-			"Case.CombinedAttachments => CombinedAttachment": [
-				"Child sObject [CombinedAttachment] is not processed"
-			],
-			"Case.ContactRequests => ContactRequest": [
-				"Child sObject [ContactRequest] is not processed"
-			],
-			"Case.null => ContentDistribution": [
-				"Child sObject [ContentDistribution] is not processed"
-			],
-			"Case.ContentDocumentLinks => ContentDocumentLink": [
-				"Child sObject [ContentDocumentLink] is not processed"
-			],
-			"Case.null => ContentDocumentLinkChangeEvent": [
-				"Child sObject [ContentDocumentLinkChangeEvent] is not processed"
-			],
-			"Case.null => ContentVersion": [
-				"Child sObject [ContentVersion] is not processed"
-			],
-			"Case.null => ContentVersionChangeEvent": [
-				"Child sObject [ContentVersionChangeEvent] is not processed"
-			],
-			"Case.EmailMessages => EmailMessage": [
-				"Child sObject [EmailMessage] is not processed"
-			],
-			"Case.Emails => EmailMessage": [
-				"Child sObject [EmailMessage] is not processed"
-			],
-			"Case.null => EmailMessageChangeEvent": [
-				"Child sObject [EmailMessageChangeEvent] is not processed"
-			],
-			"Case.FeedSubscriptionsForEntity => EntitySubscription": [
-				"Child sObject [EntitySubscription] is not processed"
-			],
-			"Case.Events => Event": [
-				"Child sObject [Event] is not processed"
-			],
-			"Case.null => EventChangeEvent": [
-				"Child sObject [EventChangeEvent] is not processed"
-			],
-			"Case.null => EventRelationChangeEvent": [
-				"Child sObject [EventRelationChangeEvent] is not processed"
-			],
-			"Case.null => FeedComment": [
-				"Child sObject [FeedComment] is not processed"
-			],
-			"Case.null => FeedItem": [
-				"Child sObject [FeedItem] is not processed"
-			],
-			"Case.null => FlowExecutionErrorEvent": [
-				"Child sObject [FlowExecutionErrorEvent] is not processed"
-			],
-			"Case.FlowOrchestrationWorkItems => FlowOrchestrationWorkItem": [
-				"Child sObject [FlowOrchestrationWorkItem] is not processed"
-			],
-			"Case.null => FlowRecordRelation": [
-				"Child sObject [FlowRecordRelation] is not processed"
-			],
-			"Case.null => Knowledge__kav": [
-				"Child sObject [Knowledge__kav] is not processed"
-			],
-			"Case.ListEmails => ListEmail": [
-				"Child sObject [ListEmail] is not processed"
-			],
-			"Case.null => ListEmailChangeEvent": [
-				"Child sObject [ListEmailChangeEvent] is not processed"
-			],
-			"Case.MessagingSessions => MessagingSession": [
-				"Child sObject [MessagingSession] is not processed"
-			],
-			"Case.null => MessagingSessionChangeEvent": [
-				"Child sObject [MessagingSessionChangeEvent] is not processed"
-			],
-			"Case.ParentEntities => NetworkActivityAudit": [
-				"Child sObject [NetworkActivityAudit] is not processed"
-			],
-			"Case.null => NetworkFeedResponseMetric": [
-				"Child sObject [NetworkFeedResponseMetric] is not processed"
-			],
-			"Case.NetworkUserHistoryRecentToRecord => NetworkUserHistoryRecent": [
-				"Child sObject [NetworkUserHistoryRecent] is not processed"
-			],
-			"Case.OpenActivities => OpenActivity": [
-				"Child sObject [OpenActivity] is not processed"
-			],
-			"Case.null => PendingServiceRouting": [
-				"Child sObject [PendingServiceRouting] is not processed"
-			],
-			"Case.null => PendingServiceRoutingChangeEvent": [
-				"Child sObject [PendingServiceRoutingChangeEvent] is not processed"
-			],
-			"Case.null => PendingServiceRoutingInteractionInfo": [
-				"Child sObject [PendingServiceRoutingInteractionInfo] is not processed"
-			],
-			"Case.ProcessExceptions => ProcessException": [
-				"Child sObject [ProcessException] is not processed"
-			],
-			"Case.null => ProcessExceptionChangeEvent": [
-				"Child sObject [ProcessExceptionChangeEvent] is not processed"
-			],
-			"Case.ProcessInstances => ProcessInstance": [
-				"Child sObject [ProcessInstance] is not processed"
-			],
-			"Case.null => ProcessInstanceChangeEvent": [
-				"Child sObject [ProcessInstanceChangeEvent] is not processed"
-			],
-			"Case.ProcessSteps => ProcessInstanceHistory": [
-				"Child sObject [ProcessInstanceHistory] is not processed"
-			],
-			"Case.RecordActions => RecordAction": [
-				"Child sObject [RecordAction] is not processed"
-			],
-			"Case.RecordActionHistories => RecordActionHistory": [
-				"Child sObject [RecordActionHistory] is not processed"
-			],
-			"Case.ReturnOrders => ReturnOrder": [
-				"Child sObject [ReturnOrder] is not processed"
-			],
-			"Case.null => ReturnOrderChangeEvent": [
-				"Child sObject [ReturnOrderChangeEvent] is not processed"
-			],
-			"Case.ServiceAppointments => ServiceAppointment": [
-				"Child sObject [ServiceAppointment] is not processed"
-			],
-			"Case.null => ServiceAppointmentChangeEvent": [
-				"Child sObject [ServiceAppointmentChangeEvent] is not processed"
-			],
-			"Case.Posts => SocialPost": [
-				"Child sObject [SocialPost] is not processed"
-			],
-			"Case.null => SocialPostChangeEvent": [
-				"Child sObject [SocialPostChangeEvent] is not processed"
-			],
-			"Case.Tasks => Task": [
-				"Child sObject [Task] is not processed"
-			],
-			"Case.null => TaskChangeEvent": [
-				"Child sObject [TaskChangeEvent] is not processed"
-			],
-			"Case.TopicAssignments => TopicAssignment": [
-				"Child sObject [TopicAssignment] is not processed"
-			],
-			"Case.UserDefinedLabelAssignments => UserDefinedLabelAssignment": [
-				"Child sObject [UserDefinedLabelAssignment] is not processed"
-			],
-			"Case.VideoRelatedRecords => VideoCall": [
-				"Child sObject [VideoCall] is not processed"
-			],
-			"Case.null => VideoCallChangeEvent": [
-				"Child sObject [VideoCallChangeEvent] is not processed"
-			],
-			"Case.RelatedRecords => VoiceCall": [
-				"Child sObject [VoiceCall] is not processed"
-			],
-			"Case.null => VoiceCallChangeEvent": [
-				"Child sObject [VoiceCallChangeEvent] is not processed"
-			],
-			"Case.WorkOrders => WorkOrder": [
-				"Child sObject [WorkOrder] is not processed"
-			],
-			"Case.null => WorkOrderChangeEvent": [
 				"Child sObject [WorkOrderChangeEvent] is not processed"
 			]
 		},
