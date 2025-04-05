@@ -6,4 +6,4 @@ for (Integer i = 1; i <= 100; i++) {
 	}
 }
 System.debug(result);
-ETDH_Helpers.debugStringInChunks(result, 20);
+ETAI_Helpers.debugStringInChunks(result, 20);

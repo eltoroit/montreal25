@@ -20,11 +20,11 @@ public with sharing class ETDH_QueryProperties {
 				result.error = queryJson;
 			} else {
 				String SOQL = (String) query.get('query');
-				ETDH_Helpers.debugStringInChunks('ETDH_QueryProperties.queryProperties(): SOQL', SOQL, 100);
+				ETAI_Helpers.debugStringInChunks('ETDH_QueryProperties.queryProperties(): SOQL', SOQL, 100);
 				result.records = Database.query(SOQL);
 			}
 		} catch (Exception e) {
-			ETDH_Helpers.debugStringInChunks('ETDH_QueryProperties.queryProperties(): Exception', JSON.serialize(e.getMessage()), 100);
+			ETAI_Helpers.debugStringInChunks('ETDH_QueryProperties.queryProperties(): Exception', JSON.serialize(e.getMessage()), 100);
 			result.error = 'An error has occurred' + e.getMessage() + '\n' + e.getStackTraceString() + '\n' + e.getLineNumber();
 		}
 		return result;
@@ -50,10 +50,10 @@ public with sharing class ETDH_QueryProperties {
 	private static String createSOQL(AgentRequest request) {
 		// Create Prompt Input Parameter Variables
 		Map<String, ConnectApi.WrappedValue> inputParams = new Map<String, ConnectApi.WrappedValue>();
-		ETDH_Helpers.addValue(inputParams, 'Input:Question', request.query);
-		ETDH_Helpers.addValue(inputParams, 'Input:ObjectName', request.sObjectName);
-		ETDH_Helpers.addValue(inputParams, 'Input:ObjectSchema', ETDH_Helpers.getSObjectMetadata(request.sObjectName));
-		ETDH_Helpers.addValue(
+		ETAI_Helpers.addValue(inputParams, 'Input:Question', request.query);
+		ETAI_Helpers.addValue(inputParams, 'Input:ObjectName', request.sObjectName);
+		ETAI_Helpers.addValue(inputParams, 'Input:ObjectSchema', ETAI_Helpers.getSObjectMetadata(request.sObjectName));
+		ETAI_Helpers.addValue(
 			inputParams,
 			'Input:AdditionalInstructions',
 			'- Properties can be identified by their Record Id (18 characters), Name (for example 123 Main Street), Address__c (for example 123 Main Street), Zip__c (five digits, for example 02123) or other attributes (bedrooms, bathrooms, ...).'
@@ -76,7 +76,7 @@ public with sharing class ETDH_QueryProperties {
 
 		// Consume response
 		ConnectApi.EinsteinLLMGenerationItemOutput response = generationsOutput.generations[0];
-		ETDH_Helpers.debugStringInChunks('ETDH_QueryProperties.createSOQL(): generationsOutput', JSON.serialize(response), 100);
-		return ETDH_Helpers.extractJson(response.text);
+		ETAI_Helpers.debugStringInChunks('ETDH_QueryProperties.createSOQL(): generationsOutput', JSON.serialize(response), 100);
+		return ETAI_Helpers.extractJson(response.text);
 	}
 }

@@ -1,4 +1,4 @@
-public inherited sharing class ETDH_Helpers {
+public inherited sharing class ETAI_Helpers {
 	public static void debugStringInChunks(String action, String longString, Integer chunkSize) {
 		// Default to 50 if chunkSize is not provided or invalid
 		if (chunkSize == null || chunkSize <= 0) {
@@ -45,7 +45,7 @@ public inherited sharing class ETDH_Helpers {
 	}
 
 	public static String extractHtml(String input) {
-		ETDH_Helpers.debugStringInChunks('ETDH_Helpers.extractHtml(): Input', input, 100);
+		debugStringInChunks('extractHtml(): Input', input, 100);
 
 		// Process
 		String output = input; // .replaceAll('\n', '');
@@ -61,13 +61,13 @@ public inherited sharing class ETDH_Helpers {
 			// Clean it twice just in case :-)
 			output = cleanHtml(output);
 			output = cleanHtml(output);
-			ETDH_Helpers.debugStringInChunks('ETDH_Helpers.extractHtml(): Output', output, 100);
+			debugStringInChunks('extractHtml(): Output', output, 100);
 			return output;
 		}
 	}
 
 	public static String extractJson(String input) {
-		ETDH_Helpers.debugStringInChunks('ETDH_Helpers.extractJson(): Input', input, 100);
+		debugStringInChunks('extractJson(): Input', input, 100);
 
 		// Process
 		String output = input;
@@ -80,7 +80,7 @@ public inherited sharing class ETDH_Helpers {
 		} else {
 			// Process JSON
 			output = output.substring(startIndex, endIndex + 1);
-			ETDH_Helpers.debugStringInChunks('ETDH_Helpers.extractJSON(): Output', output, 100);
+			debugStringInChunks('extractJSON(): Output', output, 100);
 			return output;
 		}
 	}

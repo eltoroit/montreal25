@@ -10,6 +10,6 @@ for (ETDH_QueryProperties.AgentResult result : results) {
 	if (result.error != null) {
 		System.debug('Error: ' + result.error);
 	} else {
-		ETDH_Helpers.debugStringInChunks('ExecAnon: Records', JSON.serialize(result.records), 100);
+		ETAI_Helpers.debugStringInChunks('ExecAnon: Records', JSON.serialize(result.records), 100);
 	}
 }

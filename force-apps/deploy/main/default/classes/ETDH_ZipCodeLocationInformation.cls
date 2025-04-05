@@ -48,10 +48,10 @@ public with sharing class ETDH_ZipCodeLocationInformation {
 	private static String formatZipCodeInfo(String zipCodeInfo, AgentRequest request, Property__c property) {
 		// Create Prompt Input Parameter Variables
 		Map<String, ConnectApi.WrappedValue> inputParams = new Map<String, ConnectApi.WrappedValue>();
-		ETDH_Helpers.addValue(inputParams, 'Input:ZipCode_Data', zipCodeInfo);
-		ETDH_Helpers.addValue(inputParams, 'Input:Interest', request.interest);
-		ETDH_Helpers.addValue(inputParams, 'Input:Property', new Map<String, String>{ 'id' => property.Id });
- 
+		ETAI_Helpers.addValue(inputParams, 'Input:ZipCode_Data', zipCodeInfo);
+		ETAI_Helpers.addValue(inputParams, 'Input:Interest', request.interest);
+		ETAI_Helpers.addValue(inputParams, 'Input:Property', new Map<String, String>{ 'id' => property.Id });
+
 		// Set the prompt service
 		ConnectApi.EinsteinPromptTemplateGenerationsInput promptGenerationsInput = new ConnectApi.EinsteinPromptTemplateGenerationsInput();
 		promptGenerationsInput.inputParams = inputParams;
@@ -69,7 +69,7 @@ public with sharing class ETDH_ZipCodeLocationInformation {
 
 		// Consume response
 		ConnectApi.EinsteinLLMGenerationItemOutput response = generationsOutput.generations[0];
-		return ETDH_Helpers.extractHtml(response.text);
+		return ETAI_Helpers.extractHtml(response.text);
 	}
 
 	public class AgentRequest {
