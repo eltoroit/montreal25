@@ -1,6 +1,6 @@
-import { Application, Router } from "@oak/oak";
-import data from "./data.json" with { type: "json" };
-import spec from "./openAPI.json" with { type: "json" };
+import { Application, Router, send } from "@oak/oak";
+import data from "./resources/data.json" with { type: "json" };
+import spec from "./resources/openAPI.json" with { type: "json" };
 
 class ZipCodeService {
 	// Function to select random zip code data
@@ -12,6 +12,11 @@ class ZipCodeService {
 
 	// Function to get data for a specific zip code
 	getZipCodeData(zipcode) {
+		// Validate zip code format
+		if (!zipcode || !/^\d{5}$/.test(zipcode)) {
+			throw new Error("Invalid ZIP code format. Expected 5-digit number.");
+		}
+
 		// If zip code exists, return its data
 		if (data[zipcode]) {
 			return data[zipcode];
@@ -33,30 +38,15 @@ class ZipCodeServer {
 		const { zipcode } = context.params;
 
 		try {
-			const zipData = this.zipCodeService.getZipCodeData(zipcode);
-			context.response.body = zipData;
+			context.response.body = this.zipCodeService.getZipCodeData(zipcode);
 		} catch (error) {
-			context.response.status = 500;
-			context.response.body = "Error: " + error.message;
+			context.response.status = 400;
+			context.response.body = { error: error.message };
 		}
 	}
 
-	handleRootRequest(context) {
-		context.response.body = `
-		<!DOCTYPE html>
-		<html>
-		  <head><title>ZipCode Location Simulator</title><head>
-		  <body>
-			<h1>ZipCode Location Simulator</h1>
-			<p>
-			  <a href="/zip/02115">/zip/02115</a>
-			</p>
-			<p>
-			  <a href="/service.json">/service.json</a>
-			</p>
-		  </body>
-		</html>
-			`;
+	async handleRootRequest(context) {
+		await send(context, "resources/home.html", { root: Deno.cwd() });
 	}
 
 	handleOpenAPISpec(context) {
@@ -64,11 +54,27 @@ class ZipCodeServer {
 		context.response.body = spec;
 	}
 
-	// Method to set up routes and start the server
+	async staticFiles(ctx, next) {
+		const pathname = ctx.request.url.pathname;
+		if (pathname.startsWith("/resources/")) {
+			try {
+				await send(ctx, pathname, { root: Deno.cwd() });
+				return; // Stop processing if file is sent
+			} catch (e) {
+				console.error("Error serving static file:", e);
+				// Continue to next middleware if file not found
+			}
+		}
+		await next();
+	}
+
 	setupRoutes() {
+		// First apply static file middleware with proper binding, then set up specific routes
 		this.router.get("/", (context) => this.handleRootRequest(context));
 		this.router.get("/zip/:zipcode", (context) => this.handleZipCodeRequest(context));
 		this.router.get("/service.json", (context) => this.handleOpenAPISpec(context));
+
+		this.app.use(this.staticFiles.bind(this));
 		this.app.use(this.router.routes());
 		this.app.use(this.router.allowedMethods());
 	}
