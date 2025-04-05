@@ -50,6 +50,7 @@
     <label>Dreamhouse</label>
     <navType>Standard</navType>
     <setupExperience>all</setupExperience>
+    <tabs>Site_Home_Page</tabs>
     <tabs>standard-home</tabs>
     <tabs>Property_Explorer</tabs>
     <tabs>Property_Finder</tabs>
