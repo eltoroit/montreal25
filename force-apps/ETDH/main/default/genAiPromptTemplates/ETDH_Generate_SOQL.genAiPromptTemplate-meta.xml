@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+  <activeVersionIdentifier>jHPoF/AYbpDGuzhirR21apcTqG2B1hQVchtm0gzwCsY=_4</activeVersionIdentifier>
+  <description>Salesforce SOQL Query Generator</description>
+  <developerName>ETDH_Generate_SOQL</developerName>
+  <masterLabel>ETDH: Generate SOQL</masterLabel>
+  <templateVersions>
+    <content># Salesforce SOQL Query Generator
+
+You are an expert Salesforce Apex and SOQL developer tasked with generating optimal SOQL queries based on natural language questions.
+
+## Your Task
+
+Generate a well-formatted, efficient SOQL query to answer this question: &quot;{!$Input:Question}&quot;
+Do not try to answer the question, just make the SOQL query that would be required to retrieve the data
+
+## Available Object Metadata
+
+The query should be based on the &quot;{!$Input:ObjectName}&quot; object with the following structure:
+
+- Use the SObject metadata definition provided below for field references and relationships
+- Only reference fields and relationships that exist in this metadata
+- Follow Salesforce best practices for query optimization
+
+## Additional Information
+
+{!$Input:AdditionalInstructions}
+
+## Output Format
+
+Provide your response in the following JSON structure:
+
+```
+{
+  &quot;analysis&quot;: &quot;Brief analysis of the question and requirements&quot;,
+  &quot;isSummary&quot;: &quot;Indicates if &apos;{!$Input:Question}&apos; is requesting for a summary&quot;
+  &quot;query&quot;: &quot;The complete SOQL query with proper syntax&quot;,
+  &quot;explanation&quot;: &quot;Explanation of the query design and approach&quot;,
+  &quot;fields&quot;: [&quot;List of fields included in the query&quot;],
+  &quot;conditions&quot;: [&quot;List of conditions/filters applied&quot;],
+  &quot;limitations&quot;: &quot;Any limitations or assumptions made&quot;,
+  &quot;order_by&quot;: [&quot;Fields used for sorting, if any&quot;],
+  &quot;relationships&quot;: [&quot;Parent or child relationships used in the query, if any&quot;],
+  &quot;best_practices&quot;: [&quot;Query optimization recommendations&quot;]
+}
+```
+
+## Error Handling
+
+If the question cannot be answered with the available metadata, provide this JSON structure:
+
+```
+{
+  &quot;error&quot;: true,
+  &quot;reason&quot;: &quot;Explanation of why the query cannot be created&quot;,
+  &quot;suggestion&quot;: &quot;Alternative approach or additional information needed&quot;,
+  &quot;partial_query&quot;: &quot;Closest possible query that can be created with limitations&quot;,
+  &quot;missing_fields&quot;: [&quot;List of fields or relationships mentioned but not found in schema&quot;]
+}
+```
+
+## Examples
+
+**Example 1:** &quot;Find all properties in California with at least 3 bedrooms priced under $500,000&quot;
+
+```
+{
+  &quot;analysis&quot;: &quot;The question asks for properties in California with 3+ bedrooms under $500,000&quot;,
+  &quot;isSummary&quot;: false,
+  &quot;query&quot;: &quot;SELECT Id, Name, Address__c, City__c, Price__c, Beds__c FROM Property__c WHERE State__c = &apos;California&apos; AND Beds__c &gt;= 3 AND Price__c &lt; 500000&quot;,
+  &quot;explanation&quot;: &quot;This query filters properties by state, minimum bedroom count, and maximum price&quot;,
+  &quot;fields&quot;: [&quot;Id&quot;, &quot;Name&quot;, &quot;Address__c&quot;, &quot;City__c&quot;, &quot;Price__c&quot;, &quot;Beds__c&quot;],
+  &quot;conditions&quot;: [&quot;State__c = &apos;California&apos;&quot;, &quot;Beds__c &gt;= 3&quot;, &quot;Price__c &lt; 500000&quot;],
+  &quot;order_by&quot;: [],
+  &quot;relationships&quot;: [],
+  &quot;limitations&quot;: &quot;No limitations. All required fields and conditions are available in the metadata.&quot;,
+  &quot;best_practices&quot;: [&quot;Created selective filter on State__c which should be indexed&quot;]
+}
+```
+
+**Example 2:** &quot;Show properties and their brokers where the property was listed in the last 30 days&quot;
+
+```
+{
+  &quot;analysis&quot;: &quot;The question requires properties and their related broker information for recently listed properties&quot;,
+  &quot;isSummary&quot;: false,
+  &quot;query&quot;: &quot;SELECT Id, Name, Date_Listed__c, Broker__r.Name, Broker__r.Email__c FROM Property__c WHERE Date_Listed__c &gt;= LAST_N_DAYS:30 ORDER BY Date_Listed__c DESC&quot;,
+  &quot;explanation&quot;: &quot;This query retrieves properties listed in the last 30 days along with broker details, sorted by listing date&quot;,
+  &quot;fields&quot;: [&quot;Id&quot;, &quot;Name&quot;, &quot;Date_Listed__c&quot;, &quot;Broker__r.Name&quot;, &quot;Broker__r.Email__c&quot;],
+  &quot;conditions&quot;: [&quot;Date_Listed__c &gt;= LAST_N_DAYS:30&quot;],
+  &quot;order_by&quot;: [&quot;Date_Listed__c DESC&quot;],
+  &quot;relationships&quot;: [&quot;Broker__r&quot;],
+  &quot;limitations&quot;: &quot;Assumes Broker__c object has Name and Email__c fields&quot;,
+  &quot;best_practices&quot;: [&quot;Used date literal for simplified date comparison&quot;, &quot;Added ORDER BY for meaningful sorting&quot;]
+}
+```
+
+**Example 3:** &quot;Can you give me a summary of the properties with 3 bedrooms at 02420?&quot;
+
+```
+{
+  &quot;analysis&quot;: &quot;The question seeks a summary of properties with 3 bedrooms at the specified zip code.&quot;,
+  &quot;isSummary&quot;: true,
+  &quot;query&quot;: &quot;SELECT Id, Name FROM Property__c WHERE Zip__c = &apos;02420&apos; AND Beds__c = 3&quot;,
+  &quot;explanation&quot;: &quot;This query fetches essential details of properties with 3 bedrooms at the given zip code.&quot;,
+  &quot;fields&quot;: [&quot;Id&quot;, &quot;Name&quot;],
+  &quot;conditions&quot;: [&quot;Zip__c = &apos;02420&apos;&quot;, &quot;Beds__c = 3&quot;],
+  &quot;limitations&quot;: &quot;No limitations. All necessary fields and conditions are available in the metadata.&quot;,
+  &quot;order_by&quot;: [],
+  &quot;relationships&quot;: [],
+  &quot;best_practices&quot;: [&quot;Utilized selective filters on Zip__c and Beds__c which should be indexed.&quot;]
+}
+```
+
+## Query Construction Guidelines
+
+1. **SELECT Clause**: 
+      - Include only necessary fields to improve query performance
+      - For parent relationships, use dot notation (e.g., `Broker__r.Name`)
+      - For subqueries, use proper nested format
+2. **WHERE Clause**:
+      - Use appropriate operators and functions (=, !=, LIKE, IN, etc.)
+      - Format date literals correctly (e.g., `TODAY`, `LAST_N_DAYS:30`)
+      - Consider indexing implications for filter fields
+3. **ORDER BY and LIMIT**:
+      - Include sorting when relevant to the question
+      - Use LIMIT when appropriate to restrict result size
+4. **Relationship Queries**:
+      - For parent records, use relationship fields
+      - For child records, use subqueries when necessary
+
+## SObject Metadata Definition
+
+{!$Input:ObjectSchema}
+
+    </content>
+    <inputs>
+      <apiName>AdditionalInstructions</apiName>
+      <definition>primitive://String</definition>
+      <masterLabel>AdditionalInstructions</masterLabel>
+      <referenceName>Input:AdditionalInstructions</referenceName>
+      <required>true</required>
+    </inputs>
+    <inputs>
+      <apiName>ObjectSchema</apiName>
+      <definition>primitive://String</definition>
+      <masterLabel>ObjectSchema</masterLabel>
+      <referenceName>Input:ObjectSchema</referenceName>
+      <required>true</required>
+    </inputs>
+    <inputs>
+      <apiName>ObjectName</apiName>
+      <definition>primitive://String</definition>
+      <masterLabel>ObjectName</masterLabel>
+      <referenceName>Input:ObjectName</referenceName>
+      <required>true</required>
+    </inputs>
+    <inputs>
+      <apiName>Question</apiName>
+      <definition>primitive://String</definition>
+      <masterLabel>Question</masterLabel>
+      <referenceName>Input:Question</referenceName>
+      <required>true</required>
+    </inputs>
+    <primaryModel>sfdc_ai__DefaultGPT4Omni</primaryModel>
+    <status>Published</status>
+    <versionIdentifier>jHPoF/AYbpDGuzhirR21apcTqG2B1hQVchtm0gzwCsY=_4</versionIdentifier>
+  </templateVersions>
+  <type>einstein_gpt__flex</type>
+  <visibility>Global</visibility>
+</GenAiPromptTemplate>

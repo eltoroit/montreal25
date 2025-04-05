@@ -1,0 +1,384 @@
+{
+	"childRelationships": [
+		{
+			"field": "WhatId",
+			"childObject": "ActivityHistory",
+			"relationshipName": "ActivityHistories"
+		},
+		{
+			"field": "RelatedRecordId",
+			"childObject": "ApprovalSubmission",
+			"relationshipName": "ApprovalSubmissions"
+		},
+		{
+			"field": "RelatedRecordId",
+			"childObject": "ApprovalWorkItem",
+			"relationshipName": "ApprovalWorkItems"
+		},
+		{
+			"field": "LinkedEntityId",
+			"childObject": "AttachedContentDocument",
+			"relationshipName": "AttachedContentDocuments"
+		},
+		{
+			"field": "ParentId",
+			"childObject": "Attachment",
+			"relationshipName": "Attachments"
+		},
+		{
+			"field": "RecordId",
+			"childObject": "CollaborationGroupRecord",
+			"relationshipName": "RecordAssociatedGroups"
+		},
+		{
+			"field": "ParentId",
+			"childObject": "CombinedAttachment",
+			"relationshipName": "CombinedAttachments"
+		},
+		{
+			"field": "WhatId",
+			"childObject": "ContactRequest",
+			"relationshipName": "ContactRequests"
+		},
+		{
+			"field": "LinkedEntityId",
+			"childObject": "ContentDocumentLink",
+			"relationshipName": "ContentDocumentLinks"
+		},
+		{
+			"field": "RecordId",
+			"childObject": "DuplicateRecordItem",
+			"relationshipName": "DuplicateRecordItems"
+		},
+		{
+			"field": "RelatedToId",
+			"childObject": "EmailMessage",
+			"relationshipName": "Emails"
+		},
+		{
+			"field": "ParentId",
+			"childObject": "EntitySubscription",
+			"relationshipName": "FeedSubscriptionsForEntity"
+		},
+		{
+			"field": "WhatId",
+			"childObject": "Event",
+			"relationshipName": "Events"
+		},
+		{
+			"field": "RelatedRecordId",
+			"childObject": "FlowOrchestrationWorkItem",
+			"relationshipName": "FlowOrchestrationWorkItems"
+		},
+		{
+			"field": "ItemReservationSourceId",
+			"childObject": "InventoryItemReservation",
+			"relationshipName": "InventoryReservationSources"
+		},
+		{
+			"field": "ReservationSourceId",
+			"childObject": "InventoryReservation",
+			"relationshipName": "InventoryReservations"
+		},
+		{
+			"field": "ParentEntityId",
+			"childObject": "NetworkActivityAudit",
+			"relationshipName": "ParentEntities"
+		},
+		{
+			"field": "RecordId",
+			"childObject": "NetworkUserHistoryRecent",
+			"relationshipName": "NetworkUserHistoryRecentToRecord"
+		},
+		{
+			"field": "ParentId",
+			"childObject": "Note",
+			"relationshipName": "Notes"
+		},
+		{
+			"field": "ParentId",
+			"childObject": "NoteAndAttachment",
+			"relationshipName": "NotesAndAttachments"
+		},
+		{
+			"field": "WhatId",
+			"childObject": "OpenActivity",
+			"relationshipName": "OpenActivities"
+		},
+		{
+			"field": "AttachedToId",
+			"childObject": "ProcessException",
+			"relationshipName": "ProcessExceptions"
+		},
+		{
+			"field": "TargetObjectId",
+			"childObject": "ProcessInstance",
+			"relationshipName": "ProcessInstances"
+		},
+		{
+			"field": "TargetObjectId",
+			"childObject": "ProcessInstanceHistory",
+			"relationshipName": "ProcessSteps"
+		},
+		{
+			"field": "Property__c",
+			"childObject": "PropertyOpenHouseSchedule__c",
+			"relationshipName": "OpenHouseEvents__r"
+		},
+		{
+			"field": "Property__c",
+			"childObject": "PropertyPriceHistory__c",
+			"relationshipName": "PriceHistories__r"
+		},
+		{
+			"field": "ParentId",
+			"childObject": "Property__Feed",
+			"relationshipName": "Feeds"
+		},
+		{
+			"field": "ParentId",
+			"childObject": "Property__History",
+			"relationshipName": "Histories"
+		},
+		{
+			"field": "RecordId",
+			"childObject": "RecordAction",
+			"relationshipName": "RecordActions"
+		},
+		{
+			"field": "ParentRecordId",
+			"childObject": "RecordActionHistory",
+			"relationshipName": "RecordActionHistories"
+		},
+		{
+			"field": "WhatId",
+			"childObject": "Task",
+			"relationshipName": "Tasks"
+		},
+		{
+			"field": "EntityId",
+			"childObject": "TopicAssignment",
+			"relationshipName": "TopicAssignments"
+		},
+		{
+			"field": "ItemId",
+			"childObject": "UserDefinedLabelAssignment",
+			"relationshipName": "UserDefinedLabelAssignments"
+		},
+		{
+			"field": "RelatedRecordId",
+			"childObject": "VideoCall",
+			"relationshipName": "VideoRelatedRecords"
+		},
+		{
+			"field": "RelatedRecordId",
+			"childObject": "VoiceCall",
+			"relationshipName": "RelatedRecords"
+		}
+	],
+	"fields": [
+		{
+			"type": "ID",
+			"label": "Record ID",
+			"apiName": "Id"
+		},
+		{
+			"relationshipName": "Owner",
+			"referenceTo": ["Group", "User"],
+			"type": "REFERENCE",
+			"label": "Owner ID",
+			"apiName": "OwnerId"
+		},
+		{
+			"type": "BOOLEAN",
+			"label": "Deleted",
+			"apiName": "IsDeleted"
+		},
+		{
+			"type": "STRING",
+			"label": "Property Name",
+			"apiName": "Name"
+		},
+		{
+			"type": "DATETIME",
+			"label": "Created Date",
+			"apiName": "CreatedDate"
+		},
+		{
+			"relationshipName": "CreatedBy",
+			"referenceTo": ["User"],
+			"type": "REFERENCE",
+			"label": "Created By ID",
+			"apiName": "CreatedById"
+		},
+		{
+			"type": "DATETIME",
+			"label": "Last Modified Date",
+			"apiName": "LastModifiedDate"
+		},
+		{
+			"relationshipName": "LastModifiedBy",
+			"referenceTo": ["User"],
+			"type": "REFERENCE",
+			"label": "Last Modified By ID",
+			"apiName": "LastModifiedById"
+		},
+		{
+			"type": "DATETIME",
+			"label": "System Modstamp",
+			"apiName": "SystemModstamp"
+		},
+		{
+			"type": "DATE",
+			"label": "Last Activity Date",
+			"apiName": "LastActivityDate"
+		},
+		{
+			"type": "DATETIME",
+			"label": "Last Viewed Date",
+			"apiName": "LastViewedDate"
+		},
+		{
+			"type": "DATETIME",
+			"label": "Last Referenced Date",
+			"apiName": "LastReferencedDate"
+		},
+		{
+			"type": "STRING",
+			"label": "Record Link",
+			"apiName": "Record_Link__c"
+		},
+		{
+			"type": "PICKLIST",
+			"label": "Status",
+			"apiName": "Status__c"
+		},
+		{
+			"type": "STRING",
+			"label": "Address",
+			"apiName": "Address__c"
+		},
+		{
+			"type": "DOUBLE",
+			"label": "Baths",
+			"apiName": "Baths__c"
+		},
+		{
+			"type": "DOUBLE",
+			"label": "Beds",
+			"apiName": "Beds__c"
+		},
+		{
+			"relationshipName": "Broker__r",
+			"referenceTo": ["Broker__c"],
+			"type": "REFERENCE",
+			"label": "Broker",
+			"apiName": "Broker__c"
+		},
+		{
+			"type": "STRING",
+			"label": "City",
+			"apiName": "City__c"
+		},
+		{
+			"type": "DATE",
+			"label": "Date Agreement",
+			"apiName": "Date_Agreement__c"
+		},
+		{
+			"type": "DATE",
+			"label": "Date Closed",
+			"apiName": "Date_Closed__c"
+		},
+		{
+			"type": "DATE",
+			"label": "Date Contracted",
+			"apiName": "Date_Contracted__c"
+		},
+		{
+			"type": "DATE",
+			"label": "Date Listed",
+			"apiName": "Date_Listed__c"
+		},
+		{
+			"type": "DATE",
+			"label": "Date Pre Market",
+			"apiName": "Date_Pre_Market__c"
+		},
+		{
+			"type": "TEXTAREA",
+			"label": "Description",
+			"apiName": "Description__c"
+		},
+		{
+			"type": "DOUBLE",
+			"label": "Location (Latitude)",
+			"apiName": "Location__Latitude__s"
+		},
+		{
+			"type": "DOUBLE",
+			"label": "Location (Longitude)",
+			"apiName": "Location__Longitude__s"
+		},
+		{
+			"type": "LOCATION",
+			"label": "Location",
+			"apiName": "Location__c"
+		},
+		{
+			"type": "URL",
+			"label": "Picture",
+			"apiName": "Picture__c"
+		},
+		{
+			"type": "CURRENCY",
+			"label": "Asking Price",
+			"apiName": "Price__c"
+		},
+		{
+			"type": "STRING",
+			"label": "State",
+			"apiName": "State__c"
+		},
+		{
+			"type": "STRING",
+			"label": "Tagline",
+			"apiName": "Tagline__c"
+		},
+		{
+			"type": "STRING",
+			"label": "Tags",
+			"apiName": "Tags__c"
+		},
+		{
+			"type": "URL",
+			"label": "Thumbnail",
+			"apiName": "Thumbnail__c"
+		},
+		{
+			"type": "STRING",
+			"label": "Zip",
+			"apiName": "Zip__c"
+		},
+		{
+			"type": "DOUBLE",
+			"label": "Days On Market",
+			"apiName": "Days_On_Market__c"
+		},
+		{
+			"type": "STRING",
+			"label": "Main Picture",
+			"apiName": "Picture_IMG__c"
+		},
+		{
+			"type": "STRING",
+			"label": "Main Thumbnail",
+			"apiName": "Thumbnail_IMG__c"
+		}
+	],
+	"objectMetadata": {
+		"labelPlural": "Properties",
+		"label": "Property",
+		"apiName": "Property__c"
+	}
+}

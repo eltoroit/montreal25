@@ -1,1 +1,1 @@
-web: deno run --allow-env --allow-net ./server.js
+web: deno run --allow-env --allow-read --allow-net ./server.js

@@ -18,7 +18,7 @@ This use case outlines the functionalities for internal users (Dreamhouse employ
 
 - **Property Listing Management**:
 
-    - Main Tests
+    - Main Queries [Property]
 
         1. Show all listings.
         2. Give me the details of property at 18 Henry Street.
@@ -27,14 +27,20 @@ This use case outlines the functionalities for internal users (Dreamhouse employ
         5. Show me properties with at least 3 bedrooms and at most 2 bathrooms
         6. Show me the properties in Cambridge
         7. How many listings are the grouped by city?
-        8. Change the status of property at 18 Henry Street to Sold.
+
+    - Main Queries [PropertyPriceHistory]
+
+        1. What is the listing price history for 18 Henry Street?
+        2. Find the properties in Cambridge and, for each property, show the price history
+        3. Find the properties that have been changed today, for each property review the price history. Only show properties that have changed their price
+        4. Show me the properties that have had a price change this week.
+
+    - Data Updates
+
+        1. Change the status of property at 18 Henry Street to Sold.
             - [Expected] => "Sold" is not a valid option, the option is "Closed"
-        9. Modify the property description of property at 18 Henry Street to "Sold this House. Please unlist".
-        10. Update the price of property at 18 Henry Street to $950,000.
-        11. What is the listing price history for 18 Henry Street?
-        12. Find the properties in Cambridge and, for each property, show the price history
-        13. Find the properties that have been changed today, for each property review the price history. Only show properties that have changed their price
-        14. Show me the properties that have had a price change this week.
+        2. Modify the property description of property at 18 Henry Street to "Sold this House. Please unlist".
+        3. Update the price of property at 18 Henry Street to $950,000.
 
     - Other Utterances
 

@@ -1,12 +1,16 @@
 {
 	"packageDirectories": [
 		{
-			"path": "force-apps/deploy",
-			"default": true
+			"path": "force-apps/base",
+			"default": false
 		},
 		{
 			"path": "force-apps/doNotDeploy",
 			"default": false
+		},
+		{
+			"path": "force-apps/ETDH",
+			"default": true
 		},
 		{
 			"path": "force-apps/setup",
