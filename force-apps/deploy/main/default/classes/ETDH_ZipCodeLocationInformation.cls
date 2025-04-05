@@ -47,22 +47,11 @@ public with sharing class ETDH_ZipCodeLocationInformation {
 
 	private static String formatZipCodeInfo(String zipCodeInfo, AgentRequest request, Property__c property) {
 		// Create Prompt Input Parameter Variables
-		ConnectApi.WrappedValue inputValue;
 		Map<String, ConnectApi.WrappedValue> inputParams = new Map<String, ConnectApi.WrappedValue>();
-
-		// Set each value
-		inputValue = new ConnectApi.WrappedValue();
-		inputValue.value = zipCodeInfo;
-		inputParams.put('Input:ZipCode_Data', inputValue);
-
-		inputValue = new ConnectApi.WrappedValue();
-		inputValue.value = request.interest;
-		inputParams.put('Input:Interest', inputValue);
-
-		inputValue = new ConnectApi.WrappedValue();
-		inputValue.value = new Map<String, String>{ 'id' => property.Id };
-		inputParams.put('Input:Property', inputValue);
-
+		ETDH_Helpers.addValue(inputParams, 'Input:ZipCode_Data', zipCodeInfo);
+		ETDH_Helpers.addValue(inputParams, 'Input:Interest', request.interest);
+		ETDH_Helpers.addValue(inputParams, 'Input:Property', new Map<String, String>{ 'id' => property.Id });
+ 
 		// Set the prompt service
 		ConnectApi.EinsteinPromptTemplateGenerationsInput promptGenerationsInput = new ConnectApi.EinsteinPromptTemplateGenerationsInput();
 		promptGenerationsInput.inputParams = inputParams;
@@ -74,7 +63,7 @@ public with sharing class ETDH_ZipCodeLocationInformation {
 
 		// Call the prompt service to generate messages for the prompt template
 		ConnectApi.EinsteinPromptTemplateGenerationsRepresentation generationsOutput = ConnectApi.EinsteinLLM.generateMessagesForPromptTemplate(
-			'ETDH_Analyze_ZipCode_information2',
+			'ETDH_Analyze_ZipCode_information',
 			promptGenerationsInput
 		);
 

@@ -1,5 +1,5 @@
 public inherited sharing class ETDH_Helpers {
-	public static void debugStringInChunks(String longString, Integer chunkSize) {
+	public static void debugStringInChunks(String action, String longString, Integer chunkSize) {
 		// Default to 50 if chunkSize is not provided or invalid
 		if (chunkSize == null || chunkSize <= 0) {
 			chunkSize = 50;
@@ -11,11 +11,14 @@ public inherited sharing class ETDH_Helpers {
 			return;
 		}
 
+		longString = longString.replaceAll('\n', '<NEW_LINE>');
 		Integer stringLength = longString.length();
 		Double totalChunks = Math.ceil(stringLength / (Double) chunkSize);
 
+		System.debug('*** *** BEGIN *** *** ' + action + ' *** ***');
 		System.debug('Total string length: ' + stringLength);
 		System.debug('Splitting into ' + totalChunks + ' chunks of ' + chunkSize + ' characters');
+		// System.debug(longString);
 
 		for (Integer i = 0; i < stringLength; i += chunkSize) {
 			// Calculate the end index, making sure not to exceed string length
@@ -37,14 +40,12 @@ public inherited sharing class ETDH_Helpers {
 					'): ' +
 					chunk
 			);
-			// System.debug(chunk);
 		}
+		System.debug('*** *** END *** *** ' + action + ' *** ***');
 	}
 
 	public static String extractHtml(String input) {
-		// Debug input
-		System.debug('Before format');
-		ETDH_Helpers.debugStringInChunks(input, 100);
+		ETDH_Helpers.debugStringInChunks('ETDH_Helpers.extractHtml(): Input', input, 100);
 
 		// Process
 		String output = input; // .replaceAll('\n', '');
@@ -60,11 +61,26 @@ public inherited sharing class ETDH_Helpers {
 			// Clean it twice just in case :-)
 			output = cleanHtml(output);
 			output = cleanHtml(output);
+			ETDH_Helpers.debugStringInChunks('ETDH_Helpers.extractHtml(): Output', output, 100);
+			return output;
+		}
+	}
 
-			// Debug output
-			System.debug('Before format');
-			ETDH_Helpers.debugStringInChunks(output, 100);
+	public static String extractJson(String input) {
+		ETDH_Helpers.debugStringInChunks('ETDH_Helpers.extractJson(): Input', input, 100);
 
+		// Process
+		String output = input;
+		Integer startIndex = output.indexOf('{');
+		Integer endIndex = output.lastIndexOf('}');
+
+		if (startIndex == -1 || endIndex == -1 || startIndex >= endIndex) {
+			System.debug('Not JSON, returning original input');
+			return input;
+		} else {
+			// Process JSON
+			output = output.substring(startIndex, endIndex + 1);
+			ETDH_Helpers.debugStringInChunks('ETDH_Helpers.extractJSON(): Output', output, 100);
 			return output;
 		}
 	}
@@ -104,5 +120,71 @@ public inherited sharing class ETDH_Helpers {
 
 	public static String padNumber(Integer value, Integer length) {
 		return String.valueOf(value).leftPad(length, '0');
+	}
+
+	public static ConnectApi.WrappedValue addValue(Map<String, ConnectApi.WrappedValue> inputParams, String name, Object value) {
+		ConnectApi.WrappedValue inputValue = new ConnectApi.WrappedValue();
+		inputValue.value = value;
+		inputParams.put(name, inputValue);
+		return inputValue;
+	}
+
+	public static String getSObjectMetadata(String sObjectName) {
+		Map<String, Object> jsonOutput = new Map<String, Object>();
+		Map<String, Schema.SObjectType> globalDescribe = Schema.getGlobalDescribe();
+		Schema.DescribeSObjectResult describeResult = globalDescribe.get(sObjectName).getDescribe();
+
+		// Add general object metadata
+		Map<String, Object> objectMetadata = new Map<String, Object>{
+			'apiName' => describeResult.getName(),
+			'label' => describeResult.getLabel(),
+			'labelPlural' => describeResult.getLabelPlural()
+		};
+		jsonOutput.put('objectMetadata', objectMetadata);
+
+		// Process field information
+		Map<String, Schema.SObjectField> fieldMap = describeResult.fields.getMap();
+		List<Map<String, Object>> fieldsList = new List<Map<String, Object>>();
+		for (String fieldName : fieldMap.keySet()) {
+			Schema.DescribeFieldResult field = fieldMap.get(fieldName).getDescribe();
+			Map<String, Object> fieldInfo = new Map<String, Object>{
+				'apiName' => field.getName(),
+				'label' => field.getLabel(),
+				'type' => String.valueOf(field.getType())
+			};
+
+			// For reference fields, include referenced objects
+			if (field.getType() == Schema.DisplayType.REFERENCE) {
+				List<String> references = new List<String>();
+				for (Schema.SObjectType reference : field.getReferenceTo()) {
+					references.add(reference.getDescribe().getName());
+				}
+				fieldInfo.put('referenceTo', references);
+				fieldInfo.put('relationshipName', field.getRelationshipName());
+			}
+
+			fieldsList.add(fieldInfo);
+		}
+		jsonOutput.put('fields', fieldsList);
+
+		// Get child relationships
+		List<Map<String, Object>> childRelationships = new List<Map<String, Object>>();
+		for (Schema.ChildRelationship cr : describeResult.getChildRelationships()) {
+			if (cr.getRelationshipName() != null) {
+				childRelationships.add(
+					new Map<String, Object>{
+						// 'isCascadeDelete' => cr.isCascadeDelete()
+						'relationshipName' => cr.getRelationshipName(),
+						'childObject' => cr.getChildSObject().getDescribe().getName(),
+						'field' => cr.getField().getDescribe().getName()
+					}
+				);
+			}
+		}
+		jsonOutput.put('childRelationships', childRelationships);
+
+		// Convert to JSON and output
+		String jsonString = JSON.serializePretty(jsonOutput);
+		return jsonString;
 	}
 }

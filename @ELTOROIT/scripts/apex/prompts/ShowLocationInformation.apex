@@ -1,4 +1,4 @@
-// sf apex run --file '/Users/aperez/Git Projects/current/AgentForce/08.Montreal/@ELTOROIT/scripts/apex/ShowLocationInformation.apex' | grep "USER_DEBUG"
+// sf apex run --file '/Users/aperez/Git Projects/current/AgentForce/08.Montreal/@ELTOROIT/scripts/apex/prompts/ShowLocationInformation.apex' | grep "USER_DEBUG"
 
 List<ETDH_ZipCodeLocationInformation.AgentRequest> requests = new List<ETDH_ZipCodeLocationInformation.AgentRequest>();
 ETDH_ZipCodeLocationInformation.AgentRequest request = new ETDH_ZipCodeLocationInformation.AgentRequest();
@@ -13,8 +13,4 @@ for (ETDH_ZipCodeLocationInformation.AgentResult result : results) {
 	if (result.error != null) {
 		System.debug('Error: ' + result.error);
 	}
-	// No need to System.debug() again, the method already did it.
-	// } else {
-	// 	// System.debug(result.zipCodeInfo);
-	// 	ETDH_Helpers.debugStringInChunks(result.zipCodeInfo, 100);
 }
