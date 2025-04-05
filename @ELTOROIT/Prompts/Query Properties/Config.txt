@@ -1,0 +1,12 @@
+# Question
+
+- Can you give me a summary of the property at 02420?
+
+# ObjectName
+
+- Property__c
+
+# AdditionalInstructions
+
+- Properties can be identified by their Record Id (18 characters), Name (for example 123 Main Street), Address__c (for example 123 Main Street), Zip__c (five digits, for example 02123) or other attributes (bedrooms, bathrooms, ...).
+- You may use action "QueryRecords" on the "Property__c" to find the property.
