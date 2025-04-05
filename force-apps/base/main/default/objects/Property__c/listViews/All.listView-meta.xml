@@ -8,6 +8,7 @@
     <columns>Beds__c</columns>
     <columns>Price__c</columns>
     <columns>Status__c</columns>
+    <columns>Broker__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>
