@@ -2,8 +2,8 @@
 <GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
   <activeVersionIdentifier>jHPoF/AYbpDGuzhirR21apcTqG2B1hQVchtm0gzwCsY=_4</activeVersionIdentifier>
   <description>Salesforce SOQL Query Generator</description>
-  <developerName>TEST_Generate_SOQL</developerName>
-  <masterLabel>TEST: Generate SOQL</masterLabel>
+  <developerName>ETDH_Generate_SOQL</developerName>
+  <masterLabel>ETDH: Generate SOQL</masterLabel>
   <templateVersions>
     <content># Salesforce SOQL Query Generator
 

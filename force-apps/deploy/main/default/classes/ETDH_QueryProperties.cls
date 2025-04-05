@@ -70,7 +70,7 @@ public with sharing class ETDH_QueryProperties {
 
 		// Call the prompt service to generate messages for the prompt template
 		ConnectApi.EinsteinPromptTemplateGenerationsRepresentation generationsOutput = ConnectApi.EinsteinLLM.generateMessagesForPromptTemplate(
-			'TEST_Generate_SOQL',
+			'ETDH_Generate_SOQL',
 			promptGenerationsInput
 		);
 
