@@ -7,12 +7,12 @@
 		"UserOnScreen": true // Can I prompt the user for manual verification? On CICD, this should be false
 	},
 	"steps": [
-		// Prepare environment
-		"ValidateETCopyData",
-		"CreateFinestDebugLevel",
+		// // Prepare environment
+		// "ValidateETCopyData",
+		// "CreateFinestDebugLevel",
 
-		// Deploying
-		"ShowDeployPage",
+		// // Deploying
+		// "ShowDeployPage",
 		{ "PushMetadata": { "folder": "force-apps/base" } },
 
 		// Post-Deploy

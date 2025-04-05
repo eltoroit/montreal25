@@ -10,7 +10,7 @@
 		},
 		{
 			"path": "force-apps/ETDH",
-			"default": false
+			"default": true
 		},
 		{
 			"path": "force-apps/setup",
