@@ -1,6 +1,15 @@
 [
     {
         "Broker_Id__c": 1,
+        "Name": "Andres Perez (ELTOROit)",
+        "Title__c": "Senior Broker",
+        "Phone__c": "911",
+        "Mobile_Phone__c": "911",
+        "Email__c": "eltoroit@dreamhouse.demo",
+        "Picture__c": "https://et-dreamhouse-agentforce-fac4c0e681a0.herokuapp.com/resources/eltoroit.png"
+    },
+    {
+        "Broker_Id__c": 3,
         "Name": "Caroline Kingsley",
         "Title__c": "Senior Broker",
         "Phone__c": "617-244-3672",
@@ -16,15 +25,6 @@
         "Mobile_Phone__c": "617-244-3672",
         "Email__c": "michael@dreamhouse.demo",
         "Picture__c": "https://s3-us-west-2.amazonaws.com/dev-or-devrl-s3-bucket/sample-apps/people/michael_jones.jpg"
-    },
-    {
-        "Broker_Id__c": 3,
-        "Name": "Jonathan Bradley",
-        "Title__c": "Senior Broker",
-        "Phone__c": "617-244-3672",
-        "Mobile_Phone__c": "617-244-3672",
-        "Email__c": "jonathan@dreamhouse.demo",
-        "Picture__c": "https://s3-us-west-2.amazonaws.com/dev-or-devrl-s3-bucket/sample-apps/people/jonathan_bradley.jpg"
     },
     {
         "Broker_Id__c": 4,

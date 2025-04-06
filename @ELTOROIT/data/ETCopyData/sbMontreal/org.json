@@ -331,6 +331,7 @@
 				"Price__c",
 				"State__c",
 				"Status__c",
+				"Tagline__c",
 				"Tags__c",
 				"Thumbnail__c",
 				"Zip__c"
@@ -454,6 +455,7 @@
 		"AgentWorkChangeEvent": [],
 		"AgentWorkShare": [],
 		"AggregateResult": [],
+		"AiPluginUtteranceDef": [],
 		"AlternativePaymentMethod": [],
 		"AlternativePaymentMethodShare": [],
 		"AnalyticsTaskStatusEvent": [],
@@ -571,6 +573,8 @@
 		"BatchProcessJobDefinition": [],
 		"Booking__ChangeEvent": [],
 		"Booking__c": [],
+		"BotDefinition": [],
+		"BotVersion": [],
 		"BrandTemplate": [],
 		"BrandingSet": [],
 		"BrandingSetProperty": [],
@@ -964,6 +968,9 @@
 		"ContractFeed": [],
 		"ContractHistory": [],
 		"ContractStatus": [],
+		"ConvDefDialogDailyMetric": [],
+		"ConvDefDialogHourlyMetric": [],
+		"ConvDefSessionMetric": [],
 		"ConvIntelligenceSignalRule": [],
 		"ConvIntelligenceSignalSubRule": [],
 		"ConvMessageSendRequest": [],
@@ -972,6 +979,10 @@
 		"ConversationApiLogObjSum": [],
 		"ConversationApiLogShare": [],
 		"ConversationChannelDefinition": [],
+		"ConversationDefinitionDialog": [],
+		"ConversationDefinitionEventLog": [],
+		"ConversationDefinitionSession": [],
+		"ConversationDefinitionSessionEngagement": [],
 		"ConversationEntry": [],
 		"ConversationParticipant": [],
 		"ConversationVendorInfo": [],
@@ -1315,6 +1326,13 @@
 		"FulfillmentOrderLineItemChangeEvent": [],
 		"FulfillmentOrderLineItemFeed": [],
 		"FulfillmentOrderShare": [],
+		"GenAiFunctionDefinition": [],
+		"GenAiPlannerAttrDefinition": [],
+		"GenAiPlannerDefinition": [],
+		"GenAiPlannerFunctionDef": [],
+		"GenAiPluginDefinition": [],
+		"GenAiPluginFunctionDef": [],
+		"GenAiPluginInstructionDef": [],
 		"GrantedByLicense": [],
 		"Group": [],
 		"GroupMember": [],
@@ -1496,6 +1514,8 @@
 		"MktSgmtDefCalcInsightFld": [],
 		"MktSgmtDefDataMdlObjFld": [],
 		"MlFeatureValueMetric": [],
+		"MlIntentUtterance": [],
+		"MlIntentUtteranceSuggestion": [],
 		"MobSecurityCertPinConfig": [],
 		"MobileApplicationDetail": [],
 		"MobileSecurityAssignment": [],
@@ -1820,6 +1840,7 @@
 			"State__c",
 			"Status__c",
 			"SystemModstamp",
+			"Tagline__c",
 			"Tags__c",
 			"Thumbnail_IMG__c",
 			"Thumbnail__c",
@@ -2209,39 +2230,6 @@
 	},
 	"rejected": {
 		"ADD_FIELD": {
-			"OpenHouse__c.IsDeleted": [
-				"Must be createable"
-			],
-			"OpenHouse__c.Name": [
-				"Can't be autoNumber",
-				"Must be createable"
-			],
-			"OpenHouse__c.CreatedDate": [
-				"Must be createable"
-			],
-			"OpenHouse__c.CreatedById": [
-				"Must be createable",
-				"Parent sObject [User] is not processed"
-			],
-			"OpenHouse__c.LastModifiedDate": [
-				"Must be createable"
-			],
-			"OpenHouse__c.LastModifiedById": [
-				"Must be createable",
-				"Parent sObject [User] is not processed"
-			],
-			"OpenHouse__c.SystemModstamp": [
-				"Must be createable"
-			],
-			"OpenHouse__c.LastActivityDate": [
-				"Must be createable"
-			],
-			"OpenHouse__c.LastViewedDate": [
-				"Must be createable"
-			],
-			"OpenHouse__c.LastReferencedDate": [
-				"Must be createable"
-			],
 			"Property__c.OwnerId": [
 				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
 			],
@@ -2290,6 +2278,39 @@
 				"Must be createable"
 			],
 			"Property__c.Thumbnail_IMG__c": [
+				"Can't be calculated",
+				"Must be createable"
+			],
+			"Broker__c.OwnerId": [
+				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
+			],
+			"Broker__c.IsDeleted": [
+				"Must be createable"
+			],
+			"Broker__c.CreatedDate": [
+				"Must be createable"
+			],
+			"Broker__c.CreatedById": [
+				"Must be createable",
+				"Parent sObject [User] is not processed"
+			],
+			"Broker__c.LastModifiedDate": [
+				"Must be createable"
+			],
+			"Broker__c.LastModifiedById": [
+				"Must be createable",
+				"Parent sObject [User] is not processed"
+			],
+			"Broker__c.SystemModstamp": [
+				"Must be createable"
+			],
+			"Broker__c.LastViewedDate": [
+				"Must be createable"
+			],
+			"Broker__c.LastReferencedDate": [
+				"Must be createable"
+			],
+			"Broker__c.Picture_IMG__c": [
 				"Can't be calculated",
 				"Must be createable"
 			],
@@ -2378,39 +2399,6 @@
 				"Must be createable"
 			],
 			"Case.LastReferencedDate": [
-				"Must be createable"
-			],
-			"Broker__c.OwnerId": [
-				"Reference, but it points to 0 or more than 1 sObject: | Group | User | "
-			],
-			"Broker__c.IsDeleted": [
-				"Must be createable"
-			],
-			"Broker__c.CreatedDate": [
-				"Must be createable"
-			],
-			"Broker__c.CreatedById": [
-				"Must be createable",
-				"Parent sObject [User] is not processed"
-			],
-			"Broker__c.LastModifiedDate": [
-				"Must be createable"
-			],
-			"Broker__c.LastModifiedById": [
-				"Must be createable",
-				"Parent sObject [User] is not processed"
-			],
-			"Broker__c.SystemModstamp": [
-				"Must be createable"
-			],
-			"Broker__c.LastViewedDate": [
-				"Must be createable"
-			],
-			"Broker__c.LastReferencedDate": [
-				"Must be createable"
-			],
-			"Broker__c.Picture_IMG__c": [
-				"Can't be calculated",
 				"Must be createable"
 			],
 			"Contact.IsDeleted": [
@@ -2531,189 +2519,42 @@
 			],
 			"Account.OperatingHoursId": [
 				"Parent sObject [OperatingHours] is not processed"
+			],
+			"OpenHouse__c.IsDeleted": [
+				"Must be createable"
+			],
+			"OpenHouse__c.Name": [
+				"Can't be autoNumber",
+				"Must be createable"
+			],
+			"OpenHouse__c.CreatedDate": [
+				"Must be createable"
+			],
+			"OpenHouse__c.CreatedById": [
+				"Must be createable",
+				"Parent sObject [User] is not processed"
+			],
+			"OpenHouse__c.LastModifiedDate": [
+				"Must be createable"
+			],
+			"OpenHouse__c.LastModifiedById": [
+				"Must be createable",
+				"Parent sObject [User] is not processed"
+			],
+			"OpenHouse__c.SystemModstamp": [
+				"Must be createable"
+			],
+			"OpenHouse__c.LastActivityDate": [
+				"Must be createable"
+			],
+			"OpenHouse__c.LastViewedDate": [
+				"Must be createable"
+			],
+			"OpenHouse__c.LastReferencedDate": [
+				"Must be createable"
 			]
 		},
 		"ADD_CHILD": {
-			"OpenHouse__c.null => AIInsightValue": [
-				"Child sObject [AIInsightValue] is not processed"
-			],
-			"OpenHouse__c.null => AIRecordInsight": [
-				"Child sObject [AIRecordInsight] is not processed"
-			],
-			"OpenHouse__c.ActivityHistories => ActivityHistory": [
-				"Child sObject [ActivityHistory] is not processed"
-			],
-			"OpenHouse__c.null => AgentWork": [
-				"Child sObject [AgentWork] is not processed"
-			],
-			"OpenHouse__c.null => AgentWorkChangeEvent": [
-				"Child sObject [AgentWorkChangeEvent] is not processed"
-			],
-			"OpenHouse__c.ApprovalSubmissions => ApprovalSubmission": [
-				"Child sObject [ApprovalSubmission] is not processed"
-			],
-			"OpenHouse__c.ApprovalWorkItems => ApprovalWorkItem": [
-				"Child sObject [ApprovalWorkItem] is not processed"
-			],
-			"OpenHouse__c.AttachedContentDocuments => AttachedContentDocument": [
-				"Child sObject [AttachedContentDocument] is not processed"
-			],
-			"OpenHouse__c.Attachments => Attachment": [
-				"Child sObject [Attachment] is not processed"
-			],
-			"OpenHouse__c.RecordAssociatedGroups => CollaborationGroupRecord": [
-				"Child sObject [CollaborationGroupRecord] is not processed"
-			],
-			"OpenHouse__c.null => CollaborationGroupRecordChangeEvent": [
-				"Child sObject [CollaborationGroupRecordChangeEvent] is not processed"
-			],
-			"OpenHouse__c.CombinedAttachments => CombinedAttachment": [
-				"Child sObject [CombinedAttachment] is not processed"
-			],
-			"OpenHouse__c.ContactRequests => ContactRequest": [
-				"Child sObject [ContactRequest] is not processed"
-			],
-			"OpenHouse__c.null => ContentDistribution": [
-				"Child sObject [ContentDistribution] is not processed"
-			],
-			"OpenHouse__c.ContentDocumentLinks => ContentDocumentLink": [
-				"Child sObject [ContentDocumentLink] is not processed"
-			],
-			"OpenHouse__c.null => ContentDocumentLinkChangeEvent": [
-				"Child sObject [ContentDocumentLinkChangeEvent] is not processed"
-			],
-			"OpenHouse__c.null => ContentVersion": [
-				"Child sObject [ContentVersion] is not processed"
-			],
-			"OpenHouse__c.null => ContentVersionChangeEvent": [
-				"Child sObject [ContentVersionChangeEvent] is not processed"
-			],
-			"OpenHouse__c.DuplicateRecordItems => DuplicateRecordItem": [
-				"Child sObject [DuplicateRecordItem] is not processed"
-			],
-			"OpenHouse__c.Emails => EmailMessage": [
-				"Child sObject [EmailMessage] is not processed"
-			],
-			"OpenHouse__c.null => EmailMessageChangeEvent": [
-				"Child sObject [EmailMessageChangeEvent] is not processed"
-			],
-			"OpenHouse__c.FeedSubscriptionsForEntity => EntitySubscription": [
-				"Child sObject [EntitySubscription] is not processed"
-			],
-			"OpenHouse__c.Events => Event": [
-				"Child sObject [Event] is not processed"
-			],
-			"OpenHouse__c.null => EventChangeEvent": [
-				"Child sObject [EventChangeEvent] is not processed"
-			],
-			"OpenHouse__c.null => EventRelationChangeEvent": [
-				"Child sObject [EventRelationChangeEvent] is not processed"
-			],
-			"OpenHouse__c.null => FeedComment": [
-				"Child sObject [FeedComment] is not processed"
-			],
-			"OpenHouse__c.null => FeedItem": [
-				"Child sObject [FeedItem] is not processed"
-			],
-			"OpenHouse__c.null => FlowExecutionErrorEvent": [
-				"Child sObject [FlowExecutionErrorEvent] is not processed"
-			],
-			"OpenHouse__c.FlowOrchestrationWorkItems => FlowOrchestrationWorkItem": [
-				"Child sObject [FlowOrchestrationWorkItem] is not processed"
-			],
-			"OpenHouse__c.null => FlowRecordRelation": [
-				"Child sObject [FlowRecordRelation] is not processed"
-			],
-			"OpenHouse__c.InventoryReservationSources => InventoryItemReservation": [
-				"Child sObject [InventoryItemReservation] is not processed"
-			],
-			"OpenHouse__c.InventoryReservations => InventoryReservation": [
-				"Child sObject [InventoryReservation] is not processed"
-			],
-			"OpenHouse__c.ParentEntities => NetworkActivityAudit": [
-				"Child sObject [NetworkActivityAudit] is not processed"
-			],
-			"OpenHouse__c.null => NetworkFeedResponseMetric": [
-				"Child sObject [NetworkFeedResponseMetric] is not processed"
-			],
-			"OpenHouse__c.NetworkUserHistoryRecentToRecord => NetworkUserHistoryRecent": [
-				"Child sObject [NetworkUserHistoryRecent] is not processed"
-			],
-			"OpenHouse__c.Notes => Note": [
-				"Child sObject [Note] is not processed"
-			],
-			"OpenHouse__c.NotesAndAttachments => NoteAndAttachment": [
-				"Child sObject [NoteAndAttachment] is not processed"
-			],
-			"OpenHouse__c.null => ObjectRelatedUrl": [
-				"Child sObject [ObjectRelatedUrl] is not processed"
-			],
-			"OpenHouse__c.null => ObjectRelatedUrlChangeEvent": [
-				"Child sObject [ObjectRelatedUrlChangeEvent] is not processed"
-			],
-			"OpenHouse__c.OpenActivities => OpenActivity": [
-				"Child sObject [OpenActivity] is not processed"
-			],
-			"OpenHouse__c.Histories => OpenHouse__History": [
-				"Child sObject [OpenHouse__History] is not processed"
-			],
-			"OpenHouse__c.null => PendingServiceRouting": [
-				"Child sObject [PendingServiceRouting] is not processed"
-			],
-			"OpenHouse__c.null => PendingServiceRoutingChangeEvent": [
-				"Child sObject [PendingServiceRoutingChangeEvent] is not processed"
-			],
-			"OpenHouse__c.null => PendingServiceRoutingInteractionInfo": [
-				"Child sObject [PendingServiceRoutingInteractionInfo] is not processed"
-			],
-			"OpenHouse__c.ProcessExceptions => ProcessException": [
-				"Child sObject [ProcessException] is not processed"
-			],
-			"OpenHouse__c.null => ProcessExceptionChangeEvent": [
-				"Child sObject [ProcessExceptionChangeEvent] is not processed"
-			],
-			"OpenHouse__c.null => ProcessExceptionEvent": [
-				"Child sObject [ProcessExceptionEvent] is not processed"
-			],
-			"OpenHouse__c.ProcessInstances => ProcessInstance": [
-				"Child sObject [ProcessInstance] is not processed"
-			],
-			"OpenHouse__c.null => ProcessInstanceChangeEvent": [
-				"Child sObject [ProcessInstanceChangeEvent] is not processed"
-			],
-			"OpenHouse__c.ProcessSteps => ProcessInstanceHistory": [
-				"Child sObject [ProcessInstanceHistory] is not processed"
-			],
-			"OpenHouse__c.RecordActions => RecordAction": [
-				"Child sObject [RecordAction] is not processed"
-			],
-			"OpenHouse__c.RecordActionHistories => RecordActionHistory": [
-				"Child sObject [RecordActionHistory] is not processed"
-			],
-			"OpenHouse__c.Tasks => Task": [
-				"Child sObject [Task] is not processed"
-			],
-			"OpenHouse__c.null => TaskChangeEvent": [
-				"Child sObject [TaskChangeEvent] is not processed"
-			],
-			"OpenHouse__c.TopicAssignments => TopicAssignment": [
-				"Child sObject [TopicAssignment] is not processed"
-			],
-			"OpenHouse__c.UserDefinedLabelAssignments => UserDefinedLabelAssignment": [
-				"Child sObject [UserDefinedLabelAssignment] is not processed"
-			],
-			"OpenHouse__c.VideoRelatedRecords => VideoCall": [
-				"Child sObject [VideoCall] is not processed"
-			],
-			"OpenHouse__c.null => VideoCallChangeEvent": [
-				"Child sObject [VideoCallChangeEvent] is not processed"
-			],
-			"OpenHouse__c.RelatedRecords => VoiceCall": [
-				"Child sObject [VoiceCall] is not processed"
-			],
-			"OpenHouse__c.null => VoiceCallChangeEvent": [
-				"Child sObject [VoiceCallChangeEvent] is not processed"
-			],
 			"Property__c.null => AIInsightValue": [
 				"Child sObject [AIInsightValue] is not processed"
 			],
@@ -2898,6 +2739,171 @@
 				"Child sObject [VoiceCall] is not processed"
 			],
 			"Property__c.null => VoiceCallChangeEvent": [
+				"Child sObject [VoiceCallChangeEvent] is not processed"
+			],
+			"Broker__c.null => AIInsightValue": [
+				"Child sObject [AIInsightValue] is not processed"
+			],
+			"Broker__c.null => AIRecordInsight": [
+				"Child sObject [AIRecordInsight] is not processed"
+			],
+			"Broker__c.null => AgentWork": [
+				"Child sObject [AgentWork] is not processed"
+			],
+			"Broker__c.null => AgentWorkChangeEvent": [
+				"Child sObject [AgentWorkChangeEvent] is not processed"
+			],
+			"Broker__c.ApprovalSubmissions => ApprovalSubmission": [
+				"Child sObject [ApprovalSubmission] is not processed"
+			],
+			"Broker__c.ApprovalWorkItems => ApprovalWorkItem": [
+				"Child sObject [ApprovalWorkItem] is not processed"
+			],
+			"Broker__c.AttachedContentDocuments => AttachedContentDocument": [
+				"Child sObject [AttachedContentDocument] is not processed"
+			],
+			"Broker__c.Attachments => Attachment": [
+				"Child sObject [Attachment] is not processed"
+			],
+			"Broker__c.Shares => Broker__Share": [
+				"Child sObject [Broker__Share] is not processed"
+			],
+			"Broker__c.RecordAssociatedGroups => CollaborationGroupRecord": [
+				"Child sObject [CollaborationGroupRecord] is not processed"
+			],
+			"Broker__c.null => CollaborationGroupRecordChangeEvent": [
+				"Child sObject [CollaborationGroupRecordChangeEvent] is not processed"
+			],
+			"Broker__c.CombinedAttachments => CombinedAttachment": [
+				"Child sObject [CombinedAttachment] is not processed"
+			],
+			"Broker__c.ContactRequests => ContactRequest": [
+				"Child sObject [ContactRequest] is not processed"
+			],
+			"Broker__c.null => ContentDistribution": [
+				"Child sObject [ContentDistribution] is not processed"
+			],
+			"Broker__c.ContentDocumentLinks => ContentDocumentLink": [
+				"Child sObject [ContentDocumentLink] is not processed"
+			],
+			"Broker__c.null => ContentDocumentLinkChangeEvent": [
+				"Child sObject [ContentDocumentLinkChangeEvent] is not processed"
+			],
+			"Broker__c.null => ContentVersion": [
+				"Child sObject [ContentVersion] is not processed"
+			],
+			"Broker__c.null => ContentVersionChangeEvent": [
+				"Child sObject [ContentVersionChangeEvent] is not processed"
+			],
+			"Broker__c.DuplicateRecordItems => DuplicateRecordItem": [
+				"Child sObject [DuplicateRecordItem] is not processed"
+			],
+			"Broker__c.null => EmailMessageChangeEvent": [
+				"Child sObject [EmailMessageChangeEvent] is not processed"
+			],
+			"Broker__c.FeedSubscriptionsForEntity => EntitySubscription": [
+				"Child sObject [EntitySubscription] is not processed"
+			],
+			"Broker__c.null => EventChangeEvent": [
+				"Child sObject [EventChangeEvent] is not processed"
+			],
+			"Broker__c.null => EventRelationChangeEvent": [
+				"Child sObject [EventRelationChangeEvent] is not processed"
+			],
+			"Broker__c.null => FeedComment": [
+				"Child sObject [FeedComment] is not processed"
+			],
+			"Broker__c.null => FeedItem": [
+				"Child sObject [FeedItem] is not processed"
+			],
+			"Broker__c.null => FlowExecutionErrorEvent": [
+				"Child sObject [FlowExecutionErrorEvent] is not processed"
+			],
+			"Broker__c.FlowOrchestrationWorkItems => FlowOrchestrationWorkItem": [
+				"Child sObject [FlowOrchestrationWorkItem] is not processed"
+			],
+			"Broker__c.null => FlowRecordRelation": [
+				"Child sObject [FlowRecordRelation] is not processed"
+			],
+			"Broker__c.InventoryReservationSources => InventoryItemReservation": [
+				"Child sObject [InventoryItemReservation] is not processed"
+			],
+			"Broker__c.InventoryReservations => InventoryReservation": [
+				"Child sObject [InventoryReservation] is not processed"
+			],
+			"Broker__c.ParentEntities => NetworkActivityAudit": [
+				"Child sObject [NetworkActivityAudit] is not processed"
+			],
+			"Broker__c.null => NetworkFeedResponseMetric": [
+				"Child sObject [NetworkFeedResponseMetric] is not processed"
+			],
+			"Broker__c.NetworkUserHistoryRecentToRecord => NetworkUserHistoryRecent": [
+				"Child sObject [NetworkUserHistoryRecent] is not processed"
+			],
+			"Broker__c.Notes => Note": [
+				"Child sObject [Note] is not processed"
+			],
+			"Broker__c.NotesAndAttachments => NoteAndAttachment": [
+				"Child sObject [NoteAndAttachment] is not processed"
+			],
+			"Broker__c.null => ObjectRelatedUrl": [
+				"Child sObject [ObjectRelatedUrl] is not processed"
+			],
+			"Broker__c.null => ObjectRelatedUrlChangeEvent": [
+				"Child sObject [ObjectRelatedUrlChangeEvent] is not processed"
+			],
+			"Broker__c.null => PendingServiceRouting": [
+				"Child sObject [PendingServiceRouting] is not processed"
+			],
+			"Broker__c.null => PendingServiceRoutingChangeEvent": [
+				"Child sObject [PendingServiceRoutingChangeEvent] is not processed"
+			],
+			"Broker__c.null => PendingServiceRoutingInteractionInfo": [
+				"Child sObject [PendingServiceRoutingInteractionInfo] is not processed"
+			],
+			"Broker__c.ProcessExceptions => ProcessException": [
+				"Child sObject [ProcessException] is not processed"
+			],
+			"Broker__c.null => ProcessExceptionChangeEvent": [
+				"Child sObject [ProcessExceptionChangeEvent] is not processed"
+			],
+			"Broker__c.null => ProcessExceptionEvent": [
+				"Child sObject [ProcessExceptionEvent] is not processed"
+			],
+			"Broker__c.ProcessInstances => ProcessInstance": [
+				"Child sObject [ProcessInstance] is not processed"
+			],
+			"Broker__c.null => ProcessInstanceChangeEvent": [
+				"Child sObject [ProcessInstanceChangeEvent] is not processed"
+			],
+			"Broker__c.ProcessSteps => ProcessInstanceHistory": [
+				"Child sObject [ProcessInstanceHistory] is not processed"
+			],
+			"Broker__c.RecordActions => RecordAction": [
+				"Child sObject [RecordAction] is not processed"
+			],
+			"Broker__c.RecordActionHistories => RecordActionHistory": [
+				"Child sObject [RecordActionHistory] is not processed"
+			],
+			"Broker__c.null => TaskChangeEvent": [
+				"Child sObject [TaskChangeEvent] is not processed"
+			],
+			"Broker__c.TopicAssignments => TopicAssignment": [
+				"Child sObject [TopicAssignment] is not processed"
+			],
+			"Broker__c.UserDefinedLabelAssignments => UserDefinedLabelAssignment": [
+				"Child sObject [UserDefinedLabelAssignment] is not processed"
+			],
+			"Broker__c.VideoRelatedRecords => VideoCall": [
+				"Child sObject [VideoCall] is not processed"
+			],
+			"Broker__c.null => VideoCallChangeEvent": [
+				"Child sObject [VideoCallChangeEvent] is not processed"
+			],
+			"Broker__c.RelatedRecords => VoiceCall": [
+				"Child sObject [VoiceCall] is not processed"
+			],
+			"Broker__c.null => VoiceCallChangeEvent": [
 				"Child sObject [VoiceCallChangeEvent] is not processed"
 			],
 			"PriceHistory__c.null => AIInsightValue": [
@@ -3328,171 +3334,6 @@
 			],
 			"Case.null => WorkOrderChangeEvent": [
 				"Child sObject [WorkOrderChangeEvent] is not processed"
-			],
-			"Broker__c.null => AIInsightValue": [
-				"Child sObject [AIInsightValue] is not processed"
-			],
-			"Broker__c.null => AIRecordInsight": [
-				"Child sObject [AIRecordInsight] is not processed"
-			],
-			"Broker__c.null => AgentWork": [
-				"Child sObject [AgentWork] is not processed"
-			],
-			"Broker__c.null => AgentWorkChangeEvent": [
-				"Child sObject [AgentWorkChangeEvent] is not processed"
-			],
-			"Broker__c.ApprovalSubmissions => ApprovalSubmission": [
-				"Child sObject [ApprovalSubmission] is not processed"
-			],
-			"Broker__c.ApprovalWorkItems => ApprovalWorkItem": [
-				"Child sObject [ApprovalWorkItem] is not processed"
-			],
-			"Broker__c.AttachedContentDocuments => AttachedContentDocument": [
-				"Child sObject [AttachedContentDocument] is not processed"
-			],
-			"Broker__c.Attachments => Attachment": [
-				"Child sObject [Attachment] is not processed"
-			],
-			"Broker__c.Shares => Broker__Share": [
-				"Child sObject [Broker__Share] is not processed"
-			],
-			"Broker__c.RecordAssociatedGroups => CollaborationGroupRecord": [
-				"Child sObject [CollaborationGroupRecord] is not processed"
-			],
-			"Broker__c.null => CollaborationGroupRecordChangeEvent": [
-				"Child sObject [CollaborationGroupRecordChangeEvent] is not processed"
-			],
-			"Broker__c.CombinedAttachments => CombinedAttachment": [
-				"Child sObject [CombinedAttachment] is not processed"
-			],
-			"Broker__c.ContactRequests => ContactRequest": [
-				"Child sObject [ContactRequest] is not processed"
-			],
-			"Broker__c.null => ContentDistribution": [
-				"Child sObject [ContentDistribution] is not processed"
-			],
-			"Broker__c.ContentDocumentLinks => ContentDocumentLink": [
-				"Child sObject [ContentDocumentLink] is not processed"
-			],
-			"Broker__c.null => ContentDocumentLinkChangeEvent": [
-				"Child sObject [ContentDocumentLinkChangeEvent] is not processed"
-			],
-			"Broker__c.null => ContentVersion": [
-				"Child sObject [ContentVersion] is not processed"
-			],
-			"Broker__c.null => ContentVersionChangeEvent": [
-				"Child sObject [ContentVersionChangeEvent] is not processed"
-			],
-			"Broker__c.DuplicateRecordItems => DuplicateRecordItem": [
-				"Child sObject [DuplicateRecordItem] is not processed"
-			],
-			"Broker__c.null => EmailMessageChangeEvent": [
-				"Child sObject [EmailMessageChangeEvent] is not processed"
-			],
-			"Broker__c.FeedSubscriptionsForEntity => EntitySubscription": [
-				"Child sObject [EntitySubscription] is not processed"
-			],
-			"Broker__c.null => EventChangeEvent": [
-				"Child sObject [EventChangeEvent] is not processed"
-			],
-			"Broker__c.null => EventRelationChangeEvent": [
-				"Child sObject [EventRelationChangeEvent] is not processed"
-			],
-			"Broker__c.null => FeedComment": [
-				"Child sObject [FeedComment] is not processed"
-			],
-			"Broker__c.null => FeedItem": [
-				"Child sObject [FeedItem] is not processed"
-			],
-			"Broker__c.null => FlowExecutionErrorEvent": [
-				"Child sObject [FlowExecutionErrorEvent] is not processed"
-			],
-			"Broker__c.FlowOrchestrationWorkItems => FlowOrchestrationWorkItem": [
-				"Child sObject [FlowOrchestrationWorkItem] is not processed"
-			],
-			"Broker__c.null => FlowRecordRelation": [
-				"Child sObject [FlowRecordRelation] is not processed"
-			],
-			"Broker__c.InventoryReservationSources => InventoryItemReservation": [
-				"Child sObject [InventoryItemReservation] is not processed"
-			],
-			"Broker__c.InventoryReservations => InventoryReservation": [
-				"Child sObject [InventoryReservation] is not processed"
-			],
-			"Broker__c.ParentEntities => NetworkActivityAudit": [
-				"Child sObject [NetworkActivityAudit] is not processed"
-			],
-			"Broker__c.null => NetworkFeedResponseMetric": [
-				"Child sObject [NetworkFeedResponseMetric] is not processed"
-			],
-			"Broker__c.NetworkUserHistoryRecentToRecord => NetworkUserHistoryRecent": [
-				"Child sObject [NetworkUserHistoryRecent] is not processed"
-			],
-			"Broker__c.Notes => Note": [
-				"Child sObject [Note] is not processed"
-			],
-			"Broker__c.NotesAndAttachments => NoteAndAttachment": [
-				"Child sObject [NoteAndAttachment] is not processed"
-			],
-			"Broker__c.null => ObjectRelatedUrl": [
-				"Child sObject [ObjectRelatedUrl] is not processed"
-			],
-			"Broker__c.null => ObjectRelatedUrlChangeEvent": [
-				"Child sObject [ObjectRelatedUrlChangeEvent] is not processed"
-			],
-			"Broker__c.null => PendingServiceRouting": [
-				"Child sObject [PendingServiceRouting] is not processed"
-			],
-			"Broker__c.null => PendingServiceRoutingChangeEvent": [
-				"Child sObject [PendingServiceRoutingChangeEvent] is not processed"
-			],
-			"Broker__c.null => PendingServiceRoutingInteractionInfo": [
-				"Child sObject [PendingServiceRoutingInteractionInfo] is not processed"
-			],
-			"Broker__c.ProcessExceptions => ProcessException": [
-				"Child sObject [ProcessException] is not processed"
-			],
-			"Broker__c.null => ProcessExceptionChangeEvent": [
-				"Child sObject [ProcessExceptionChangeEvent] is not processed"
-			],
-			"Broker__c.null => ProcessExceptionEvent": [
-				"Child sObject [ProcessExceptionEvent] is not processed"
-			],
-			"Broker__c.ProcessInstances => ProcessInstance": [
-				"Child sObject [ProcessInstance] is not processed"
-			],
-			"Broker__c.null => ProcessInstanceChangeEvent": [
-				"Child sObject [ProcessInstanceChangeEvent] is not processed"
-			],
-			"Broker__c.ProcessSteps => ProcessInstanceHistory": [
-				"Child sObject [ProcessInstanceHistory] is not processed"
-			],
-			"Broker__c.RecordActions => RecordAction": [
-				"Child sObject [RecordAction] is not processed"
-			],
-			"Broker__c.RecordActionHistories => RecordActionHistory": [
-				"Child sObject [RecordActionHistory] is not processed"
-			],
-			"Broker__c.null => TaskChangeEvent": [
-				"Child sObject [TaskChangeEvent] is not processed"
-			],
-			"Broker__c.TopicAssignments => TopicAssignment": [
-				"Child sObject [TopicAssignment] is not processed"
-			],
-			"Broker__c.UserDefinedLabelAssignments => UserDefinedLabelAssignment": [
-				"Child sObject [UserDefinedLabelAssignment] is not processed"
-			],
-			"Broker__c.VideoRelatedRecords => VideoCall": [
-				"Child sObject [VideoCall] is not processed"
-			],
-			"Broker__c.null => VideoCallChangeEvent": [
-				"Child sObject [VideoCallChangeEvent] is not processed"
-			],
-			"Broker__c.RelatedRecords => VoiceCall": [
-				"Child sObject [VoiceCall] is not processed"
-			],
-			"Broker__c.null => VoiceCallChangeEvent": [
-				"Child sObject [VoiceCallChangeEvent] is not processed"
 			],
 			"Contact.null => AIInsightValue": [
 				"Child sObject [AIInsightValue] is not processed"
@@ -4315,6 +4156,186 @@
 			],
 			"Account.null => WorkOrderChangeEvent": [
 				"Child sObject [WorkOrderChangeEvent] is not processed"
+			],
+			"OpenHouse__c.null => AIInsightValue": [
+				"Child sObject [AIInsightValue] is not processed"
+			],
+			"OpenHouse__c.null => AIRecordInsight": [
+				"Child sObject [AIRecordInsight] is not processed"
+			],
+			"OpenHouse__c.ActivityHistories => ActivityHistory": [
+				"Child sObject [ActivityHistory] is not processed"
+			],
+			"OpenHouse__c.null => AgentWork": [
+				"Child sObject [AgentWork] is not processed"
+			],
+			"OpenHouse__c.null => AgentWorkChangeEvent": [
+				"Child sObject [AgentWorkChangeEvent] is not processed"
+			],
+			"OpenHouse__c.ApprovalSubmissions => ApprovalSubmission": [
+				"Child sObject [ApprovalSubmission] is not processed"
+			],
+			"OpenHouse__c.ApprovalWorkItems => ApprovalWorkItem": [
+				"Child sObject [ApprovalWorkItem] is not processed"
+			],
+			"OpenHouse__c.AttachedContentDocuments => AttachedContentDocument": [
+				"Child sObject [AttachedContentDocument] is not processed"
+			],
+			"OpenHouse__c.Attachments => Attachment": [
+				"Child sObject [Attachment] is not processed"
+			],
+			"OpenHouse__c.RecordAssociatedGroups => CollaborationGroupRecord": [
+				"Child sObject [CollaborationGroupRecord] is not processed"
+			],
+			"OpenHouse__c.null => CollaborationGroupRecordChangeEvent": [
+				"Child sObject [CollaborationGroupRecordChangeEvent] is not processed"
+			],
+			"OpenHouse__c.CombinedAttachments => CombinedAttachment": [
+				"Child sObject [CombinedAttachment] is not processed"
+			],
+			"OpenHouse__c.ContactRequests => ContactRequest": [
+				"Child sObject [ContactRequest] is not processed"
+			],
+			"OpenHouse__c.null => ContentDistribution": [
+				"Child sObject [ContentDistribution] is not processed"
+			],
+			"OpenHouse__c.ContentDocumentLinks => ContentDocumentLink": [
+				"Child sObject [ContentDocumentLink] is not processed"
+			],
+			"OpenHouse__c.null => ContentDocumentLinkChangeEvent": [
+				"Child sObject [ContentDocumentLinkChangeEvent] is not processed"
+			],
+			"OpenHouse__c.null => ContentVersion": [
+				"Child sObject [ContentVersion] is not processed"
+			],
+			"OpenHouse__c.null => ContentVersionChangeEvent": [
+				"Child sObject [ContentVersionChangeEvent] is not processed"
+			],
+			"OpenHouse__c.DuplicateRecordItems => DuplicateRecordItem": [
+				"Child sObject [DuplicateRecordItem] is not processed"
+			],
+			"OpenHouse__c.Emails => EmailMessage": [
+				"Child sObject [EmailMessage] is not processed"
+			],
+			"OpenHouse__c.null => EmailMessageChangeEvent": [
+				"Child sObject [EmailMessageChangeEvent] is not processed"
+			],
+			"OpenHouse__c.FeedSubscriptionsForEntity => EntitySubscription": [
+				"Child sObject [EntitySubscription] is not processed"
+			],
+			"OpenHouse__c.Events => Event": [
+				"Child sObject [Event] is not processed"
+			],
+			"OpenHouse__c.null => EventChangeEvent": [
+				"Child sObject [EventChangeEvent] is not processed"
+			],
+			"OpenHouse__c.null => EventRelationChangeEvent": [
+				"Child sObject [EventRelationChangeEvent] is not processed"
+			],
+			"OpenHouse__c.null => FeedComment": [
+				"Child sObject [FeedComment] is not processed"
+			],
+			"OpenHouse__c.null => FeedItem": [
+				"Child sObject [FeedItem] is not processed"
+			],
+			"OpenHouse__c.null => FlowExecutionErrorEvent": [
+				"Child sObject [FlowExecutionErrorEvent] is not processed"
+			],
+			"OpenHouse__c.FlowOrchestrationWorkItems => FlowOrchestrationWorkItem": [
+				"Child sObject [FlowOrchestrationWorkItem] is not processed"
+			],
+			"OpenHouse__c.null => FlowRecordRelation": [
+				"Child sObject [FlowRecordRelation] is not processed"
+			],
+			"OpenHouse__c.InventoryReservationSources => InventoryItemReservation": [
+				"Child sObject [InventoryItemReservation] is not processed"
+			],
+			"OpenHouse__c.InventoryReservations => InventoryReservation": [
+				"Child sObject [InventoryReservation] is not processed"
+			],
+			"OpenHouse__c.ParentEntities => NetworkActivityAudit": [
+				"Child sObject [NetworkActivityAudit] is not processed"
+			],
+			"OpenHouse__c.null => NetworkFeedResponseMetric": [
+				"Child sObject [NetworkFeedResponseMetric] is not processed"
+			],
+			"OpenHouse__c.NetworkUserHistoryRecentToRecord => NetworkUserHistoryRecent": [
+				"Child sObject [NetworkUserHistoryRecent] is not processed"
+			],
+			"OpenHouse__c.Notes => Note": [
+				"Child sObject [Note] is not processed"
+			],
+			"OpenHouse__c.NotesAndAttachments => NoteAndAttachment": [
+				"Child sObject [NoteAndAttachment] is not processed"
+			],
+			"OpenHouse__c.null => ObjectRelatedUrl": [
+				"Child sObject [ObjectRelatedUrl] is not processed"
+			],
+			"OpenHouse__c.null => ObjectRelatedUrlChangeEvent": [
+				"Child sObject [ObjectRelatedUrlChangeEvent] is not processed"
+			],
+			"OpenHouse__c.OpenActivities => OpenActivity": [
+				"Child sObject [OpenActivity] is not processed"
+			],
+			"OpenHouse__c.Histories => OpenHouse__History": [
+				"Child sObject [OpenHouse__History] is not processed"
+			],
+			"OpenHouse__c.null => PendingServiceRouting": [
+				"Child sObject [PendingServiceRouting] is not processed"
+			],
+			"OpenHouse__c.null => PendingServiceRoutingChangeEvent": [
+				"Child sObject [PendingServiceRoutingChangeEvent] is not processed"
+			],
+			"OpenHouse__c.null => PendingServiceRoutingInteractionInfo": [
+				"Child sObject [PendingServiceRoutingInteractionInfo] is not processed"
+			],
+			"OpenHouse__c.ProcessExceptions => ProcessException": [
+				"Child sObject [ProcessException] is not processed"
+			],
+			"OpenHouse__c.null => ProcessExceptionChangeEvent": [
+				"Child sObject [ProcessExceptionChangeEvent] is not processed"
+			],
+			"OpenHouse__c.null => ProcessExceptionEvent": [
+				"Child sObject [ProcessExceptionEvent] is not processed"
+			],
+			"OpenHouse__c.ProcessInstances => ProcessInstance": [
+				"Child sObject [ProcessInstance] is not processed"
+			],
+			"OpenHouse__c.null => ProcessInstanceChangeEvent": [
+				"Child sObject [ProcessInstanceChangeEvent] is not processed"
+			],
+			"OpenHouse__c.ProcessSteps => ProcessInstanceHistory": [
+				"Child sObject [ProcessInstanceHistory] is not processed"
+			],
+			"OpenHouse__c.RecordActions => RecordAction": [
+				"Child sObject [RecordAction] is not processed"
+			],
+			"OpenHouse__c.RecordActionHistories => RecordActionHistory": [
+				"Child sObject [RecordActionHistory] is not processed"
+			],
+			"OpenHouse__c.Tasks => Task": [
+				"Child sObject [Task] is not processed"
+			],
+			"OpenHouse__c.null => TaskChangeEvent": [
+				"Child sObject [TaskChangeEvent] is not processed"
+			],
+			"OpenHouse__c.TopicAssignments => TopicAssignment": [
+				"Child sObject [TopicAssignment] is not processed"
+			],
+			"OpenHouse__c.UserDefinedLabelAssignments => UserDefinedLabelAssignment": [
+				"Child sObject [UserDefinedLabelAssignment] is not processed"
+			],
+			"OpenHouse__c.VideoRelatedRecords => VideoCall": [
+				"Child sObject [VideoCall] is not processed"
+			],
+			"OpenHouse__c.null => VideoCallChangeEvent": [
+				"Child sObject [VideoCallChangeEvent] is not processed"
+			],
+			"OpenHouse__c.RelatedRecords => VoiceCall": [
+				"Child sObject [VoiceCall] is not processed"
+			],
+			"OpenHouse__c.null => VoiceCallChangeEvent": [
+				"Child sObject [VoiceCallChangeEvent] is not processed"
 			]
 		},
 		"ADD_SOBJECT": {
@@ -4555,6 +4576,9 @@
 				"Must be queryable",
 				"Must be retrieveable",
 				"Must be updateable",
+				"Was Not requested"
+			],
+			"AiPluginUtteranceDef": [
 				"Was Not requested"
 			],
 			"AlternativePaymentMethod": [
@@ -5117,6 +5141,15 @@
 				"Was Not requested"
 			],
 			"Booking__c": [
+				"Was Not requested"
+			],
+			"BotDefinition": [
+				"Must be createable",
+				"Must be deletable",
+				"Must be updateable",
+				"Was Not requested"
+			],
+			"BotVersion": [
 				"Was Not requested"
 			],
 			"BrandTemplate": [
@@ -6292,6 +6325,24 @@
 				"Must be updateable",
 				"Was Not requested"
 			],
+			"ConvDefDialogDailyMetric": [
+				"Must be createable",
+				"Must be deletable",
+				"Must be updateable",
+				"Was Not requested"
+			],
+			"ConvDefDialogHourlyMetric": [
+				"Must be createable",
+				"Must be deletable",
+				"Must be updateable",
+				"Was Not requested"
+			],
+			"ConvDefSessionMetric": [
+				"Must be createable",
+				"Must be deletable",
+				"Must be updateable",
+				"Was Not requested"
+			],
 			"ConvIntelligenceSignalRule": [
 				"Was Not requested"
 			],
@@ -6320,6 +6371,27 @@
 				"Was Not requested"
 			],
 			"ConversationChannelDefinition": [
+				"Was Not requested"
+			],
+			"ConversationDefinitionDialog": [
+				"Was Not requested"
+			],
+			"ConversationDefinitionEventLog": [
+				"Must be createable",
+				"Must be deletable",
+				"Must be updateable",
+				"Was Not requested"
+			],
+			"ConversationDefinitionSession": [
+				"Must be createable",
+				"Must be deletable",
+				"Must be updateable",
+				"Was Not requested"
+			],
+			"ConversationDefinitionSessionEngagement": [
+				"Must be createable",
+				"Must be deletable",
+				"Must be updateable",
 				"Was Not requested"
 			],
 			"ConversationEntry": [
@@ -8039,6 +8111,27 @@
 			"FulfillmentOrderShare": [
 				"Was Not requested"
 			],
+			"GenAiFunctionDefinition": [
+				"Was Not requested"
+			],
+			"GenAiPlannerAttrDefinition": [
+				"Was Not requested"
+			],
+			"GenAiPlannerDefinition": [
+				"Was Not requested"
+			],
+			"GenAiPlannerFunctionDef": [
+				"Was Not requested"
+			],
+			"GenAiPluginDefinition": [
+				"Was Not requested"
+			],
+			"GenAiPluginFunctionDef": [
+				"Was Not requested"
+			],
+			"GenAiPluginInstructionDef": [
+				"Was Not requested"
+			],
 			"GrantedByLicense": [
 				"Must be createable",
 				"Must be deletable",
@@ -8926,6 +9019,15 @@
 				"Was Not requested"
 			],
 			"MlFeatureValueMetric": [
+				"Was Not requested"
+			],
+			"MlIntentUtterance": [
+				"Was Not requested"
+			],
+			"MlIntentUtteranceSuggestion": [
+				"Must be createable",
+				"Must be deletable",
+				"Must be updateable",
 				"Was Not requested"
 			],
 			"MobSecurityCertPinConfig": [
