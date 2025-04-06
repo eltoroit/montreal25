@@ -5,7 +5,6 @@
         <default>true</default>
         <visible>true</visible>
     </applicationVisibilities>
-
     <loginIpRanges>
         <endAddress>255.255.255.255</endAddress>
         <startAddress>0.0.0.0</startAddress>

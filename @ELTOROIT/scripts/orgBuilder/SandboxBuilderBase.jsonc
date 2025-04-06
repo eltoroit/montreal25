@@ -11,15 +11,15 @@
 		"ValidateETCopyData",
 		"CreateFinestDebugLevel",
 
+		// Deploying
+		"ShowDeployPage",
 		// SKIP https://login.salesforce.com/packaging/installPackage.apexp?p0=04tKY000000LRJJYA4
 		{ "InstallPackage": { "id": "04tKY000000LRJJYA4" } }, // Dreamhouse App
-
-		// // Deploying
-		"ShowDeployPage",
 		{ "PushMetadata": { "folder": "force-apps/dreamhouse_ELTOROit" } },
 
 		// Post-Deploy
 		{ "AssignPermissionSet": "dreamhouse" },
+		{ "AssignPermissionSet": "dreamhouseET" },
 		{ "ExecuteApex": "@ELTOROIT/scripts/apex/SetUserRecord.apex" },
 		{ "DeployProfile": "force-apps/doNotDeploy/main/default/profiles/Admin.profile-meta.xml" },
 		{ "ETCopyData": "./@ELTOROIT/data" },

@@ -154,14 +154,14 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
-    <label>Property Price History</label>
+    <label>Price History</label>
     <nameField>
         <displayFormat>Price-{0000}</displayFormat>
-        <label>Property Price History Name</label>
+        <label>Price History Name</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Property Property Price Histories</pluralLabel>
+    <pluralLabel>Price Histories</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
