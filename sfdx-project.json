@@ -1,44 +1,36 @@
 {
-  "packageDirectories": [
-    {
-      "path": "force-apps/dreamhouse_ELTOROit",
-      "default": false,
-      "versionName": "ver 0.1",
-      "versionNumber": "0.1.0.NEXT",
-      "package": "dreamhouse_ELTOROit",
-      "versionDescription": "Additional metadata for Dreamhouse App required for Agentforce Workshop"
-    },
-    {
-      "path": "force-apps/doNotDeploy",
-      "default": false
-    },
-    {
-      "path": "force-apps/ETDH",
-      "default": true
-    },
-    {
-      "path": "force-apps/setup",
-      "default": false
-    }
-  ],
-  "name": "et-basic-project",
-  "namespace": "",
-  "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "63.0",
-  "replacements": [
-    {
-      "filename": "force-apps/deploy/main/default/bots/Human_Resources_Agent/Human_Resources_Agent.bot-meta.xml",
-      "stringToReplace": "{{AGENT_USERNAME}}",
-      "replaceWithFile": "./etReplacements/AGENT_USERNAME.txt"
-    },
-    {
-      "filename": "force-apps/deploy/main/default/authproviders/RAG_Demo_AP.authprovider-meta.xml",
-      "stringToReplace": "{{CONSUMER_SECRET}}",
-      "replaceWithFile": "./etReplacements/CONSUMER_SECRET.txt"
-    }
-  ],
-  "packageAliases": {
-    "dreamhouse_ELTOROit": "0Hobn0000002EV7CAM",
-    "dreamhouse_ELTOROit@0.1.0-1": "04tbn000000pBcXAAU"
-  }
+	"packageDirectories": [
+		{
+			"path": "force-apps/dreamhouse_ELTOROit",
+			"default": false
+		},
+		{
+			"path": "force-apps/doNotDeploy",
+			"default": false
+		},
+		{
+			"path": "force-apps/ETDH",
+			"default": true
+		},
+		{
+			"path": "force-apps/setup",
+			"default": false
+		}
+	],
+	"name": "et-basic-project",
+	"namespace": "",
+	"sfdcLoginUrl": "https://login.salesforce.com",
+	"sourceApiVersion": "63.0",
+	"replacements": [
+		{
+			"filename": "force-apps/deploy/main/default/bots/Human_Resources_Agent/Human_Resources_Agent.bot-meta.xml",
+			"stringToReplace": "{{AGENT_USERNAME}}",
+			"replaceWithFile": "./etReplacements/AGENT_USERNAME.txt"
+		},
+		{
+			"filename": "force-apps/deploy/main/default/authproviders/RAG_Demo_AP.authprovider-meta.xml",
+			"stringToReplace": "{{CONSUMER_SECRET}}",
+			"replaceWithFile": "./etReplacements/CONSUMER_SECRET.txt"
+		}
+	]
 }

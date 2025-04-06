@@ -60,7 +60,7 @@ Properties can be identified by their Record Id (18 characters), Name, Address__
 # Unlocked Package
 
 ```
-sf package create --name dreamhouse_ELTOROit --package-type Unlocked --path force-apps/dreamhouse_ELTOROit --no-namespace --target-dev-hub etdcoDevHub --org-dependent
+sf package create --name dreamhouse_ELTOROit --package-type Unlocked --path force-apps/dreamhouse_ELTOROit --no-namespace --target-dev-hub etdcoDevHub --description "Dreamhouse app plus additional metadata required for Agentforce Workshop"
 Package Id │ 0Hobn0000002EV7CAM
 
 sf package version create --package dreamhouse_ELTOROit --wait 60 --target-dev-hub etdcoDevHub --installation-key-bypass
