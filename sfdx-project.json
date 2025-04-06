@@ -1,6 +1,10 @@
 {
 	"packageDirectories": [
 		{
+			"path": "force-apps/dreamhouse",
+			"default": false
+		},
+		{
 			"path": "force-apps/base",
 			"default": false
 		},
