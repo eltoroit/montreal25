@@ -52,7 +52,7 @@
                 <elementReference>PropertyID</elementReference>
             </value>
         </inputAssignments>
-        <object>PropertyOpenHouseSchedule__c</object>
+        <object>OpenHouse__c</object>
     </recordCreates>
     <recordLookups>
         <name>GET020</name>
@@ -68,7 +68,7 @@
                 <elementReference>PropertyOpenHouseEventID</elementReference>
             </value>
         </filters>
-        <object>PropertyOpenHouseSchedule__c</object>
+        <object>OpenHouse__c</object>
         <outputReference>PropertyOpenHouseEvent</outputReference>
         <queriedFields>Id</queriedFields>
         <queriedFields>Broker__c</queriedFields>
@@ -114,7 +114,7 @@
         <isCollection>false</isCollection>
         <isInput>false</isInput>
         <isOutput>true</isOutput>
-        <objectType>PropertyOpenHouseSchedule__c</objectType>
+        <objectType>OpenHouse__c</objectType>
     </variables>
     <variables>
         <description>The Id for the record created</description>

@@ -36,9 +36,9 @@ private class ETDH_PropertyPriceHistory_Test {
 		Test.stopTest();
 
 		// Verify price history records were created
-		List<PropertyPriceHistory__c> priceHistories = [
+		List<PriceHistory__c> priceHistories = [
 			SELECT Id, Property__c, OldPrice__c, NewPrice__c, DateChanged__c
-			FROM PropertyPriceHistory__c
+			FROM PriceHistory__c
 		];
 
 		System.assertEquals(3, priceHistories.size(), 'Should have created 3 price history records');
@@ -46,7 +46,7 @@ private class ETDH_PropertyPriceHistory_Test {
 		// Verify details of price history records
 		Map<Id, Property__c> propMap = new Map<Id, Property__c>(properties);
 
-		for (PropertyPriceHistory__c history : priceHistories) {
+		for (PriceHistory__c history : priceHistories) {
 			Property__c relatedProperty = propMap.get(history.Property__c);
 			System.assertNotEquals(null, relatedProperty, 'Price history should be linked to a property');
 			System.assertEquals(relatedProperty.Price__c, history.NewPrice__c, 'New price should match updated property price');
@@ -73,7 +73,7 @@ private class ETDH_PropertyPriceHistory_Test {
 		Test.stopTest();
 
 		// Verify no price history records were created
-		List<PropertyPriceHistory__c> priceHistories = [SELECT Id FROM PropertyPriceHistory__c];
+		List<PriceHistory__c> priceHistories = [SELECT Id FROM PriceHistory__c];
 		System.assertEquals(0, priceHistories.size(), 'No price history records should be created when price is unchanged');
 	}
 
@@ -98,9 +98,9 @@ private class ETDH_PropertyPriceHistory_Test {
 		Test.stopTest();
 
 		// Verify two price history records were created
-		List<PropertyPriceHistory__c> priceHistories = [
+		List<PriceHistory__c> priceHistories = [
 			SELECT Id, Property__c, OldPrice__c, NewPrice__c, DateChanged__c
-			FROM PropertyPriceHistory__c
+			FROM PriceHistory__c
 			WHERE Property__c = :testProperty.Id
 			ORDER BY DateChanged__c ASC
 		];
@@ -140,7 +140,7 @@ private class ETDH_PropertyPriceHistory_Test {
 		Test.stopTest();
 
 		// Verify price history records were created for all properties
-		Integer historyCount = [SELECT COUNT() FROM PropertyPriceHistory__c WHERE Property__c IN :bulkProperties];
+		Integer historyCount = [SELECT COUNT() FROM PriceHistory__c WHERE Property__c IN :bulkProperties];
 		System.assertEquals(200, historyCount, 'Should have created 200 price history records for bulk update');
 	}
 }

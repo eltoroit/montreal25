@@ -53,7 +53,7 @@
                 <elementReference>EndDateTime</elementReference>
             </value>
         </filters>
-        <object>PropertyPriceHistory__c</object>
+        <object>PriceHistory__c</object>
         <outputReference>PriceHistory</outputReference>
         <queriedFields>Id</queriedFields>
         <queriedFields>DateChanged__c</queriedFields>
@@ -86,7 +86,7 @@
         <isCollection>true</isCollection>
         <isInput>false</isInput>
         <isOutput>true</isOutput>
-        <objectType>PropertyPriceHistory__c</objectType>
+        <objectType>PriceHistory__c</objectType>
     </variables>
     <variables>
         <description>The range starts at this DateTime</description>

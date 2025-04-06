@@ -179,7 +179,7 @@
         <fields>DateChanged__c</fields>
         <fields>OldPrice__c</fields>
         <fields>NewPrice__c</fields>
-        <relatedList>PropertyPriceHistory__c.Property__c</relatedList>
+        <relatedList>PriceHistory__c.Property__c</relatedList>
         <sortField>DateChanged__c</sortField>
         <sortOrder>Desc</sortOrder>
     </relatedLists>
@@ -187,7 +187,7 @@
         <fields>NAME</fields>
         <fields>Broker__c</fields>
         <fields>DateTime__c</fields>
-        <relatedList>PropertyOpenHouseSchedule__c.Property__c</relatedList>
+        <relatedList>OpenHouse__c.Property__c</relatedList>
         <sortField>DateTime__c</sortField>
         <sortOrder>Desc</sortOrder>
     </relatedLists>

@@ -154,14 +154,14 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>ControlledByParent</externalSharingModel>
-    <label>Property Open House Schedule</label>
+    <label>Open House</label>
     <nameField>
         <displayFormat>Open-{0000}</displayFormat>
-        <label>Property Open House Name</label>
+        <label>Open House Name</label>
         <trackHistory>false</trackHistory>
         <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Property Open House Schedules</pluralLabel>
+    <pluralLabel>Open Houses</pluralLabel>
     <searchLayouts></searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>

@@ -8,12 +8,15 @@
 	},
 	"steps": [
 		// // Prepare environment
-		// "ValidateETCopyData",
-		// "CreateFinestDebugLevel",
+		"ValidateETCopyData",
+		"CreateFinestDebugLevel",
+
+		// SKIP https://login.salesforce.com/packaging/installPackage.apexp?p0=04tKY000000LRJJYA4
+		{ "InstallPackage": { "id": "04tKY000000LRJJYA4" } }, // Dreamhouse App
 
 		// // Deploying
-		// "ShowDeployPage",
-		{ "PushMetadata": { "folder": "force-apps/base" } },
+		"ShowDeployPage",
+		{ "PushMetadata": { "folder": "force-apps/dreamhouse_ELTOROit" } },
 
 		// Post-Deploy
 		{ "AssignPermissionSet": "dreamhouse" },

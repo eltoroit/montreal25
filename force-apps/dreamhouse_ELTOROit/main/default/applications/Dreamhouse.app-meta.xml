@@ -56,8 +56,8 @@
     <tabs>Broker__c</tabs>
     <tabs>standard-Contact</tabs>
     <tabs>Property__c</tabs>
-    <tabs>PropertyPriceHistory__c</tabs>
-    <tabs>PropertyOpenHouseSchedule__c</tabs>
+    <tabs>PriceHistory__c</tabs>
+    <tabs>OpenHouse__c</tabs>
     <tabs>standard-File</tabs>
     <tabs>Settings</tabs>
     <uiType>Lightning</uiType>

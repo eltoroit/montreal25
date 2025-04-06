@@ -46,7 +46,7 @@
                 <elementReference>EndDateTime</elementReference>
             </value>
         </filters>
-        <object>PropertyOpenHouseSchedule__c</object>
+        <object>OpenHouse__c</object>
         <outputReference>OpenHouses</outputReference>
         <queriedFields>Id</queriedFields>
         <queriedFields>Broker__c</queriedFields>
@@ -78,7 +78,7 @@
         <isCollection>true</isCollection>
         <isInput>false</isInput>
         <isOutput>true</isOutput>
-        <objectType>PropertyOpenHouseSchedule__c</objectType>
+        <objectType>OpenHouse__c</objectType>
     </variables>
     <variables>
         <description>The range starts at this DateTime</description>

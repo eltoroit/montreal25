@@ -2,7 +2,7 @@
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <fieldPermissions>
         <editable>true</editable>
-        <field>PropertyOpenHouseSchedule__c.Broker__c</field>
+        <field>OpenHouse__c.Broker__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
@@ -13,7 +13,7 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>PropertyOpenHouseSchedule__c</object>
+        <object>OpenHouse__c</object>
         <viewAllFields>true</viewAllFields>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
@@ -23,16 +23,16 @@
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>true</modifyAllRecords>
-        <object>PropertyPriceHistory__c</object>
+        <object>PriceHistory__c</object>
         <viewAllFields>true</viewAllFields>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <tabSettings>
-        <tab>PropertyOpenHouseSchedule__c</tab>
+        <tab>OpenHouse__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
     <tabSettings>
-        <tab>PropertyPriceHistory__c</tab>
+        <tab>PriceHistory__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
 </PermissionSet>

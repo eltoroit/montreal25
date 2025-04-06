@@ -1,11 +1,7 @@
 {
 	"packageDirectories": [
 		{
-			"path": "force-apps/dreamhouse",
-			"default": false
-		},
-		{
-			"path": "force-apps/base",
+			"path": "force-apps/dreamhouse_ELTOROit",
 			"default": false
 		},
 		{
