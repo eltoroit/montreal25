@@ -21,12 +21,14 @@ This use case outlines the functionalities for internal users (Dreamhouse employ
     - Main Queries [Property]
 
         1. Show all listings.
-        2. Give me the details of property at 18 Henry Street.
-        3. Can you give me a summary of the property at 02420?
-        4. Can you give me a summary of the properties at 02420?
-        5. Show me properties with at least 3 bedrooms and at most 2 bathrooms
-        6. Show me the properties in Cambridge
-        7. How many listings are the grouped by city?
+        2. Summarize property named "Stunning Victorian".
+        3. Give me the details of property named "Stunning Victorian".
+        4. Give me the details of property at 18 Henry Street.
+        5. Can you give me a summary of the property at 02420?
+        6. Can you give me a summary of the properties at 02420?
+        7. Show me properties with at least 3 bedrooms and at most 2 bathrooms
+        8. Show me the properties in Cambridge
+        9. How many listings are the grouped by city?
 
     - Main Queries [PropertyPriceHistory]
 
