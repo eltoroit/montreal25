@@ -1,0 +1,32 @@
+{
+	"settings": {
+		"days": 1,
+		"alias": "sbMontreal",
+		"OpenBrowser": true,
+		"QuitOnErrors": true,
+		"UserOnScreen": true // Can I prompt the user for manual verification? On CICD, this should be false
+	},
+	"steps": [
+		// // Prepare environment
+		"ValidateETCopyData",
+		"CreateFinestDebugLevel",
+
+		// Deploying
+		"ShowDeployPage",
+		// // SKIP https://login.salesforce.com/packaging/installPackage.apexp?p0=04tKY000000LRJJYA4
+		// // SKIP { "InstallPackage": { "id": "04tKY000000LRJJYA4" } }, // Dreamhouse App
+		{ "InstallPackage": { "id": "04tbn000000pBizAAE" } }, // "dreamhouse_ELTOROit@0.1.0-3"
+		// { "PushMetadata": { "folder": "force-apps/dreamhouse_ELTOROit" } },
+
+		// Post-Deploy
+		{ "AssignPermissionSet": "dreamhouse" },
+		{ "AssignPermissionSet": "dreamhouseET" },
+		{ "ExecuteApex": "@ELTOROIT/scripts/apex/SetUserRecord.apex" },
+		{ "DeployProfile": "force-apps/doNotDeploy/main/default/profiles/Admin.profile-meta.xml" },
+		// // SKIP { "ETCopyData": "./@ELTOROIT/data" },
+		{ "ExecuteApex": "@ELTOROIT/scripts/apex/CreateDreamHouseAppData.apex" },
+
+		// Print results
+		"ShowFinalSuccess"
+	]
+}

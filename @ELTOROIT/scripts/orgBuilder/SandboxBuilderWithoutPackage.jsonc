@@ -14,16 +14,16 @@
 		// Deploying
 		"ShowDeployPage",
 		// // SKIP https://login.salesforce.com/packaging/installPackage.apexp?p0=04tKY000000LRJJYA4
-		// { "InstallPackage": { "id": "04tKY000000LRJJYA4" } }, // Dreamhouse App
-		// { "PushMetadata": { "folder": "force-apps/dreamhouse_ELTOROit" } },
-		{ "InstallPackage": { "id": "04tbn000000pBizAAE" } }, // "dreamhouse_ELTOROit@0.1.0-3"
+		// // SKIP { "InstallPackage": { "id": "04tKY000000LRJJYA4" } }, // Dreamhouse App
+		// { "InstallPackage": { "id": "04tbn000000pBizAAE" } }, // "dreamhouse_ELTOROit@0.1.0-3"
+		{ "PushMetadata": { "folder": "force-apps/dreamhouse_ELTOROit" } },
 
 		// Post-Deploy
 		{ "AssignPermissionSet": "dreamhouse" },
 		{ "AssignPermissionSet": "dreamhouseET" },
 		{ "ExecuteApex": "@ELTOROIT/scripts/apex/SetUserRecord.apex" },
 		{ "DeployProfile": "force-apps/doNotDeploy/main/default/profiles/Admin.profile-meta.xml" },
-		// { "ETCopyData": "./@ELTOROIT/data" },
+		// // SKIP { "ETCopyData": "./@ELTOROIT/data" },
 		{ "ExecuteApex": "@ELTOROIT/scripts/apex/CreateDreamHouseAppData.apex" },
 
 		// Print results
