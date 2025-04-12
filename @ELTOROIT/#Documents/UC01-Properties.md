@@ -1,4 +1,4 @@
-# Main Queries [Property]
+# Queries Properties
 
 1. Show all listings.
 2. Summarize property named "Stunning Victorian".
@@ -10,19 +10,20 @@
 8. Show me the properties in Cambridge
 9. How many listings are the grouped by city?
 
-# Main Queries [PropertyPriceHistory]
-
-1. What is the listing price history for 18 Henry Street?
-2. Find the properties in Cambridge and, for each property, show the price history
-3. Find the properties that have been changed today, for each property review the price history. Only show properties that have changed their price
-4. Show me the properties that have had a price change this week.
-
-# Data Updates
+# Update Properties
 
 1. Change the status of property at 18 Henry Street to Sold.
     - [Expected] => "Sold" is not a valid option, the option is "Closed"
 2. Modify the property description of property at 18 Henry Street to "Sold this House. Please unlist".
 3. Update the price of property at 18 Henry Street to $950,000.
+4. Find the properties in Cambridge and, for each property, increase the price by 10%
+
+# Query Property Price History
+
+1. What is the listing price history for 18 Henry Street?
+2. Find the properties in Cambridge and, for each property, show the price history
+3. Find the properties that have been changed today, for each property review the price history. Only show properties that have reduced their price
+4. Show me the properties that have had a price change this week.
 
 # Other Utterances
 

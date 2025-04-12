@@ -1,7 +1,7 @@
 # Main Tests
 
-1. When is the next open house at 18 Henry Street?
-2. Schedule an open house at 18 Henry Street next Saturday at 10 AM.
+1. Schedule an open house at 18 Henry Street next Saturday at 10 AM.
+2. When is the next open house at 18 Henry Street?
 3. Schedule an open house at 18 Henry Street next Sunday at 3:45 PM. Victor will be the broker for this event
 4. Show me the open house events for 18 Henry Street
 5. List all open houses scheduled for this weekend
