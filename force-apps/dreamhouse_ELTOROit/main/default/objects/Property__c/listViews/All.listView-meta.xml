@@ -5,8 +5,8 @@
     <columns>Address__c</columns>
     <columns>City__c</columns>
     <columns>Zip__c</columns>
-    <columns>Baths__c</columns>
     <columns>Beds__c</columns>
+    <columns>Baths__c</columns>
     <columns>Price__c</columns>
     <columns>Status__c</columns>
     <columns>Broker__c</columns>

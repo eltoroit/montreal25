@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
+    <canEscalate>false</canEscalate>
+    <description>Manage Property__c records, including querying properties based on Name, Address__c, Zip__c, and City__c.</description>
+    <developerName>Property_Management</developerName>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__GetRecordDetails</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__LabelARecord</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecords</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecordsWithAggregate</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__SummarizeRecord</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__UpdateRecordFields</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>If you need to find a property, you can either:
+
+- Property name, for example &quot;Stunning Victorian&quot;
+- Use the Property ID (18 characters)
+- Use the property Address__c (example, 123 Main street). 
+- Use the property Zip_c, (Zip codes have 5 digits)
+- Use the property City__c
+
+ALWAYS convert the abbreviations (St, W) to the long words (Street, West)</description>
+        <developerName>instruction_ifyouneedt0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_ifyouneedt0</masterLabel>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <masterLabel>Property Management</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>Only manage Property__c records</scope>
+</GenAiPlugin>
