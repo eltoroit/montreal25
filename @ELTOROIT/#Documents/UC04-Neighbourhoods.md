@@ -1,9 +1,9 @@
 # Main
 
-1. What is the crime rate for the property at 18 Henry Street?
-2. Can you give me information about the neighbourhood for the property at 18 Henry Street?
+1. Can you give me information about the neighbourhood for the property at 18 Henry Street?
+2. Tell me about the community around 18 Henry Street
 3. Are these good schools around 18 Henry Street?
-4. Tell me about the community around 18 Henry Street
+4. What is the crime rate for the property at 18 Henry Street?
 5. Compare the neighborhoods for these two locations: 48 Brattle Street and 110 Baxter Street.
     1. Which one is better for kids?
     2. Which one is safer?

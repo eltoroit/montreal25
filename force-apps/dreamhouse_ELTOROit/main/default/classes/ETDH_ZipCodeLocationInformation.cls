@@ -29,7 +29,8 @@ public with sharing class ETDH_ZipCodeLocationInformation {
 				HTTPResponse res = http.send(req);
 
 				if (res.getStatusCode() == 200) {
-					result.zipCodeInfo = formatZipCodeInfo(res.getBody(), request, property);
+					result.zipCodeInfo = res.getBody();
+					// result.zipCodeInfo = ETDH_ZipCodeLocationFormatter.format(res.getBody(), request, property);
 				} else {
 					// Log the error and return null.  Important for debugging.
 					result.error = ('Error: Zip Code API call failed with status code: ' + res.getStatusCode() + ', body: ' + res.getBody());
@@ -43,33 +44,6 @@ public with sharing class ETDH_ZipCodeLocationInformation {
 			result.error = 'An error has occurred' + e.getMessage() + '\n' + e.getStackTraceString() + '\n' + e.getLineNumber();
 		}
 		return result;
-	}
-
-	private static String formatZipCodeInfo(String zipCodeInfo, AgentRequest request, Property__c property) {
-		// Create Prompt Input Parameter Variables
-		Map<String, ConnectApi.WrappedValue> inputParams = new Map<String, ConnectApi.WrappedValue>();
-		ETAI_Helpers.addValue(inputParams, 'Input:ZipCode_Data', zipCodeInfo);
-		ETAI_Helpers.addValue(inputParams, 'Input:Interest', request.interest);
-		ETAI_Helpers.addValue(inputParams, 'Input:Property', new Map<String, String>{ 'id' => property.Id });
-
-		// Set the prompt service
-		ConnectApi.EinsteinPromptTemplateGenerationsInput promptGenerationsInput = new ConnectApi.EinsteinPromptTemplateGenerationsInput();
-		promptGenerationsInput.inputParams = inputParams;
-		promptGenerationsInput.additionalConfig = new ConnectApi.EinsteinLlmAdditionalConfigInput();
-		promptGenerationsInput.additionalConfig.numGenerations = 1;
-		promptGenerationsInput.additionalConfig.enablePiiMasking = true;
-		promptGenerationsInput.additionalConfig.applicationName = 'PromptTemplateGenerationsInvocable';
-		promptGenerationsInput.isPreview = false;
-
-		// Call the prompt service to generate messages for the prompt template
-		ConnectApi.EinsteinPromptTemplateGenerationsRepresentation generationsOutput = ConnectApi.EinsteinLLM.generateMessagesForPromptTemplate(
-			'ETDH_Analyze_ZipCode_information',
-			promptGenerationsInput
-		);
-
-		// Consume response
-		ConnectApi.EinsteinLLMGenerationItemOutput response = generationsOutput.generations[0];
-		return ETAI_Helpers.extractHtml(response.text);
 	}
 
 	public class AgentRequest {
