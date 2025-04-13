@@ -26,24 +26,7 @@
 - **Open house filtering**:
     - Users want to view open houses based on location ("in my area") or time period criteria
 
-## UC03 Lifestyle
-
-- **Neighborhood characteristics**:
-    - Users request information about the general qualities and attributes of neighborhoods surrounding specific properties
-- **Safety information**:
-    - Users inquire about crime rates and safety statistics for specific areas
-- **Educational resources**:
-    - Users ask about school quality and educational options in proximity to properties
-- **Community amenities**:
-    - Users want to know about local facilities, services, and attractions such as parks, healthcare, restaurants, and shopping
-- **Neighborhood comparison**:
-    - Users seek to compare different neighborhoods across various metrics including safety, child-friendliness, amenities, and cost of living
-- **Lifestyle factors**:
-    - Users ask about quality of life aspects including walkability, commute times, demographics, and future development plans
-- **Local economy**:
-    - Users inquire about cost of living, local businesses, and housing market trends
-
-## UC04 Guidelines (RAG)
+## UC03 Guidelines (RAG)
 
 - **Listing requirements**:
     - Users seek information about specific requirements for different property types (luxury, rental, commercial, rural)
@@ -61,6 +44,23 @@
     - Users request specialized information for different categories of properties (waterfront, foreclosed, commercial)
 - **Advertising regulations**:
     - Users inquire about restrictions or requirements for promoting listings and open houses
+
+## UC04 Lifestyle
+
+- **Neighborhood characteristics**:
+    - Users request information about the general qualities and attributes of neighborhoods surrounding specific properties
+- **Safety information**:
+    - Users inquire about crime rates and safety statistics for specific areas
+- **Educational resources**:
+    - Users ask about school quality and educational options in proximity to properties
+- **Community amenities**:
+    - Users want to know about local facilities, services, and attractions such as parks, healthcare, restaurants, and shopping
+- **Neighborhood comparison**:
+    - Users seek to compare different neighborhoods across various metrics including safety, child-friendliness, amenities, and cost of living
+- **Lifestyle factors**:
+    - Users ask about quality of life aspects including walkability, commute times, demographics, and future development plans
+- **Local economy**:
+    - Users inquire about cost of living, local businesses, and housing market trends
 
 ## UC05 Digital Experience
 
