@@ -16,7 +16,7 @@
         <functionName>EmployeeCopilot__UpdateRecordFields</functionName>
     </genAiFunctions>
     <genAiFunctions>
-        <functionName>ETDH_Schedule_Property_Open_House_Event</functionName>
+        <functionName>ETDH_Re_Schedule_Property_Open_House_Event</functionName>
     </genAiFunctions>
     <genAiPluginInstructions>
         <description>Always ask clarifying questions to ensure all necessary information is collected from the user.</description>
@@ -25,15 +25,23 @@
         <masterLabel>instruction_alwaysaskc0</masterLabel>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
-        <description>Steps to schedule a new open house event
+        <description>Steps to schedule and reschedule a new open house event
 
 1. You must have the Property ID (18 character), use topic &quot;Property Management&quot; to find it.
 2. If a broker is desired, you must have the Broker ID (18 character)
 3. Gather all necessary details such as date, time, property. Confirm the details with the user
-4. Call action &quot;ETDH: Schedule Property Open House Event&quot;</description>
+4. Call action &quot;ETDH: Re-Schedule Property Open House Event&quot;
+
+When rescheduling an open house event, the &quot;PropertyOpenHouseEventID&quot; is required</description>
         <developerName>instruction_stepstosch1</developerName>
         <language>en_US</language>
         <masterLabel>instruction_stepstosch1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>The times for open house events are ALWAYS based on the user’s local timezone.</description>
+        <developerName>instruction_thetimesfo2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_thetimesfo2</masterLabel>
     </genAiPluginInstructions>
     <language>en_US</language>
     <masterLabel>Open House Event Management</masterLabel>

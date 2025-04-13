@@ -62,7 +62,7 @@
             <targetReference>GET010</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <description>The range ends at this DateTime</description>
         <name>EndDateTime</name>
