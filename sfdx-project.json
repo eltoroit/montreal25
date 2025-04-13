@@ -15,10 +15,6 @@
 		{
 			"path": "force-apps/doNotDeploy",
 			"default": false
-		},
-		{
-			"path": "force-apps/setup",
-			"default": false
 		}
 	],
 	"name": "et-basic-project",
