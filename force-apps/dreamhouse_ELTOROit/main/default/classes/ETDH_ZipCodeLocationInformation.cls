@@ -1,7 +1,7 @@
 public with sharing class ETDH_ZipCodeLocationInformation {
 	@InvocableMethod(
 		label='ETDH: Zipcode Location Information'
-		description='Retrieves location information for the property ZipCode. You must provide either the Property ID or the Zip Code.'
+		description='Retrieves location information near the property . You must provide either the Property ID.'
 	)
 	public static List<AgentResult> getZipCodeInfo(List<AgentRequest> requests) {
 		List<AgentResult> results = new List<AgentResult>();
@@ -49,7 +49,7 @@ public with sharing class ETDH_ZipCodeLocationInformation {
 	public class AgentRequest {
 		@InvocableVariable(
 			required=true
-			description='What specific does the customer want to find in this zip code? Or does he want general information?'
+			description='What specific does the user want to find near this property? Or does he want general information?'
 		)
 		public String interest;
 

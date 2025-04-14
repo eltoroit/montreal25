@@ -21,6 +21,18 @@
     <genAiFunctions>
         <functionName>EmployeeCopilot__UpdateRecordFields</functionName>
     </genAiFunctions>
+    <genAiFunctions>
+        <functionName>ETDH_Zipcode_Location_Information</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>Provide clients with comprehensive neighbourhood insights by answering questions or comparing areas based on schools, crime, amenities, transportation, cost of living, and lifestyle, following these steps:
+
+1. You must know the property being researched.
+2. Call the &quot;ETDH_ZipCodeLocationInformation&quot; action with the property ID.</description>
+        <developerName>instruction_providecli0</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_providecli0</masterLabel>
+    </genAiPluginInstructions>
     <genAiPluginInstructions>
         <description>If you need to find a property, you can either:
 
@@ -31,9 +43,9 @@
 - Use the property City__c
 
 ALWAYS convert the abbreviations (St, W) to the long words (Street, West)</description>
-        <developerName>instruction_ifyouneedt0</developerName>
+        <developerName>instruction_ifyouneedt1</developerName>
         <language>en_US</language>
-        <masterLabel>instruction_ifyouneedt0</masterLabel>
+        <masterLabel>instruction_ifyouneedt1</masterLabel>
     </genAiPluginInstructions>
     <language>en_US</language>
     <masterLabel>Property Management</masterLabel>
