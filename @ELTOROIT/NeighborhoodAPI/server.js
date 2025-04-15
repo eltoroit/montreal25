@@ -34,7 +34,7 @@ class ZipCodeServer {
 		this.router = new Router();
 	}
 
-	handleZipCodeRequest(context) {
+	handleRequestZipCode(context) {
 		const { zipcode } = context.params;
 
 		try {
@@ -45,11 +45,15 @@ class ZipCodeServer {
 		}
 	}
 
-	async handleRootRequest(context) {
+	async handleRequestRoot(context) {
 		await send(context, "resources/home.html", { root: Deno.cwd() });
 	}
 
-	handleOpenAPISpec(context) {
+	async handleRequestELIZA(context) {
+		await send(context, "resources/ELIZA.html", { root: Deno.cwd() });
+	}
+
+	handleRequestOpenAPISpec(context) {
 		context.response.headers.set("Content-Type", "application/json");
 		context.response.body = spec;
 	}
@@ -70,9 +74,10 @@ class ZipCodeServer {
 
 	setupRoutes() {
 		// First apply static file middleware with proper binding, then set up specific routes
-		this.router.get("/", (context) => this.handleRootRequest(context));
-		this.router.get("/zip/:zipcode", (context) => this.handleZipCodeRequest(context));
-		this.router.get("/service.json", (context) => this.handleOpenAPISpec(context));
+		this.router.get("/ELIZA", (context) => this.handleRequestELIZA(context));
+		this.router.get("/zip/:zipcode", (context) => this.handleRequestZipCode(context));
+		this.router.get("/service.json", (context) => this.handleRequestOpenAPISpec(context));
+		this.router.get("/", (context) => this.handleRequestRoot(context));
 
 		this.app.use(this.staticFiles.bind(this));
 		this.app.use(this.router.routes());

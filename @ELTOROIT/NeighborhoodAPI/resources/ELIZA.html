@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>ELIZA - Therapist Chatbot</title>
+		<link rel="stylesheet" href="/resources/ELIZA.css" />
+		<script src="resources/ELIZA.js"></script>
+	</head>
+	<body>
+		<h1>ELIZA</h1>
+		<div class="intro">The original AI therapist from 1966, reimagined</div>
+
+		<div class="columns">
+			<div class="column">
+				<div class="chat-container" id="chat-container"></div>
+				<div class="input-area">
+					<input type="text" id="user-input" placeholder="Type your message here..." autocomplete="off" />
+					<button id="send-button">Send</button>
+				</div>
+			</div>
+
+			<div class="column">
+				<button class="collapsible">Sample Conversation 1: Opening Up About Stress</button>
+				<div class="content">
+					<ul>
+						<li><b>User:</b> I've been feeling really stressed lately about my job.</li>
+						<li><b>ELIZA:</b> Tell me about your job.</li>
+						<li><b>User:</b> I work as a manager and there's too much pressure. My boss expects too much.</li>
+						<li><b>ELIZA:</b> How does your work make you feel?</li>
+						<li><b>User:</b> It makes me feel overwhelmed and anxious all the time.</li>
+						<li><b>ELIZA:</b> How long have you felt overwhelmed and anxious?</li>
+						<li><b>User:</b> For about three months now, ever since the new project started.</li>
+						<li><b>ELIZA:</b> What do you think causes these feelings?</li>
+						<li><b>User:</b> I think I'm afraid of failing and letting everyone down.</li>
+						<li><b>ELIZA:</b> Why do you think you're afraid of failing and letting everyone down?</li>
+						<li><b>User:</b> Because my father always had such high expectations for me.</li>
+						<li><b>ELIZA:</b> Tell me more about your father.</li>
+					</ul>
+				</div>
+
+				<button class="collapsible">Sample Conversation 2: Relationship Issues</button>
+				<div class="content">
+					<ul>
+						<li><b>User:</b> My girlfriend doesn't understand me.</li>
+						<li><b>ELIZA:</b> How do your relationships affect you?</li>
+						<li><b>User:</b> I feel lonely even when I'm with her.</li>
+						<li><b>ELIZA:</b> Tell me more about feeling lonely.</li>
+						<li><b>User:</b> I just can't seem to connect with her anymore.</li>
+						<li><b>ELIZA:</b> Why can't you connect with her anymore?</li>
+						<li><b>User:</b> I think we've grown apart. I don't know what to do.</li>
+						<li><b>ELIZA:</b> Have you tried to know what to do?</li>
+						<li><b>User:</b> Yes, I've tried talking to her but it doesn't work.</li>
+						<li><b>ELIZA:</b> Can you elaborate on that?</li>
+						<li><b>User:</b> Whenever I try to have a serious conversation, she changes the subject.</li>
+						<li><b>ELIZA:</b> Why do you think she changes the subject?</li>
+					</ul>
+				</div>
+
+				<button class="collapsible">Sample Conversation 3: Ambition and Self-Doubt</button>
+				<div class="content">
+					<ul>
+						<li><b>User:</b> I've always wanted to be a writer.</li>
+						<li><b>ELIZA:</b> Why do you want to be a writer?</li>
+						<li><b>User:</b> I think I have stories to tell that might help people.</li>
+						<li><b>ELIZA:</b> Do you really think you have stories to tell that might help people?</li>
+						<li><b>User:</b> Yes, but I'm afraid I'm not good enough.</li>
+						<li><b>ELIZA:</b> Why are you afraid you're not good enough?</li>
+						<li><b>User:</b> I compare myself to famous authors and feel inadequate.</li>
+						<li><b>ELIZA:</b> How does comparing yourself to famous authors make you feel?</li>
+						<li><b>User:</b> Discouraged and small.</li>
+						<li><b>ELIZA:</b> How long have you felt discouraged and small?</li>
+						<li><b>User:</b> Since I was a teenager, I guess.</li>
+						<li><b>ELIZA:</b> What causes you to feel this way?</li>
+					</ul>
+				</div>
+
+				<button class="collapsible">Sample Patterns</button>
+				<div class="content">
+					<ul>
+						<li>I am / I'm ...</li>
+						<li>I want ...</li>
+						<li>I feel ...</li>
+						<li>I think ...</li>
+						<li>I need ...</li>
+						<li>I can't ...</li>
+						<li>I wish ...</li>
+						<li>Are you ...</li>
+						<li>You are ...</li>
+						<li>Why ...</li>
+						<li>Emotion ...</li>
+					</ul>
+				</div>
+
+				<button class="collapsible">Sample Topics</button>
+				<div class="content">
+					<ul>
+						<li><b>Good feelings:</b> happy, excited, glad, delighted</li>
+						<li><b>Bad feelings:</b> worried, anxious, nervous, scared</li>
+						<li><b>Really bad feelings:</b> angry, mad, furious, upset</li>
+						<li><b>People:</b> mother, mom, mum</li>
+						<li><b>People:</b> father, dad, daddy, pop</li>
+						<li><b>People:</b> friend, friends</li>
+						<li><b>Chat:</b> computer, ai, chatbot, eliza, program</li>
+						<li><b>Relationships:</b> relationship, marriage, partner, spouse, boyfriend, girlfriend</li>
+						<li><b>Work:</b> job, work, career, profession</li>
+						<li><b>Health:</b> health, illness, sick, disease</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
