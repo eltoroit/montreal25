@@ -1,19 +1,19 @@
 {
 	"packageDirectories": [
 		{
-			"path": "force-apps/base",
-			"default": false
-		},
-		{
-			"path": "force-apps/doNotDeploy",
-			"default": false
-		},
-		{
 			"path": "force-apps/ETDH",
 			"default": true
 		},
 		{
-			"path": "force-apps/setup",
+			"path": "force-apps/dreamhouse_ELTOROit",
+			"default": false,
+			"versionName": "ver 0.1",
+			"versionNumber": "0.1.0.NEXT",
+			"package": "dreamhouse_ELTOROit",
+			"versionDescription": "Dreamhouse app plus additional metadata required for Agentforce Workshop"
+		},
+		{
+			"path": "force-apps/doNotDeploy",
 			"default": false
 		}
 	],
@@ -32,5 +32,11 @@
 			"stringToReplace": "{{CONSUMER_SECRET}}",
 			"replaceWithFile": "./etReplacements/CONSUMER_SECRET.txt"
 		}
-	]
+	],
+	"packageAliases": {
+		"dreamhouse_ELTOROit": "0Hobn0000002EWjCAM",
+		"dreamhouse_ELTOROit@0.1.0-1": "04tbn000000pBflAAE",
+		"dreamhouse_ELTOROit@0.1.0-2": "04tbn000000pBhNAAU",
+		"dreamhouse_ELTOROit@0.1.0-3": "04tbn000000pBizAAE"
+	}
 }

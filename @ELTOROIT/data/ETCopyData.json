@@ -43,7 +43,7 @@
       "orderBy": null
     },
     {
-      "name": "PropertyOpenHouseSchedule__c",
+      "name": "OpenHouse__c",
       "ignoreFields": "",
       "externalIdField": null,
       "twoPassReferenceFields": "",
@@ -51,7 +51,7 @@
       "orderBy": null
     },
     {
-      "name": "PropertyPriceHistory__c",
+      "name": "PriceHistory__c",
       "ignoreFields": "",
       "externalIdField": null,
       "twoPassReferenceFields": "",

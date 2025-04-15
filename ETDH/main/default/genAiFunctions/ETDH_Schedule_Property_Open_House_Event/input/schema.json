@@ -1,0 +1,28 @@
+{
+  "required" : [ "DateTime", "PropertyID" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "BrokerID" : {
+      "title" : "BrokerID",
+      "description" : "Broker ID (optional) is the ID identifying the broker who will hose the open house event. If the value is provided, you must find the ID before calling the flow",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "DateTime" : {
+      "title" : "DateTime",
+      "description" : "DateTime for the open house event",
+      "lightning:type" : "lightning__dateTimeStringType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "PropertyID" : {
+      "title" : "PropertyID",
+      "description" : "Property Id (18 characters) that will host the open house event. You must find the ID before calling the flow",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

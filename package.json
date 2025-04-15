@@ -5,7 +5,8 @@
 	"description": "Learn AgentForce the fun way",
 	"scripts": {
 		"build": "./build.sh",
-		"initializeSandboxOrg": "node ~/ET_Tools/@ELTOROit/ScratchOrgBuilder/orgBuilder.mjs --config-file=@ELTOROIT/scripts/orgBuilder/SandboxBuilderBase.jsonc",
+		"initializeBase": "node ~/ET_Tools/@ELTOROit/ScratchOrgBuilder/orgBuilder.mjs --config-file=@ELTOROIT/scripts/orgBuilder/SandboxBuilderBase.jsonc",
+		"openDEV04": "sf org open --target-org aperez.montreal@test1.org.dev04",
 		"exportData": "~/ET_Tools/node_modules/sfdx-cli/bin/run ETCopyData export --configfolder ./@ELTOROIT/data --loglevel trace --json",
 		"importData": "~/ET_Tools/node_modules/sfdx-cli/bin/run ETCopyData import --configfolder ./@ELTOROIT/data --loglevel trace --json",
 		"deleteData": "~/ET_Tools/node_modules/sfdx-cli/bin/run ETCopyData delete --configfolder ./@ELTOROIT/data --loglevel trace --json",

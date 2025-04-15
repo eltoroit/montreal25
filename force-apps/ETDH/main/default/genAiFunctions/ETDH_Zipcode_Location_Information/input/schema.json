@@ -4,7 +4,7 @@
   "properties" : {
     "interest" : {
       "title" : "interest",
-      "description" : "What specific does the customer want to find in this zip code? Or does he want general information?",
+      "description" : "What specific does the user want to find near this property? Or does he want general information?",
       "lightning:type" : "lightning__textType",
       "lightning:isPII" : false,
       "copilotAction:isUserInput" : false

@@ -6,7 +6,7 @@
       "description" : "The new property open house event created",
       "lightning:type" : "lightning__recordInfoType",
       "lightning:sObjectInfo" : {
-        "apiName" : "PropertyOpenHouseSchedule__c"
+        "apiName" : "OpenHouse__c"
       },
       "lightning:isPII" : false,
       "copilotAction:isDisplayable" : true,

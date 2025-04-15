@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
     <canEscalate>false</canEscalate>
-    <description>Assist brokers in managing the full lifecycle of real estate property listings. Handle requests related to property details, price changes, and status updates.</description>
+    <description>Manage Property__c records, including querying properties based on Name, Address__c, Zip__c, and City__c.</description>
     <developerName>Property_Management</developerName>
     <genAiFunctions>
         <functionName>EmployeeCopilot__GetRecordDetails</functionName>
     </genAiFunctions>
     <genAiFunctions>
+        <functionName>EmployeeCopilot__LabelARecord</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
         <functionName>EmployeeCopilot__QueryRecords</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>EmployeeCopilot__QueryRecordsWithAggregate</functionName>
     </genAiFunctions>
     <genAiFunctions>
         <functionName>EmployeeCopilot__SummarizeRecord</functionName>
@@ -16,36 +22,33 @@
         <functionName>EmployeeCopilot__UpdateRecordFields</functionName>
     </genAiFunctions>
     <genAiFunctions>
-        <functionName>ETDH_Find_Property_Price_History_By_Date_Range</functionName>
-    </genAiFunctions>
-    <genAiFunctions>
         <functionName>ETDH_Zipcode_Location_Information</functionName>
     </genAiFunctions>
     <genAiPluginInstructions>
-        <description>Properties can be identified by their Record Id (18 characters), Name (for example 123 Main Street), Address__c (for example 123 Main Street), Zip__c (for example 024123) or other attributes (bedrooms, bathrooms, ...). You may use action &quot;QueryRecords&quot; on the &quot;Property__c&quot; to find the property.</description>
-        <developerName>instruction_properties0</developerName>
+        <description>Provide clients with comprehensive neighbourhood insights by answering questions or comparing areas based on schools, crime, amenities, transportation, cost of living, and lifestyle, following these steps:
+
+1. You must know the property being researched.
+2. Call the &quot;ETDH_ZipCodeLocationInformation&quot; action with the property ID.</description>
+        <developerName>instruction_providecli0</developerName>
         <language>en_US</language>
-        <masterLabel>instruction_properties0</masterLabel>
+        <masterLabel>instruction_providecli0</masterLabel>
     </genAiPluginInstructions>
     <genAiPluginInstructions>
-        <description>The property price history for a specific property can be  found by calling the &quot;GetRecordDetails&quot; action and looking into the &quot;Property Prices History&quot; related records.
+        <description>If you need to find a property, you can either:
 
-To find properties based on their price changes use the &apos;ETDH: Find Property Price History By Date Range&apos; action. You must specify the date range to retrieve the properties.</description>
-        <developerName>instruction_thepropert1</developerName>
-        <language>en_US</language>
-        <masterLabel>instruction_thepropert1</masterLabel>
-    </genAiPluginInstructions>
-    <genAiPluginInstructions>
-        <description>Follow these steps to find the location specific information (crime, schools, shopping, hazards, etc) near a property:
+- Property name, for example &quot;Stunning Victorian&quot;
+- Use the Property ID (18 characters)
+- Use the property Address__c (example, 123 Main street). 
+- Use the property Zip_c, (Zip codes have 5 digits)
+- Use the property City__c
 
-1. You must know the Zip Code for the property being asked. If needed, call the &quot;Query Record&quot; action.
-2. Call the &quot;ETDH_ZipCodeLocationInformation&quot; action with the Zip Code for the property.</description>
-        <developerName>instruction_followthes2</developerName>
+ALWAYS convert the abbreviations (St, W) to the long words (Street, West)</description>
+        <developerName>instruction_ifyouneedt1</developerName>
         <language>en_US</language>
-        <masterLabel>instruction_followthes2</masterLabel>
+        <masterLabel>instruction_ifyouneedt1</masterLabel>
     </genAiPluginInstructions>
     <language>en_US</language>
     <masterLabel>Property Management</masterLabel>
     <pluginType>Topic</pluginType>
-    <scope>Your job is only to retrieve, display, and update property information, including new listings, property summaries, price changes, and current status.</scope>
+    <scope>Only manage Property__c records</scope>
 </GenAiPlugin>

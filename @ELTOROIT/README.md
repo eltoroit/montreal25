@@ -51,8 +51,16 @@
 
 - Agentforce (default) (builder and regular modes) runs under "Platform Integration User" (Set debug logs on this user)
 
-# Instrcutions
+# Instructions
 
 ```
 Properties can be identified by their Record Id (18 characters), Name, Address__c (for example 123 Main Street), or Zip__c (for example 024123) or other attributes. You may use action "QueryRecords" to find the property.
+```
+
+# Unlocked Package
+
+```
+sf package create --name dreamhouse_ELTOROit --package-type Unlocked --path force-apps/dreamhouse_ELTOROit --no-namespace --target-dev-hub etdcoDevHub --description "Dreamhouse app plus additional metadata required for Agentforce Workshop"
+
+sf package version create --package dreamhouse_ELTOROit --wait 600 --target-dev-hub etdcoDevHub --installation-key-bypass
 ```

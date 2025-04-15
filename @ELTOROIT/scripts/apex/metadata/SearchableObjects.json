@@ -2907,7 +2907,7 @@
 			"keyPrefix": "a0B",
 			"pluralLabel": "Property Open House Schedules",
 			"label": "Property Open House Schedule",
-			"name": "PropertyOpenHouseSchedule__c"
+			"name": "OpenHouse__c"
 		},
 		{
 			"isUpdateable": true,
@@ -2926,7 +2926,7 @@
 			"keyPrefix": "a0C",
 			"pluralLabel": "Property Prices History",
 			"label": "Property Price History",
-			"name": "PropertyPriceHistory__c"
+			"name": "PriceHistory__c"
 		},
 		{
 			"isUpdateable": true,

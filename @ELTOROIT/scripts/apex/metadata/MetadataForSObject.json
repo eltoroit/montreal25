@@ -122,12 +122,12 @@
 		},
 		{
 			"field": "Property__c",
-			"childObject": "PropertyOpenHouseSchedule__c",
+			"childObject": "OpenHouse__c",
 			"relationshipName": "OpenHouseEvents__r"
 		},
 		{
 			"field": "Property__c",
-			"childObject": "PropertyPriceHistory__c",
+			"childObject": "PriceHistory__c",
 			"relationshipName": "PriceHistories__r"
 		},
 		{
