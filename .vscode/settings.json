@@ -8,5 +8,7 @@
 	"codeBuilder.showWelcomePage": false,
 	"salesforcedx-vscode-core.push-or-deploy-on-save.ignoreConflictsOnPush": true,
 	"salesforcedx-vscode-core.push-or-deploy-on-save.showOutputPanel": true,
-	"salesforcedx-vscode-core.push-or-deploy-on-save.enabled": false
+	"salesforcedx-vscode-core.push-or-deploy-on-save.enabled": false,
+	"markdown-mermaid.darkModeTheme": "forest",
+	"markdown-mermaid.lightModeTheme": "neutral"
 }
