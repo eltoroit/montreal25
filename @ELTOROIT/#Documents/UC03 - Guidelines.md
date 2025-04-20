@@ -47,9 +47,9 @@
 
 1. What is the Property Pricing Structure?
 2. What are the rules about including photos in a listing?
-3. Explain the rules for virtual tours in listings.
+3. Explain the rules for virtual tours in listings
 4. What are the requirements for listing a property?
-5. Show me the guidelines for property descriptions.
+5. Show me the guidelines for property descriptions
 6. Can you provide the guidelines on pricing a property?
 7. What are the legal requirements for property disclosures?
 8. How should I handle showing instructions in a listing?
@@ -65,7 +65,7 @@
 18. What are the guidelines for listing waterfront properties?
 19. What are the rules about listing commission information?
 20. Can you provide clarification on the section about property boundaries?
-21. I need to know the guidelines for listing a commercial property.
+21. I need to know the guidelines for listing a commercial property
 22. What are the requirements for listing a rental property?
 
 # Clarify and Understand User Inquiries

@@ -1,6 +1,6 @@
-# Dreamhouse Agent Use Cases
+# Use Cases
 
-## UC01 Properties
+# UC01 Properties
 
 - **Property listings retrieval**:
     - Users want to view all listings or filter properties by criteria like location, number of bedrooms/bathrooms
@@ -13,7 +13,7 @@
 - **Analytics**:
     - Users request aggregated information like property counts by city or status
 
-## UC02 OpenHouses
+# UC02 OpenHouses
 
 - **Open house scheduling**:
     - Users want to create new open house events, specifying property addresses, dates, times, and broker assignments
@@ -26,7 +26,7 @@
 - **Open house filtering**:
     - Users want to view open houses based on location ("in my area") or time period criteria
 
-## UC03 Guidelines (RAG)
+# UC03 Guidelines (RAG)
 
 - **Listing requirements**:
     - Users seek information about specific requirements for different property types (luxury, rental, commercial, rural)
@@ -45,7 +45,7 @@
 - **Advertising regulations**:
     - Users inquire about restrictions or requirements for promoting listings and open houses
 
-## UC04 Lifestyle
+# UC04 Neighbourhoods
 
 - **Neighborhood characteristics**:
     - Users request information about the general qualities and attributes of neighborhoods surrounding specific properties
@@ -62,6 +62,6 @@
 - **Local economy**:
     - Users inquire about cost of living, local businesses, and housing market trends
 
-## UC05 Digital Experience
+# UC05 Digital Experience
 
 - Same as the internal employees use cases (except for **UC04-Guidelines**) but for Digital Experience users (guests and logged in)
