@@ -8,25 +8,30 @@ public with sharing class ETDH_ZipCodeLocationFormatter {
 		addValue(inputParams, 'Input:Interest', request.interest);
 		addValue(inputParams, 'Input:Property', propertyId);
 
-		// Set the prompt service
-		ConnectApi.EinsteinPromptTemplateGenerationsInput promptGenerationsInput = new ConnectApi.EinsteinPromptTemplateGenerationsInput();
-		promptGenerationsInput.inputParams = inputParams;
-		promptGenerationsInput.additionalConfig = new ConnectApi.EinsteinLlmAdditionalConfigInput();
-		promptGenerationsInput.additionalConfig.numGenerations = 1;
-		promptGenerationsInput.additionalConfig.enablePiiMasking = true;
-		promptGenerationsInput.additionalConfig.applicationName = 'PromptTemplateGenerationsInvocable';
-		promptGenerationsInput.isPreview = false;
+		// Configure Einstein LLM Service
+		ConnectApi.EinsteinPromptTemplateGenerationsInput promptTemplateService = setPromptTemplateService(inputParams);
 
-		// Call the prompt service to generate messages for the prompt template
+		// Generate Response with LLM
 		ConnectApi.EinsteinPromptTemplateGenerationsRepresentation generationsOutput = ConnectApi.EinsteinLLM.generateMessagesForPromptTemplate(
 			'ETDH_Analyze_ZipCode_information',
-			promptGenerationsInput
+			promptTemplateService
 		);
 
-		// Consume response
+		// Extract and Return HTML
 		ConnectApi.EinsteinLLMGenerationItemOutput response = generationsOutput.generations[0];
 		return ETAI_Helpers.extractHtml(response.text);
 	}
+
+	private static ConnectApi.EinsteinPromptTemplateGenerationsInput setPromptTemplateService(Map<String, ConnectApi.WrappedValue> inputParams) {
+        ConnectApi.EinsteinPromptTemplateGenerationsInput promptGenerationsInput = new ConnectApi.EinsteinPromptTemplateGenerationsInput();
+        promptGenerationsInput.inputParams = inputParams;
+        promptGenerationsInput.additionalConfig = new ConnectApi.EinsteinLlmAdditionalConfigInput();
+        promptGenerationsInput.additionalConfig.numGenerations = 1;
+        promptGenerationsInput.additionalConfig.enablePiiMasking = true;
+        promptGenerationsInput.additionalConfig.applicationName = 'PromptTemplateGenerationsInvocable';
+        promptGenerationsInput.isPreview = false;
+        return promptGenerationsInput;
+    }
 
 	private static ConnectApi.WrappedValue addValue(Map<String, ConnectApi.WrappedValue> inputParams, String name, Object value) {
 		ConnectApi.WrappedValue inputValue = new ConnectApi.WrappedValue();
