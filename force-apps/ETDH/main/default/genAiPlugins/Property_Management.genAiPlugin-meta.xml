@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata">
     <canEscalate>false</canEscalate>
-    <description>Manage Property__c records, including querying properties based on Name, Address__c, Zip__c, and City__c.</description>
+    <description>Manage Property__c records, including querying properties based on Name, Address__c, Zip__c, and City__c. Also manage PriceHistory__c records that record price changes to the properties.</description>
     <developerName>Property_Management</developerName>
     <genAiFunctions>
         <functionName>EmployeeCopilot__GetRecordDetails</functionName>
@@ -25,15 +25,6 @@
         <functionName>ETDH_Zipcode_Location_Information</functionName>
     </genAiFunctions>
     <genAiPluginInstructions>
-        <description>Provide clients with comprehensive neighbourhood insights by answering questions or comparing areas based on schools, crime, amenities, transportation, cost of living, and lifestyle, following these steps:
-
-1. You must know the property being researched.
-2. Call the &quot;ETDH_ZipCodeLocationInformation&quot; action with the property ID.</description>
-        <developerName>instruction_providecli0</developerName>
-        <language>en_US</language>
-        <masterLabel>instruction_providecli0</masterLabel>
-    </genAiPluginInstructions>
-    <genAiPluginInstructions>
         <description>If you need to find a property, you can either:
 
 - Property name, for example &quot;Stunning Victorian&quot;
@@ -43,12 +34,35 @@
 - Use the property City__c
 
 ALWAYS convert the abbreviations (St, W) to the long words (Street, West)</description>
-        <developerName>instruction_ifyouneedt1</developerName>
+        <developerName>instruction_ifyouneedt0</developerName>
         <language>en_US</language>
-        <masterLabel>instruction_ifyouneedt1</masterLabel>
+        <masterLabel>instruction_ifyouneedt0</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Provide clients with comprehensive neighbourhood insights by answering questions or comparing areas based on schools, crime, amenities, transportation, cost of living, and lifestyle
+
+- You need to find the property and obtain the  property ID (18 characters).
+- Call the &quot;ETDH_ZipCodeLocationInformation&quot; action with the property ID.</description>
+        <developerName>instruction_providecli1</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_providecli1</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>The property currency fields (Price__c) must not be formatted when changing the data, remove these characters: dollar ($), comma (,), etc.</description>
+        <developerName>instruction_thepropert2</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_thepropert2</masterLabel>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When inquiring about property price changes query the PriceHistory__c object, make sure to include these fields (Property__c, OldPrice__c, NewPrice__c, DateChanged__c)
+
+When presenting property price changes, include fields such as the property, old price, new price, date of change, and any additional relevant details.</description>
+        <developerName>instruction_wheninquir3</developerName>
+        <language>en_US</language>
+        <masterLabel>instruction_wheninquir3</masterLabel>
     </genAiPluginInstructions>
     <language>en_US</language>
     <masterLabel>Property Management</masterLabel>
     <pluginType>Topic</pluginType>
-    <scope>Only manage Property__c records</scope>
+    <scope>Only manage Property__c and PriceHistory__c records</scope>
 </GenAiPlugin>
