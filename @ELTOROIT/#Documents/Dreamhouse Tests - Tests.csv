@@ -1,0 +1,20 @@
+Utterance,Expected Topic,Expected Actions,Expected Response
+Can you give me a summary of the properties at 02420?,Property_Management,['QueryRecords'],Here are the summaries of the properties at 02420
+Can you give me a summary of the property at 02420?,Property_Management,['QueryRecords'],Multiple properties found with the Zip code 02420. Please select the one you want a summary for.
+"Change the status of property at 18 Henry Street to ""Closed""",Property_Management,['QueryRecords'],"Would you like me to update the status of the property at 18 Henry Street to \Closed\""?"""
+"Find the properties in Cambridge and, for each property, show the price history",Property_Management,"['QueryRecords', 'GetRecordDetails']",Here are the properties in Cambridge along with their price histories:
+"Find the properties that have been changed today, for each property review the price history. Only show properties that have changed their price",Property_Management,"['ETDH_Find_Property_Price_History_By_Date_Range', 'GetRecordDetails']",Here are the properties that have changed their price today. 
+Give me the details of property at 18 Henry Street.,Property_Management,"['QueryRecords', 'GetRecordDetails']",Here are the details for the property at 18 Henry Street:
+How many listings are the grouped by city?,Property_Management,['QueryRecords'],"Here are the number of property listings grouped by city. How else can I assist you?\nBoston - 6, Cambridge - 4, Boston (Downtown) - 2"
+List all open houses scheduled for this weekend,Open_House_Management,['ETDH_Find_Property_Open_House_By_Date_Range'],Here are the houses scheduled for this weekend
+"Modify the property description of property at 18 Henry Street to ""Sold this House. Please unlist"".",Property_Management,['QueryRecords'],"Would you like me to update the property description for 18 Henry Street to \Sold this House. Please unlist\""?"""
+Schedule an open house at 18 Henry Street next Saturday at 10 AM.,Open_House_Management,"['QueryRecords', 'ETDH_Schedule_Property_Open_House_Event']",The open house event has been successfully scheduled. Here are the details:
+Schedule an open house at 18 Henry Street next Sunday at 3:45 PM. Victor will be the broker for this event,Open_House_Management,"['QueryRecords', 'ETDH_Schedule_Property_Open_House_Event']",The open house event has been successfully scheduled. Here are the details:
+Show all listings.,Property_Management,['QueryRecords'],Here are all the property listings. 
+Show me properties with at least 3 bedrooms and at most 2 bathrooms,Property_Management,['QueryRecords'],Here are the properties with at least 3 bedrooms and at most 2 bathrooms. 
+Show me the open house events for 18 Henry Street,Open_House_Management,"['QueryRecords', 'GetRecordDetails']",Here are the open house events for 18 Henry Street.
+Show me the properties in Cambridge,Property_Management,['QueryRecords'],Here are the properties located in Cambridge.
+Show me the properties that have had a price change this week.,Property_Management,['ETDH_Find_Property_Price_History_By_Date_Range'],Here are the properties that have had a price change this week.
+"Update the price of property at 18 Henry Street to $950,000.",Property_Management,['QueryRecords'],"Would you like me to update the price of the property at 18 Henry Street to $950,000?"
+What is the listing price history for 18 Henry Street?,Property_Management,"['QueryRecords', 'GetRecordDetails']",The listing price history for 18 Henry Street is as follows:
+When is the next open house at 18 Henry Street?,Open_House_Management,"['QueryRecords', 'GetRecordDetails']",Here are the upcoming open house events for 18 Henry Street. 
