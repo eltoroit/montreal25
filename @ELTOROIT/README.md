@@ -5,5 +5,5 @@ sf package create --target-dev-hub etdcoDevHub --name dreamhouse_ELTOROit --pack
 
 sf package version create --target-dev-hub etdcoDevHub --package dreamhouse_ELTOROit --wait 600 --installation-key-bypass --code-coverage
 
-sf package version promote --target-dev-hub etdcoDevHub --package "dreamhouse_ELTOROit@0.1.0-7"
+sf package version promote --target-dev-hub etdcoDevHub --package "dreamhouse_ELTOROit@0.1.1-1"
 ```

@@ -7,8 +7,8 @@
     {
       "path": "force-apps/dreamhouse_ELTOROit",
       "default": false,
-      "versionName": "ver 0.1",
-      "versionNumber": "0.1.0.NEXT",
+      "versionName": "Montreal Dreaming '25",
+      "versionNumber": "0.1.1.NEXT",
       "package": "dreamhouse_ELTOROit",
       "versionDescription": "Dreamhouse app plus additional metadata required for Agentforce Workshop"
     },
@@ -40,6 +40,8 @@
     "dreamhouse_ELTOROit@0.1.0-3": "04tbn000000pBizAAE",
     "dreamhouse_ELTOROit@0.1.0-5": "04tbn000000pTftAAE",
     "dreamhouse_ELTOROit@0.1.0-6": "04tbn000000pThVAAU",
-    "dreamhouse_ELTOROit@0.1.0-7": "04tbn000000pTj7AAE"
+    "dreamhouse_ELTOROit@0.1.0-7": "04tbn000000pTj7AAE",
+    "dreamhouse_ELTOROit@0.1.0-8": "04tbn000000pzXhAAI",
+    "dreamhouse_ELTOROit@0.1.1-1": "04tbn000000pzZJAAY"
   }
 }
