@@ -6,6 +6,7 @@
 				deleted.
 			</p>
 			<lightning-button label="Import Data" variant="brand" onclick={handleImportSampleData} disabled={buttonDisabled}></lightning-button>
+			<span lwc:if={buttonDisabled} class="slds-var-m-left_xx-small">Please Wait...</span>
 		</div>
 	</lightning-card>
 </template>
