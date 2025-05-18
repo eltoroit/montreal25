@@ -195,7 +195,7 @@
             <targetReference>IF010</targetReference>
         </connector>
     </start>
-    <status>Active</status>
+    <status>Obsolete</status>
     <variables>
         <description>Broker ID (optional) is the ID identifying the broker who will hose the open house event. If the value is provided, you must find the ID before calling the flow</description>
         <name>BrokerID</name>
