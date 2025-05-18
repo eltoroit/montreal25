@@ -15,7 +15,7 @@
 		"ShowDeployPage",
 		// // SKIP https://login.salesforce.com/packaging/installPackage.apexp?p0=04tKY000000LRJJYA4
 		// // SKIP { "InstallPackage": { "id": "04tKY000000LRJJYA4" } }, // Dreamhouse App
-		{ "InstallPackage": { "id": "04tbn000000pBizAAE" } }, // "dreamhouse_ELTOROit@0.1.0-3"
+		{ "InstallPackage": { "id": "04tbn000000pTj7AAE" } }, // "dreamhouse_ELTOROit@0.1.0-7": "04tbn000000pTj7AAE"
 		// { "PushMetadata": { "folder": "force-apps/dreamhouse_ELTOROit" } },
 
 		// Post-Deploy

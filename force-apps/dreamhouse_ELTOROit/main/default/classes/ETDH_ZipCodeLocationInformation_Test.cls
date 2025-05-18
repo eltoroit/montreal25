@@ -6,10 +6,19 @@ private class ETDH_ZipCodeLocationInformation_Test {
 		String mockResponse = '{"zip_code":"94105","latitude":37.7864,"longitude":-122.3892,"city":"San Francisco","state":"CA","county":"San Francisco"}';
 		Test.setMock(HttpCalloutMock.class, new MockHttpResponse(200, mockResponse));
 
+		// Set Data
+		//  I'm deleting data since I am doing SeeAllData=true (required to test prompts) but there is no data when creating the unmanaged package
+		delete [SELECT Id FROM Case];
+		delete [SELECT Id FROM Property__c];
+		delete [SELECT Id FROM Broker__c];
+		delete [SELECT Id FROM Contact];
+		// Now create the property for the test
+		Property__c property = new Property__c(Name = 'Test Property ', Price__c = 100000);
+		insert property;
+
 		// Gind location information
 		List<ETDH_ZipCodeLocationInformation.AgentRequest> requests = new List<ETDH_ZipCodeLocationInformation.AgentRequest>();
 		ETDH_ZipCodeLocationInformation.AgentRequest request = new ETDH_ZipCodeLocationInformation.AgentRequest();
-		Property__c property = [SELECT Id FROM Property__c LIMIT 1];
 		request.propertyID = property.Id;
 		request.interest = 'everything';
 		// request.interest = 'Schools';

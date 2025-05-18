@@ -122,13 +122,6 @@ public inherited sharing class ETAI_Helpers {
 		return String.valueOf(value).leftPad(length, '0');
 	}
 
-	public static ConnectApi.WrappedValue addValue(Map<String, ConnectApi.WrappedValue> inputParams, String name, Object value) {
-		ConnectApi.WrappedValue inputValue = new ConnectApi.WrappedValue();
-		inputValue.value = value;
-		inputParams.put(name, inputValue);
-		return inputValue;
-	}
-
 	public static String getSObjectMetadata(String sObjectName) {
 		Map<String, Object> jsonOutput = new Map<String, Object>();
 		Map<String, Schema.SObjectType> globalDescribe = Schema.getGlobalDescribe();
